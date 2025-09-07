@@ -114,7 +114,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Layout de duas colunas - VÍDEO MENOR */
+/* Layout de duas colunas */
 .two-columns {
     display: flex;
     gap: 40px;
@@ -134,28 +134,33 @@ body {
     flex-direction: column;
 }
 
-/* CONTAINER DO VÍDEO - TAMANHO DE 6,2 POLEGADAS */
+/* CONTAINER DO VÍDEO - CORREÇÃO DO ESPAÇO SOBRANDO */
 .video-container {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 300px; /* Largura fixa de ~6.2 polegadas */
-    height: 533px; /* Altura proporcional 9:16 (formato vertical) */
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    padding: 0; /* Remove qualquer padding */
+    margin: 0; /* Remove qualquer margem */
 }
 
 .video-wrapper {
     width: 100%;
-    height: 100%;
+    height: 533px; /* Altura fixa para o vídeo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000; /* Fundo preto para não mostrar espaços */
 }
 
 .video-wrapper iframe {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 10px 10px 0 0;
+    display: block; /* Remove espaços embaixo de elementos inline */
 }
 
 .demo-container {
@@ -217,6 +222,7 @@ body {
     font-size: 0.9rem;
     color: #666;
     background: #f8f9fa;
+    margin: 0; /* Remove margens */
 }
 
 .video-details {
@@ -295,6 +301,9 @@ body {
     .video-container {
         width: 100%;
         max-width: 400px;
+    }
+    
+    .video-wrapper {
         height: 711px; /* Proporção mantida (400 * 16/9) */
     }
     
@@ -316,6 +325,9 @@ body {
     
     .video-container {
         max-width: 350px;
+    }
+    
+    .video-wrapper {
         height: 622px; /* Proporção mantida (350 * 16/9) */
     }
 }
@@ -342,6 +354,9 @@ body {
     
     .video-container {
         max-width: 100%;
+    }
+    
+    .video-wrapper {
         height: calc(100vw * 1.777); /* Proporção 9:16 responsiva */
         max-height: 600px;
     }
@@ -352,6 +367,7 @@ body {
     
     .demo-container {
         padding: 20px;
+        max-height: none;
     }
     
     .math-display {
