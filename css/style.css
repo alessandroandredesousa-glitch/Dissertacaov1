@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     background-color: #f8f9fa;
     color: #333;
-    overflow: hidden; /* Impede rolagem global */
+    overflow: hidden;
 }
 
 /* Menu lateral */
@@ -94,7 +94,7 @@ body {
     margin-left: 280px;
     padding: 30px;
     height: 100vh;
-    overflow: hidden; /* Impede rolagem no conteúdo principal */
+    overflow: hidden;
 }
 
 .page-header {
@@ -115,42 +115,44 @@ body {
     margin-bottom: 20px;
 }
 
-/* Layout de duas colunas */
+/* Layout de duas colunas - CORRIGIDO */
 .two-columns {
     display: flex;
     gap: 30px;
-    height: calc(100vh - 180px); /* Altura ajustada para preencher a tela */
+    height: calc(100vh - 180px);
 }
 
 .video-column {
-    flex: 0 0 420px; /* Largura fixa para a coluna do vídeo */
+    flex: 0 0 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .demo-column {
-    flex: 1; /* A coluna de demonstração ocupa o espaço restante */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    min-width: 0; /* Importante para evitar overflow horizontal */
+    min-width: 0;
 }
 
+/* CONTAINER DO VÍDEO - CORREÇÃO PRINCIPAL */
 .video-container {
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: visible; /* Alterado de hidden para visible */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 380px; /* Tamanho aumentado para o vídeo */
+    max-width: 380px;
+    height: auto; /* Deixe a altura ser determinada pelo conteúdo */
+    min-height: 600px; /* Altura mínima para garantir espaço */
 }
 
 .video-wrapper {
     width: 100%;
-    height: 0;
-    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
     position: relative;
+    height: 600px; /* Altura fixa para o container do vídeo */
 }
 
 .video-wrapper iframe {
@@ -169,9 +171,9 @@ body {
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
-    overflow-y: auto; /* Adiciona barra de rolagem vertical */
-    overflow-x: hidden; /* Impede rolagem horizontal */
-    max-height: 100%; /* Garante que não ultrapasse a altura do container */
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
 }
 
 .demo-container h2 {
@@ -183,9 +185,9 @@ body {
 .math-display {
     font-size: 1.1rem;
     line-height: 1.6;
-    overflow-x: auto; /* Permite rolagem horizontal apenas para equações longas */
-    max-width: 100%; /* Impede que o conteúdo ultrapasse a largura do container */
-    word-wrap: break-word; /* Quebra palavras longas */
+    overflow-x: auto;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .math-display h3, .math-display h4 {
@@ -209,7 +211,7 @@ body {
     padding: 15px;
     margin: 20px 0;
     border-radius: 0 5px 5px 0;
-    max-width: 100%; /* Garante que não cause overflow horizontal */
+    max-width: 100%;
 }
 
 .theorem h3 {
@@ -217,7 +219,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Melhorias para o player do YouTube */
 .yt-info {
     text-align: center;
     margin-top: 15px;
@@ -231,7 +232,7 @@ body {
     background: #f8f9fa;
     border-radius: 8px;
     width: 100%;
-    max-width: 100%; /* Garante que não cause overflow */
+    max-width: 100%;
 }
 
 .video-details h3 {
@@ -258,7 +259,6 @@ body {
     background: #2980b9;
 }
 
-/* Para Firefox */
 .demo-container {
     scrollbar-width: thin;
     scrollbar-color: #3498db #f1f1f1;
@@ -275,8 +275,17 @@ body {
     .video-column {
         flex: 0 0 auto;
         width: 100%;
-        max-width: 450px;
+        max-width: 500px;
         margin: 0 auto;
+    }
+    
+    .video-wrapper {
+        height: 500px; /* Reduz altura em tablets */
+    }
+    
+    .video-container {
+        min-height: 500px;
+        max-width: 100%;
     }
     
     .demo-column {
@@ -302,7 +311,7 @@ body {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        overflow: auto; /* Restaura rolagem global em mobile */
+        overflow: auto;
     }
     
     .sidebar {
@@ -324,6 +333,11 @@ body {
     
     .video-container {
         max-width: 100%;
+        min-height: 400px;
+    }
+    
+    .video-wrapper {
+        height: 400px; /* Altura menor para mobile */
     }
     
     .page-header h1 {
@@ -340,6 +354,22 @@ body {
     }
     
     .math-display {
-        overflow-x: auto; /* Mantém rolagem horizontal para equações */
+        overflow-x: auto;
     }
+}
+
+/* Estilo para garantir que o YouTube carregue corretamente */
+.youtube-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 177.8%;
+    position: relative;
+}
+
+.youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
