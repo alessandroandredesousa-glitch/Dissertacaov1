@@ -122,7 +122,7 @@ body {
 }
 
 .video-column {
-    flex: 0 0 320px; /* Largura fixa reduzida */
+    flex: 0 0 340px; /* Largura para o formato TikTok */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,33 +134,32 @@ body {
     flex-direction: column;
 }
 
-/* CONTAINER DO VÍDEO - CORREÇÃO DO ESPAÇO SOBRANDO */
+/* CONTAINER DO VÍDEO - FORMATO TIKTOK (9:16) */
 .video-container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Largura fixa de ~6.2 polegadas */
+    background-color: #000; /* Fundo preto igual TikTok */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 320px; /* Largura ideal para formato TikTok */
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 0; /* Remove qualquer padding */
-    margin: 0; /* Remove qualquer margem */
+    padding: 0;
+    margin: 0;
 }
 
 .video-wrapper {
     width: 100%;
-    height: 533px; /* Altura fixa para o vídeo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000; /* Fundo preto para não mostrar espaços */
+    height: 568px; /* 320 * 16/9 = 568px (formato 9:16) */
+    position: relative;
+    background: #000;
 }
 
 .video-wrapper iframe {
     width: 100%;
     height: 100%;
     border: none;
-    display: block; /* Remove espaços embaixo de elementos inline */
+    display: block;
+    border-radius: 10px 10px 0 0;
 }
 
 .demo-container {
@@ -170,7 +169,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
     overflow-y: auto;
-    max-height: 533px; /* Mesma altura do vídeo */
+    max-height: 568px; /* Mesma altura do vídeo */
 }
 
 .demo-container h2 {
@@ -218,11 +217,12 @@ body {
 
 .yt-info {
     text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-    color: #666;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #888;
     background: #f8f9fa;
-    margin: 0; /* Remove margens */
+    margin: 0;
+    border-top: 1px solid #eee;
 }
 
 .video-details {
@@ -236,6 +236,13 @@ body {
 .video-details h3 {
     color: #2c3e50;
     margin-bottom: 10px;
+}
+
+/* Efeito de destaque no hover (opcional) */
+.video-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 /* Personalização da barra de rolagem */
@@ -304,7 +311,7 @@ body {
     }
     
     .video-wrapper {
-        height: 711px; /* Proporção mantida (400 * 16/9) */
+        height: 711px; /* 400 * 16/9 = 711px */
     }
     
     .demo-container {
@@ -328,7 +335,7 @@ body {
     }
     
     .video-wrapper {
-        height: 622px; /* Proporção mantida (350 * 16/9) */
+        height: 622px; /* 350 * 16/9 = 622px */
     }
 }
 
@@ -354,6 +361,7 @@ body {
     
     .video-container {
         max-width: 100%;
+        width: 100%;
     }
     
     .video-wrapper {
@@ -373,4 +381,10 @@ body {
     .math-display {
         overflow-x: auto;
     }
+}
+
+/* Estilo para modo TikTok (opcional) */
+.tiktok-mode {
+    border: 2px solid #ff0050; /* Cor do TikTok */
+    box-shadow: 0 0 20px rgba(255, 0, 80, 0.3);
 }
