@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     background-color: #f8f9fa;
     color: #333;
+    overflow: hidden; /* Impede rolagem global */
 }
 
 /* Menu lateral */
@@ -92,6 +93,8 @@ body {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
+    height: 100vh;
+    overflow: hidden; /* Impede rolagem no conteúdo principal */
 }
 
 .page-header {
@@ -130,6 +133,7 @@ body {
     flex: 1; /* A coluna de demonstração ocupa o espaço restante */
     display: flex;
     flex-direction: column;
+    min-width: 0; /* Importante para evitar overflow horizontal */
 }
 
 .video-container {
@@ -166,6 +170,8 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
     overflow-y: auto; /* Adiciona barra de rolagem vertical */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    max-height: 100%; /* Garante que não ultrapasse a altura do container */
 }
 
 .demo-container h2 {
@@ -177,7 +183,9 @@ body {
 .math-display {
     font-size: 1.1rem;
     line-height: 1.6;
-    overflow-x: auto;
+    overflow-x: auto; /* Permite rolagem horizontal apenas para equações longas */
+    max-width: 100%; /* Impede que o conteúdo ultrapasse a largura do container */
+    word-wrap: break-word; /* Quebra palavras longas */
 }
 
 .math-display h3, .math-display h4 {
@@ -201,6 +209,7 @@ body {
     padding: 15px;
     margin: 20px 0;
     border-radius: 0 5px 5px 0;
+    max-width: 100%; /* Garante que não cause overflow horizontal */
 }
 
 .theorem h3 {
@@ -222,6 +231,7 @@ body {
     background: #f8f9fa;
     border-radius: 8px;
     width: 100%;
+    max-width: 100%; /* Garante que não cause overflow */
 }
 
 .video-details h3 {
@@ -248,11 +258,18 @@ body {
     background: #2980b9;
 }
 
+/* Para Firefox */
+.demo-container {
+    scrollbar-width: thin;
+    scrollbar-color: #3498db #f1f1f1;
+}
+
 /* Responsividade */
 @media (max-width: 1200px) {
     .two-columns {
         flex-direction: column;
         height: auto;
+        min-height: calc(100vh - 180px);
     }
     
     .video-column {
@@ -264,6 +281,11 @@ body {
     
     .demo-column {
         width: 100%;
+    }
+    
+    .demo-container {
+        max-height: none;
+        overflow-y: visible;
     }
 }
 
@@ -280,6 +302,7 @@ body {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
+        overflow: auto; /* Restaura rolagem global em mobile */
     }
     
     .sidebar {
@@ -291,6 +314,8 @@ body {
     .main-content {
         margin-left: 0;
         padding: 20px;
+        height: auto;
+        overflow: visible;
     }
     
     .video-column {
@@ -311,5 +336,10 @@ body {
     
     .demo-container {
         max-height: none;
+        overflow-y: visible;
+    }
+    
+    .math-display {
+        overflow-x: auto; /* Mantém rolagem horizontal para equações */
     }
 }
