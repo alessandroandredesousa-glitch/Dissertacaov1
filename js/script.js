@@ -21,37 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(`${videoIframes.length} vídeo(s) incorporado(s) do YouTube.`);
 });
 
-// Funções de controle do vídeo
-function togglePlay() {
-    const iframe = document.querySelector('iframe');
-    const iframeSrc = iframe.src;
-    
-    // Verifica se o iframe já tem parâmetros de consulta
-    if (iframeSrc.includes('?')) {
-        if (iframeSrc.includes('autoplay=1')) {
-            iframe.src = iframeSrc.replace('autoplay=1', 'autoplay=0');
-        } else if (iframeSrc.includes('autoplay=0')) {
-            iframe.src = iframeSrc.replace('autoplay=0', 'autoplay=1');
-        } else {
-            iframe.src = iframeSrc + '&autoplay=1';
-        }
-    } else {
-        iframe.src = iframeSrc + '?autoplay=1';
-    }
-}
-
-function toggleFullscreen() {
-    const iframe = document.querySelector('iframe');
-    
-    if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-    } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-    }
-}
-
 // Função para carregar conteúdo dinamicamente (opcional)
 function loadContent(page) {
     // Esta função pode ser usada para carregar conteúdo sem recarregar a página toda
