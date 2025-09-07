@@ -9,7 +9,7 @@ body {
     display: flex;
     background-color: #f8f9fa;
     color: #333;
-    min-height: 1000px; /* Altura reduzida */
+    min-height: 100vh;
     overflow-y: auto;
 }
 
@@ -93,7 +93,7 @@ body {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    min-height: 1000px; /* Altura reduzida */
+    min-height: 100vh;
 }
 
 .page-header {
@@ -117,56 +117,55 @@ body {
 /* Layout de duas colunas - VÍDEO MENOR */
 .two-columns {
     display: flex;
-    gap: 30px;
-    min-height: 600px;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .video-column {
-    flex: 0 0 320px; /* Largura reduzida para o vídeo */
+    flex: 0 0 320px; /* Largura fixa reduzida */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .demo-column {
-    flex: 1; /* Coluna de demonstração ocupa espaço restante */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    min-width: 0;
 }
 
-/* CONTAINER DO VÍDEO - TAMANHO REDUZIDO (6,2 polegadas) */
+/* CONTAINER DO VÍDEO - TAMANHO DE 6,2 POLEGADAS */
 .video-container {
     background-color: white;
     border-radius: 10px;
-    overflow: visible;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-    max-width: 300px; /* Largura reduzida */
-    height: 533px; /* Altura proporcional 9:16 (300 * 16/9 = 533px) */
+    width: 300px; /* Largura fixa de ~6.2 polegadas */
+    height: 533px; /* Altura proporcional 9:16 (formato vertical) */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .video-wrapper {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .video-wrapper iframe {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .demo-container {
     background-color: white;
     border-radius: 10px;
-    padding: 25px;
+    padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 533px; /* Altura igual ao vídeo reduzido */
+    flex: 1;
     overflow-y: auto;
+    max-height: 533px; /* Mesma altura do vídeo */
 }
 
 .demo-container h2 {
@@ -214,9 +213,10 @@ body {
 
 .yt-info {
     text-align: center;
-    margin-top: 15px;
+    padding: 10px;
     font-size: 0.9rem;
     color: #666;
+    background: #f8f9fa;
 }
 
 .video-details {
@@ -225,7 +225,6 @@ body {
     background: #f8f9fa;
     border-radius: 8px;
     width: 100%;
-    max-width: 100%;
 }
 
 .video-details h3 {
@@ -282,37 +281,25 @@ body {
 
 /* Responsividade */
 @media (max-width: 1200px) {
-    body {
-        min-height: 1200px;
-    }
-    
-    .main-content {
-        min-height: 1200px;
-    }
-    
     .two-columns {
         flex-direction: column;
-        min-height: 800px;
+        gap: 30px;
     }
     
     .video-column {
         flex: 0 0 auto;
         width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+        align-items: center;
     }
     
     .video-container {
-        max-width: 100%;
-        height: 450px; /* Altura reduzida para tablets */
+        width: 100%;
+        max-width: 400px;
+        height: 711px; /* Proporção mantida (400 * 16/9) */
     }
     
     .demo-container {
-        height: auto;
-        min-height: 450px;
-    }
-    
-    .demo-column {
+        max-height: none;
         width: 100%;
     }
 }
@@ -328,22 +315,17 @@ body {
     }
     
     .video-container {
-        height: 400px;
-    }
-    
-    .demo-container {
-        min-height: 400px;
+        max-width: 350px;
+        height: 622px; /* Proporção mantida (350 * 16/9) */
     }
 }
 
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        min-height: 1400px;
     }
     
     .main-content {
-        min-height: 1400px;
         margin-left: 0;
         padding: 15px;
     }
@@ -355,31 +337,21 @@ body {
     }
     
     .two-columns {
-        flex-direction: column;
         gap: 20px;
-        min-height: 1000px;
-    }
-    
-    .video-column {
-        max-width: 100%;
     }
     
     .video-container {
         max-width: 100%;
-        height: 350px; /* Altura menor para mobile */
-    }
-    
-    .demo-container {
-        min-height: 350px;
-        height: auto;
+        height: calc(100vw * 1.777); /* Proporção 9:16 responsiva */
+        max-height: 600px;
     }
     
     .page-header h1 {
         font-size: 1.8rem;
     }
     
-    .demo-column {
-        width: 100%;
+    .demo-container {
+        padding: 20px;
     }
     
     .math-display {
