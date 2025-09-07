@@ -112,18 +112,21 @@ body {
     margin-bottom: 20px;
 }
 
-/* Layout de duas colunas */
+/* Layout de duas colunas - MODIFICADO */
 .two-columns {
     display: flex;
     gap: 30px;
 }
 
 .video-column {
-    flex: 1;
+    flex: 0 0 380px; /* Largura fixa para a coluna do vídeo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .demo-column {
-    flex: 1;
+    flex: 1; /* A coluna de demonstração ocupa o espaço restante */
 }
 
 .video-container {
@@ -132,12 +135,14 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
+    width: 100%;
+    max-width: 320px; /* Tamanho aproximado de 6.2 polegadas */
 }
 
 .video-wrapper {
     width: 100%;
     height: 0;
-    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical (16:9 seria 56.25%) */
+    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
     position: relative;
 }
 
@@ -156,6 +161,7 @@ body {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .demo-container h2 {
@@ -196,6 +202,7 @@ body {
     padding: 15px;
     background: #f8f9fa;
     border-radius: 8px;
+    width: 100%;
 }
 
 .video-details h3 {
@@ -203,12 +210,48 @@ body {
     margin-bottom: 10px;
 }
 
+/* Controles adicionais para o vídeo */
+.video-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.control-btn {
+    padding: 8px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.control-btn:hover {
+    background: #2980b9;
+}
+
 /* Responsividade */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .two-columns {
         flex-direction: column;
     }
     
+    .video-column {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .demo-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
     .sidebar {
         width: 220px;
     }
@@ -231,9 +274,22 @@ body {
     
     .main-content {
         margin-left: 0;
+        padding: 20px;
     }
     
-    .video-wrapper {
-        padding-bottom: 177.8%; /* Mantém a proporção vertical em mobile */
+    .video-column {
+        max-width: 100%;
+    }
+    
+    .video-container {
+        max-width: 100%;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .video-controls {
+        flex-direction: column;
     }
 }
