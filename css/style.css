@@ -131,27 +131,24 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.video-placeholder {
+.video-wrapper {
     width: 100%;
     height: 0;
-    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
-    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical (16:9 seria 56.25%) */
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
 }
 
-.video-player {
-    width: 100%;
-    height: 100%;
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 .demo-container {
@@ -186,6 +183,26 @@ body {
     margin-bottom: 10px;
 }
 
+/* Melhorias para o player do YouTube */
+.yt-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.video-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.video-details h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
 /* Responsividade */
 @media (max-width: 992px) {
     .two-columns {
@@ -214,5 +231,9 @@ body {
     
     .main-content {
         margin-left: 0;
+    }
+    
+    .video-wrapper {
+        padding-bottom: 177.8%; /* Mantém a proporção vertical em mobile */
     }
 }
