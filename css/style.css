@@ -9,8 +9,8 @@ body {
     display: flex;
     background-color: #f8f9fa;
     color: #333;
-    overflow-y: auto; /* Rolagem global permitida */
-    min-height: 100vh;
+    min-height: 1200px; /* ALTURA FIXA GRANDE para garantir que tudo caiba */
+    overflow-y: auto; /* Permite rolagem se necessário */
 }
 
 /* Menu lateral */
@@ -88,12 +88,12 @@ body {
     color: white;
 }
 
-/* Conteúdo principal - COM ROLAGEM GLOBAL */
+/* Conteúdo principal */
 .main-content {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    min-height: 100vh; /* Altura mínima da viewport */
+    min-height: 1200px; /* Altura mínima igual ao body */
 }
 
 .page-header {
@@ -118,7 +118,7 @@ body {
 .two-columns {
     display: flex;
     gap: 30px;
-    margin-bottom: 50px; /* Espaço no final para rolagem */
+    min-height: 800px; /* Altura suficiente para o vídeo + conteúdo */
 }
 
 .video-column {
@@ -165,7 +165,8 @@ body {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    min-height: 710px; /* Altura mínima igual ao vídeo */
+    height: 710px; /* Altura igual ao vídeo */
+    overflow-y: auto; /* Rolagem apenas na demonstração */
 }
 
 .demo-container h2 {
@@ -233,6 +234,24 @@ body {
 }
 
 /* Personalização da barra de rolagem */
+.demo-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.demo-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.demo-container::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+.demo-container::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }
@@ -251,6 +270,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Para Firefox */
+.demo-container {
+    scrollbar-width: thin;
+    scrollbar-color: #3498db #f1f1f1;
+}
+
 body {
     scrollbar-width: thin;
     scrollbar-color: #3498db #f1f1f1;
@@ -258,8 +282,17 @@ body {
 
 /* Responsividade */
 @media (max-width: 1200px) {
+    body {
+        min-height: 1400px; /* Altura maior para layout responsivo */
+    }
+    
+    .main-content {
+        min-height: 1400px;
+    }
+    
     .two-columns {
         flex-direction: column;
+        min-height: 1000px;
     }
     
     .video-column {
@@ -271,10 +304,11 @@ body {
     
     .video-container {
         max-width: 100%;
-        height: 600px; /* Altura reduzida para tablets */
+        height: 600px;
     }
     
     .demo-container {
+        height: auto;
         min-height: 600px;
     }
     
@@ -305,6 +339,13 @@ body {
 @media (max-width: 768px) {
     body {
         flex-direction: column;
+        min-height: 1600px; /* Altura ainda maior para mobile */
+    }
+    
+    .main-content {
+        min-height: 1600px;
+        margin-left: 0;
+        padding: 15px;
     }
     
     .sidebar {
@@ -313,14 +354,10 @@ body {
         position: relative;
     }
     
-    .main-content {
-        margin-left: 0;
-        padding: 15px;
-    }
-    
     .two-columns {
         flex-direction: column;
         gap: 20px;
+        min-height: 1200px;
     }
     
     .video-column {
@@ -329,11 +366,12 @@ body {
     
     .video-container {
         max-width: 100%;
-        height: 500px; /* Altura menor para mobile */
+        height: 500px;
     }
     
     .demo-container {
         min-height: 500px;
+        height: auto;
     }
     
     .page-header h1 {
