@@ -7,10 +7,10 @@
 
 body {
     display: flex;
-    min-height: 100vh;
     background-color: #f8f9fa;
     color: #333;
-    overflow: auto; /* Permite rolagem global quando necessário */
+    overflow: hidden; /* Impede rolagem global */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
 }
 
 /* Menu lateral */
@@ -88,16 +88,19 @@ body {
     color: white;
 }
 
-/* Conteúdo principal */
+/* Conteúdo principal - CORREÇÃO PRINCIPAL */
 .main-content {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    min-height: 100vh; /* Garante altura mínima */
+    height: 100vh; /* Ocupa 100% da altura */
+    display: flex;
+    flex-direction: column;
 }
 
 .page-header {
     margin-bottom: 30px;
+    flex-shrink: 0; /* Impede que o cabeçalho diminua */
 }
 
 .page-header h1 {
@@ -114,11 +117,12 @@ body {
     margin-bottom: 20px;
 }
 
-/* Layout de duas colunas - CORRIGIDO */
+/* Layout de duas colunas - CORREÇÃO DEFINITIVA */
 .two-columns {
     display: flex;
     gap: 30px;
-    min-height: 700px; /* Altura mínima aumentada */
+    flex: 1; /* Ocupa todo o espaço restante */
+    min-height: 0; /* Importante para flexbox com overflow */
 }
 
 .video-column {
@@ -126,6 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 0; /* Importante para flexbox com overflow */
 }
 
 .demo-column {
@@ -133,9 +138,10 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    min-height: 0; /* Importante para flexbox com overflow */
 }
 
-/* CONTAINER DO VÍDEO - TAMANHO CORRIGIDO */
+/* CONTAINER DO VÍDEO - CORREÇÃO DEFINITIVA */
 .video-container {
     background-color: white;
     border-radius: 10px;
@@ -144,20 +150,17 @@ body {
     position: relative;
     width: 100%;
     max-width: 400px;
-    height: auto;
-    min-height: 650px; /* Altura mínima para garantir espaço para o vídeo */
+    height: 710px; /* Altura fixa para o vídeo vertical (9:16) */
+    flex-shrink: 0; /* Impede que o vídeo diminua */
 }
 
 .video-wrapper {
     width: 100%;
+    height: 100%;
     position: relative;
-    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
 }
 
 .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: none;
@@ -172,7 +175,6 @@ body {
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 650px; /* Altura máxima com rolagem interna */
 }
 
 .demo-container h2 {
@@ -267,7 +269,6 @@ body {
 @media (max-width: 1200px) {
     .two-columns {
         flex-direction: column;
-        height: auto;
     }
     
     .video-column {
@@ -279,7 +280,7 @@ body {
     
     .video-container {
         max-width: 100%;
-        min-height: 550px;
+        height: 600px; /* Altura reduzida para tablets */
     }
     
     .demo-column {
@@ -288,7 +289,6 @@ body {
     
     .demo-container {
         max-height: none;
-        overflow-y: visible;
     }
 }
 
@@ -301,11 +301,17 @@ body {
         margin-left: 220px;
         padding: 20px;
     }
+    
+    .video-container {
+        height: 550px;
+    }
 }
 
 @media (max-width: 768px) {
     body {
         flex-direction: column;
+        height: auto;
+        overflow: auto;
     }
     
     .sidebar {
@@ -333,7 +339,7 @@ body {
     
     .video-container {
         max-width: 100%;
-        min-height: 500px;
+        height: 500px; /* Altura menor para mobile */
     }
     
     .page-header h1 {
