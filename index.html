@@ -67,13 +67,21 @@
             <!-- Coluna do vídeo -->
             <div class="video-column">
                 <div class="video-container">
-                    <div class="video-placeholder">
-                        <!-- Substitua isso pelo seu vídeo -->
-                        <video class="video-player" controls>
-                            <source src="videos/demonstracao-pitagoras.mp4" type="video/mp4">
-                            Seu navegador não suporta o elemento de vídeo.
-                        </video>
+                    <div class="video-wrapper">
+                        <!-- Substitua o ID pelo código do seu vídeo do YouTube -->
+                        <iframe src="https://www.youtube.com/embed/riQIDhweKqQ?modestbranding=1&rel=0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
                     </div>
+                    <p class="yt-info">Vídeo hospedado no YouTube</p>
+                </div>
+                
+                <!-- Você pode adicionar uma seção de detalhes do vídeo se quiser -->
+                <div class="video-details">
+                    <h3>Detalhes do Vídeo</h3>
+                    <p><strong>Duração:</strong> 5:42 minutos</p>
+                    <p><strong>Gravação:</strong> Novembro 2023</p>
+                    <p><strong>Conteúdo:</strong> Demonstração visual do Teorema de Pitágoras usando animações 3D.</p>
                 </div>
             </div>
             
