@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     background-color: #f8f9fa;
     color: #333;
-    overflow: hidden; /* Impede rolagem global */
+    overflow: auto; /* Permite rolagem global quando necessário */
 }
 
 /* Menu lateral */
@@ -93,8 +93,7 @@ body {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    height: 100vh;
-    overflow: hidden; /* Impede rolagem no conteúdo principal */
+    min-height: 100vh; /* Garante altura mínima */
 }
 
 .page-header {
@@ -119,11 +118,11 @@ body {
 .two-columns {
     display: flex;
     gap: 30px;
-    height: calc(100vh - 180px); /* Ocupa quase toda a altura da tela */
+    min-height: 700px; /* Altura mínima aumentada */
 }
 
 .video-column {
-    flex: 0 0 450px; /* Largura aumentada para o vídeo */
+    flex: 0 0 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,14 +143,15 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 400px; /* Tamanho aumentado */
+    max-width: 400px;
     height: auto;
+    min-height: 650px; /* Altura mínima para garantir espaço para o vídeo */
 }
 
 .video-wrapper {
     width: 100%;
     position: relative;
-    height: 710px; /* Altura fixa aumentada para vídeo vertical (9:16) */
+    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
 }
 
 .video-wrapper iframe {
@@ -170,9 +170,9 @@ body {
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
-    overflow-y: auto; /* Rolagem apenas na demonstração */
+    overflow-y: auto;
     overflow-x: hidden;
-    max-height: 100%;
+    max-height: 650px; /* Altura máxima com rolagem interna */
 }
 
 .demo-container h2 {
@@ -277,12 +277,9 @@ body {
         margin: 0 auto;
     }
     
-    .video-wrapper {
-        height: 600px; /* Altura reduzida para tablets */
-    }
-    
     .video-container {
         max-width: 100%;
+        min-height: 550px;
     }
     
     .demo-column {
@@ -304,16 +301,11 @@ body {
         margin-left: 220px;
         padding: 20px;
     }
-    
-    .video-wrapper {
-        height: 550px;
-    }
 }
 
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        overflow: auto;
     }
     
     .sidebar {
@@ -341,10 +333,7 @@ body {
     
     .video-container {
         max-width: 100%;
-    }
-    
-    .video-wrapper {
-        height: 500px; /* Altura menor para mobile */
+        min-height: 500px;
     }
     
     .page-header h1 {
