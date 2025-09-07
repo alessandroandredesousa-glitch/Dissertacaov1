@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    color: white;
+    padding: 20px 0;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.menu-item > a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.menu-item > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+}
+
+.submenu {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.submenu.show {
+    max-height: 500px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px 10px 40px;
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 30px;
+}
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+/* Layout de duas colunas */
+.two-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.video-column {
+    flex: 1;
+}
+
+.demo-column {
+    flex: 1;
+}
+
+.video-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 0;
+    padding-bottom: 177.8%; /* Proporção 9:16 para vídeo vertical */
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.demo-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.demo-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.math-display {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+.theorem {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.theorem h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .two-columns {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 220px;
+    }
+    
+    .main-content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+}
