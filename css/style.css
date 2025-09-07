@@ -9,8 +9,8 @@ body {
     display: flex;
     background-color: #f8f9fa;
     color: #333;
-    min-height: 1200px; /* ALTURA FIXA GRANDE para garantir que tudo caiba */
-    overflow-y: auto; /* Permite rolagem se necessário */
+    min-height: 1000px; /* Altura reduzida */
+    overflow-y: auto;
 }
 
 /* Menu lateral */
@@ -93,7 +93,7 @@ body {
     flex: 1;
     margin-left: 280px;
     padding: 30px;
-    min-height: 1200px; /* Altura mínima igual ao body */
+    min-height: 1000px; /* Altura reduzida */
 }
 
 .page-header {
@@ -114,28 +114,28 @@ body {
     margin-bottom: 20px;
 }
 
-/* Layout de duas colunas */
+/* Layout de duas colunas - VÍDEO MENOR */
 .two-columns {
     display: flex;
     gap: 30px;
-    min-height: 800px; /* Altura suficiente para o vídeo + conteúdo */
+    min-height: 600px;
 }
 
 .video-column {
-    flex: 0 0 450px;
+    flex: 0 0 320px; /* Largura reduzida para o vídeo */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .demo-column {
-    flex: 1;
+    flex: 1; /* Coluna de demonstração ocupa espaço restante */
     display: flex;
     flex-direction: column;
     min-width: 0;
 }
 
-/* CONTAINER DO VÍDEO */
+/* CONTAINER DO VÍDEO - TAMANHO REDUZIDO (6,2 polegadas) */
 .video-container {
     background-color: white;
     border-radius: 10px;
@@ -143,8 +143,8 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     width: 100%;
-    max-width: 400px;
-    height: 710px; /* Altura fixa para vídeo vertical (9:16) */
+    max-width: 300px; /* Largura reduzida */
+    height: 533px; /* Altura proporcional 9:16 (300 * 16/9 = 533px) */
 }
 
 .video-wrapper {
@@ -165,8 +165,8 @@ body {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 710px; /* Altura igual ao vídeo */
-    overflow-y: auto; /* Rolagem apenas na demonstração */
+    height: 533px; /* Altura igual ao vídeo reduzido */
+    overflow-y: auto;
 }
 
 .demo-container h2 {
@@ -283,33 +283,33 @@ body {
 /* Responsividade */
 @media (max-width: 1200px) {
     body {
-        min-height: 1400px; /* Altura maior para layout responsivo */
+        min-height: 1200px;
     }
     
     .main-content {
-        min-height: 1400px;
+        min-height: 1200px;
     }
     
     .two-columns {
         flex-direction: column;
-        min-height: 1000px;
+        min-height: 800px;
     }
     
     .video-column {
         flex: 0 0 auto;
         width: 100%;
-        max-width: 500px;
+        max-width: 400px;
         margin: 0 auto;
     }
     
     .video-container {
         max-width: 100%;
-        height: 600px;
+        height: 450px; /* Altura reduzida para tablets */
     }
     
     .demo-container {
         height: auto;
-        min-height: 600px;
+        min-height: 450px;
     }
     
     .demo-column {
@@ -328,22 +328,22 @@ body {
     }
     
     .video-container {
-        height: 550px;
+        height: 400px;
     }
     
     .demo-container {
-        min-height: 550px;
+        min-height: 400px;
     }
 }
 
 @media (max-width: 768px) {
     body {
         flex-direction: column;
-        min-height: 1600px; /* Altura ainda maior para mobile */
+        min-height: 1400px;
     }
     
     .main-content {
-        min-height: 1600px;
+        min-height: 1400px;
         margin-left: 0;
         padding: 15px;
     }
@@ -357,7 +357,7 @@ body {
     .two-columns {
         flex-direction: column;
         gap: 20px;
-        min-height: 1200px;
+        min-height: 1000px;
     }
     
     .video-column {
@@ -366,11 +366,11 @@ body {
     
     .video-container {
         max-width: 100%;
-        height: 500px;
+        height: 350px; /* Altura menor para mobile */
     }
     
     .demo-container {
-        min-height: 500px;
+        min-height: 350px;
         height: auto;
     }
     
