@@ -69,16 +69,11 @@
                 <div class="video-container">
                     <div class="video-wrapper">
                         <!-- Substitua o ID pelo código do seu vídeo do YouTube -->
-                        <iframe src="https://www.youtube.com/embed/imHmMONAkWE?modestbranding=1&rel=0" 
+                        <iframe src="https://www.youtube.com/embed/riQIDhweKqQ?modestbranding=1&rel=0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen></iframe>
                     </div>
-                    <p class="yt-info">Vídeo hospedado no YouTube</p>
-                </div>
-                
-                <div class="video-controls">
-                    <button class="control-btn" onclick="togglePlay()">Play/Pause</button>
-                    <button class="control-btn" onclick="toggleFullscreen()">Tela Cheia</button>
+                    <p class="yt-info">Vídeo hospedado no YouTube - Use os controles para ajustar a qualidade</p>
                 </div>
                 
                 <!-- Você pode adicionar uma seção de detalhes do vídeo se quiser -->
@@ -90,7 +85,7 @@
                 </div>
             </div>
             
-            <!-- Coluna da demonstração (mais larga) -->
+            <!-- Coluna da demonstração (mais larga) com barra de rolagem -->
             <div class="demo-column">
                 <div class="demo-container">
                     <h2>Demonstração</h2>
@@ -134,6 +129,89 @@
                         \]</p>
                         
                         <p>O que prova o teorema. ∎</p>
+                        
+                        <h3>Aplicações do Teorema de Pitágoras</h3>
+                        
+                        <p>O Teorema de Pitágoras é uma das ferramentas mais fundamentais da geometria euclidiana, com aplicações em diversas áreas:</p>
+                        
+                        <h4>1. Cálculo de distâncias</h4>
+                        <p>Em um plano cartesiano, a distância entre dois pontos \((x_1, y_1)\) e \((x_2, y_2)\) é dada por:</p>
+                        <p>\[
+                        d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+                        \]</p>
+                        
+                        <h4>2. Trigonometria</h4>
+                        <p>O teorema é a base para as identidades trigonométricas fundamentais, como:</p>
+                        <p>\[
+                        \sin^2(\theta) + \cos^2(\theta) = 1
+                        \]</p>
+                        
+                        <h4>3. Geometria espacial</h4>
+                        <p>Em três dimensões, o teorema pode ser estendido para calcular distâncias entre pontos no espaço:</p>
+                        <p>\[
+                        d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+                        \]</p>
+                        
+                        <h4>4. Engenharia e arquitetura</h4>
+                        <p>O teorema é utilizado no cálculo de estruturas, determinação de ângulos e planejamento de construções.</p>
+                        
+                        <h4>5. Navegação</h4>
+                        <p>É fundamental para cálculos de rotas e distâncias em navegação marítima e aérea.</p>
+                        
+                        <h3>Generalizações</h3>
+                        
+                        <p>O Teorema de Pitágoras tem várias generalizações importantes:</p>
+                        
+                        <h4>Lei dos Cossenos</h4>
+                        <p>Para qualquer triângulo (não necessariamente retângulo) com lados \(a\), \(b\), \(c\) e ângulo \(\theta\) oposto ao lado \(c\):</p>
+                        <p>\[
+                        c^2 = a^2 + b^2 - 2ab \cdot \cos(\theta)
+                        \]</p>
+                        <p>Note que quando \(\theta = 90^\circ\), \(\cos(\theta) = 0\), recuperando o Teorema de Pitágoras.</p>
+                        
+                        <h4>Teorema de Pitágoras em Espaços de Dimensão Superior</h4>
+                        <p>Em um espaço n-dimensional, para vetores ortogonais \(v_1, v_2, \ldots, v_k\):</p>
+                        <p>\[
+                        \|v_1 + v_2 + \cdots + v_k\|^2 = \|v_1\|^2 + \|v_2\|^2 + \cdots + \|v_k\|^2
+                        \]</p>
+                        
+                        <h3>Demonstrações Alternativas</h3>
+                        
+                        <p>Existem centenas de demonstrações diferentes do Teorema de Pitágoras. Algumas das mais notáveis incluem:</p>
+                        
+                        <h4>Demonstração por Rearranjo</h4>
+                        <p>Rearranjando as quatro cópias do triângulo retângulo para formar dois quadrados menores que, juntos, têm a mesma área do quadrado maior.</p>
+                        
+                        <h4>Demonstração por Semelhança de Triângulos</h4>
+                        <p>Usando a semelhança entre os triângulos formados pela altura relativa à hipotenusa.</p>
+                        
+                        <h4>Demonstração Algébrica</h4>
+                        <p>Utilizando identidades algébricas para mostrar a relação entre os quadrados dos lados.</p>
+                        
+                        <h3>História</h3>
+                        
+                        <p>Embora o teorema leve o nome de Pitágoras, sabe-se que os babilônios já conheciam essa relação muitos séculos antes. Tabletes de argila da Babilônia, datados de around 1800-1600 a.C., contêm problemas que envolvem triplas pitagóricas.</p>
+                        
+                        <p>Pitágoras (c. 570 – c. 495 a.C.) e sua escola são creditados com a primeira demonstração formal do teorema, embora não haja evidências concretas disso. A primeira demonstração que sobreviveu até nossos dias está nos Elementos de Euclides (c. 300 a.C.).</p>
+                        
+                        <h3>Triplas Pitagóricas</h3>
+                        
+                        <p>Uma tripla pitagórica é um conjunto de três números inteiros positivos \(a\), \(b\) e \(c\) que satisfazem a equação \(a^2 + b^2 = c^2\). A tripla mais conhecida é \((3, 4, 5)\), mas existem infinitas triplas pitagóricas.</p>
+                        
+                        <p>Algumas triplas pitagóricas primitivas (onde \(a\), \(b\) e \(c\) são coprimos) incluem:</p>
+                        
+                        <ul>
+                            <li>\((3, 4, 5)\)</li>
+                            <li>\((5, 12, 13)\)</li>
+                            <li>\((7, 24, 25)\)</li>
+                            <li>\((8, 15, 17)\)</li>
+                            <li>\((9, 40, 41)\)</li>
+                        </ul>
+                        
+                        <p>Triplas pitagóricas podem ser geradas usando a fórmula de Euclides: para quaisquer inteiros positivos \(m\) e \(n\) com \(m > n\):</p>
+                        <p>\[
+                        a = m^2 - n^2, \quad b = 2mn, \quad c = m^2 + n^2
+                        \]</p>
                     </div>
                 </div>
             </div>
