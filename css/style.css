@@ -116,6 +116,7 @@ body {
 .two-columns {
     display: flex;
     gap: 30px;
+    height: calc(100vh - 180px); /* Altura ajustada para preencher a tela */
 }
 
 .video-column {
@@ -127,6 +128,8 @@ body {
 
 .demo-column {
     flex: 1; /* A coluna de demonstração ocupa o espaço restante */
+    display: flex;
+    flex-direction: column;
 }
 
 .video-container {
@@ -161,7 +164,8 @@ body {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    flex: 1;
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
 }
 
 .demo-container h2 {
@@ -174,6 +178,21 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
     overflow-x: auto;
+}
+
+.math-display h3, .math-display h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.math-display ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.math-display li {
+    margin-bottom: 5px;
 }
 
 .theorem {
@@ -210,26 +229,22 @@ body {
     margin-bottom: 10px;
 }
 
-/* Controles adicionais para o vídeo */
-.video-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
+/* Personalização da barra de rolagem */
+.demo-container::-webkit-scrollbar {
+    width: 8px;
 }
 
-.control-btn {
-    padding: 8px 15px;
+.demo-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.demo-container::-webkit-scrollbar-thumb {
     background: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background 0.3s;
+    border-radius: 4px;
 }
 
-.control-btn:hover {
+.demo-container::-webkit-scrollbar-thumb:hover {
     background: #2980b9;
 }
 
@@ -237,6 +252,7 @@ body {
 @media (max-width: 1200px) {
     .two-columns {
         flex-direction: column;
+        height: auto;
     }
     
     .video-column {
@@ -289,7 +305,11 @@ body {
         font-size: 1.8rem;
     }
     
-    .video-controls {
-        flex-direction: column;
+    .two-columns {
+        height: auto;
+    }
+    
+    .demo-container {
+        max-height: none;
     }
 }
