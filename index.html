@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometria Demonstrada - Dissertação Matemática</title>
-    <!-- MathJax para renderizar LaTeX -->
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax para renderizar equações matemáticas -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <!-- Nosso arquivo CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Menu lateral -->
@@ -18,41 +17,37 @@
             <p>Produto Educacional</p>
         </div>
         
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#" onclick="toggleSubmenu('euclidiana')">Geometria Euclidiana</a>
-                <ul class="submenu" id="euclidiana-submenu">
-                    <li><a href="index.html">Teorema de Pitágoras</a></li>
-                    <li><a href="teorema-tales.html">Teorema de Tales</a></li>
-                    <li><a href="lei-cossenos.html">Lei dos Cossenos</a></li>
-                </ul>
-            </li>
-            
-            <li class="menu-item">
-                <a href="#" onclick="toggleSubmenu('analitica')">Geometria Analítica</a>
-                <ul class="submenu" id="analitica-submenu">
-                    <li><a href="distancia-pontos.html">Distância entre pontos</a></li>
-                    <li><a href="equacao-reta.html">Equação da reta</a></li>
-                    <li><a href="circunferencia.html">Circunferência</a></li>
-                </ul>
-            </li>
-            
-            <li class="menu-item">
-                <a href="#" onclick="toggleSubmenu('diferencial')">Geometria Diferencial</a>
-                <ul class="submenu" id="diferencial-submenu">
-                    <li><a href="curvatura-curvas.html">Curvatura de curvas</a></li>
-                    <li><a href="teorema-egregium.html">Teorema Egregium</a></li>
-                </ul>
-            </li>
-            
-            <li class="menu-item">
-                <a href="sobre.html">Sobre a Dissertação</a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="contato.html">Contato</a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" onclick="toggleSubmenu('euclidiana')">Geometria Euclidiana</a>
+                    <ul class="submenu" id="euclidiana-submenu">
+                        <li><a href="#pitagoras">Teorema de Pitágoras</a></li>
+                        <li><a href="#tales">Teorema de Tales</a></li>
+                        <li><a href="#cossenos">Lei dos Cossenos</a></li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#" onclick="toggleSubmenu('analitica')">Geometria Analítica</a>
+                    <ul class="submenu" id="analitica-submenu">
+                        <!-- Submenu items aqui -->
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#">Geometria Diferencial</a>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#">Sobre a Dissertação</a>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </aside>
     
     <!-- Conteúdo principal -->
@@ -68,11 +63,14 @@
             <div class="video-column">
                 <div class="video-container">
                     <div class="video-wrapper">
-                        <!-- Substitua o ID pelo código do seu vídeo do YouTube -->
-                       <iframe src="https://www.youtube.com/embed/imHmMONAkWE?modestbranding=1&rel=0&controls=1&showinfo=0&iv_load_policy=3&fs=1&hl=pt" 
-                                width="1280" height="720" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
+                        <!-- CORREÇÃO CRÍTICA: Usando iframe em vez de div + parâmetros HD -->
+                        <iframe 
+                            src="https://www.youtube.com/embed/imHmMONAkWE?vq=hd1080&hd=1&modestbranding=1&rel=0&controls=1&showinfo=0&iv_load_policy=3&fs=1&hl=pt" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Vídeo do YouTube - Ângulo Externo dos Triângulos">
+                        </iframe>
                     </div>
                     <!-- <p class="yt-info">Vídeo hospedado no YouTube - Use os controles para ajustar a qualidade</p> -->
                 </div>
@@ -99,9 +97,7 @@
                     <div class="math-display">
                         <p>Seja um triângulo retângulo com catetos de comprimentos \(a\) e \(b\), e hipotenusa de comprimento \(c\). Então:</p>
                         
-                        <p>\[
-                        a^2 + b^2 = c^2
-                        \]</p>
+                        <p>$$a^2 + b^2 = c^2$$</p>
                         
                         <p><strong>Demonstração:</strong></p>
                         
@@ -113,21 +109,15 @@
                         
                         <p>A área também pode ser calculada como a soma das áreas dos quatro triângulos mais a área do quadrado interno:</p>
                         
-                        <p>\[
-                        4 \times \left(\frac{1}{2}ab\right) + c^2 = 2ab + c^2
-                        \]</p>
+                        <p>$$4 \times \left(\frac{1}{2}ab\right) + c^2 = 2ab + c^2$$</p>
                         
                         <p>Igualando as duas expressões para a área:</p>
                         
-                        <p>\[
-                        a^2 + 2ab + b^2 = 2ab + c^2
-                        \]</p>
+                        <p>$$a^2 + 2ab + b^2 = 2ab + c^2$$</p>
                         
                         <p>Subtraindo \(2ab\) de ambos os lados:</p>
                         
-                        <p>\[
-                        a^2 + b^2 = c^2
-                        \]</p>
+                        <p>$$a^2 + b^2 = c^2$$</p>
                         
                         <p>O que prova o teorema. ∎</p>
                         
@@ -137,21 +127,15 @@
                         
                         <h4>1. Cálculo de distâncias</h4>
                         <p>Em um plano cartesiano, a distância entre dois pontos \((x_1, y_1)\) e \((x_2, y_2)\) é dada por:</p>
-                        <p>\[
-                        d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-                        \]</p>
+                        <p>$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$</p>
                         
                         <h4>2. Trigonometria</h4>
                         <p>O teorema é a base para as identidades trigonométricas fundamentais, como:</p>
-                        <p>\[
-                        \sin^2(\theta) + \cos^2(\theta) = 1
-                        \]</p>
+                        <p>$$\sin^2(\theta) + \cos^2(\theta) = 1$$</p>
                         
                         <h4>3. Geometria espacial</h4>
                         <p>Em três dimensões, o teorema pode ser estendido para calcular distâncias entre pontos no espaço:</p>
-                        <p>\[
-                        d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
-                        \]</p>
+                        <p>$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$</p>
                         
                         <h4>4. Engenharia e arquitetura</h4>
                         <p>O teorema é utilizado no cálculo de estruturas, determinação de ângulos e planejamento de construções.</p>
@@ -165,16 +149,12 @@
                         
                         <h4>Lei dos Cossenos</h4>
                         <p>Para qualquer triângulo (não necessariamente retângulo) com lados \(a\), \(b\), \(c\) e ângulo \(\theta\) oposto ao lado \(c\):</p>
-                        <p>\[
-                        c^2 = a^2 + b^2 - 2ab \cdot \cos(\theta)
-                        \]</p>
+                        <p>$$c^2 = a^2 + b^2 - 2ab \cdot \cos(\theta)$$</p>
                         <p>Note que quando \(\theta = 90^\circ\), \(\cos(\theta) = 0\), recuperando o Teorema de Pitágoras.</p>
                         
                         <h4>Teorema de Pitágoras em Espaços de Dimensão Superior</h4>
                         <p>Em um espaço n-dimensional, para vetores ortogonais \(v_1, v_2, \ldots, v_k\):</p>
-                        <p>\[
-                        \|v_1 + v_2 + \cdots + v_k\|^2 = \|v_1\|^2 + \|v_2\|^2 + \cdots + \|v_k\|^2
-                        \]</p>
+                        <p>$$\|v_1 + v_2 + \cdots + v_k\|^2 = \|v_1\|^2 + \|v_2\|^2 + \cdots + \|v_k\|^2$$</p>
                         
                         <h3>Demonstrações Alternativas</h3>
                         
@@ -210,9 +190,7 @@
                         </ul>
                         
                         <p>Triplas pitagóricas podem ser geradas usando a fórmula de Euclides: para quaisquer inteiros positivos \(m\) e \(n\) com \(m > n\):</p>
-                        <p>\[
-                        a = m^2 - n^2, \quad b = 2mn, \quad c = m^2 + n^2
-                        \]</p>
+                        <p>$$a = m^2 - n^2, \quad b = 2mn, \quad c = m^2 + n^2$$</p>
                     </div>
                 </div>
             </div>
@@ -220,6 +198,6 @@
     </main>
 
     <!-- Nosso arquivo JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
