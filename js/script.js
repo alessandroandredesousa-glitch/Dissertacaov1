@@ -22,3 +22,4 @@ function loadContent(page) {
     console.log('Carregando conteúdo: ' + page);
     // Implementação específica vai depender da sua necessidade
 }
+
