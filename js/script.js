@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     console.log('Site de demonstrações matemáticas carregado!');
+    console.log('Vídeo configurado para carregar em HD (1080p)');
 });
 
 // Função para carregar conteúdo dinamicamente (opcional)
