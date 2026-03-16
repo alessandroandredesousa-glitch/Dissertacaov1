@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Geometria Demonstrada</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Geometria Demonstrada</h2>
+            <p>Produto Educacional</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <!-- MENU 1: Geometria Euclidiana -->
+                <li class="menu-item">
+                    <a href="#" onclick="toggleSubmenu('euclidiana')">Geometria Euclidiana</a>
+                    <ul class="submenu" id="euclidiana-submenu">
+                        <li><a href="#" onclick="loadPage('pitagoras')">Teorema de Pitágoras</a></li>
+                        <li><a href="#" onclick="loadPage('tales')">Teorema de Tales</a></li>
+                        
+                        <!-- SUBMENU DE 2º NÍVEL: Áreas -->
+                        <li class="menu-item">
+                            <a href="#" onclick="toggleSubmenu('areas')">Áreas</a>
+                            <ul class="submenu submenu-level-2" id="areas-submenu">
+                                <li><a href="#" onclick="loadPage('area-quadrado')">Quadrado</a></li>
+                                <li><a href="#" onclick="loadPage('area-retangulo')">Retângulo</a></li>
+                                <li><a href="#" onclick="loadPage('area-triangulo')">Triângulo</a></li>
+                                <li><a href="#" onclick="loadPage('area-circulo')">Círculo</a></li>
+                                <li><a href="#" onclick="loadPage('area-trapezio')">Trapézio</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- SUBMENU DE 2º NÍVEL: Perímetros -->
+                        <li class="menu-item">
+                            <a href="#" onclick="toggleSubmenu('perimetros')">Perímetros</a>
+                            <ul class="submenu submenu-level-2" id="perimetros-submenu">
+                                <li><a href="#" onclick="loadPage('perimetro-quadrado')">Quadrado</a></li>
+                                <li><a href="#" onclick="loadPage('perimetro-retangulo')">Retângulo</a></li>
+                                <li><a href="#" onclick="loadPage('perimetro-circulo')">Círculo</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#" onclick="loadPage('angulos-triangulos')">Ângulos em Triângulos</a></li>
+                        <li><a href="#" onclick="loadPage('cossenos')">Lei dos Cossenos</a></li>
+                    </ul>
+                </li>
+                
+                <!-- MENU 2: Geometria Analítica -->
+                <li class="menu-item">
+                    <a href="#" onclick="toggleSubmenu('analitica')">Geometria Analítica</a>
+                    <ul class="submenu" id="analitica-submenu">
+                        <li><a href="#" onclick="loadPage('distancia-pontos')">Distância entre Pontos</a></li>
+                        <li><a href="#" onclick="loadPage('ponto-medio')">Ponto Médio</a></li>
+                    </ul>
+                </li>
+                
+                <!-- MENU 3: Geometria Espacial -->
+                <li class="menu-item">
+                    <a href="#" onclick="toggleSubmenu('espacial')">Geometria Espacial</a>
+                    <ul class="submenu" id="espacial-submenu">
+                        <li><a href="#" onclick="loadPage('prismas')">Prismas</a></li>
+                        <li><a href="#" onclick="loadPage('piramides')">Pirâmides</a></li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#" onclick="loadPage('sobre')">Sobre a Dissertação</a>
+                </li>
+                
+                <li class="menu-item">
+                    <a href="#" onclick="loadPage('contato')">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content" id="main-content"></main>
+    <script src="pages-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
