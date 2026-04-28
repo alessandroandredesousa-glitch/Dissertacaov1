@@ -12,43 +12,42 @@ videoDescription: 'Demonstração visual do Teorema de Pitágoras.',
 content: `
             <div class="theorem">
     <h3>1.1 Definição de Triângulo</h3>
-    <p>Dados três pontos \(A\), \(B\) e \(C\) não colineares, dizemos que o triângulo \(ABC\) (denotado por \(\triangle ABC\)) é a reunião dos segmentos \(\overline{AB}\), \(\overline{AC}\) e \(\overline{BC}\).</p>
+    <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\triangle ABC\\)) é a reunião dos segmentos \\(\overline{AB}\\), \\(\overline{AC}\\) e \\(\overline{BC}\\).</p>
 </div>
 
 <div class="math-display">
     <div style="text-align: center; margin: 20px 0;">
-        <img src="caminho_da_imagem_pontos.jpg" alt="Pontos A, B e C não colineares" style="max-width: 100%;">
+        <img src="URL_DA_SUA_IMAGEM_PONTOS" alt="Pontos A, B e C não colineares" style="max-width: 100%;">
     </div>
 
     <div style="text-align: center; margin: 20px 0;">
-        <img src="caminho_da_imagem_1.jpg" alt="Representação do Triângulo ABC" style="max-width: 100%;">
+        <img src="URL_DA_SUA_IMAGEM_1" alt="Representação do Triângulo ABC" style="max-width: 100%;">
         <p><strong>Imagem 1</strong></p>
     </div>
 
-    <p>Os pontos \(A\), \(B\) e \(C\) são chamados de <strong>vértices</strong>.</p>
-    <p>Os segmentos \(\overline{AB}\) (de medida \(c\)), \(\overline{AC}\) (de medida \(b\)) e \(\overline{BC}\) (de medida \(a\)) são chamados de <strong>lados</strong> do \(\triangle ABC\).</p>
+    <p>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.</p>
+    <p>Os segmentos \\(\overline{AB}\\) (de medida \\(c\\)), \\(\overline{AC}\\) (de medida \\(b\\)) e \\(\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\triangle ABC\\).</p>
 
     <div style="text-align: center; margin: 20px 0;">
-        <img src="caminho_da_imagem_2.jpg" alt="Lados do Triângulo" style="max-width: 100%;">
+        <img src="URL_DA_SUA_IMAGEM_2" alt="Lados do Triângulo" style="max-width: 100%;">
         <p><strong>Imagem 2</strong></p>
     </div>
 
     <h3>Ângulos Internos</h3>
-    <p>Os ângulos \(B\hat{A}C\) ou \(\hat{A}\), \(A\hat{B}C\) ou \(\hat{B}\) e \(B\hat{C}A\) ou \(\hat{C}\) são chamados de <strong>ângulos internos</strong> do \(\triangle ABC\).</p>
-    <p>Estes ângulos são opostos aos lados \(a\), \(b\) e \(c\), respectivamente, conforme detalhado abaixo:</p>
+    <p>Os ângulos \\(B\hat{A}C\\) ou \\(\hat{A}\\), \\(A\hat{B}C\\) ou \\(\hat{B}\\) e \\(B\hat{C}A\\) ou \\(\hat{C}\\) são chamados de <strong>ângulos internos</strong> do \\(\triangle ABC\\).</p>
+    <p>Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente, conforme detalhado abaixo:</p>
     
     <ul>
-        <li>O ângulo \(\hat{A}\) é oposto ao lado \(a\).</li>
-        <li>O ângulo \(\hat{B}\) é oposto ao lado \(b\).</li>
-        <li>O ângulo \(\hat{C}\) é oposto ao lado \(c\).</li>
+        <li>O ângulo \\(\hat{A}\\) é oposto ao lado \\(a\\).</li>
+        <li>O ângulo \\(\hat{B}\\) é oposto ao lado \\(b\\).</li>
+        <li>O ângulo \\(\hat{C}\\) é oposto ao lado \\(c\\).</li>
     </ul>
 
     <div style="text-align: center; margin: 20px 0;">
-        <img src="caminho_da_imagem_3.jpg" alt="Ângulos e Lados Opostos" style="max-width: 100%;">
+        <img src="URL_DA_SUA_IMAGEM_3" alt="Ângulos e Lados Opostos" style="max-width: 100%;">
         <p><strong>Imagem 3</strong></p>
     </div>
 </div>
-
 
         `
 },
