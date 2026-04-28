@@ -11,36 +11,44 @@ videoDate: 'Novembro 2023',
 videoDescription: 'Demonstração visual do Teorema de Pitágoras.',
 content: `
             <div class="theorem">
-                <h3>Teorema de Pitágoras</h3>
-                <p>Em qualquer triângulo retângulo, o quadrado do comprimento da hipotenusa é igual à soma dos quadrados dos comprimentos dos catetos.</p>
-            </div>
-            
-            <div class="math-display">
-                <p>Seja um triângulo retângulo com catetos de comprimentos \\(a\\) e \\(b\\), e hipotenusa de comprimento \\(c\\). Então:</p>
-                <p>$$a^2 + b^2 = c^2$$</p>
-                
-                <p><strong>Demonstração:</strong></p>
-                <p>Considere quatro triângulos retângulos idênticos, cada um com lados \\(a\\), \\(b\\) e \\(c\\).</p>
-                <p>Organize-os de forma a criar um quadrado maior com lado \\(a + b\\):</p>
-                <p>A área do quadrado maior é \\((a + b)^2 = a^2 + 2ab + b^2\\).</p>
-                <p>A área também pode ser calculada como a soma das áreas dos quatro triângulos mais a área do quadrado interno:</p>
-                <p>$$4 \\times \\left(\\frac{1}{2}ab\\right) + c^2 = 2ab + c^2$$</p>
-                <p>Igualando as duas expressões para a área:</p>
-                <p>$$a^2 + 2ab + b^2 = 2ab + c^2$$</p>
-                <p>Subtraindo \\(2ab\\) de ambos os lados:</p>
-                <p>$$a^2 + b^2 = c^2$$</p>
-                <p>O que prova o teorema. ∎</p>
-                
-                <h3>Aplicações</h3>
-                <p>O Teorema de Pitágoras é fundamental para:</p>
-                <ul>
-                    <li>Cálculo de distâncias em geometria analítica</li>
-                    <li>Base da trigonometria</li>
-                    <li>Geometria espacial</li>
-                    <li>Engenharia e arquitetura</li>
-                    <li>Navegação</li>
-                </ul>
-            </div>
+    <h3>1.1 Definição de Triângulo</h3>
+    <p>Dados três pontos \(A\), \(B\) e \(C\) não colineares, dizemos que o triângulo \(ABC\) (denotado por \(\triangle ABC\)) é a reunião dos segmentos \(\overline{AB}\), \(\overline{AC}\) e \(\overline{BC}\).</p>
+</div>
+
+<div class="math-display">
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="caminho_da_imagem_pontos.jpg" alt="Pontos A, B e C não colineares" style="max-width: 100%;">
+    </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="caminho_da_imagem_1.jpg" alt="Representação do Triângulo ABC" style="max-width: 100%;">
+        <p><strong>Imagem 1</strong></p>
+    </div>
+
+    <p>Os pontos \(A\), \(B\) e \(C\) são chamados de <strong>vértices</strong>.</p>
+    <p>Os segmentos \(\overline{AB}\) (de medida \(c\)), \(\overline{AC}\) (de medida \(b\)) e \(\overline{BC}\) (de medida \(a\)) são chamados de <strong>lados</strong> do \(\triangle ABC\).</p>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="caminho_da_imagem_2.jpg" alt="Lados do Triângulo" style="max-width: 100%;">
+        <p><strong>Imagem 2</strong></p>
+    </div>
+
+    <h3>Ângulos Internos</h3>
+    <p>Os ângulos \(B\hat{A}C\) ou \(\hat{A}\), \(A\hat{B}C\) ou \(\hat{B}\) e \(B\hat{C}A\) ou \(\hat{C}\) são chamados de <strong>ângulos internos</strong> do \(\triangle ABC\).</p>
+    <p>Estes ângulos são opostos aos lados \(a\), \(b\) e \(c\), respectivamente, conforme detalhado abaixo:</p>
+    
+    <ul>
+        <li>O ângulo \(\hat{A}\) é oposto ao lado \(a\).</li>
+        <li>O ângulo \(\hat{B}\) é oposto ao lado \(b\).</li>
+        <li>O ângulo \(\hat{C}\) é oposto ao lado \(c\).</li>
+    </ul>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="caminho_da_imagem_3.jpg" alt="Ângulos e Lados Opostos" style="max-width: 100%;">
+        <p><strong>Imagem 3</strong></p>
+    </div>
+</div>
+
         `
 },
 
