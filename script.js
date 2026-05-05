@@ -36,7 +36,8 @@ function loadPage(pageId) {
         html += '<div class="video-details"><h3>Detalhes do Vídeo</h3><p><strong>Duração:</strong> ' + pageData.videoDuration + '</p><p><strong>Gravação:</strong> ' + pageData.videoDate + '</p><p><strong>Conteúdo:</strong> ' + pageData.videoDescription + '</p></div></div>';
     }
     
-    html += '<div class="demo-column"><div class="demo-container"><h2>Demonstração</h2>' + pageData.content + '</div></div></div>';
+    const sectionTitle = pageData.sectionTitle ? '<h2>' + pageData.sectionTitle + '</h2>' : '';
+    html += '<div class="demo-column"><div class="demo-container">' + sectionTitle + pageData.content + '</div></div></div>';
     
     mainContent.innerHTML = html;
     
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         euclidiana.classList.add('show');
     }
     
-    loadPage('pitagoras');
+    loadPage('definicaotriangulos');
     
     console.log('✅ Site carregado! Total de páginas:', Object.keys(PAGES_DATA).length);
 });
