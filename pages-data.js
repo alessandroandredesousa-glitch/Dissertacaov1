@@ -1,79 +1,157 @@
 // DADOS DAS PÁGINAS
 const PAGES_DATA = {
 
-// ========== GEOMETRIA EUCLIDIANA ==========
-'pitagoras': {
-title: 'Teorema de Pitágoras',
-description: 'Uma das demonstrações clássicas da geometria euclidiana',
-videoId: 'imHmMONAkWE',
-videoDuration: '5:42 minutos',
-videoDate: 'Novembro 2023',
-videoDescription: 'Demonstração visual do Teorema de Pitágoras.',
+// ========== Triângulos ==========
+'definicaotriangulos': {
+title: 'Definição de triângulos',
+description: '',
+sectionTitle: '',
+videoId: 'Xyblz3iS57Y',
+videoDuration: '1:00 minutos',
+videoDate: '28 de abril de 2026',
+videoDescription: 'Definição de triângulos',
 content: `
-            <div class="theorem">
-    <h3>1.1 Definição de Triângulo</h3>
-    <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\triangle ABC\\)) é a reunião dos segmentos \\(\overline{AB}\\), \\(\overline{AC}\\) e \\(\overline{BC}\\).</p>
-</div>
+           <div class="theorem">
+            <h3>1.1 Definição de Triângulo</h3>
+            <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\\triangle ABC\\)) é a reunião dos segmentos \\(\\overline{AB}\\), \\(\\overline{AC}\\) e \\(\\overline{BC}\\).</p>
+        </div>
 
-<div class="math-display">
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="LINK_DA_IMAGEM_PONTOS" alt="Pontos A, B e C" style="max-width: 100%;">
-    </div>
+        <div class="math-display">
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="./imagem/img_definicaodetriangulos.PNG" alt="Pontos A, B e C" style="max-width: 40%;">
+            </div>
+            <ul>
+                <li>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.
+                <li>Os segmentos \\(\\overline{AB}\\) (de medida \\(c\\)), \\(\\overline{AC}\\) (de medida \\(b\\)) e \\(\\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\\triangle ABC\\).
+            </ul>
 
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="LINK_DA_IMAGEM_1" alt="Triângulo ABC" style="max-width: 100%;">
-        <p><strong>Imagem 1</strong></p>
-    </div>
+            
 
-    <p>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.</p>
-    <p>Os segmentos \\(\overline{AB}\\) (de medida \\(c\\)), \\(\overline{AC}\\) (de medida \\(b\\)) e \\(\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\triangle ABC\\).</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="./imagem/img_definicaodetriangulos_1.PNG" alt="Lados do triângulo" style="max-width: 40%;">
+                <p><strong></strong></p>
+            </div>
 
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="LINK_DA_IMAGEM_2" alt="Lados do triângulo" style="max-width: 100%;">
-        <p><strong>Imagem 2</strong></p>
-    </div>
-
-    <h3>Ângulos Internos</h3>
-    <p>Os ângulos \\(B\hat{A}C\\) ou \\(\hat{A}\\), \\(A\hat{B}C\\) ou \\(\hat{B}\\) e \\(B\hat{C}A\\) ou \\(\hat{C}\\) são chamados de <strong>ângulos internos</strong> do \\(\triangle ABC\\), e são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.</p>
-    
-    <div style="text-align: center; margin: 20px 0;">
-        <img src="LINK_DA_IMAGEM_3" alt="Ângulos e lados opostos" style="max-width: 100%;">
-        <p><strong>Imagem 3</strong></p>
-    </div>
-
-    <p><strong>Relação de Oposição:</strong></p>
-    <ul>
-        <li>O ângulo \\(\hat{A}\\) é oposto ao lado \\(a\\).</li>
-        <li>O ângulo \\(\hat{B}\\) é oposto ao lado \\(b\\).</li>
-        <li>O ângulo \\(\hat{C}\\) é oposto ao lado \\(c\\).</li>
-    </ul>
-</div>
-
+            <ul>
+            <li>Os ângulos \\(B\\widehat{A}C\\) (ou \\(\\widehat{A}\\)), \\(A\\widehat{B}C\\) (ou \\(\\widehat{B}\\)) e \\(B\\widehat{C}A\\) (ou \\(\\widehat{C}\\)) são chamados de <strong>ângulos internos</strong> do \\(\\triangle ABC\\).
+            Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
+            <ul>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_definicaodetriangulos_2.PNG" alt="Ângulos e lados opostos" style="max-width: 40%;">
+                <p><strong></strong></p>
+            </div>
+        </div>
         `
 },
 
-'tales': {
-title: 'Teorema de Tales',
-description: 'Proporcionalidade em feixes de retas paralelas',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '4:30 minutos',
-videoDate: 'Outubro 2023',
-videoDescription: 'Demonstração do Teorema de Tales.',
-content: '<div class="theorem"><h3>Teorema de Tales</h3><p>Se duas retas transversais cortam um feixe de retas paralelas, então as medidas dos segmentos são proporcionais.</p></div><div class="math-display"><p>$$\\frac{AB}{BC} = \\frac{DE}{EF}$$</p></div>'
+'classificacaotriangulos': {
+title: 'Classificação dos Triângulos',
+description: '',
+videoId: '5EGzuVGgBO0',
+videoDuration: '1:13 minutos',
+videoDate: '04 de maio de 2026',
+videoDescription: 'Classificação dos Triângulos',
+sectionTitle: '',
+content: `
+        <div class="theorem">
+            <h3>1.2 Classificação</h3>
+            <p>Os triângulos podem ser classificados de duas formas: quanto aos seus lados ou quanto aos seus ângulos internos.</p>
+        </div>
+
+        <div class="math-display">
+            <h4>a) Quanto aos lados:</h4>
+            <ul>
+                <li><strong>Equilátero:</strong> possui os três lados congruentes (com a mesma medida).
+                    <p>\\(a = b = c\\)</p>
+                </li>
+                <li><strong>Isósceles:</strong> possui pelo menos dois lados congruentes.
+                    <p>\\(a = b\\) ou \\(a = c\\) ou \\(b = c\\)</p>
+                </li>
+                <li><strong>Escaleno:</strong> possui os três lados com medidas diferentes entre si.
+                    <p>\\(a \\neq b\\), \\(b \\neq c\\) e \\(a \\neq c\\)</p>
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="LINK_DA_IMAGEM_LADOS" alt="Classificação quanto aos lados" style="max-width: 100%;">
+                <p><strong>Imagem: Classificação por Lados</strong></p>
+            </div>
+
+            <h4>b) Quanto aos ângulos:</h4>
+            <ul>
+                <li><strong>Acutângulo:</strong> possui os três ângulos internos agudos (menores que \\(90^\\circ\\)).
+                    <p>\\(\\widehat{A}, \\widehat{B}, \\widehat{C} < 90^\\circ\\)</p>
+                </li>
+                <li><strong>Retângulo:</strong> possui um ângulo interno reto (igual a \\(90^\\circ\\)).
+                    <p>Ex: \\(\\widehat{A} = 90^\\circ\\)</p>
+                </li>
+                <li><strong>Obtusângulo:</strong> possui um ângulo interno obtuso (maior que \\(90^\\circ\\)).
+                    <p>Ex: \\(\\widehat{A} > 90^\\circ\\)</p>
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="LINK_DA_IMAGEM_ANGULOS" alt="Classificação quanto aos ângulos" style="max-width: 100%;">
+                <p><strong>Imagem: Classificação por Ângulos</strong></p>
+            </div>
+        </div>
+    `
 },
 
-// ========== ÁREAS (SUBMENU DE 2º NÍVEL) ==========
-'area-quadrado': {
-title: 'Área do Quadrado',
-description: 'Cálculo da área do quadrado',
+
+'definicaodecongruencia': {
+title: 'Definição de Congruências',
+description: '',
+videoId: 'Xyblz3iS57Y',
+videoDuration: '4:30 minutos',
+videoDate: 'Outubro 2023',
+videoDescription: 'Definição de Congruências',
+sectionTitle: '',
+content: `
+        <div class="theorem">
+            <h3>1.3 Definição de Congruência</h3>
+            <p>Dois triângulos são ditos congruentes se, e somente se, existe uma correspondência entre seus vértices, tal que:</p>
+            <ul style="list-style-type: none; padding-left: 15px;">
+                <li><strong>I)</strong> Os lados correspondentes são congruentes;</li>
+                <li><strong>II)</strong> Os ângulos correspondentes são congruentes.</li>
+            </ul>
+        </div>
+
+        <div class="math-display">
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_congruenciadetriangulo_1.PNG" alt="Triângulos Congruentes" style="max-width: 40%;">
+                <p><strong>Imagem: Correspondência entre Vértices</strong></p>
+            </div>
+
+            <p>Formalmente, a congruência entre o triângulo \\(ABC\\) e o triângulo \\(A'B'C'\\) implica nas seguintes igualdades:</p>
+            
+            <p>
+                \\[
+                \\triangle ABC \\equiv \\triangle A'B'C' \\implies 
+                \\begin{cases} 
+                \\overline{AB} = \\overline{A'B'} & \\quad e \\quad & \\widehat{A} = \\widehat{A'} \\\\
+                \\overline{AC} = \\overline{A'C'} & \\quad e \\quad &\\widehat{B} = \\widehat{B'} \\\\
+                \\overline{BC} = \\overline{B'C'} & \\quad e \\quad & \\widehat{C} = \\widehat{C'} 
+                \\end{cases}
+                \\]
+            </p>
+        </div>
+    `
+},
+
+// ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
+'congruenciasdetriangulos-LAL': {
+title: 'Casos de congruências',
+description: '',
 videoId: 'dQw4w9WgXcQ',
 videoDuration: '3:00 minutos',
 videoDate: 'Setembro 2023',
 videoDescription: 'Área do quadrado.',
-content: '<div class="theorem"><h3>Área do Quadrado</h3><p>A área de um quadrado é igual ao lado ao quadrado.</p></div><div class="math-display"><p>$$A = l^2$$</p><p>Onde <strong>l</strong> é o lado do quadrado.</p><h4>Exemplo:</h4><p>Se o lado = 5 cm:</p><p>$$A = 5^2 = 25 \\text{ cm}^2$$</p></div>'
+sectionTitle: 'Postulado',
+content: '<div class="theorem"><h3>Congruência Lado-Ângulo-Lado</h3><p>A área de um quadrado é igual ao lado ao quadrado.</p></div><div class="math-display"><p>$$A = l^2$$</p><p>Onde <strong>l</strong> é o lado do quadrado.</p><h4>Exemplo:</h4><p>Se o lado = 5 cm:</p><p>$$A = 5^2 = 25 \\text{ cm}^2$$</p></div>'
 },
 
-'area-retangulo': {
+'congruenciasdetriangulos-ALA': {
 title: 'Área do Retângulo',
 description: 'Cálculo da área do retângulo',
 videoId: 'dQw4w9WgXcQ',
@@ -83,7 +161,7 @@ videoDescription: 'Área do retângulo.',
 content: '<div class="theorem"><h3>Área do Retângulo</h3><p>A área de um retângulo é base vezes altura.</p></div><div class="math-display"><p>$$A = b \\times h$$</p><p>Onde:</p><ul><li><strong>b</strong> = base</li><li><strong>h</strong> = altura</li></ul></div>'
 },
 
-'area-triangulo': {
+'congruenciasdetriangulos-LLL': {
 title: 'Área do Triângulo',
 description: 'Cálculo da área do triângulo',
 videoId: 'dQw4w9WgXcQ',
@@ -91,26 +169,6 @@ videoDuration: '4:20 minutos',
 videoDate: 'Setembro 2023',
 videoDescription: 'Área do triângulo.',
 content: '<div class="math-display"><h3>Fórmula Básica</h3><p>$$A = \\frac{b \\times h}{2}$$</p><h3>Fórmula de Herão</h3><p>$$A = \\sqrt{s(s-a)(s-b)(s-c)}$$</p><p>Onde s é o semiperímetro.</p></div>'
-},
-
-'area-circulo': {
-title: 'Área do Círculo',
-description: 'Cálculo da área do círculo',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:30 minutos',
-videoDate: 'Setembro 2023',
-videoDescription: 'Área do círculo.',
-content: '<div class="theorem"><h3>Área do Círculo</h3><p>A área de um círculo é pi vezes o raio ao quadrado.</p></div><div class="math-display"><p>$$A = \\pi r^2$$</p><p>Onde <strong>r</strong> é o raio.</p><h4>Exemplo:</h4><p>Se r = 3 cm:</p><p>$$A = \\pi \\times 3^2 = 9\\pi \\approx 28.27 \\text{ cm}^2$$</p></div>'
-},
-
-'area-trapezio': {
-title: 'Área do Trapézio',
-description: 'Cálculo da área do trapézio',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:45 minutos',
-videoDate: 'Setembro 2023',
-videoDescription: 'Área do trapézio.',
-content: '<div class="math-display"><h3>Fórmula</h3><p>$$A = \\frac{(B + b) \\times h}{2}$$</p><p>Onde:</p><ul><li><strong>B</strong> = base maior</li><li><strong>b</strong> = base menor</li><li><strong>h</strong> = altura</li></ul></div>'
 },
 
 // ========== PERÍMETROS (SUBMENU DE 2º NÍVEL) ==========
@@ -210,6 +268,7 @@ content: '<div class="math-display"><h3>Volume</h3><p>$$V = \\frac{1}{3} A_b \\t
 'sobre': {
 title: 'Sobre a Dissertação',
 description: 'Informações sobre o projeto',
+sectionTitle: 'Sobre',
 videoId: '',
 videoDuration: '',
 videoDate: '',
@@ -220,6 +279,7 @@ content: '<div class="math-display"><h3>Geometria Demonstrada</h3><p>Produto edu
 'contato': {
 title: 'Contato',
 description: 'Entre em contato',
+sectionTitle: 'Contato',
 videoId: '',
 videoDuration: '',
 videoDate: '',
