@@ -141,14 +141,14 @@ content: `
 
 // ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
 'congruenciasdetriangulos-LAL': {
-title: 'Casos de congruências',
+title: 'Casos de congruencias',
 description: '',
 videoId: 'dQw4w9WgXcQ',
 videoDuration: '3:00 minutos',
 videoDate: 'Setembro 2023',
 videoDescription: 'Área do quadrado.',
 sectionTitle: 'Postulado',
-content: '<div class="theorem"><h3>Congruência Lado-Ângulo-Lado</h3><p>A área de um quadrado é igual ao lado ao quadrado.</p></div><div class="math-display"><p>$$A = l^2$$</p><p>Onde <strong>l</strong> é o lado do quadrado.</p><h4>Exemplo:</h4><p>Se o lado = 5 cm:</p><p>$$A = 5^2 = 25 \\text{ cm}^2$$</p></div>'
+content: '<div class="theorem"><h3>Congruência Lado-Ângulo-Lado</h3><p>Dado o \\triangle ABC <p>$$A = l^2$$</p><p>Onde <strong>l</strong> é o lado do quadrado.</p><h4>Exemplo:</h4><p>Se o lado = 5 cm:</p><p>$$A = 5^2 = 25 \\text{ cm}^2$$</p></div>'
 },
 
 'congruenciasdetriangulos-ALA': {
