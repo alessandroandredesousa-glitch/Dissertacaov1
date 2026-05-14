@@ -100,7 +100,7 @@ content: `
 
 
 'definicaodecongruencia': {
-title: 'Definição de Congruências',
+title: '1.3 Definição de Congruências',
 description: '',
 videoId: 'Xyblz3iS57Y',
 videoDuration: '4:30 minutos',
@@ -141,14 +141,37 @@ content: `
 
 // ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
 'congruenciasdetriangulos-LAL': {
-title: 'Casos de congruencias',
-description: '',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:00 minutos',
-videoDate: 'Setembro 2023',
-videoDescription: 'Área do quadrado.',
-sectionTitle: 'Postulado',
-content: '<div class="theorem"><h3>Congruência Lado-Ângulo-Lado</h3><p>Dado o \\triangle ABC <p>$$A = l^2$$</p><p>Onde <strong>l</strong> é o lado do quadrado.</p><h4>Exemplo:</h4><p>Se o lado = 5 cm:</p><p>$$A = 5^2 = 25 \\text{ cm}^2$$</p></div>'
+    title: '1.3.2 Caso LAL',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Postulado LAL',
+    sectionTitle: 'Postulado',
+    content: `
+        <div class="theorem">
+            <h3>Postulado Lado-Ângulo-Lado (LAL)</h3>
+            <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes.</p>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 50%;">
+                <p><strong>Imagem: Caso LAL</strong></p>
+            
+        </div>
+        <div class="math-display">
+            <p>
+            \\[
+                \\Delta ABC \\equiv \\Delta A'B'C' \\implies
+                \\left\\{\\begin{array}{ll}
+                    \\textcolor{#f67821}{\\overline{AB} = \\overline{A'B'}} & \\textcolor{#f67821}{e} \\quad \\textcolor{#f67821}{\\widehat{C} = \\widehat{C'}} \\\\
+                    \\textcolor{#008000}{\\overline{AC} = \\overline{A'C'}} & \\textcolor{#008000}{e} \\quad \\textcolor{#008000}{\\widehat{B} = \\widehat{B'}} \\\\
+                    \\overline{BC} = \\overline{B'C'} & e \\quad \\widehat{A} = \\widehat{A'}
+                \\end{array}\\right.
+            \\]
+            </p>
+        </div>
+    `
 },
 
 'congruenciasdetriangulos-ALA': {

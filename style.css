@@ -51,18 +51,21 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* CORRIGIDO: border-left fixo para não mudar o tamanho no hover */
 .menu-item > a {
     display: block;
     padding: 12px 20px;
     color: white;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-color 0.3s, border-left-color 0.3s;
     font-weight: 500;
+    border-left: 3px solid transparent;
 }
 
 .menu-item > a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    padding-left: 25px;
+    border-left: 3px solid #3498db;
+    /* padding-left removido — eliminado o layout shift */
 }
 
 /* --- SUBMENU NÍVEL 1 --- */
@@ -78,17 +81,21 @@ body {
     max-height: 1000px;
 }
 
+/* CORRIGIDO: padding fixo, sem alteração no hover */
 .submenu li a {
     display: block;
     padding: 10px 20px 10px 40px;
     color: #ddd;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-left-color 0.3s;
+    border-left: 3px solid transparent;
 }
 
 .submenu li a:hover {
     background-color: rgba(255, 255, 255, 0.05);
     color: white;
+    border-left: 3px solid rgba(52, 152, 219, 0.6);
+    /* padding-left removido — eliminado o layout shift */
 }
 
 /* --- SUBMENU NÍVEL 2 (submenu dentro de submenu) --- */
@@ -98,16 +105,18 @@ body {
     border-left: 2px solid rgba(52, 152, 219, 0.5);
 }
 
+/* CORRIGIDO: padding fixo, sem alteração no hover */
 .submenu-level-2 li a {
     padding-left: 60px !important;
     font-size: 0.9rem;
     color: #bbb;
+    border-left: none;
 }
 
 .submenu-level-2 li a:hover {
     background-color: rgba(52, 152, 219, 0.2);
     color: #3498db;
-    padding-left: 65px !important;
+    /* padding-left: 65px removido — eliminado o layout shift */
 }
 
 /* Símbolo de seta para indicar submenu */
