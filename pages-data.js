@@ -3,7 +3,7 @@ const PAGES_DATA = {
 
 // ========== Triângulos ==========
 'definicaotriangulos': {
-title: 'Definição de triângulos',
+title: '1.1 Definição de triângulos',
 description: '',
 sectionTitle: '',
 videoId: 'Xyblz3iS57Y',
@@ -18,7 +18,7 @@ content: `
 
         <div class="math-display">
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/img_definicaodetriangulos.PNG" alt="Pontos A, B e C" style="max-width: 40%;">
+                <img src="./imagem/img_definicaodetriangulos.PNG" alt="Pontos A, B e C" style="max-width: 70%;">
             </div>
             <ul>
                 <li>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.
@@ -28,8 +28,8 @@ content: `
             
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/img_definicaodetriangulos_1.PNG" alt="Lados do triângulo" style="max-width: 40%;">
-                <p><strong></strong></p>
+                <img src="./imagem/img_definicaodetriangulos_1.PNG" alt="Lados do triângulo" style="max-width: 70%;">
+                <p><strong>Imagem: Lados do triângulo</strong></p>
             </div>
 
             <ul>
@@ -37,15 +37,15 @@ content: `
             Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
             <ul>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_definicaodetriangulos_2.PNG" alt="Ângulos e lados opostos" style="max-width: 40%;">
-                <p><strong></strong></p>
+                <img src="imagem/img_definicaodetriangulos_2.PNG" alt="Ângulos e lados opostos" style="max-width: 70%;">
+                <p><strong>Imagem: Ângulos e lados opostos</strong></p>
             </div>
         </div>
         `
 },
 
 'classificacaotriangulos': {
-title: 'Classificação dos Triângulos',
+title: '1.2 Classificação dos Triângulos',
 description: '',
 videoId: '5EGzuVGgBO0',
 videoDuration: '1:13 minutos',
@@ -89,8 +89,9 @@ content: `
 
             <h3 style="text-align: center;">Resumindo .... </h3>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_classsificacao_tri_3.PNG" alt="Classificação quanto aos ângulos" style="max-width: 85%;">
-                <p><strong></strong></p>
+                <img src="imagem/img_classsificacao_tri_3.PNG" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
+                <p><strong>Imagem: Classificação quanto aos lados e ângulos</strong></p>
+            </div>
         </div>
     `
 },
