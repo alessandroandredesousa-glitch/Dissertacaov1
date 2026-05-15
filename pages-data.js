@@ -72,10 +72,7 @@ content: `
                 </li>
             </ul>
 
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="LINK_DA_IMAGEM_LADOS" alt="Classificação quanto aos lados" style="max-width: 100%;">
-                <p><strong>Imagem: Classificação por Lados</strong></p>
-            </div>
+            
 
             <h4>b) Quanto aos ângulos:</h4>
             <ul>
@@ -90,10 +87,10 @@ content: `
                 </li>
             </ul>
 
+            <h3 style="text-align: center;">Resumindo .... </h3>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="LINK_DA_IMAGEM_ANGULOS" alt="Classificação quanto aos ângulos" style="max-width: 100%;">
-                <p><strong>Imagem: Classificação por Ângulos</strong></p>
-            </div>
+                <img src="imagem/img_classsificacao_tri_3.PNG" alt="Classificação quanto aos ângulos" style="max-width: 85%;">
+                <p><strong></strong></p>
         </div>
     `
 },
@@ -119,7 +116,7 @@ content: `
 
         <div class="math-display">
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_congruenciadetriangulo_1.PNG" alt="Triângulos Congruentes" style="max-width: 40%;">
+                <img src="imagem/img_congruenciadetriangulo_1.PNG" alt="Triângulos Congruentes" style="max-width: 70%;">
                 <p><strong>Imagem: Correspondência entre Vértices</strong></p>
             </div>
 
@@ -155,7 +152,7 @@ content: `
         </div>
 
         <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 50%;">
+                <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
                 <p><strong>Imagem: Caso LAL</strong></p>
             
         </div>
@@ -175,13 +172,60 @@ content: `
 },
 
 'congruenciasdetriangulos-ALA': {
-title: 'Área do Retângulo',
-description: 'Cálculo da área do retângulo',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:15 minutos',
-videoDate: 'Setembro 2023',
-videoDescription: 'Área do retângulo.',
-content: '<div class="theorem"><h3>Área do Retângulo</h3><p>A área de um retângulo é base vezes altura.</p></div><div class="math-display"><p>$$A = b \\times h$$</p><p>Onde:</p><ul><li><strong>b</strong> = base</li><li><strong>h</strong> = altura</li></ul></div>'
+    title: '1.3.2 Caso ALA',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Postulado ALA',
+    sectionTitle: '',
+    content: `
+        <div class="theorem">
+            <h3>Teorema Ângulo-Lado-Ângulo (ALA)</h3>
+            <p>Se dois triângulos possuem dois ângulos congruentes e o lado compreendido entre esses ângulos também é congruente, então os triângulos são congruentes.</p>
+        </div>
+
+        <div class="math-display">
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Por hipótese, \\(\\widehat{A} \\equiv \\widehat{A'}\\), \\(\\widehat{B} \\equiv \\widehat{B'}\\) e 
+                \\(\\overline{AB} = \\overline{A'B'}\\). Vamos mostrar que \\(\\overline{AC} = \\overline{A'C'}\\) 
+                \\(\\Rightarrow \\triangle ABC \\equiv \\triangle A'B'C'\\).
+            </p>
+
+            <h4>Demonstração:</h4>
+            <p>
+                Tracemos uma reta \\(r\\) sobre o segmento \\(\\overline{A'C'}\\) e marquemos um ponto \\(X\\) sobre 
+                \\(r\\) de tal modo que \\(\\overline{AC} = \\overline{A'X}\\).
+            </p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+            </div>
+            <p>
+                Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo caso LAL. Como, por hipótese, 
+                o ângulo \\(\\widehat{C} \\equiv \\widehat{C'}\\), logo o ponto \\(X = C'\\), 
+                portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_ALA_3.png" alt="Demonstração — ponto X sobre A'C'" style="max-width: 70%;">
+            </div>
+
+            <p>Temos:</p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    \\overline{AC} = \\overline{A'C} \\\\
+                    \\widehat{A} \\equiv \\widehat{A'} \\\\
+                    \\overline{AB} = \\overline{A'B'}
+                \\end{array}\\right.
+                \\Rightarrow \\triangle ABC \\equiv \\triangle A'B'C' \\quad \\text{(pelo caso LAL)}
+            \\]
+        </div>
+    `
 },
 
 'congruenciasdetriangulos-LLL': {
