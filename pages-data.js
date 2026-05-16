@@ -253,7 +253,7 @@ content: `
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casa_LLL_1.PNG" alt="Construção do ponto X" style="max-width: 70%;">
+                <img src="imagem/img_casa_ALA_1.png" alt="Construção do ponto X" style="max-width: 70%;">
             </div>
 
             <p>
