@@ -230,13 +230,110 @@ content: `
 },
 
 'congruenciasdetriangulos-LLL': {
-title: 'Área do Triângulo',
-description: 'Cálculo da área do triângulo',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '4:20 minutos',
-videoDate: 'Setembro 2023',
-videoDescription: 'Área do triângulo.',
-content: '<div class="math-display"><h3>Fórmula Básica</h3><p>$$A = \\frac{b \\times h}{2}$$</p><h3>Fórmula de Herão</h3><p>$$A = \\sqrt{s(s-a)(s-b)(s-c)}$$</p><p>Onde s é o semiperímetro.</p></div>'
+    title: '1.3.3 Caso de congruência LLL',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Postulado LLL',
+    sectionTitle: 'Teorema',
+    content: `
+        <div class="theorem">
+            <h3>Congruência Lado-Lado-Lado (LLL)</h3>
+            <p>Se dois triângulos possuem os três lados congruentes, então os triângulos são congruentes.</p>
+        </div>
+
+        <div class="math-display">
+
+            <h4>Demonstração:</h4>
+
+            <p>
+                Vamos construir o ângulo \\(C\\widehat{A}B\\) no semiplano oposto ao ponto \\(F\\),
+                tomando um ponto \\(X\\) tal que \\(E\\widehat{D}X \\equiv C\\widehat{A}B\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_LLL_1.PNG" alt="Construção do ponto X" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Tomamos um ponto \\(H\\) sobre a reta \\(\\overleftrightarrow{DX}\\), tal que
+                \\(\\overline{DH} = \\overline{AC}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_LLL_2.PNG" alt="Ponto H sobre DX" style="max-width: 70%;">
+            </div>
+
+            <p>Note que:</p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    E\\widehat{D}H \\equiv C\\widehat{A}B \\\\
+                    \\overline{DH} = \\overline{AC} \\\\
+                    \\overline{DE} = \\overline{AB}
+                \\end{array}\\right.
+                \\quad \\quad \\Rightarrow \\quad \\quad \\triangle DHE \\equiv \\triangle ABC \\quad \\text{(Caso LAL)}
+            \\]
+            <p>onde \\(\\overline{DH} = \\overline{AC}\\) por construção e \\(\\overline{DE} = \\overline{AB}\\) pela hipótese.</p>
+
+            <p>
+                Traçando \\(FH\\), obtemos o \\(\\triangle DFH\\) que é isósceles, pois
+                \\(\\overline{DH} = \\overline{AC}\\) e \\(\\overline{DF} = \\overline{AC}\\),
+                portanto \\(D\\widehat{H}F \\equiv D\\widehat{F}H\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_LLL_3.PNG" alt="Triângulo DFH isósceles" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Com o mesmo raciocínio, podemos concluir que o \\(\\triangle FEH\\) é isósceles
+                e \\(E\\widehat{F}H \\equiv F\\widehat{H}E\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_LLL_4.PNG" alt="Triângulo FEH isósceles" style="max-width: 70%;">
+            </div>
+
+            <p>Portanto:</p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    D\\widehat{F}E = D\\widehat{F}H + H\\widehat{F}E \\\\
+                    D\\widehat{H}E = D\\widehat{H}F + E\\widehat{H}F
+                \\end{array}\\right.
+            \\]
+
+            <p>
+                Como \\(D\\widehat{F}H \\equiv D\\widehat{H}F\\) e \\(H\\widehat{F}E \\equiv E\\widehat{H}F\\), logo:
+            </p>
+            \\[
+                D\\widehat{F}E \\equiv D\\widehat{H}E
+            \\]
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_casa_LLL_5.PNG" alt="Conclusão LAL" style="max-width: 70%;">
+            </div>
+
+            <p>Temos:</p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    \\overline{DF} = \\overline{DH} \\\\
+                    D\\widehat{H}E \\equiv D\\widehat{F}E \\\\
+                    \\overline{HE} = \\overline{FE}
+                \\end{array}\\right.
+                \\quad \\quad \\Rightarrow \\quad \\quad \\triangle DHE \\equiv \\triangle DEF \\quad \\text{(LAL)}
+            \\]
+
+            <p>
+                Como \\(\\triangle ABC \\equiv \\triangle DHE\\) e \\(\\triangle DHE \\equiv \\triangle DEF\\),
+                então:
+            </p>
+            \\[
+                \\triangle ABC \\equiv \\triangle DEF
+            \\]
+
+        </div>
+    `
 },
 
 // ========== PERÍMETROS (SUBMENU DE 2º NÍVEL) ==========
