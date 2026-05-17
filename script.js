@@ -1,8 +1,10 @@
 function toggleSubmenu(id) {
     if (event) event.preventDefault();
     const submenu = document.getElementById(id + '-submenu');
+    const menuItem = submenu?.parentElement;
     if (submenu) {
         submenu.classList.toggle('show');
+        menuItem.classList.toggle('open');
     }
 }
 
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const euclidiana = document.getElementById('euclidiana-submenu');
     if (euclidiana) {
         euclidiana.classList.add('show');
+        euclidiana.parentElement.classList.add('open');
     }
     
     loadPage('definicaotriangulos');
