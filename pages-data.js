@@ -283,7 +283,7 @@ content: `
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casa_LLL_3.PNG" alt="Triângulo DFH isósceles" style="max-width: 70%;">
+                <img src="imagem/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
             </div>
 
             <p>
@@ -292,7 +292,7 @@ content: `
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casa_LLL_4.PNG" alt="Triângulo FEH isósceles" style="max-width: 70%;">
+                <img src="imagem/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
             </div>
 
             <p>Portanto:</p>
@@ -311,7 +311,7 @@ content: `
             \\]
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casa_LLL_5.PNG" alt="Conclusão LAL" style="max-width: 70%;">
+                <img src="imagem/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
             </div>
 
             <p>Temos:</p>
