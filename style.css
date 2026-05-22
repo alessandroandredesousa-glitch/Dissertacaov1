@@ -117,7 +117,6 @@ body {
     border-left: 2px solid rgba(52, 152, 219, 0.5);
 }
 
-/* CORRIGIDO: padding fixo, sem alteração no hover */
 .submenu-level-2 li a {
     padding-left: 60px !important;
     font-size: 0.9rem;
@@ -142,6 +141,7 @@ body {
     margin-left: 280px;
     padding: 30px;
     min-height: 100vh;
+    min-width: 0; /* evita estouro no flexbox */
 }
 
 .page-header {
@@ -167,6 +167,7 @@ body {
     display: flex;
     gap: 40px;
     align-items: flex-start;
+    min-width: 0; /* evita estouro no flexbox */
 }
 
 .video-column {
@@ -180,6 +181,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 0; /* evita estouro no flexbox */
 }
 
 /* --- CONTAINER DO VÍDEO --- */
@@ -220,7 +222,9 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden; /* evita barra horizontal */
     max-height: 710px;
+    min-width: 0;       /* evita estouro no flexbox */
 }
 
 .demo-container h2 {
@@ -235,6 +239,7 @@ body {
     overflow-x: auto;
     max-width: 100%;
     word-wrap: break-word;
+    overflow-wrap: break-word; /* evita estouro de texto */
 }
 
 .math-display h3, .math-display h4 {
@@ -259,6 +264,7 @@ body {
     margin: 20px 0;
     border-radius: 0 5px 5px 0;
     max-width: 100%;
+    overflow-x: hidden; /* evita estouro dentro do theorem */
 }
 
 .theorem h3 {

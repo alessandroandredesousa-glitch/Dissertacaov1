@@ -141,9 +141,9 @@ content: `
 'congruenciasdetriangulos-LAL': {
     title: '1.3.2 Caso LAL',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
+    videoId: 'glSWv63mKMM',
+    videoDuration: '1:04',
+    videoDate: '22/05/2026',
     videoDescription: 'Postulado LAL',
     sectionTitle: 'Postulado',
     content: `
@@ -336,15 +336,74 @@ content: `
     `
 },
 
-// ========== PERÍMETROS (SUBMENU DE 2º NÍVEL) ==========
-'perimetro-quadrado': {
-title: 'Perímetro do Quadrado',
-description: 'Cálculo do perímetro do quadrado',
+// ========== CONSTRUÇÕES GEOMÉTRICAS (SUBMENU DE 2º NÍVEL) ==========
+'ponto_medio': {
+title: '1.4.1 Ponto Médio',
+description: 'Cálculo do ponto médio',
 videoId: 'dQw4w9WgXcQ',
 videoDuration: '2:30 minutos',
 videoDate: 'Agosto 2023',
 videoDescription: 'Perímetro do quadrado.',
-content: '<div class="math-display"><h3>Perímetro do Quadrado</h3><p>$$P = 4l$$</p><p>Onde <strong>l</strong> é o lado.</p></div>'
+content: `
+        <div class="theorem">
+            <h3>Definição de Ponto Médio</h3>
+            <p>
+                Dado um segmento \\(\\overline{AB}\\), dizemos que um ponto \\(M\\) é o <strong>ponto médio</strong> 
+                de \\(\\overline{AB}\\) se \\(M\\) está entre \\(A\\) e \\(B\\) e 
+                \\(\\overline{AM} = \\overline{MB}\\).
+            </p>
+        </div>
+
+        <div class="math-display">
+
+            <h4>Demonstração da Existência:</h4>
+
+            <p>
+                Dado um segmento \\(\\overline{AB}\\), constrói-se pontos \\(C\\) e \\(D\\) em semiplanos 
+                opostos em relação ao segmento \\(\\overline{AB}\\), de modo que:
+            </p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    C\\widehat{A}B \\equiv A\\widehat{B}D \\\\
+                    \\overline{AC} = \\overline{BD}
+                \\end{array}\\right.
+            \\]
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_pontomedio_1.PNG" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
+            </div>
+
+            <p>
+                O segmento \\(\\overline{CD}\\) intercepta o segmento \\(\\overline{AB}\\) em um ponto \\(M\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_pontomedio_2.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+            </div>
+
+            <h4>Note que:</h4>
+            <ul>
+                <li>
+                    \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (caso LAL)
+                </li>
+                <li>
+                    \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (caso LLL), pois \\(\\overline{AD} = \\overline{CB}\\) 
+                    pela congruência anterior
+                </li>
+                <li>
+                    \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (caso ALA: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
+                    \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
+                </li>
+            </ul>
+
+            <p>
+                Como \\(\\triangle AMD \\equiv \\triangle BMC\\), então \\(\\overline{AM} = \\overline{MB}\\), 
+                ou seja, \\(M\\) é ponto médio de \\(\\overline{AB}\\).
+            </p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
 },
 
 'perimetro-retangulo': {
