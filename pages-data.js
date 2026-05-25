@@ -1,16 +1,16 @@
 // DADOS DAS PÁGINAS
 const PAGES_DATA = {
 
-// ========== Triângulos ==========
-'definicaotriangulos': {
-title: '1.1 Definição de triângulos',
-description: '',
-sectionTitle: '',
-videoId: 'Xyblz3iS57Y',
-videoDuration: '1:00 minutos',
-videoDate: '28 de abril de 2026',
-videoDescription: 'Definição de triângulos',
-content: `
+    // ========== Triângulos ==========
+    'definicaotriangulos': {
+        title: '1.1 Definição de triângulos',
+        description: '',
+        sectionTitle: '',
+        videoId: 'Xyblz3iS57Y',
+        videoDuration: '1:00 minutos',
+        videoDate: '28 de abril de 2026',
+        videoDescription: 'Definição de triângulos',
+        content: `
            <div class="theorem">
             <h3>1.1 Definição de Triângulo</h3>
             <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\\triangle ABC\\)) é a reunião dos segmentos \\(\\overline{AB}\\), \\(\\overline{AC}\\) e \\(\\overline{BC}\\).</p>
@@ -42,17 +42,17 @@ content: `
             </div>
         </div>
         `
-},
+    },
 
-'classificacaotriangulos': {
-title: '1.2 Classificação dos Triângulos',
-description: '',
-videoId: '5EGzuVGgBO0',
-videoDuration: '1:13 minutos',
-videoDate: '04 de maio de 2026',
-videoDescription: 'Classificação dos Triângulos',
-sectionTitle: '',
-content: `
+    'classificacaotriangulos': {
+        title: '1.2 Classificação dos Triângulos',
+        description: '',
+        videoId: '5EGzuVGgBO0',
+        videoDuration: '1:13 minutos',
+        videoDate: '04 de maio de 2026',
+        videoDescription: 'Classificação dos Triângulos',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
             <h3>1.2 Classificação</h3>
             <p>Os triângulos podem ser classificados de duas formas: quanto aos seus lados ou quanto aos seus ângulos internos.</p>
@@ -94,18 +94,18 @@ content: `
             </div>
         </div>
     `
-},
+    },
 
 
-'definicaodecongruencia': {
-title: '1.3 Definição de Congruências',
-description: '',
-videoId: 'Xyblz3iS57Y',
-videoDuration: '4:30 minutos',
-videoDate: 'Outubro 2023',
-videoDescription: 'Definição de Congruências',
-sectionTitle: '',
-content: `
+    'definicaodecongruencia': {
+        title: '1.3 Definição de Congruências',
+        description: '',
+        videoId: 'Xyblz3iS57Y',
+        videoDuration: '4:30 minutos',
+        videoDate: 'Outubro 2023',
+        videoDescription: 'Definição de Congruências',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
             <h3>1.3 Definição de Congruência</h3>
             <p>Dois triângulos são ditos congruentes se, e somente se, existe uma correspondência entre seus vértices, tal que:</p>
@@ -135,20 +135,20 @@ content: `
             </p>
         </div>
     `
-},
+    },
 
-// ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
-'congruenciasdetriangulos-LAL': {
-    title: '1.3.2 Caso LAL',
-    description: '',
-    videoId: 'glSWv63mKMM',
-    videoDuration: '1:04',
-    videoDate: '22/05/2026',
-    videoDescription: 'Postulado LAL',
-    sectionTitle: 'Postulado',
-    content: `
+    // ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
+    'congruenciasdetriangulos-LAL': {
+        title: '1.3.2 Congruência Lado-Ângulo-Lado (LAL)',
+        description: '',
+        videoId: 'glSWv63mKMM',
+        videoDuration: '1:04',
+        videoDate: '22/05/2026',
+        videoDescription: 'Postulado LAL',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
-            <h3>Postulado Lado-Ângulo-Lado (LAL)</h3>
+            <h3>Postulado de Congruência Lado-Ângulo-Lado (LAL)</h3>
             <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes.</p>
         </div>
 
@@ -170,19 +170,19 @@ content: `
             </p>
         </div>
     `
-},
+    },
 
-'congruenciasdetriangulos-ALA': {
-    title: '1.3.2 Caso ALA',
-    description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Postulado ALA',
-    sectionTitle: '',
-    content: `
+    'congruenciasdetriangulos-ALA': {
+        title: '1.3.2 Congruência Ângulo-Lado-Ângulo (ALA)',
+        description: '',
+        videoId: 'SEU_VIDEO_ID',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: 'Postulado ALA',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
-            <h3>Teorema Ângulo-Lado-Ângulo (ALA)</h3>
+            <h3>Teorema de Congruência Ângulo-Lado-Ângulo (ALA)</h3>
             <p>Se dois triângulos possuem dois ângulos congruentes e o lado compreendido entre esses ângulos também é congruente, então os triângulos são congruentes.</p>
         </div>
 
@@ -227,19 +227,19 @@ content: `
             \\]
         </div>
     `
-},
+    },
 
-'congruenciasdetriangulos-LLL': {
-    title: '1.3.3 Caso de congruência LLL',
-    description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Postulado LLL',
-    sectionTitle: 'Teorema',
-    content: `
+    'congruenciasdetriangulos-LLL': {
+        title: '1.3.3 Congruência Lado-Lado-Lado (LLL)',
+        description: '',
+        videoId: 'SEU_VIDEO_ID',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: 'Postulado LLL',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
-            <h3>Congruência Lado-Lado-Lado (LLL)</h3>
+            <h3>Teorema de Congruência Lado-Lado-Lado (LLL)</h3>
             <p>Se dois triângulos possuem os três lados congruentes, então os triângulos são congruentes.</p>
         </div>
 
@@ -334,17 +334,17 @@ content: `
 
         </div>
     `
-},
+    },
 
-// ========== CONSTRUÇÕES GEOMÉTRICAS (SUBMENU DE 2º NÍVEL) ==========
-'ponto_medio': {
-title: '1.4.1 Ponto Médio',
-description: 'Cálculo do ponto médio',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '2:30 minutos',
-videoDate: 'Agosto 2023',
-videoDescription: 'Perímetro do quadrado.',
-content: `
+    // ========== CONSTRUÇÕES GEOMÉTRICAS (SUBMENU DE 2º NÍVEL) ==========
+    'ponto_medio': {
+        title: '1.4.1 Ponto Médio',
+        description: 'Cálculo do ponto médio',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '2:30 minutos',
+        videoDate: 'Agosto 2023',
+        videoDescription: 'Perímetro do quadrado.',
+        content: `
         <div class="theorem">
             <h3>Definição de Ponto Médio</h3>
             <p>
@@ -400,116 +400,158 @@ content: `
                 Como \\(\\triangle AMD \\equiv \\triangle BMC\\), então \\(\\overline{AM} = \\overline{MB}\\), 
                 ou seja, \\(M\\) é ponto médio de \\(\\overline{AB}\\).
             </p>
-            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 95%;">\\(\\blacksquare\\)</p>
+
+            </div>
+    `
+    },
+    
+    'mediana-triangulo': {
+    title: '1.4.2 Mediana de um Triângulo',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Mediana de um Triângulo',
+    sectionTitle: '',
+    content: `
+        <div class="theorem">
+            <h3>Definição de Mediana</h3>
+            <p>
+                Dado um triângulo \\(\\triangle ABC\\), a <strong>mediana</strong> relativa ao lado 
+                \\(\\overline{AB}\\) é o segmento que une o vértice \\(C\\) ao ponto médio \\(M\\) 
+                do lado \\(\\overline{AB}\\).
+            </p>
+        </div>
+
+        <div class="math-display">
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Todo triângulo possui três medianas, cada uma relativa a um de seus lados:
+            </p>
+
+            <ul>
+                <li>Mediana relativa ao lado \\(\\overline{AB}\\): segmento \\(\\overline{CM_c}\\), onde \\(M_c\\) é o ponto médio de \\(\\overline{AB}\\).</li>
+                <li>Mediana relativa ao lado \\(\\overline{AC}\\): segmento \\(\\overline{BM_b}\\), onde \\(M_b\\) é o ponto médio de \\(\\overline{AC}\\).</li>
+                <li>Mediana relativa ao lado \\(\\overline{BC}\\): segmento \\(\\overline{AM_a}\\), onde \\(M_a\\) é o ponto médio de \\(\\overline{BC}\\).</li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 70%;">
+            </div>
 
         </div>
     `
 },
 
-'perimetro-retangulo': {
-title: 'Perímetro do Retângulo',
-description: 'Cálculo do perímetro do retângulo',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '2:45 minutos',
-videoDate: 'Agosto 2023',
-videoDescription: 'Perímetro do retângulo.',
-content: '<div class="math-display"><h3>Perímetro do Retângulo</h3><p>$$P = 2(b + h)$$</p></div>'
-},
+    'perimetro-retangulo': {
+        title: 'Perímetro do Retângulo',
+        description: 'Cálculo do perímetro do retângulo',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '2:45 minutos',
+        videoDate: 'Agosto 2023',
+        videoDescription: 'Perímetro do retângulo.',
+        content: '<div class="math-display"><h3>Perímetro do Retângulo</h3><p>$$P = 2(b + h)$$</p></div>'
+    },
 
-'perimetro-circulo': {
-title: 'Perímetro do Círculo (Circunferência)',
-description: 'Cálculo da circunferência',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:00 minutos',
-videoDate: 'Agosto 2023',
-videoDescription: 'Circunferência.',
-content: '<div class="math-display"><h3>Circunferência</h3><p>$$C = 2\\pi r$$</p><p>Onde <strong>r</strong> é o raio.</p></div>'
-},
+    'perimetro-circulo': {
+        title: 'Perímetro do Círculo (Circunferência)',
+        description: 'Cálculo da circunferência',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '3:00 minutos',
+        videoDate: 'Agosto 2023',
+        videoDescription: 'Circunferência.',
+        content: '<div class="math-display"><h3>Circunferência</h3><p>$$C = 2\\pi r$$</p><p>Onde <strong>r</strong> é o raio.</p></div>'
+    },
 
-// ========== OUTROS ==========
-'angulos-triangulos': {
-title: 'Ângulos em Triângulos',
-description: 'Propriedades dos ângulos',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:45 minutos',
-videoDate: 'Julho 2023',
-videoDescription: 'Ângulos.',
-content: '<div class="theorem"><h3>Soma dos Ângulos</h3><p>$$\\alpha + \\beta + \\gamma = 180°$$</p></div>'
-},
+    // ========== OUTROS ==========
+    'angulos-triangulos': {
+        title: 'Ângulos em Triângulos',
+        description: 'Propriedades dos ângulos',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '3:45 minutos',
+        videoDate: 'Julho 2023',
+        videoDescription: 'Ângulos.',
+        content: '<div class="theorem"><h3>Soma dos Ângulos</h3><p>$$\\alpha + \\beta + \\gamma = 180°$$</p></div>'
+    },
 
-'cossenos': {
-title: 'Lei dos Cossenos',
-description: 'Generalização de Pitágoras',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '5:15 minutos',
-videoDate: 'Junho 2023',
-videoDescription: 'Cossenos.',
-content: '<div class="math-display"><p>$$c^2 = a^2 + b^2 - 2ab \\cos(\\gamma)$$</p></div>'
-},
+    'cossenos': {
+        title: 'Lei dos Cossenos',
+        description: 'Generalização de Pitágoras',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '5:15 minutos',
+        videoDate: 'Junho 2023',
+        videoDescription: 'Cossenos.',
+        content: '<div class="math-display"><p>$$c^2 = a^2 + b^2 - 2ab \\cos(\\gamma)$$</p></div>'
+    },
 
-// ========== GEOMETRIA ANALÍTICA ==========
-'distancia-pontos': {
-title: 'Distância entre Pontos',
-description: 'Fórmula euclidiana',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:30 minutos',
-videoDate: 'Maio 2023',
-videoDescription: 'Distância.',
-content: '<div class="math-display"><p>$$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$</p></div>'
-},
+    // ========== GEOMETRIA ANALÍTICA ==========
+    'distancia-pontos': {
+        title: 'Distância entre Pontos',
+        description: 'Fórmula euclidiana',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '3:30 minutos',
+        videoDate: 'Maio 2023',
+        videoDescription: 'Distância.',
+        content: '<div class="math-display"><p>$$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$</p></div>'
+    },
 
-'ponto-medio': {
-title: 'Ponto Médio',
-description: 'Cálculo do ponto médio',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '3:15 minutos',
-videoDate: 'Abril 2023',
-videoDescription: 'Ponto médio.',
-content: '<div class="math-display"><p>$$M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$$</p></div>'
-},
+    'ponto-medio': {
+        title: 'Ponto Médio',
+        description: 'Cálculo do ponto médio',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '3:15 minutos',
+        videoDate: 'Abril 2023',
+        videoDescription: 'Ponto médio.',
+        content: '<div class="math-display"><p>$$M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$$</p></div>'
+    },
 
-// ========== GEOMETRIA ESPACIAL ==========
-'prismas': {
-title: 'Prismas',
-description: 'Volume e área',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '4:30 minutos',
-videoDate: 'Março 2023',
-videoDescription: 'Prismas.',
-content: '<div class="math-display"><h3>Volume</h3><p>$$V = A_b \\times h$$</p></div>'
-},
+    // ========== GEOMETRIA ESPACIAL ==========
+    'prismas': {
+        title: 'Prismas',
+        description: 'Volume e área',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '4:30 minutos',
+        videoDate: 'Março 2023',
+        videoDescription: 'Prismas.',
+        content: '<div class="math-display"><h3>Volume</h3><p>$$V = A_b \\times h$$</p></div>'
+    },
 
-'piramides': {
-title: 'Pirâmides',
-description: 'Volume e área',
-videoId: 'dQw4w9WgXcQ',
-videoDuration: '4:45 minutos',
-videoDate: 'Fevereiro 2023',
-videoDescription: 'Pirâmides.',
-content: '<div class="math-display"><h3>Volume</h3><p>$$V = \\frac{1}{3} A_b \\times h$$</p></div>'
-},
+    'piramides': {
+        title: 'Pirâmides',
+        description: 'Volume e área',
+        videoId: 'dQw4w9WgXcQ',
+        videoDuration: '4:45 minutos',
+        videoDate: 'Fevereiro 2023',
+        videoDescription: 'Pirâmides.',
+        content: '<div class="math-display"><h3>Volume</h3><p>$$V = \\frac{1}{3} A_b \\times h$$</p></div>'
+    },
 
-'sobre': {
-title: 'Sobre a Dissertação',
-description: 'Informações sobre o projeto',
-sectionTitle: 'Sobre',
-videoId: '',
-videoDuration: '',
-videoDate: '',
-videoDescription: '',
-content: '<div class="math-display"><h3>Geometria Demonstrada</h3><p>Produto educacional para o ensino de geometria.</p></div>'
-},
+    'sobre': {
+        title: 'Sobre a Dissertação',
+        description: 'Informações sobre o projeto',
+        sectionTitle: 'Sobre',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        content: '<div class="math-display"><h3>Geometria Demonstrada</h3><p>Produto educacional para o ensino de geometria.</p></div>'
+    },
 
-'contato': {
-title: 'Contato',
-description: 'Entre em contato',
-sectionTitle: 'Contato',
-videoId: '',
-videoDuration: '',
-videoDate: '',
-videoDescription: '',
-content: '<div class="math-display"><h3>Contato</h3><p>Email: contato@exemplo.com</p></div>'
-}
+    'contato': {
+        title: 'Contato',
+        description: 'Entre em contato',
+        sectionTitle: 'Contato',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        content: '<div class="math-display"><h3>Contato</h3><p>Email: contato@exemplo.com</p></div>'
+    }
 
 };
 
