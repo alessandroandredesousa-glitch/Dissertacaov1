@@ -405,16 +405,16 @@ const PAGES_DATA = {
             </div>
     `
     },
-    
+
     'mediana-triangulo': {
-    title: '1.4.2 Mediana de um Triângulo',
-    description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Mediana de um Triângulo',
-    sectionTitle: '',
-    content: `
+        title: '1.4.2 Mediana de um Triângulo',
+        description: '',
+        videoId: 'SEU_VIDEO_ID',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: 'Mediana de um Triângulo',
+        sectionTitle: '',
+        content: `
         <div class="theorem">
             <h3>Definição de Mediana</h3>
             <p>
@@ -446,17 +446,100 @@ const PAGES_DATA = {
 
         </div>
     `
-},
-
-    'perimetro-retangulo': {
-        title: 'Perímetro do Retângulo',
-        description: 'Cálculo do perímetro do retângulo',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '2:45 minutos',
-        videoDate: 'Agosto 2023',
-        videoDescription: 'Perímetro do retângulo.',
-        content: '<div class="math-display"><h3>Perímetro do Retângulo</h3><p>$$P = 2(b + h)$$</p></div>'
     },
+
+   'existencia-bissetriz': {
+    title: '1.4.3 Existência da Bissetriz',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Existência da Bissetriz',
+    sectionTitle: '',
+    content: `
+        <div class="theorem">
+            <h3>Definição de Bissetriz de um Ângulo</h3>
+            <p>
+                Dado um ângulo \\(A\\widehat{O}B\\), a <strong>bissetriz</strong> desse ângulo é a semirreta 
+                \\(\\overrightarrow{OC}\\) que parte do vértice \\(O\\), está contida no interior do ângulo 
+                \\(A\\widehat{O}B\\) e o divide em dois ângulos congruentes, isto é:
+            </p>
+            \\[
+                A\\widehat{O}C \\equiv C\\widehat{O}B
+            \\]
+        </div>
+
+        <div class="math-display">
+
+            <h4>Demonstração da Existência:</h4>
+
+            <p>
+                Dado um ângulo \\(a\\widehat{O}b\\), escolhemos pontos \\(A\\) e \\(A'\\) pertencentes 
+                à semirreta \\(\\overrightarrow{Oa}\\) e pontos \\(B\\) e \\(B'\\) pertencentes à 
+                semirreta \\(\\overrightarrow{Ob}\\), de tal modo que:
+            </p>
+            \\[
+                \\left\\{\\begin{array}{l}
+                    \\overline{OA} = \\overline{OB} \\\\
+                    \\overline{OB'} \\equiv \\overline{OB'}
+                \\end{array}\\right.
+            \\]
+            <p>
+                com \\(\\overline{OA'} > \\overline{OA}\\) e \\(\\overline{OB'} > \\overline{OB}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Façamos \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Seja \\(C\\) o ponto de interseção de 
+                \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Consideremos a semirreta \\(\\overrightarrow{OC}\\). Temos:
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 70%;">
+            </div>
+
+            <ul>
+                <li>
+                    O triângulo \\(\\triangle OBA' \\equiv \\triangle OAB'\\) &nbsp; (caso LAL)
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 70%;">
+            </div>
+
+            <ul>
+                <li>
+                    O triângulo \\(\\triangle ACA' \\equiv \\triangle BCB'\\) &nbsp; (caso ALA)
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 70%;">
+            </div>
+
+            <ul>
+                <li>
+                    O triângulo \\(\\triangle OAC \\equiv \\triangle OBC\\) &nbsp; (caso LAL)
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Desta última congruência, \\(A\\widehat{O}C \\equiv C\\widehat{O}B\\), ou seja, 
+                \\(\\overrightarrow{OC}\\) é bissetriz de \\(a\\widehat{O}b\\).
+            </p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+},
 
     'perimetro-circulo': {
         title: 'Perímetro do Círculo (Circunferência)',
