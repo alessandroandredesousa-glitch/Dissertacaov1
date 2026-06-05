@@ -541,15 +541,99 @@ const PAGES_DATA = {
     `
 },
 
-    'perimetro-circulo': {
-        title: 'Perímetro do Círculo (Circunferência)',
-        description: 'Cálculo da circunferência',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '3:00 minutos',
-        videoDate: 'Agosto 2023',
-        videoDescription: 'Circunferência.',
-        content: '<div class="math-display"><h3>Circunferência</h3><p>$$C = 2\\pi r$$</p><p>Onde <strong>r</strong> é o raio.</p></div>'
-    },
+'teorema-angulo-externo': {
+    title: '1.5 Teorema do Ângulo Externo',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Teorema do Ângulo Externo',
+    sectionTitle: '',
+    content: `
+        <div class="math-display">
+
+            <h3>1.5 Teorema do Ângulo Externo</h3>
+
+            <div class="theorem">
+                <p>
+                    Um ângulo externo de um triângulo é maior que qualquer um dos ângulos internos não adjacentes.
+                </p>
+            </div>
+
+            <p>
+                Dado um \\(\\triangle ABC\\) e sendo \\(\\overrightarrow{CX}\\) a semirreta oposta à semirreta 
+                \\(\\overrightarrow{CB}\\), o ângulo \\(\\varepsilon = A\\widehat{C}X\\) é o ângulo externo do 
+                triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 70%;">
+            </div>
+
+            <h4>Demonstração:</h4>
+
+            <p>
+                Seja \\(M\\) o ponto médio de \\(\\overline{AC}\\), e tomemos um ponto \\(P\\) sobre a 
+                semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Note que \\(\\triangle BMA \\equiv \\triangle CMP\\) (caso LAL), então 
+                \\(B\\widehat{A}C \\equiv M\\widehat{C}P\\). Como \\(M\\widehat{C}P\\) é interno a 
+                \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
+            </p>
+
+            <p>
+                De maneira análoga, seja \\(M\\) o ponto médio do segmento \\(\\overline{BC}\\) e \\(P\\) 
+                um ponto pertencente à semirreta \\(\\overrightarrow{AM}\\), tal que 
+                \\(\\overline{AM} = \\overline{MP}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_3.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Note que \\(\\triangle BMA \\equiv \\triangle PMC\\) (pelo caso LAL), então 
+                \\(A\\widehat{B}C \\equiv M\\widehat{C}P\\).
+            </p>
+
+            <p>
+                Tomemos um ponto \\(K\\) pertencente à semirreta \\(\\overrightarrow{PC}\\), tal que 
+                \\(K\\) está fora do segmento \\(\\overline{PC}\\).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_4.png" alt="Ponto K sobre semirreta PC" style="max-width: 70%;">
+            </div>
+
+            <p>
+                Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice).
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_5.png" alt="Ângulos opostos pelo vértice" style="max-width: 70%;">
+            </div>
+
+            <p>
+                O ângulo \\(K\\widehat{C}X\\) é interno ao ângulo \\(\\varepsilon\\), então 
+                \\(\\varepsilon > K\\widehat{C}X\\). Como \\(K\\widehat{C}X \\equiv M\\widehat{C}P \\equiv A\\widehat{B}C\\), 
+                temos que \\(\\varepsilon > A\\widehat{B}C\\).
+            </p>
+
+            <p>
+                Com isso \\(\\varepsilon > B\\widehat{A}C\\) e \\(\\varepsilon > A\\widehat{B}C\\), ou seja, 
+                \\(\\varepsilon\\) é maior que os dois ângulos internos do \\(\\triangle ABC\\) não adjacentes a ele.
+            </p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+},
 
     // ========== OUTROS ==========
     'angulos-triangulos': {
