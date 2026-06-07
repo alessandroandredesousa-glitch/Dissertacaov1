@@ -175,10 +175,10 @@ const PAGES_DATA = {
     'congruenciasdetriangulos-ALA': {
         title: '1.3.2 Congruência Ângulo-Lado-Ângulo (ALA)',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
-        videoDescription: 'Postulado ALA',
+        videoId: 'NZ4-fDWQwKw',
+        videoDuration: '2:56 Minutos',
+        videoDate: '07 de junho de 2026',
+        videoDescription: 'Caso ALA',
         sectionTitle: '',
         content: `
         <div class="theorem">
@@ -232,10 +232,10 @@ const PAGES_DATA = {
     'congruenciasdetriangulos-LLL': {
         title: '1.3.3 Congruência Lado-Lado-Lado (LLL)',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
-        videoDescription: 'Postulado LLL',
+        videoId: 'TQV90EEjjt8',
+        videoDuration: '3:20 Minutos',
+        videoDate: '07 de junho de 2026',
+        videoDescription: 'Congruência  LLL',
         sectionTitle: '',
         content: `
         <div class="theorem">
@@ -386,14 +386,24 @@ const PAGES_DATA = {
                 <li>
                     \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (caso LAL)
                 </li>
+                <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_pontomedio_3.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                </div>
                 <li>
                     \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (caso LLL), pois \\(\\overline{AD} = \\overline{CB}\\) 
                     pela congruência anterior
                 </li>
+                <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_pontomedio_4.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                </div>
                 <li>
                     \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (caso ALA: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
                     \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
                 </li>
+                <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_pontomedio_5.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                </div>
+
             </ul>
 
             <p>
