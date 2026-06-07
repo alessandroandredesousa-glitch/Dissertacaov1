@@ -208,7 +208,7 @@ const PAGES_DATA = {
             </div>
             <p>
                 Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo caso LAL. Como, por hipótese, 
-                o ângulo \\(\\widehat{C} \\equiv \\widehat{C'}\\), logo o ponto \\(X = C'\\), 
+                o ângulo \\(\\widehat{B} \\equiv \\widehat{B'}\\), logo o ponto \\(X = C'\\), 
                 portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
             </p>
 
