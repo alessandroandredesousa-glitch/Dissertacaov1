@@ -5,11 +5,19 @@ function toggleSubmenu(id) {
     if (submenu) {
         submenu.classList.toggle('show');
         menuItem.classList.toggle('open');
+
+        // salva quais submenus estão abertos
+        const openMenus = [];
+        document.querySelectorAll('.submenu.show').forEach(el => {
+            openMenus.push(el.id.replace('-submenu', ''));
+        });
+        localStorage.setItem('openMenus', JSON.stringify(openMenus));
     }
 }
 
 function loadPage(pageId) {
     if (event) event.preventDefault();
+    localStorage.setItem('lastPage', pageId);
     
     console.log('🔄 Carregando página:', pageId);
     
@@ -53,13 +61,34 @@ function loadPage(pageId) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const euclidiana = document.getElementById('euclidiana-submenu');
-    if (euclidiana) {
-        euclidiana.classList.add('show');
-        euclidiana.parentElement.classList.add('open');
+
+    // restaura submenus abertos ou abre euclidiana por padrão
+    const openMenus = JSON.parse(localStorage.getItem('openMenus') || '[]');
+    if (openMenus.length > 0) {
+        openMenus.forEach(id => {
+            const submenu = document.getElementById(id + '-submenu');
+            if (submenu) {
+                submenu.classList.add('show');
+                submenu.parentElement.classList.add('open');
+            }
+        });
+    } else {
+        const euclidiana = document.getElementById('euclidiana-submenu');
+        if (euclidiana) {
+            euclidiana.classList.add('show');
+            euclidiana.parentElement.classList.add('open');
+        }
     }
-    
-    loadPage('definicaotriangulos');
+
+    // restaura última página visitada
+    setTimeout(function() {
+        const lastPage = localStorage.getItem('lastPage');
+        if (lastPage && PAGES_DATA[lastPage]) {
+            loadPage(lastPage);
+        } else {
+            loadPage('definicaotriangulos');
+        }
+    }, 100);
     
     console.log('✅ Site carregado! Total de páginas:', Object.keys(PAGES_DATA).length);
 });
