@@ -437,7 +437,7 @@ const PAGES_DATA = {
         <div class="math-display">
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 70%;">
+                <img src="imagem/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
             </div>
 
             <p>
@@ -451,7 +451,7 @@ const PAGES_DATA = {
             </ul>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 70%;">
+                <img src="imagem/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
             </div>
 
         </div>
