@@ -21,6 +21,8 @@ Disponíveis em quase todas as funções de desenho:
 | `rotation` | Rotação em **radianos** (exceto `drawText`, que usa **graus**) |
 | `rotationOrigin` | Ponto `{x, y}` de pivô da rotação (padrão: origem) |
 | `translation` | Move o elemento: `{x, y}` |
+
+> ⚠️ **Ordem de transformações:** rotação acontece **antes** da translação, sempre. A rotação ocorre no sistema de coordenadas original do elemento. Só depois o elemento é transportado pela translação. Calcular ângulos em relação à posição final (após translação) dá resultado errado.|
 | `colorOnDark` / `colorOnLight` | Cores alternativas por fundo |
 
 ---
