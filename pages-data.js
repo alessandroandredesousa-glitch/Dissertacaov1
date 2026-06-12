@@ -18,7 +18,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/img_definicaodetriangulos.PNG" alt="Pontos A, B e C" style="max-width: 70%;">
+                <img src="./imagem/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
             </div>
             <ul>
                 <li>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.
@@ -28,7 +28,7 @@ const PAGES_DATA = {
             
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/img_definicaodetriangulos_1.PNG" alt="Lados do triângulo" style="max-width: 70%;">
+                <img src="./imagem/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
                 <p><strong>Imagem: Lados do triângulo</strong></p>
             </div>
 
@@ -37,7 +37,7 @@ const PAGES_DATA = {
             Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
             <ul>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_definicaodetriangulos_2.PNG" alt="Ângulos e lados opostos" style="max-width: 70%;">
+                <img src="imagem/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
                 <p><strong>Imagem: Ângulos e lados opostos</strong></p>
             </div>
         </div>
@@ -89,7 +89,7 @@ const PAGES_DATA = {
 
             <h3 style="text-align: center;">Resumindo .... </h3>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_classsificacao_tri_3.PNG" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
+                <img src="imagem/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
                 <p><strong>Imagem: Classificação quanto aos lados e ângulos</strong></p>
             </div>
         </div>
@@ -117,7 +117,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_congruenciadetriangulo_1.PNG" alt="Triângulos Congruentes" style="max-width: 70%;">
+                <img src="imagem/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
                 <p><strong>Imagem: Correspondência entre Vértices</strong></p>
             </div>
 
@@ -370,7 +370,7 @@ const PAGES_DATA = {
             \\]
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_1.PNG" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
+                <img src="imagem/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
             </div>
 
             <p>
@@ -378,7 +378,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_2.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
             </div>
 
             <h4>Note que:</h4>
@@ -387,21 +387,21 @@ const PAGES_DATA = {
                     \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (caso LAL)
                 </li>
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_3.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
                 </div>
                 <li>
                     \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (caso LLL), pois \\(\\overline{AD} = \\overline{CB}\\) 
                     pela congruência anterior
                 </li>
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_4.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
                 </div>
                 <li>
                     \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (caso ALA: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
                     \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
                 </li>
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_5.PNG" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
                 </div>
 
             </ul>
