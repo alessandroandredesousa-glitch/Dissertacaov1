@@ -17,9 +17,15 @@ const PAGES_DATA = {
         </div>
 
         <div class="math-display">
+            <p style="text-align: center; font-weight: bold;">Figura 1.1 – Triângulo ABC com vértices A, B e C</p>
+
             <div style="text-align: center; margin: 20px 0;">
+
                 <img src="./imagem/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
+
             </div>
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
             <ul>
                 <li>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.
                 <li>Os segmentos \\(\\overline{AB}\\) (de medida \\(c\\)), \\(\\overline{AC}\\) (de medida \\(b\\)) e \\(\\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\\triangle ABC\\).
@@ -27,19 +33,21 @@ const PAGES_DATA = {
 
             
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.2 – Lados do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="./imagem/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
-                <p><strong>Imagem: Lados do triângulo</strong></p>
             </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <ul>
             <li>Os ângulos \\(B\\widehat{A}C\\) (ou \\(\\widehat{A}\\)), \\(A\\widehat{B}C\\) (ou \\(\\widehat{B}\\)) e \\(B\\widehat{C}A\\) (ou \\(\\widehat{C}\\)) são chamados de <strong>ângulos internos</strong> do \\(\\triangle ABC\\).
             Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
             <ul>
+            <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos internos e lados opostos do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
-                <p><strong>Imagem: Ângulos e lados opostos</strong></p>
             </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
         `
     },
@@ -88,10 +96,11 @@ const PAGES_DATA = {
             </ul>
 
             <h3 style="text-align: center;">Resumindo .... </h3>
+            <p style="text-align: center; font-weight: bold;">Figura 1.4 – Classificação dos triângulos quanto aos lados e ângulos internos</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
-                <p><strong>Imagem: Classificação quanto aos lados e ângulos</strong></p>
             </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
     `
     },
@@ -116,10 +125,11 @@ const PAGES_DATA = {
         </div>
 
         <div class="math-display">
+            <p style="text-align: center; font-weight: bold;">Figura 1.5 – Correspondência entre vértices de triângulos congruentes</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
-                <p><strong>Imagem: Correspondência entre Vértices</strong></p>
             </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Formalmente, a congruência entre o triângulo \\(ABC\\) e o triângulo \\(A'B'C'\\) implica nas seguintes igualdades:</p>
             
@@ -152,11 +162,11 @@ const PAGES_DATA = {
             <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes.</p>
         </div>
 
+        <p style="text-align: center; font-weight: bold;">Figura 1.6 – Postulado de congruência Lado-Ângulo-Lado (LAL)</p>
         <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
-                <p><strong>Imagem: Caso LAL</strong></p>
-            
+            <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
         </div>
+        <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         <div class="math-display">
             <p>
             \\[
@@ -188,9 +198,19 @@ const PAGES_DATA = {
 
         <div class="math-display">
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.7 – Triângulos ABC e A'B'C' com hipótese ALA</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Por hipótese, \\(\\widehat{A} \\equiv \\widehat{A'}\\), \\(\\widehat{B} \\equiv \\widehat{B'}\\) e 
@@ -203,18 +223,34 @@ const PAGES_DATA = {
                 Tracemos uma reta \\(r\\) sobre o segmento \\(\\overline{A'C'}\\) e marquemos um ponto \\(X\\) sobre 
                 \\(r\\) de tal modo que \\(\\overline{AC} = \\overline{A'X}\\).
             </p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.8 – Ponto X sobre a reta A'C' com A'X = AC</p>
+
             <div style="text-align: center; margin: 20px 0;">
+
                 <img src="imagem/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+
             </div>
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
             <p>
                 Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo caso LAL. Como, por hipótese, 
                 o ângulo \\(\\widehat{B} \\equiv \\widehat{B'}\\), logo o ponto \\(X = C'\\), 
                 portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.9 – Coincidência X = C' e conclusão pelo caso LAL</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_casa_ALA_3.png" alt="Demonstração — ponto X sobre A'C'" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Temos:</p>
             \\[
@@ -252,18 +288,38 @@ const PAGES_DATA = {
                 tomando um ponto \\(X\\) tal que \\(E\\widehat{D}X \\equiv C\\widehat{A}B\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.10 – Construção do ângulo EDX ≡ CAB</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_caso_LLL_1.png" alt="Construção do ponto X" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Tomamos um ponto \\(H\\) sobre a reta \\(\\overleftrightarrow{DX}\\), tal que
                 \\(\\overline{DH} = \\overline{AC}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.11 – Ponto H sobre a reta DX com DH = AC</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_caso_LLL_2.png" alt="Ponto H sobre DX" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Note que:</p>
             \\[
@@ -282,18 +338,38 @@ const PAGES_DATA = {
                 portanto \\(D\\widehat{H}F \\equiv D\\widehat{F}H\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.12 – Triângulo DFH isósceles</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Com o mesmo raciocínio, podemos concluir que o \\(\\triangle FEH\\) é isósceles
                 e \\(E\\widehat{F}H \\equiv F\\widehat{H}E\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.13 – Triângulo FEH isósceles</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Portanto:</p>
             \\[
@@ -310,9 +386,19 @@ const PAGES_DATA = {
                 D\\widehat{F}E \\equiv D\\widehat{H}E
             \\]
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.14 – Conclusão △ABC ≡ △DEF pelo caso LAL</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Temos:</p>
             \\[
@@ -369,40 +455,78 @@ const PAGES_DATA = {
                 \\end{array}\\right.
             \\]
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.15 – Pontos C e D em semiplanos opostos em relação a AB</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 O segmento \\(\\overline{CD}\\) intercepta o segmento \\(\\overline{AB}\\) em um ponto \\(M\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.16 – Segmento CD interceptando AB no ponto M</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <h4>Note que:</h4>
             <ul>
                 <li>
                     \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (caso LAL)
                 </li>
+                <p style="text-align: center; font-weight: bold;">Figura 1.17 – Congruência △CAB ≡ △ABD pelo caso LAL</p>
+
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
+                    <img src="imagem/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
                 </div>
+
+                <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
                     \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (caso LLL), pois \\(\\overline{AD} = \\overline{CB}\\) 
                     pela congruência anterior
                 </li>
+                <p style="text-align: center; font-weight: bold;">Figura 1.18 – Congruência △ACD ≡ △CDB pelo caso LLL</p>
+
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
+                    <img src="imagem/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
                 </div>
+
+                <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
                     \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (caso ALA: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
                     \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
                 </li>
+                <p style="text-align: center; font-weight: bold;">Figura 1.19 – Congruência △AMD ≡ △BMC pelo caso ALA</p>
+
                 <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
+                    <img src="imagem/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+
                 </div>
+
+                <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             </ul>
 
@@ -436,9 +560,19 @@ const PAGES_DATA = {
 
         <div class="math-display">
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.20 – Mediana relativa ao lado AB do triângulo ABC</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Todo triângulo possui três medianas, cada uma relativa a um de seus lados:
@@ -450,9 +584,19 @@ const PAGES_DATA = {
                 <li>Mediana relativa ao lado \\(\\overline{BC}\\): segmento \\(\\overline{AM_a}\\), onde \\(M_a\\) é o ponto médio de \\(\\overline{BC}\\).</li>
             </ul>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.21 – As três medianas do triângulo ABC</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
         </div>
     `
@@ -498,18 +642,38 @@ const PAGES_DATA = {
                 com \\(\\overline{OA'} > \\overline{OA}\\) e \\(\\overline{OB'} > \\overline{OB}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.22 – Ângulo aOb com pontos A, A', B, B' nas semirretas</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Façamos \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Seja \\(C\\) o ponto de interseção de 
                 \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Consideremos a semirreta \\(\\overrightarrow{OC}\\). Temos:
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.23 – Ponto C interseção de AB' e BA'</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <ul>
                 <li>
@@ -517,9 +681,19 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.24 – Congruência △OBA' ≡ △OAB' pelo caso LAL</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <ul>
                 <li>
@@ -527,9 +701,19 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.25 – Congruência △ACA' ≡ △BCB' pelo caso ALA</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <ul>
                 <li>
@@ -537,9 +721,19 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.26 – Congruência △OAC ≡ △OBC e bissetriz OC</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Desta última congruência, \\(A\\widehat{O}C \\equiv C\\widehat{O}B\\), ou seja, 
@@ -576,9 +770,19 @@ const PAGES_DATA = {
                 triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.27 – Triângulo ABC com ângulo externo ε</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <h4>Demonstração:</h4>
 
@@ -587,9 +791,19 @@ const PAGES_DATA = {
                 semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.28 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Note que \\(\\triangle BMA \\equiv \\triangle CMP\\) (caso LAL), então 
@@ -597,9 +811,19 @@ const PAGES_DATA = {
                 \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.29 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
 
             <p>
@@ -608,9 +832,19 @@ const PAGES_DATA = {
                 \\(\\overline{AM} = \\overline{MP}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.30 – Ponto M médio de BC e ponto P sobre a semirreta AM</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Note que \\(\\triangle BMA \\equiv \\triangle PMC\\) (pelo caso LAL), então 
@@ -622,17 +856,37 @@ const PAGES_DATA = {
                 \\(K\\) está fora do segmento \\(\\overline{PC}\\).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.31 – Ponto K sobre a semirreta PC</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 1.32 – Ângulos opostos pelo vértice KCX e MCP</p>
+
+
             <div style="text-align: center; margin: 20px 0;">
+
+
                 <img src="imagem/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
+
+
             </div>
+
+
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 O ângulo \\(K\\widehat{C}X\\) é interno ao ângulo \\(\\varepsilon\\), então 
@@ -737,4 +991,4 @@ const PAGES_DATA = {
 
 };
 
-console.log('✅ PAGES_DATA carregado com', Object.keys(PAGES_DATA).length, 'páginas');
+console.log('✅ PAGES_DATA carregado com', Object.keys(PAGES_DATA).length, ' páginas');
