@@ -233,7 +233,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
             <p>
-                Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo caso LAL. Como, por hipótese, 
+                Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>. Como, por hipótese, 
                 o ângulo \\(\\widehat{B} \\equiv \\widehat{B'}\\), logo o ponto \\(X = C'\\), 
                 portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
             </p>
@@ -490,7 +490,7 @@ const PAGES_DATA = {
             <h4>Note que:</h4>
             <ul>
                 <li>
-                    \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (caso LAL)
+                    \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 1.17 – Congruência △CAB ≡ △ABD pelo caso LAL</p>
 
@@ -502,7 +502,7 @@ const PAGES_DATA = {
 
                 <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
-                    \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (caso LLL), pois \\(\\overline{AD} = \\overline{CB}\\) 
+                    \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL</a>), pois \\(\\overline{AD} = \\overline{CB}\\) 
                     pela congruência anterior
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 1.18 – Congruência △ACD ≡ △CDB pelo caso LLL</p>
@@ -515,7 +515,7 @@ const PAGES_DATA = {
 
                 <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
-                    \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (caso ALA: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
+                    \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
                     \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 1.19 – Congruência △AMD ≡ △BMC pelo caso ALA</p>
@@ -677,7 +677,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle OBA' \\equiv \\triangle OAB'\\) &nbsp; (caso LAL)
+                    O triângulo \\(\\triangle OBA' \\equiv \\triangle OAB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
                 </li>
             </ul>
 
@@ -697,7 +697,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle ACA' \\equiv \\triangle BCB'\\) &nbsp; (caso ALA)
+                    O triângulo \\(\\triangle ACA' \\equiv \\triangle BCB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>)
                 </li>
             </ul>
 
@@ -717,7 +717,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle OAC \\equiv \\triangle OBC\\) &nbsp; (caso LAL)
+                    O triângulo \\(\\triangle OAC \\equiv \\triangle OBC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
                 </li>
             </ul>
 
@@ -806,7 +806,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Note que \\(\\triangle BMA \\equiv \\triangle CMP\\) (caso LAL), então 
+                Note que \\(\\triangle BMA \\equiv \\triangle CMP\\) (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>), então 
                 \\(B\\widehat{A}C \\equiv M\\widehat{C}P\\). Como \\(M\\widehat{C}P\\) é interno a 
                 \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
             </p>
@@ -847,7 +847,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Note que \\(\\triangle BMA \\equiv \\triangle PMC\\) (pelo caso LAL), então 
+                Note que \\(\\triangle BMA \\equiv \\triangle PMC\\) (pelo <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>), então 
                 \\(A\\widehat{B}C \\equiv M\\widehat{C}P\\).
             </p>
 
@@ -904,6 +904,86 @@ const PAGES_DATA = {
     `
 },
 
+    'maior-lado-maior-angulo': {
+    title: '1.6 Ao maior lado opõe-se o maior ângulo',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Ao maior lado opõe-se o maior ângulo',
+    sectionTitle: '',
+    content: `
+        <div class="math-display">
+
+            <h3>1.6 Ao maior lado opõe-se o maior ângulo</h3>
+
+            <div class="theorem">
+                <p>
+                    Se dois lados de um triângulo não são congruentes, então os ângulos opostos
+                    a eles não são congruentes, e o maior deles está oposto ao maior lado.
+                </p>
+            </div>
+
+            <p>
+                Seja \\(\\triangle ABC\\) com \\(\\overline{AB} > \\overline{AC}\\).
+                Vamos mostrar que \\(\\widehat{C} > \\widehat{B}\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.33 – Triângulo ABC com AB > AC</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <h4>Demonstração:</h4>
+
+            <p>
+                Seja \\(D\\) um ponto sobre \\(\\overline{AB}\\) de tal modo que
+                \\(\\overline{AC} = \\overline{AD}\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.34 – Ponto D sobre AB com AD = AC</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como \\(\\overline{AB} > \\overline{AC}\\), o ponto \\(D\\) é interno ao segmento \\(\\overline{AB}\\),
+                portanto \\(A\\widehat{C}B > A\\widehat{C}D\\).
+            </p>
+
+            <p>
+                Observe que o \\(\\triangle ACD\\) é isósceles de base \\(\\overline{CD}\\), pois
+                \\(\\overline{AC} = \\overline{AD}\\). Logo:
+            </p>
+            \\[
+                A\\widehat{C}D \\equiv A\\widehat{D}C
+            \\]
+
+            <p>
+                Mas \\(A\\widehat{D}C\\) é ângulo externo ao triângulo \\(\\triangle BDC\\), portanto,
+                pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>:
+            </p>
+            \\[
+                A\\widehat{D}C > D\\widehat{B}C = \\widehat{B}
+            \\]
+
+            <p>De sorte que:</p>
+            \\[
+                \\widehat{B} < A\\widehat{D}C = A\\widehat{C}D < A\\widehat{C}B
+            \\]
+
+            <p>Portanto:</p>
+            \\[
+                \\widehat{C} > \\widehat{B}
+            \\]
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+},
+
     // ========== OUTROS ==========
     'angulos-triangulos': {
         title: 'Ângulos em Triângulos',
@@ -912,7 +992,7 @@ const PAGES_DATA = {
         videoDuration: '3:45 minutos',
         videoDate: 'Julho 2023',
         videoDescription: 'Ângulos.',
-        content: '<div class="theorem"><h3>Soma dos Ângulos</h3><p>$$\\alpha + \\beta + \\gamma = 180°$$</p></div>'
+        content: '<div class="theorem"><h3>Soma dos Ângulos</h3><p>5\alpha + \beta + \gamma = 180°5</p></div>'
     },
 
     'cossenos': {
@@ -922,7 +1002,7 @@ const PAGES_DATA = {
         videoDuration: '5:15 minutos',
         videoDate: 'Junho 2023',
         videoDescription: 'Cossenos.',
-        content: '<div class="math-display"><p>$$c^2 = a^2 + b^2 - 2ab \\cos(\\gamma)$$</p></div>'
+        content: '<div class="math-display"><p>5c^2 = a^2 + b^2 - 2ab \cos(\gamma)5</p></div>'
     },
 
     // ========== GEOMETRIA ANALÍTICA ==========
@@ -933,7 +1013,7 @@ const PAGES_DATA = {
         videoDuration: '3:30 minutos',
         videoDate: 'Maio 2023',
         videoDescription: 'Distância.',
-        content: '<div class="math-display"><p>$$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$</p></div>'
+        content: '<div class="math-display"><p>5d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}5</p></div>'
     },
 
     'ponto-medio': {
@@ -943,7 +1023,7 @@ const PAGES_DATA = {
         videoDuration: '3:15 minutos',
         videoDate: 'Abril 2023',
         videoDescription: 'Ponto médio.',
-        content: '<div class="math-display"><p>$$M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$$</p></div>'
+        content: '<div class="math-display"><p>5M = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)5</p></div>'
     },
 
     // ========== GEOMETRIA ESPACIAL ==========
@@ -954,7 +1034,7 @@ const PAGES_DATA = {
         videoDuration: '4:30 minutos',
         videoDate: 'Março 2023',
         videoDescription: 'Prismas.',
-        content: '<div class="math-display"><h3>Volume</h3><p>$$V = A_b \\times h$$</p></div>'
+        content: '<div class="math-display"><h3>Volume</h3><p>5V = A_b \times h5</p></div>'
     },
 
     'piramides': {
@@ -964,7 +1044,7 @@ const PAGES_DATA = {
         videoDuration: '4:45 minutos',
         videoDate: 'Fevereiro 2023',
         videoDescription: 'Pirâmides.',
-        content: '<div class="math-display"><h3>Volume</h3><p>$$V = \\frac{1}{3} A_b \\times h$$</p></div>'
+        content: '<div class="math-display"><h3>Volume</h3><p>5V = \frac{1}{3} A_b \times h5</p></div>'
     },
 
     'sobre': {
