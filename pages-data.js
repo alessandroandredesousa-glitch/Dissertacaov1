@@ -499,7 +499,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 70%;">
+                <img src="imagem/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
             </div>
 
             <p>
@@ -508,7 +508,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 70%;">
+                <img src="imagem/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
             </div>
 
             <ul>
@@ -518,7 +518,7 @@ const PAGES_DATA = {
             </ul>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 70%;">
+                <img src="imagem/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
             </div>
 
             <ul>
@@ -528,7 +528,7 @@ const PAGES_DATA = {
             </ul>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 70%;">
+                <img src="imagem/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
             </div>
 
             <ul>
@@ -538,7 +538,7 @@ const PAGES_DATA = {
             </ul>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 70%;">
+                <img src="imagem/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
             </div>
 
             <p>
@@ -577,7 +577,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 70%;">
+                <img src="imagem/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
             </div>
 
             <h4>Demonstração:</h4>
@@ -588,7 +588,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 70%;">
+                <img src="imagem/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
             </div>
 
             <p>
@@ -597,6 +597,11 @@ const PAGES_DATA = {
                 \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
             </p>
 
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
+            </div>
+
+
             <p>
                 De maneira análoga, seja \\(M\\) o ponto médio do segmento \\(\\overline{BC}\\) e \\(P\\) 
                 um ponto pertencente à semirreta \\(\\overrightarrow{AM}\\), tal que 
@@ -604,7 +609,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_angulo_externo_3.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 70%;">
+                <img src="imagem/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
             </div>
 
             <p>
@@ -618,7 +623,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_angulo_externo_4.png" alt="Ponto K sobre semirreta PC" style="max-width: 70%;">
+                <img src="imagem/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
             </div>
 
             <p>
@@ -626,7 +631,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_angulo_externo_5.png" alt="Ângulos opostos pelo vértice" style="max-width: 70%;">
+                <img src="imagem/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
             </div>
 
             <p>
