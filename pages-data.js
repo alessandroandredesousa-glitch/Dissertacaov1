@@ -905,37 +905,36 @@ const PAGES_DATA = {
 },
 
     'maior-lado-maior-angulo': {
-    title: '1.6 Ao maior lado opõe-se o maior ângulo',
+    title: '1.6.1 Relação entre Lados e Ângulos Opostos',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
     videoDate: '',
-    videoDescription: 'Ao maior lado opõe-se o maior ângulo',
+    videoDescription: 'Relação entre Lados e Ângulos Opostos em um Triângulo',
     sectionTitle: '',
     content: `
         <div class="math-display">
 
-            <h3>1.6 Ao maior lado opõe-se o maior ângulo</h3>
+            <h3>1.6.1 Relação entre Lados e Ângulos Opostos</h3>
 
             <div class="theorem">
-                <p>
-                    Se dois lados de um triângulo não são congruentes, então os ângulos opostos
-                    a eles não são congruentes, e o maior deles está oposto ao maior lado.
+                <p><strong>Teorema.</strong>
+                    Em um triângulo \\(ABC\\), \\(\\overline{AB} > \\overline{AC}\\) se, e somente se,
+                    \\(\\widehat{C} > \\widehat{B}\\).
                 </p>
             </div>
 
             <p>
-                Seja \\(\\triangle ABC\\) com \\(\\overline{AB} > \\overline{AC}\\).
-                Vamos mostrar que \\(\\widehat{C} > \\widehat{B}\\).
+                Demonstraremos as duas implicações separadamente.
             </p>
+
+            <h4>Demonstração (\\(\\Rightarrow\\)): Se \\(\\overline{AB} > \\overline{AC}\\), então \\(\\widehat{C} > \\widehat{B}\\).</h4>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.33 – Triângulo ABC com AB > AC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
-            <h4>Demonstração:</h4>
 
             <p>
                 Seja \\(D\\) um ponto sobre \\(\\overline{AB}\\) de tal modo que
@@ -958,7 +957,7 @@ const PAGES_DATA = {
                 \\(\\overline{AC} = \\overline{AD}\\). Logo:
             </p>
             \\[
-                A\\widehat{C}D \\equiv A\\widehat{D}C
+                A\\widehat{C}D = A\\widehat{D}C
             \\]
 
             <p>
@@ -971,13 +970,33 @@ const PAGES_DATA = {
 
             <p>De sorte que:</p>
             \\[
-                \\widehat{B} < A\\widehat{D}C = A\\widehat{C}D < A\\widehat{C}B
+                \\widehat{B} < A\\widehat{D}C = A\\widehat{C}D < A\\widehat{C}B = \\widehat{C}
             \\]
 
-            <p>Portanto:</p>
-            \\[
-                \\widehat{C} > \\widehat{B}
-            \\]
+            <p>Portanto \\(\\widehat{C} > \\widehat{B}\\).</p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <h4>Demonstração (\\(\\Leftarrow\\)): Se \\(\\widehat{C} > \\widehat{B}\\), então \\(\\overline{AB} > \\overline{AC}\\).</h4>
+
+            <p>
+                Suponha, por contradição, que \\(\\overline{AB} \\leq \\overline{AC}\\). Há dois casos:
+            </p>
+
+            <p>
+                <strong>Caso 1:</strong> Se \\(\\overline{AB} = \\overline{AC}\\), o triângulo é isósceles e
+                \\(\\widehat{B} = \\widehat{C}\\), contrariando \\(\\widehat{C} > \\widehat{B}\\).
+            </p>
+
+            <p>
+                <strong>Caso 2:</strong> Se \\(\\overline{AB} < \\overline{AC}\\), então pela direção
+                \\(\\Rightarrow\\) já demonstrada (com os papéis de \\(AB\\) e \\(AC\\) trocados),
+                teríamos \\(\\widehat{B} > \\widehat{C}\\), também uma contradição.
+            </p>
+
+            <p>
+                Portanto a hipótese \\(\\overline{AB} \\leq \\overline{AC}\\) é falsa, e conclui-se que
+                \\(\\overline{AB} > \\overline{AC}\\).
+            </p>
             <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
 
         </div>
