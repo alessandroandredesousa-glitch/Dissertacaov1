@@ -1003,6 +1003,101 @@ const PAGES_DATA = {
     `
 },
 
+    'desigualdade-triangular': {
+    title: '1.6.2 A Desigualdade Triangular',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'A Desigualdade Triangular',
+    sectionTitle: '',
+    content: `
+        <div class="math-display">
+
+            <h3>1.6.2 A Desigualdade Triangular</h3>
+
+            <div class="theorem">
+                <p>
+                    Em todo triângulo, cada lado é menor que a soma dos outros dois.
+                </p>
+            </div>
+
+            <p>
+                Seja \\(\\triangle ABC\\) com \\(\\overline{AB} = c\\), \\(\\overline{AC} = b\\) e \\(\\overline{BC} = a\\).
+                Vamos mostrar que \\(c + b > a\\), isto é, \\(\\overline{AB} + \\overline{AC} > \\overline{BC}\\).
+                As demais desigualdades seguem por argumento análogo com os papéis dos lados permutados.
+            </p>
+
+            <h4>Demonstração:</h4>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.35 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Seja \\(D\\) um ponto na extensão de \\(\\overrightarrow{BA}\\) além de \\(A\\),
+                de tal modo que \\(\\overline{AD} = \\overline{AC}\\).
+                Os pontos ficam na ordem \\(B\\text{-}A\\text{-}D\\) sobre a reta.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.36 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como \\(\\overline{AC} = \\overline{AD}\\), o triângulo \\(\\triangle ACD\\) é isósceles
+                de base \\(\\overline{CD}\\). Portanto:
+            </p>
+            \\[
+                A\\widehat{C}D = A\\widehat{D}C
+            \\]
+
+            <p>
+                Como \\(A\\) é interno ao segmento \\(\\overline{BD}\\), o ângulo \\(B\\widehat{C}D\\) contém
+                \\(A\\widehat{C}D\\) como parte, portanto:
+            </p>
+            \\[
+                B\\widehat{C}D > A\\widehat{C}D = A\\widehat{D}C = B\\widehat{D}C
+            \\]
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.37 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Assim, no triângulo \\(\\triangle BCD\\), temos \\(B\\widehat{C}D > B\\widehat{D}C\\).
+                Pelo <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema 1.6.1</a>, o maior ângulo se opõe ao maior lado:
+            </p>
+            \\[
+                \\overline{BD} > \\overline{BC}
+            \\]
+
+            <p>
+                Como a ordem é \\(B\\text{-}A\\text{-}D\\):
+            </p>
+            \\[
+                \\overline{BD} = \\overline{BA} + \\overline{AD}
+            \\]
+
+            <p>
+                Logo \\(\\overline{BA} + \\overline{AD} > \\overline{BC}\\).
+                Como \\(\\overline{AD} = \\overline{AC}\\), conclui-se:
+            </p>
+            \\[
+                \\overline{BA} + \\overline{AC} > \\overline{BC} \\quad \\text{ou seja,} \\quad c + b > a
+            \\]
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+},
+
     // ========== OUTROS ==========
     'angulos-triangulos': {
         title: 'Ângulos em Triângulos',

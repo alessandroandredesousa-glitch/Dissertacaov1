@@ -1,5 +1,5 @@
 // ============================================================
-// ANIMAÇÃO: 1.6 Ao Maior Lado opõe-se o Maior Ângulo
+// ANIMAÇÃO: 1.6.1 Relação entre Lados e Ângulos Opostos
 // ============================================================
 //
 // TÉCNICAS USADAS NESTA ANIMAÇÃO:
@@ -40,11 +40,21 @@
 // 6. ORDEM DOS animation() = ordem de profundidade (z-index)
 //    O que é declarado primeiro fica atrás.
 //
+// 7. ESTRUTURA SE E SOMENTE SE (bicondicional)
+//    Título + Teorema (Leftrightarrow) logo no início
+//    (=>) Hipótese antes do triângulo, Conclusão após a comparação em P
+//    Recíproca por contradição em dois casos, com \\pause dentro do drawText
+//    Cores: Recíproca em azul elétrico, Contradição em rosa choque, Conclusão em verde neon
+//
+// 8. \\pause DENTRO DE drawText
+//    Permite revelar partes do texto progressivamente sem criar múltiplos drawText
+//    Ex: "texto inicial \\pause mais texto \\pause conclusão"
+//
 // ============================================================
 
 //drawGrid({ xMin: -5, xMax: 5, yMin: -5, yMax: 5 });
 
-// -- CORES ----------------------------------------------------
+// ── CORES ──────────────────────────────────────────────────────
 const cor_ciano = '#00FFFF'
 const cor_verde_neon = '#39FF14'
 const cor_amarelo_neon = '#FFFF00'
@@ -57,21 +67,28 @@ const cor_verde_menta = '#00FA9A'
 const cor_dourado = '#FFD700'
 const cor_titulo = '#FF4500'
 
-// -- TÍTULO ---------------------------------------------------
+// ── TÍTULO E TEOREMA ──────────────────────────────────────────
 
 drawText({
     text: "\\begin{center} 1.6.1 Relação entre Lados e Ângulos Opostos \\end{center}",
-    x: 0.44,
-    y: 7.48,
+    x: 0.11,
+    y: 9.53,
     color: cor_titulo,
 })
 
-// -- PONTOS BASE ----------------------------------------------
+drawText({
+    text: "\\begin{center}\\textbf{Teorema:} Em $\\triangle ABC$, $\\overline{AB} > \\overline{AC} \\Leftrightarrow \\hat{C} > \\hat{B}$\\end{center}",
+    x: -1.67, y: 7.48})
+
+drawText({
+    text: "\\begin{center} ($\\Rightarrow$) Hipótese:\\\\ $\\bar{AB}> \\bar{AC}$\\end{center}", x: -2.68, y: 4.5})
+
+// ── PONTOS BASE ────────────────────────────────────────────────
 const A = { x: 3.4,   y: 4.54  }
 const B = { x: -3.97, y: -1.01 }
 const C = { x: 4.39,  y: 0.37  }
 
-// -- PONTO D sobre AB com AD = AC -----------------------------
+// ── PONTO D sobre AB com AD = AC ──────────────────────────────
 const AC_len = Math.sqrt((C.x - A.x) ** 2 + (C.y - A.y) ** 2)
 const AB_len = Math.sqrt((B.x - A.x) ** 2 + (B.y - A.y) ** 2)
 const t = AC_len / AB_len
@@ -80,12 +97,12 @@ const D = {
     y: A.y + t * (B.y - A.y)
 }
 
-// -- COMPRIMENTOS ---------------------------------------------
+// ── COMPRIMENTOS ──────────────────────────────────────────────
 const CD_len = Math.sqrt((D.x - C.x) ** 2 + (D.y - C.y) ** 2)
 const BC_len = Math.sqrt((C.x - B.x) ** 2 + (C.y - B.y) ** 2)
 const BD_len = Math.sqrt((D.x - B.x) ** 2 + (D.y - B.y) ** 2)
 
-// -- ROTAÇÃO ACD → ADC (método bissetor) ----------------------
+// ── ROTAÇÃO ACD → ADC (método bissetor) ───────────────────────
 const uCA = { x: (A.x - C.x) / AC_len, y: (A.y - C.y) / AC_len }
 const uCD = { x: (D.x - C.x) / CD_len, y: (D.y - C.y) / CD_len }
 const bis_C = Math.atan2(uCA.y + uCD.y, uCA.x + uCD.x)
@@ -96,14 +113,14 @@ const bis_D = Math.atan2(uDA.y + uDC.y, uDA.x + uDC.x)
 
 const R = bis_D - bis_C
 
-// -- ROTAÇÕES PARA PONTO DE COMPARAÇÃO P ----------------------
+// ── ROTAÇÕES PARA PONTO P ─────────────────────────────────────
 const P = { x: 0, y: -3.5 }
 
 const R_ABC_P = -Math.atan2(C.y - B.y, C.x - B.x)
 const R_ACD_P = -Math.atan2(A.y - C.y, A.x - C.x)
 const R_ACB_P = -Math.atan2(A.y - C.y, A.x - C.x)
 
-// -- PARAMS ---------------------------------------------------
+// ── PARAMS ────────────────────────────────────────────────────
 
 // Rosa 1 (móvel): C → D (v: 0→1) depois D → P (v: 1→2)
 const levar_angulo = param({
@@ -127,7 +144,7 @@ const levar_dourado = param({
 const cmp_dourado = param({
     value: 0, min: 0, max: 1, step: 0.001,
     buttons: [{ value: 1, time: 2 }, { value: 0, time: 2 }],
-    label: "Comparação 1 - ABC → P"
+    label: "Comparação 1 – ABC → P"
 })
 
 // Rosa 2 (fixo): fica em C, depois vai para P
@@ -141,12 +158,12 @@ const cmp_ACD = param({
 const cmp_ACB = param({
     value: 0, min: 0, max: 1, step: 0.001,
     buttons: [{ value: 1, time: 2 }, { value: 0, time: 2 }],
-    label: "Comparação 4 - ACB → P"
+    label: "Comparação 4 – ACB → P"
 })
 
-// ============================================================
+// ══════════════════════════════════════════════════════════════
 // DESENHOS ESTÁTICOS
-// ============================================================
+// ══════════════════════════════════════════════════════════════
 
 drawPoint({ x: A.x, y: A.y, size: 0.06 })
 drawText({ text: "A", x: 3.01, y: 4.65 })
@@ -169,9 +186,9 @@ drawSegmentMeasureMark({ points: [A, C], quantity: 2, size: 0.3 })
 
 pause()
 
-// ============================================================
+// ══════════════════════════════════════════════════════════════
 // ÂNGULOS — ordem de desenho: maior (atrás) → menor (frente)
-// ============================================================
+// ══════════════════════════════════════════════════════════════
 
 // Azul ACB — radius 0.8 — sempre atrás de tudo
 animation(cmp_ACB, (s) => {
@@ -233,15 +250,15 @@ animation(cmp_dourado, (s) => {
         translation: { x: (P.x - B.x) * s, y: (P.y - B.y) * s } })
 })
 
-// -- CONCLUSÃO BICONDICIONAL ----------------------------------
 pause()
 
-drawText({ text: "$\\Rightarrow$ Se $\\overline{AB} > \\overline{AC}$, então $\\widehat{C} > \\widehat{B}.$ \\checkmark",
-    x: -4.5, y: -5.2, color: cor_verde_neon })
+drawText({
+    text: "\\begin{center}Conclusão \\\\ $\\hat{C} > \\hat{B}$\\end{center}", x: 3.03, y: -3.55})
+
+// ── RECÍPROCA ─────────────────────────────────────────────────
 
 pause()
 
-drawText({ text: "$\\Leftarrow$ Se $\\widehat{C} > \\widehat{B}$, então $\\overline{AB} > \\overline{AC}.$",
-    x: -4.5, y: -5.9, color: cor_azul_eletrico })
-drawText({ text: "\\textit{(Por contradição: $\\overline{AB} \\leq \\overline{AC}$ implicaria $\\widehat{C} \\leq \\widehat{B}$, absurdo.)}",
-    x: -4.5, y: -6.55, color: cor_azul_eletrico, fontSize: 0.38 })
+drawText({
+    text: "\\textcolor{#00B0FF}{Recíproca:} Se $\\hat{C} > \\hat{B}$, então $\\overline{AB} > \\overline{AC}.$ \\\\ Suponha, por contradição, que $\\overline{AB} \\leq \\overline{AC}$. Há dois casos: \\pause \\begin{itemize} \\item \\textbf{Caso 1:} $\\overline{AB} = \\overline{AC}$ $\\Rightarrow$ $\\triangle ABC$ isósceles $\\Rightarrow$ $\\hat{C} = \\hat{B}$. \\textcolor{#FF1493}{Contradição.} \\pause \\item \\textbf{Caso 2:} $\\overline{AB} < \\overline{AC}$ $\\Rightarrow$ pela ida já demonstrada, $\\hat{C} < \\hat{B}$. \\textcolor{#FF1493}{Contradição.} \\end{itemize} \\pause \\textcolor{#39FF14}{Logo, $\\overline{AB} > \\overline{AC}$.  $\\blacksquare$}",
+    x: 0.12, y: -6.47})
