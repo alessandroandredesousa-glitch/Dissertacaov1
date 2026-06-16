@@ -3,7 +3,7 @@ const PAGES_DATA = {
 
     // ========== Triângulos ==========
     'definicaotriangulos': {
-        title: '1.1 Definição de triângulos',
+        title: '1.1 Definição de Triângulos',
         description: '',
         sectionTitle: '',
         videoId: 'Xyblz3iS57Y',
@@ -107,12 +107,12 @@ const PAGES_DATA = {
 
 
     'definicaodecongruencia': {
-        title: '1.3 Definição de Congruências',
+        title: '1.3.1 Definição de Congruência',
         description: '',
         videoId: 'Xyblz3iS57Y',
         videoDuration: '4:30 minutos',
         videoDate: 'Outubro 2023',
-        videoDescription: 'Definição de Congruências',
+        videoDescription: 'Definição de Congruência',
         sectionTitle: '',
         content: `
         <div class="theorem">
@@ -255,7 +255,7 @@ const PAGES_DATA = {
             <p>Temos:</p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    \\overline{AC} = \\overline{A'C} \\\\
+                    \\overline{AC} = \\overline{A'C'} \\\\
                     \\widehat{A} \\equiv \\widehat{A'} \\\\
                     \\overline{AB} = \\overline{A'B'}
                 \\end{array}\\right.
@@ -271,7 +271,7 @@ const PAGES_DATA = {
         videoId: 'TQV90EEjjt8',
         videoDuration: '3:20 Minutos',
         videoDate: '07 de junho de 2026',
-        videoDescription: 'Congruência  LLL',
+        videoDescription: 'Congruência LLL',
         sectionTitle: '',
         content: `
         <div class="theorem">
@@ -540,6 +540,7 @@ const PAGES_DATA = {
     `
     },
 
+    // ! TODO: img_mediana_2.png — atualizar com o ponto G (baricentro) bem destacado
     'mediana-triangulo': {
         title: '1.4.2 Mediana de um Triângulo',
         description: '',
@@ -584,6 +585,10 @@ const PAGES_DATA = {
                 <li>Mediana relativa ao lado \\(\\overline{BC}\\): segmento \\(\\overline{AM_a}\\), onde \\(M_a\\) é o ponto médio de \\(\\overline{BC}\\).</li>
             </ul>
 
+            <!-- TODO: atualizar img_mediana_2.png — incluir o ponto G (baricentro) bem destacado sobre as três medianas -->
+            <p style="background-color: #ff4444; color: white; font-weight: bold; padding: 8px 12px; border-radius: 4px; text-align: center;">
+                ⚠️ IMAGEM PENDENTE: atualizar com o ponto G (baricentro) bem destacado
+            </p>
             <p style="text-align: center; font-weight: bold;">Figura 1.21 – As três medianas do triângulo ABC</p>
 
 
@@ -598,12 +603,19 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
+            <p>
+                Um resultado notável, que será explorado futuramente, é que as três medianas são
+                <strong>concorrentes</strong>: elas se encontram em um único ponto \\(G\\),
+                chamado <strong>baricentro</strong> (ou centróide) do triângulo, que divide
+                cada mediana na razão \\(2:1\\) a partir do vértice.
+            </p>
+
         </div>
     `
     },
 
    'existencia-bissetriz': {
-    title: '1.4.3 Existência da Bissetriz',
+    title: '1.4.3 Definição e Existência da Bissetriz',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -745,6 +757,52 @@ const PAGES_DATA = {
     `
 },
 
+'bissetriz-triangulo': {
+    title: '1.4.4 Bissetriz de um Triângulo',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Bissetriz de um Triângulo',
+    sectionTitle: '',
+    content: `
+        <div class="math-display">
+
+            <h3>1.4.4 Bissetriz de um Triângulo</h3>
+
+            <div class="theorem">
+                <p>
+                    Dado um triângulo \\(\\triangle ABC\\), a <strong>bissetriz interna</strong> relativa
+                    ao vértice \\(A\\) é o segmento que parte de \\(A\\), bissecta o ângulo interno
+                    \\(\\widehat{A}\\) e tem sua outra extremidade no ponto \\(D\\) de interseção com o
+                    lado oposto \\(\\overline{BC}\\).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.27 – Bissetriz interna \\(\\overline{AD}\\) do triângulo \\(ABC\\) relativa ao vértice \\(A\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_triangulo_1.png" alt="Bissetriz interna AD do triângulo ABC" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como um triângulo possui três vértices, ele possui três bissetrizes internas —
+                uma relativa a cada vértice. Um resultado notável, que será explorado futuramente,
+                é que essas três bissetrizes são <strong>concorrentes</strong>: elas se encontram
+                em um único ponto \\(I\\), chamado <strong>incentro</strong> do triângulo,
+                que é equidistante dos três lados.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.28 – As três bissetrizes internas do triângulo \\(ABC\\) concorrendo no incentro \\(I\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_bissetriz_triangulo_2.png" alt="As três bissetrizes do triângulo ABC e o incentro I" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+        </div>
+    `
+},
+
 'teorema-angulo-externo': {
     title: '1.5 Teorema do Ângulo Externo',
     description: '',
@@ -770,7 +828,7 @@ const PAGES_DATA = {
                 triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.27 – Triângulo ABC com ângulo externo ε</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.29 – Triângulo ABC com ângulo externo ε</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -791,7 +849,7 @@ const PAGES_DATA = {
                 semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.28 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.30 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -811,7 +869,7 @@ const PAGES_DATA = {
                 \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.29 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.31 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -832,7 +890,7 @@ const PAGES_DATA = {
                 \\(\\overline{AM} = \\overline{MP}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.30 – Ponto M médio de BC e ponto P sobre a semirreta AM</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.32 – Ponto M médio de BC e ponto P sobre a semirreta AM</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -856,7 +914,7 @@ const PAGES_DATA = {
                 \\(K\\) está fora do segmento \\(\\overline{PC}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.31 – Ponto K sobre a semirreta PC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.33 – Ponto K sobre a semirreta PC</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -874,7 +932,7 @@ const PAGES_DATA = {
                 Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.32 – Ângulos opostos pelo vértice KCX e MCP</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.34 – Ângulos opostos pelo vértice KCX e MCP</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
@@ -904,8 +962,95 @@ const PAGES_DATA = {
     `
 },
 
+    'congruencia-LAA': {
+    title: '1.6 Congruência de Triângulos — Caso LAA(o)',
+    description: '',
+    videoId: 'SEU_VIDEO_ID',
+    videoDuration: '',
+    videoDate: '',
+    videoDescription: 'Caso de Congruência LAA(o)',
+    sectionTitle: '',
+    content: `
+        <div class="math-display">
+
+            <h3>1.6 Teorema de Congruência \\(\\text{LAA}_o\\)</h3>
+
+            <div class="theorem">
+                <p>
+                    Dados dois triângulos \\(\\triangle ABC\\) e \\(\\triangle DEF\\) tais que:
+                </p>
+                \\[
+                    \\left\\{\\begin{array}{l}
+                        \\overline{AB} = \\overline{DE} \\\\
+                        \\widehat{B} \\equiv \\widehat{E} \\\\
+                        \\widehat{C} \\equiv \\widehat{F}
+                    \\end{array}\\right.
+                \\]
+                <p>
+                    Então \\(\\triangle ABC \\equiv \\triangle DEF\\).
+                </p>
+            </div>
+
+            <p>
+                A hipótese estabelece a igualdade de um lado (\\(\\overline{AB} = \\overline{DE}\\)),
+                do ângulo adjacente a esse lado em cada triângulo (\\(\\widehat{B} \\equiv \\widehat{E}\\))
+                e do ângulo oposto a esse lado (\\(\\widehat{C} \\equiv \\widehat{F}\\)).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.35 – Triângulos \\(ABC\\) e \\(DEF\\) com hipótese do caso \\(\\text{LAA}_o\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_congruencia_LAA_1.png" alt="Triângulos ABC e DEF com as marcações da hipótese LAA(o)" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <h4>Demonstração:</h4>
+
+            <p>
+                Consideremos as três possibilidades para \\(\\overline{BC}\\) em relação a \\(\\overline{EF}\\):
+            </p>
+
+            <p>
+                <strong>(1) \\(\\overline{BC} = \\overline{EF}\\):</strong>
+                Temos \\(\\overline{AB} = \\overline{DE}\\), \\(\\widehat{B} \\equiv \\widehat{E}\\) e
+                \\(\\overline{BC} = \\overline{EF}\\). Pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>,
+                \\(\\triangle ABC \\equiv \\triangle DEF\\). \\(\\checkmark\\)
+            </p>
+
+            <p>
+                <strong>(2) \\(\\overline{EF} > \\overline{BC}\\):</strong>
+                Tomamos um ponto \\(P\\) interno a \\(\\overline{EF}\\) tal que \\(\\overline{EP} = \\overline{BC}\\).
+                Pelo caso LAL (\\(\\overline{AB} = \\overline{DE}\\), \\(\\widehat{E} \\equiv \\widehat{B}\\),
+                \\(\\overline{EP} = \\overline{BC}\\)), temos \\(\\triangle ABC \\equiv \\triangle DEP\\),
+                e portanto \\(D\\widehat{P}E \\equiv \\widehat{C} \\equiv \\widehat{F}\\).
+                Mas \\(D\\widehat{P}E\\) é ângulo externo de \\(\\triangle DPF\\), logo pelo
+                <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>,
+                \\(D\\widehat{P}E > \\widehat{F}\\). Contradição.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>(3) \\(\\overline{BC} > \\overline{EF}\\):</strong>
+                Análogo ao caso (2), com ponto \\(P\\) interno a \\(\\overline{BC}\\), chegando à mesma contradição.
+            </p>
+
+            <p>
+                Portanto, necessariamente \\(\\overline{BC} = \\overline{EF}\\), e pelo caso (1),
+                \\(\\triangle ABC \\equiv \\triangle DEF\\).
+            </p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+},
+
     'maior-lado-maior-angulo': {
-    title: '1.6.1 Relação entre Lados e Ângulos Opostos',
+    title: '1.7.1 Relação entre Lados e Ângulos Opostos',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -915,7 +1060,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.6.1 Relação entre Lados e Ângulos Opostos</h3>
+            <h3>1.7.1 Relação entre Lados e Ângulos Opostos</h3>
 
             <div class="theorem">
                 <p><strong>Teorema.</strong>
@@ -930,7 +1075,7 @@ const PAGES_DATA = {
 
             <h4>Demonstração (\\(\\Rightarrow\\)): Se \\(\\overline{AB} > \\overline{AC}\\), então \\(\\widehat{C} > \\widehat{B}\\).</h4>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.33 – Triângulo ABC com AB > AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.37 – Triângulo ABC com AB > AC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
             </div>
@@ -941,7 +1086,7 @@ const PAGES_DATA = {
                 \\(\\overline{AC} = \\overline{AD}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.34 – Ponto D sobre AB com AD = AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.38 – Ponto D sobre AB com AD = AC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
             </div>
@@ -1004,7 +1149,7 @@ const PAGES_DATA = {
 },
 
     'desigualdade-triangular': {
-    title: '1.6.2 A Desigualdade Triangular',
+    title: '1.7.2 A Desigualdade Triangular',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -1014,7 +1159,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.6.2 A Desigualdade Triangular</h3>
+            <h3>1.7.2 A Desigualdade Triangular</h3>
 
             <div class="theorem">
                 <p>
@@ -1030,7 +1175,7 @@ const PAGES_DATA = {
 
             <h4>Demonstração:</h4>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.35 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.39 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
             </div>
@@ -1042,7 +1187,7 @@ const PAGES_DATA = {
                 Os pontos ficam na ordem \\(B\\text{-}A\\text{-}D\\) sobre a reta.
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.36 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.40 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
             </div>
@@ -1064,7 +1209,7 @@ const PAGES_DATA = {
                 B\\widehat{C}D > A\\widehat{C}D = A\\widehat{D}C = B\\widehat{D}C
             \\]
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.37 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.41 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
             </div>
@@ -1072,7 +1217,7 @@ const PAGES_DATA = {
 
             <p>
                 Assim, no triângulo \\(\\triangle BCD\\), temos \\(B\\widehat{C}D > B\\widehat{D}C\\).
-                Pelo <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema 1.6.1</a>, o maior ângulo se opõe ao maior lado:
+                Pelo <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema 1.7.1</a>, o maior ângulo se opõe ao maior lado:
             </p>
             \\[
                 \\overline{BD} > \\overline{BC}
