@@ -678,6 +678,117 @@ O segundo bloco declarado fica na frente (z-order). O resultado é uma troca vis
 
 ---
 
+### 8.16 Padrão "Lápis Fantasma" — Prevenção
+
+O Conexty usa um "lápis fantasma" que deixa um traço verde fraco quando `drawText` é chamado com `opacity: 0`. Isso acontece sempre que a opacidade é calculada por uma fórmula que chega a zero (ex: `Math.max(0, s - 0.15)` quando `s = 0`).
+
+**Regra:** nunca chamar `drawText` (ou qualquer draw) quando a opacidade resultante seria 0.
+
+```javascript
+// ❌ ERRADO — opacity pode chegar a 0, causando lápis fantasma
+animation(p, (s) => {
+    drawText({ text: "...", opacity: Math.max(0, s - 0.15) * 6 })
+})
+
+// ✅ CORRETO — guarda com if para não chamar quando opacity=0
+animation(p, (s) => {
+    if (s > 0.02) {   // guarda de fade-in: só chama quando já tem opacidade visível
+        drawText({ text: "...", opacity: s })
+    }
+})
+
+// ✅ CORRETO — guarda de fade-out: para de chamar antes de chegar a 0
+animation(sumir, (s) => {
+    if (s < 0.98) {   // guarda de fade-out: para de chamar quando quase invisível
+        drawText({ text: "...", opacity: 1 - s })
+    }
+})
+```
+
+**Thresholds usados na prática:**
+- Fade-in (aparecer): `if (s > 0.02)` — garante que drawText só é chamado quando s já tem alguma opacidade
+- Fade-out (sumir): `if (s < 0.98)` — garante que drawText não é chamado quando quase invisível
+
+A mesma precaução vale para `drawSector`, `drawPolygon`, etc., mas nesses o lápis fantasma não ocorre — só em `drawText`.
+
+---
+
+### 8.17 Param "Sumir" para Texto Controlado por Dois Params
+
+Quando um texto deve aparecer com base em um param (ex: `separar`) mas também precisar ser apagado por um segundo param independente (ex: `sumir_paralelo`):
+
+```javascript
+const separar       = param({ value: 0, min: 0, max: 1, ... })
+const sumir_paralelo = param({ value: 0, min: 0, max: 1, ... })
+
+animation(separar, sumir_paralelo, (s, st) => {
+    // Texto aparece gradualmente quando s > 0.15, some quando st aumenta
+    if (s > 0.15 && st < 0.98) {
+        const alpha = Math.min(1, (s - 0.15) * 5) * (1 - st)
+        drawText({ text: "...", opacity: alpha })
+    }
+})
+```
+
+**Lógica da fórmula:**
+- `Math.min(1, (s - 0.15) * 5)`: fade-in rápido depois que s passa de 0.15
+- `* (1 - st)`: multiplica pelo inverso do sumir — quando st=0 não apaga; quando st=1 apaga tudo
+- Guarda dupla `s > 0.15 && st < 0.98` previne lápis fantasma em ambos os extremos
+
+---
+
+### 8.18 Reta como Seta Dupla + Segmento
+
+Para desenhar uma reta (linha infinita com setas nos dois lados):
+
+```javascript
+// Seta para a esquerda (sentido: ponto interno → ponta esquerda)
+drawArrow({ points: [{ x: -3.5, y: yA }, { x: -4.5, y: yA }], color: cor_azul_eletrico, size: 0.2 })
+// Segmento central (visível na tela)
+drawSegment({ points: [{ x: -4, y: yA }, { x: 4, y: yA }], color: cor_azul_eletrico, width: 0.06 })
+// Seta para a direita
+drawArrow({ points: [{ x:  3.5, y: yA }, { x:  4.5, y: yA }], color: cor_azul_eletrico, size: 0.2 })
+// Rótulo da reta
+drawText({ text: "$a$", x: -4.3, y: yA + 0.38, fontSize: 0.55, color: cor_azul_eletrico })
+```
+
+**Detalhe:** as setas são declaradas com o ponto interno como primeiro ponto e a ponta como segundo — assim a ponta fica na extremidade. O segmento sobrepõe a base da seta para garantir linha contínua.
+
+---
+
+### 8.19 Reta Móvel com Animação (retas paralelas que coincidem/separam)
+
+Para animar uma reta que se move verticalmente de y=yA até y=yB:
+
+```javascript
+const yA = 0.8
+const yB_final = yA - 2.8   // posição final (s=1)
+
+const separar = param({ value: 0, min: 0, max: 1, step: 0.001,
+    buttons: [{ value: 1, time: 2.5 }, { value: 0, time: 2.5 }], label: 'Separar' })
+
+animation(separar, (s) => {
+    const yB = yA - 2.8 * s   // interpolação linear: s=0 → coincidem, s=1 → separadas
+
+    drawArrow({ points: [{ x: -3.5, y: yB }, { x: -4.5, y: yB }], ... })
+    drawSegment({ points: [{ x: -4, y: yB }, { x: 4, y: yB }], ... })
+    drawArrow({ points: [{ x: 3.5, y: yB }, { x: 4.5, y: yB }], ... })
+
+    // Texto "coincidem" some rapidamente quando s passa de 0
+    if (s < 0.2) {
+        drawText({ text: "...", opacity: 1 - s * 5 })
+    }
+    // Texto "paralelas" aparece depois e some via segundo param
+    if (s > 0.15 && st < 0.98) {
+        drawText({ text: "...", opacity: Math.min(1, (s-0.15)*5) * (1-st) })
+    }
+})
+```
+
+**Nota:** pontos que dependem da posição final (ex: `C = {x, y: yB_final}`) devem ser declarados **fora** da animation com o valor de `yB_final`, pois variáveis locais da animation não saem do seu escopo.
+
+---
+
 ### 8.15 Sistema de Inequações com Chave (LaTeX)
 
 ```javascript
@@ -688,6 +799,98 @@ drawText({
 ```
 
 `\left\{` abre a chave, `\begin{array}{l}` alinha à esquerda, `\\` quebra linha, `\right.` fecha sem símbolo. Testado e funciona no Conexty.
+
+---
+
+### 8.20 Rotação Manual em Torno de Ponto Fixo (Math.cos/sin)
+
+Use quando precisar girar um segmento/reta em torno de um ponto P fixo **dentro de um `animation`**, sem usar `rotation` + `rotationOrigin` nativos (que não compõem bem com `translation` simultânea).
+
+```javascript
+// Endpoints do segmento em repouso (angulo = 0): m1_base e m2_base
+// P = ponto de pivô fixo
+
+animation(p_concorrente, (s) => {
+    const angulo = -s * 0.6   // gira horariamente até ≈ −34°
+    const cosA = Math.cos(angulo)
+    const sinA = Math.sin(angulo)
+
+    // vetor de P até cada endpoint → rotaciona → soma P de volta
+    const vx1 = m1_base.x - P.x,  vy1 = m1_base.y - P.y
+    const vx2 = m2_base.x - P.x,  vy2 = m2_base.y - P.y
+
+    const m1 = { x: P.x + cosA*vx1 - sinA*vy1,  y: P.y + sinA*vx1 + cosA*vy1 }
+    const m2 = { x: P.x + cosA*vx2 - sinA*vy2,  y: P.y + sinA*vx2 + cosA*vy2 }
+
+    drawSegment({ points: [m1, m2], color: cor_azul_eletrico, width: 0.04,
+        lineDash: [0.12, 0.07], opacity: s })
+})
+```
+
+**Por que não usar `rotation` nativo aqui:** o Conexty aplica rotação ANTES de translação. Quando o segmento já está na posição final (via `translation`), adicionar `rotationOrigin: P` não funciona como esperado — o pivô se desloca junto. A rotação manual resolve isso completamente.
+
+**Fórmula resumida:** `novo = P + R(θ) · (original − P)` onde `R(θ)` é a matriz de rotação 2D.
+
+---
+
+### 8.21 Função Caixa de Texto com Posição e Escala
+
+Para criar blocos de texto em caixa (polígono de contorno + múltiplos `drawText`) que possam ser reposicionados e redimensionados com um único parâmetro:
+
+```javascript
+function textoBetaExterno(pos, escala = 1) {
+    const x = pos.x,  y = pos.y,  e = escala
+
+    // caixa — coordenadas são offsets do canto superior esquerdo (pos)
+    drawPolygon({
+        points: [
+            { x: x + 0      * e, y: y + 0      * e },
+            { x: x + 3.51   * e, y: y - 0.02   * e },
+            { x: x + 3.51   * e, y: y - 1.85   * e },
+            { x: x + 0.04   * e, y: y - 1.81   * e }
+        ],
+        color: "red", width: 0.05 * e
+    })
+
+    // linhas de texto — offsets em relação a pos, escalados
+    drawText({ text: "linha 1",  x: x + 1.83*e, y: y - 0.54*e, color: "red", fontSize: 0.5*e })
+    drawText({ text: "linha 2",  x: x + 1.79*e, y: y - 0.97*e, color: "red", fontSize: 0.5*e })
+    drawText({ text: "linha 3",  x: x + 1.79*e, y: y - 1.47*e, color: "red", fontSize: 0.5*e })
+}
+
+// uso — pos é o canto superior esquerdo da caixa:
+textoBetaExterno({ x: -4.34, y: 4.35 }, 0.8)   // 80% do tamanho original
+textoBetaExterno({ x: 0, y: 3 }, 1.2)           // 120% em outra posição
+```
+
+**Regras do padrão:**
+- `pos` = canto superior esquerdo da caixa (âncora)
+- Todos os offsets internos são relativos a `pos` e multiplicados por `escala`
+- `width` da caixa também escala (`0.05 * e`)
+- `fontSize` também escala (`0.5 * e`)
+- Espaçamento entre linhas: ≈ 0.43–0.5 unidades (ajustar conforme o conteúdo LaTeX)
+
+**Para calibrar:** descobrir coordenadas absolutas corretas primeiro (com `drawGrid`), depois converter para offsets subtraindo `pos`.
+
+---
+
+### 8.22 drawArrow com Cotovelo (Seta em L apontando para elemento)
+
+Para criar uma seta que dobra no caminho, útil para apontar de uma caixa de texto a um elemento na figura:
+
+```javascript
+// Seta do tipo cotovelo: ponto inicial → cotovelo → ponta final
+drawArrow({
+    points: [
+        { x: -2.3, y: 1.13 },   // saída (ex: ao lado da caixa de texto)
+        { x: -3.8, y: 1.79 },   // cotovelo (dobra horizontal/vertical)
+        { x: -3.82, y: 2.73 }   // ponta (aponta para o elemento)
+    ],
+    color: "red", opacity: 0.7
+})
+```
+
+**A ponta da seta fica sempre no ÚLTIMO ponto.** O cotovelo define a curvatura. Usar 3 pontos para setas que precisam contornar elementos na cena.
 
 ---
 
@@ -768,6 +971,8 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | Dois setores desenhados no mesmo lugar | Usar `if(ld > 0)` no param secundário |
 | `rotation` em drawText | É em graus (não radianos) |
 | Calcular ângulo após translação | Sempre calcular ANTES (rotação ocorre antes da translação) |
+| `rotation: {angle, x, y}` em drawArrow/drawSegment | Sintaxe inválida — usar `rotation: angulo` + `rotationOrigin: {x, y}` separados; ou rotação manual com Math.cos/sin (técnica 8.20) |
+| Simular lineDash com loop de drawSegment | Usar `lineDash: [dashLen, gapLen]` nativo do drawSegment |
 
 ---
 
@@ -782,5 +987,7 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `congruencia_laa_o.js` | 1.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
 | `maior_lado_maior_angulo.js` | 1.6.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
 | `desigualdade_triangular.js` | 1.6.2 | Transporte bissetor, mesmo param dois efeitos opostos, vértices animados via senoides, cópias que voam com comprimento dinâmico, animation(p1, p2), sistema com chave LaTeX |
+| `paralelas.js` | 1.8.1 | Reta móvel (coincidem→paralelas), lápis fantasma (guards if s>0.02 / s<0.98), dois params simultâneos (separar + sumir), reta como seta dupla, setores de tipo de ângulo, numeração 1–8 |
+| `existencia_paralela.js` | 1.8.2 | Rotação manual Math.cos/sin (técnica 8.20), lineDash nativo em drawSegment, dois params num mesmo animation (retaM + p_concorrente), função caixa de texto com pos+escala (técnica 8.21), drawArrow cotovelo 3 pontos (técnica 8.22), triângulo de absurdo com drawPolygon opacity:0.1, ponto de interseção calculado analiticamente |
 | `ex2_semelhanca_triangulos.js` | Exercício | drawCurve pontilhada, drawArrow em L, função congruencia() |
 | `ex3_circulos_inscritos.js` | Exercício | Geometria analítica explícita, 3 níveis de círculos, animation condicional aninhada |

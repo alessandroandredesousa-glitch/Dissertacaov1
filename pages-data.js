@@ -1243,6 +1243,185 @@ const PAGES_DATA = {
     `
 },
 
+    // ========== PARALELISMO ==========
+    'paralelas-transversal': {
+        title: '1.8.1 Retas Paralelas e Ângulos com Transversal',
+        description: '',
+        videoId: 'SEU_VIDEO_ID',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: 'Retas Paralelas e Ângulos com Transversal',
+        sectionTitle: '',
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.1 Retas Paralelas e Ângulos com Transversal</h3>
+
+            <div class="theorem">
+                <p>
+                    Duas retas coplanares \\(a\\) e \\(b\\) são ditas <strong>paralelas</strong>
+                    (notação: \\(a \\parallel b\\)) se não possuem nenhum ponto em comum.
+                    Caso contrário, são chamadas <strong>concorrentes</strong>.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.42 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Quando uma reta \\(t\\) corta duas retas \\(a\\) e \\(b\\) em pontos distintos,
+                dizemos que \\(t\\) é uma <strong>transversal</strong> de \\(a\\) e \\(b\\).
+                São formados 8 ângulos, que recebem nomes conforme sua posição:
+            </p>
+
+            <div class="theorem">
+                <p>Sendo \\(t\\) uma transversal às retas \\(a\\) e \\(b\\), os 8 ângulos formados classificam-se em:</p>
+                <ul style="margin-top: 10px;">
+                    <li>
+                        <strong>Ângulos alternos internos:</strong> como \\(\\widehat{\\mathit{3}}\\) e \\(\\widehat{\\mathit{5}}\\), estão entre as retas \\(a\\) e \\(b\\) em lados opostos da transversal.
+                    </li>
+                    <li>
+                        <strong>Ângulos alternos externos:</strong> como \\(\\widehat{\\mathit{1}}\\) e \\(\\widehat{\\mathit{7}}\\), estão fora das retas \\(a\\) e \\(b\\) em lados opostos da transversal.
+                    </li>
+                    <li>
+                        <strong>Ângulos correspondentes:</strong> como \\(\\widehat{\\mathit{1}}\\) e \\(\\widehat{\\mathit{5}}\\), ocupam a mesma posição relativa em cada reta.
+                    </li>
+                    <li>
+                        <strong>Ângulos colaterais internos:</strong> como \\(\\widehat{\\mathit{3}}\\) e \\(\\widehat{\\mathit{6}}\\), estão entre as retas \\(a\\) e \\(b\\) no mesmo lado da transversal.
+                    </li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.43 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+        </div>
+    `
+    },
+
+    'existencia-paralela': {
+        title: '1.8.2 Existência da Paralela',
+        description: '',
+        videoId: 'SEU_VIDEO_ID',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: 'Existência da Paralela',
+        sectionTitle: '',
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.2 Existência da Paralela</h3>
+
+            <div class="theorem">
+                <p>
+                    Por um ponto \\(P\\) não pertencente a uma reta \\(r\\),
+                    passa pelo menos uma reta paralela a \\(r\\).
+                </p>
+            </div>
+
+            <table style="margin: 18px 0 18px 0; border-spacing: 0 4px;">
+                <tr>
+                    <td style="padding-right: 60px; vertical-align: top;"><strong>Hipótese</strong></td>
+                    <td><strong>Tese</strong></td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 60px; vertical-align: top;">\\(P \\notin r\\)</td>
+                    <td>existe \\(m \\ni P\\) tal que \\(m \\parallel r\\)</td>
+                </tr>
+            </table>
+
+            <p><strong>Demonstração:</strong></p>
+
+            <p>
+                Tome um ponto \\(A \\in r\\) e trace a reta \\(t = PA\\), transversal a \\(r\\).
+                Seja \\(\\alpha\\) o ângulo formado por \\(t\\) com \\(r\\) no vértice \\(A\\).
+                Construímos, com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
+                um ângulo \\(\\beta\\) congruente a \\(\\alpha\\),
+                com \\(\\beta\\) e \\(\\alpha\\) em lados opostos de \\(t\\) — ângulos alternos internos.
+                Seja \\(m\\) a reta que contém esse ângulo.
+            </p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/img_existencia_paralela_1.png" alt="Existência da paralela — construção e absurdo" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Se \\(m\\) e \\(r\\) não fossem paralelas, teriam um ponto \\(B\\) em comum e
+                \\(m \\cap r = \\{B\\}\\).
+                Sendo \\(t \\cap r = \\{A\\}\\) e \\(t \\cap m = \\{P\\}\\), teríamos o triângulo \\(ABP\\).
+            </p>
+
+            <p>
+                Pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>
+                aplicado ao \\(\\triangle ABP\\), teríamos:
+            </p>
+
+            <p style="text-align: center;">
+                \\(\\alpha > \\beta \\quad \\text{ou} \\quad \\beta > \\alpha\\)
+            </p>
+
+            <p>
+                o que é absurdo, de acordo com a hipótese, pois \\(\\alpha \\equiv \\beta\\) por construção.
+                Logo, \\(m \\parallel r\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+    `
+    },
+
+    'construcao-paralela': {
+        title: '1.8.3 Construção da Paralela',
+        description: '',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        sectionTitle: '',
+        content: `<div class="math-display"><p>Em construção...</p></div>`
+    },
+
+    'postulado-euclides': {
+        title: '1.8.4 Postulado de Euclides',
+        description: '',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        sectionTitle: '',
+        content: `<div class="math-display"><p>Em construção...</p></div>`
+    },
+
+    'paralelas-angulos-congruentes': {
+        title: '1.8.5 Paralelas e Ângulos Congruentes',
+        description: '',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        sectionTitle: '',
+        content: `<div class="math-display"><p>Em construção...</p></div>`
+    },
+
+    'soma-angulos-triangulo': {
+        title: '1.8.6 Soma dos Ângulos do Triângulo',
+        description: '',
+        videoId: '',
+        videoDuration: '',
+        videoDate: '',
+        videoDescription: '',
+        sectionTitle: '',
+        content: `<div class="math-display"><p>Em construção...</p></div>`
+    },
+
     // ========== OUTROS ==========
     'angulos-triangulos': {
         title: 'Ângulos em Triângulos',
