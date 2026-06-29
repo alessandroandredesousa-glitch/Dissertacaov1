@@ -204,7 +204,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
 
 
             </div>
@@ -227,7 +227,7 @@ const PAGES_DATA = {
 
             <div style="text-align: center; margin: 20px 0;">
 
-                <img src="imagem/1.3/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
 
             </div>
 
@@ -244,7 +244,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_casa_ALA_3.png" alt="Demonstração — ponto X sobre A'C'" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_3.png" alt="Demonstração: ponto X sobre A'C'" style="max-width: 70%;">
 
 
             </div>
@@ -781,7 +781,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Como um triângulo possui três vértices, ele possui três bissetrizes internas —
+                Como um triângulo possui três vértices, ele possui três bissetrizes internas,
                 uma relativa a cada vértice. Um resultado notável, que será explorado futuramente,
                 é que essas três bissetrizes são <strong>concorrentes</strong>: elas se encontram
                 em um único ponto \\(I\\), chamado <strong>incentro</strong> do triângulo,
@@ -958,7 +958,7 @@ const PAGES_DATA = {
 },
 
     'congruencia-LAA': {
-    title: '1.6 Congruência de Triângulos — Caso LAA(o)',
+    title: '1.6 Congruência de Triângulos: Caso LAA(o)',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -1345,12 +1345,12 @@ const PAGES_DATA = {
                 Seja \\(\\alpha\\) o ângulo formado por \\(t\\) com \\(r\\) no vértice \\(A\\).
                 Construímos, com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
                 um ângulo \\(\\beta\\) congruente a \\(\\alpha\\),
-                com \\(\\beta\\) e \\(\\alpha\\) em lados opostos de \\(t\\) — ângulos alternos internos.
+                com \\(\\beta\\) e \\(\\alpha\\) em lados opostos de \\(t\\), formando ângulos alternos internos.
                 Seja \\(m\\) a reta que contém esse ângulo.
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_existencia_paralela_1.png" alt="Existência da paralela — construção e absurdo" style="max-width: 65%;">
+                <img src="imagem/1.8/img_existencia_paralela_1.png" alt="Existência da paralela: construção e absurdo" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
