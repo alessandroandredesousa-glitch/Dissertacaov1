@@ -21,7 +21,7 @@ const PAGES_DATA = {
 
             <div style="text-align: center; margin: 20px 0;">
 
-                <img src="./imagem/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
+                <img src="./imagem/1.1/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
 
             </div>
 
@@ -35,7 +35,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.2 – Lados do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
+                <img src="./imagem/1.1/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -45,7 +45,7 @@ const PAGES_DATA = {
             <ul>
             <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos internos e lados opostos do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
+                <img src="imagem/1.1/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
@@ -98,7 +98,7 @@ const PAGES_DATA = {
             <h3 style="text-align: center;">Resumindo .... </h3>
             <p style="text-align: center; font-weight: bold;">Figura 1.4 – Classificação dos triângulos quanto aos lados e ângulos internos</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
+                <img src="imagem/1.1/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
@@ -127,7 +127,7 @@ const PAGES_DATA = {
         <div class="math-display">
             <p style="text-align: center; font-weight: bold;">Figura 1.5 – Correspondência entre vértices de triângulos congruentes</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
+                <img src="imagem/1.2/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -164,7 +164,7 @@ const PAGES_DATA = {
 
         <p style="text-align: center; font-weight: bold;">Figura 1.6 – Postulado de congruência Lado-Ângulo-Lado (LAL)</p>
         <div style="text-align: center; margin: 20px 0;">
-            <img src="imagem/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
+            <img src="imagem/1.3/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
         </div>
         <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         <div class="math-display">
@@ -204,7 +204,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
 
 
             </div>
@@ -227,7 +227,7 @@ const PAGES_DATA = {
 
             <div style="text-align: center; margin: 20px 0;">
 
-                <img src="imagem/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C' — Caso ALA" style="max-width: 70%;">
 
             </div>
 
@@ -244,7 +244,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_casa_ALA_3.png" alt="Demonstração — ponto X sobre A'C'" style="max-width: 70%;">
+                <img src="imagem/1.3/img_casa_ALA_3.png" alt="Demonstração — ponto X sobre A'C'" style="max-width: 70%;">
 
 
             </div>
@@ -294,7 +294,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_caso_LLL_1.png" alt="Construção do ponto X" style="max-width: 70%;">
+                <img src="imagem/1.3/img_caso_LLL_1.png" alt="Construção do ponto X" style="max-width: 70%;">
 
 
             </div>
@@ -313,7 +313,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_caso_LLL_2.png" alt="Ponto H sobre DX" style="max-width: 70%;">
+                <img src="imagem/1.3/img_caso_LLL_2.png" alt="Ponto H sobre DX" style="max-width: 70%;">
 
 
             </div>
@@ -344,7 +344,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
+                <img src="imagem/1.3/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
 
 
             </div>
@@ -363,7 +363,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
+                <img src="imagem/1.3/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
 
 
             </div>
@@ -392,7 +392,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
+                <img src="imagem/1.3/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
 
 
             </div>
@@ -461,7 +461,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
+                <img src="imagem/1.4/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
 
 
             </div>
@@ -479,7 +479,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/1.4/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
 
             </div>
@@ -496,7 +496,7 @@ const PAGES_DATA = {
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/1.4/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -509,7 +509,7 @@ const PAGES_DATA = {
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/1.4/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -522,7 +522,7 @@ const PAGES_DATA = {
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/1.4/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -540,7 +540,6 @@ const PAGES_DATA = {
     `
     },
 
-    // ! TODO: img_mediana_2.png — atualizar com o ponto G (baricentro) bem destacado
     'mediana-triangulo': {
         title: '1.4.2 Mediana de um Triângulo',
         description: '',
@@ -567,7 +566,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
+                <img src="imagem/1.4/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
 
 
             </div>
@@ -585,17 +584,13 @@ const PAGES_DATA = {
                 <li>Mediana relativa ao lado \\(\\overline{BC}\\): segmento \\(\\overline{AM_a}\\), onde \\(M_a\\) é o ponto médio de \\(\\overline{BC}\\).</li>
             </ul>
 
-            <!-- TODO: atualizar img_mediana_2.png — incluir o ponto G (baricentro) bem destacado sobre as três medianas -->
-            <p style="background-color: #ff4444; color: white; font-weight: bold; padding: 8px 12px; border-radius: 4px; text-align: center;">
-                ⚠️ IMAGEM PENDENTE: atualizar com o ponto G (baricentro) bem destacado
-            </p>
-            <p style="text-align: center; font-weight: bold;">Figura 1.21 – As três medianas do triângulo ABC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 1.21 – As três medianas do triângulo ABC concorrendo no baricentro G</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
+                <img src="imagem/1.4/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
 
 
             </div>
@@ -660,7 +655,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
+                <img src="imagem/1.4/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
 
 
             </div>
@@ -679,7 +674,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
+                <img src="imagem/1.4/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
 
 
             </div>
@@ -699,7 +694,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
+                <img src="imagem/1.4/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
 
 
             </div>
@@ -719,7 +714,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
+                <img src="imagem/1.4/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
 
 
             </div>
@@ -739,7 +734,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
+                <img src="imagem/1.4/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
 
 
             </div>
@@ -781,7 +776,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.27 – Bissetriz interna \\(\\overline{AD}\\) do triângulo \\(ABC\\) relativa ao vértice \\(A\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_triangulo_1.png" alt="Bissetriz interna AD do triângulo ABC" style="max-width: 60%;">
+                <img src="imagem/1.4/img_bissetriz_triangulo_1.png" alt="Bissetriz interna AD do triângulo ABC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -795,7 +790,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.28 – As três bissetrizes internas do triângulo \\(ABC\\) concorrendo no incentro \\(I\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_bissetriz_triangulo_2.png" alt="As três bissetrizes do triângulo ABC e o incentro I" style="max-width: 60%;">
+                <img src="imagem/1.4/img_bissetriz_triangulo_2.png" alt="As três bissetrizes do triângulo ABC e o incentro I" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -834,7 +829,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
 
 
             </div>
@@ -855,7 +850,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
 
 
             </div>
@@ -875,7 +870,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
 
 
             </div>
@@ -896,7 +891,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
 
 
             </div>
@@ -920,7 +915,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
 
 
             </div>
@@ -938,7 +933,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
+                <img src="imagem/1.5/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
 
 
             </div>
@@ -999,7 +994,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.35 – Triângulos \\(ABC\\) e \\(DEF\\) com hipótese do caso \\(\\text{LAA}_o\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_congruencia_LAA_1.png" alt="Triângulos ABC e DEF com as marcações da hipótese LAA(o)" style="max-width: 65%;">
+                <img src="imagem/1.6/img_congruencia_LAA_1.png" alt="Triângulos ABC e DEF com as marcações da hipótese LAA(o)" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1030,7 +1025,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
+                <img src="imagem/1.6/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1077,7 +1072,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.37 – Triângulo ABC com AB > AC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
+                <img src="imagem/1.6/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1088,7 +1083,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.38 – Ponto D sobre AB com AD = AC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
+                <img src="imagem/1.6/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1109,6 +1104,13 @@ const PAGES_DATA = {
                 Mas \\(A\\widehat{D}C\\) é ângulo externo ao triângulo \\(\\triangle BDC\\), portanto,
                 pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>:
             </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.39 – Triângulo BDC com ângulo externo \\(A\\widehat{D}C\\) em destaque</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.6/img_maior_lado_3.png" alt="Triângulo BDC destacado com ângulo externo ADC" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
             \\[
                 A\\widehat{D}C > D\\widehat{B}C = \\widehat{B}
             \\]
@@ -1177,7 +1179,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.39 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
+                <img src="imagem/1.7/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1189,7 +1191,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.40 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
+                <img src="imagem/1.7/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1211,7 +1213,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.41 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
+                <img src="imagem/1.7/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1267,7 +1269,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.42 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
+                <img src="imagem/1.8/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1297,7 +1299,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.43 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
+                <img src="imagem/1.8/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1348,7 +1350,7 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/img_existencia_paralela_1.png" alt="Existência da paralela — construção e absurdo" style="max-width: 65%;">
+                <img src="imagem/1.8/img_existencia_paralela_1.png" alt="Existência da paralela — construção e absurdo" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
