@@ -1383,45 +1383,363 @@ const PAGES_DATA = {
     'construcao-paralela': {
         title: '1.8.3 Construção da Paralela',
         description: '',
-        videoId: '',
+        videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
         videoDate: '',
-        videoDescription: '',
+        videoDescription: 'Construção da Paralela',
         sectionTitle: '',
-        content: `<div class="math-display"><p>Em construção...</p></div>`
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.3 Construção da Paralela</h3>
+
+            <p>
+                A existência da paralela, demonstrada na seção anterior, foi obtida por meio de uma
+                <strong>construção geométrica</strong> explícita. Apresentamos agora esse procedimento
+                de forma sistematizada.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Problema de Construção:</strong> Dados uma reta \\(r\\) e um ponto \\(P \\notin r\\),
+                    construir uma reta \\(m\\) passando por \\(P\\) tal que \\(m \\parallel r\\).
+                </p>
+            </div>
+
+            <p><strong>Construção:</strong></p>
+
+            <ol>
+                <li>Escolha um ponto qualquer \\(A \\in r\\) e trace a transversal \\(t = \\overleftrightarrow{PA}\\) (a reta que passa por \\(P\\) e \\(A\\)).</li>
+                <li>Seja \\(\\alpha\\) o ângulo formado por \\(t\\) e \\(r\\) no vértice \\(A\\), do lado interior entre as retas.</li>
+            </ol>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_construcao_paralela_1.png" alt="Transversal t por P e A, ângulo α em A" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.45 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
+
+            <ol start="3">
+                <li>Em \\(P\\), construa um ângulo \\(\\beta \\equiv \\alpha\\) com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
+                    de modo que \\(\\beta\\) e \\(\\alpha\\) fiquem em lados <strong>opostos</strong> de \\(t\\), formando ângulos alternos internos.</li>
+                <li>Seja \\(m\\) a reta determinada pelo outro lado do ângulo \\(\\beta\\) em \\(P\\).</li>
+            </ol>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_construcao_paralela_2.png" alt="Ângulo β reproduzido em P e reta m paralela a r" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.46 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
+
+            <p><strong>Justificativa:</strong></p>
+
+            <p>
+                Por construção, \\(\\alpha \\equiv \\beta\\) são ângulos alternos internos formados pela transversal
+                \\(t\\) com as retas \\(r\\) e \\(m\\). Pela demonstração da
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>,
+                isso implica \\(m \\parallel r\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> A construção é válida qualquer que seja o ponto \\(A \\in r\\) escolhido,
+                    pois o resultado não depende dessa escolha. Em particular, o procedimento acima é exatamente
+                    o que foi utilizado implicitamente na demonstração de existência da seção anterior.
+                </p>
+            </div>
+
+        </div>
+        `
     },
 
     'postulado-euclides': {
         title: '1.8.4 Postulado de Euclides',
         description: '',
-        videoId: '',
+        videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
         videoDate: '',
-        videoDescription: '',
+        videoDescription: 'Postulado de Euclides',
         sectionTitle: '',
-        content: `<div class="math-display"><p>Em construção...</p></div>`
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.4 Postulado de Euclides</h3>
+
+            <p>
+                Na <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>
+                demonstramos a <strong>existência</strong> de uma paralela a uma reta \\(r\\)
+                passando por um ponto \\(P \\notin r\\). Resta saber se essa paralela é <strong>única</strong>.
+                Essa unicidade não é demonstrável a partir dos demais postulados da geometria euclidiana;
+                ela precisa ser aceita como um novo postulado.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Postulado de Euclides:</strong> Por um ponto \\(P\\) fora de uma reta \\(r\\),
+                    passa <em>uma única</em> reta paralela a \\(r\\).
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_postulado_euclides_1.png" alt="Única paralela por P a r" style="max-width: 60%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.47 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação histórica:</strong> Este postulado é conhecido como o
+                    <strong>5º Postulado de Euclides</strong>. Por séculos, matemáticos tentaram
+                    deduzi-lo dos outros quatro postulados de Euclides, sem sucesso. No século XIX,
+                    Gauss, Bolyai e Lobachevski mostraram que, ao substituí-lo por sua negação,
+                    obtêm-se geometrias igualmente consistentes, denominadas
+                    <strong>geometrias não euclidianas</strong>. Na geometria que estudamos
+                    (geometria euclidiana plana), ele é aceito como axioma.
+                </p>
+            </div>
+
+            <p>
+                Combinando o resultado de existência (
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>)
+                com o Postulado de Euclides, obtemos o seguinte teorema:
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema:</strong> Por um ponto \\(P\\) fora de uma reta \\(r\\),
+                    existe uma e somente uma reta paralela a \\(r\\).
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                A existência foi demonstrada na
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>.
+                A unicidade é garantida pelo Postulado de Euclides.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+        </div>
+        `
     },
 
     'paralelas-angulos-congruentes': {
         title: '1.8.5 Paralelas e Ângulos Congruentes',
         description: '',
-        videoId: '',
+        videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
         videoDate: '',
-        videoDescription: '',
+        videoDescription: 'Paralelas e Ângulos Congruentes',
         sectionTitle: '',
-        content: `<div class="math-display"><p>Em construção...</p></div>`
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.5 Paralelas e Ângulos Congruentes</h3>
+
+            <p>
+                Nas seções anteriores estabelecemos a
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">existência</a>
+                e a
+                <a href="#" onclick="loadPage('postulado-euclides')" style="color: inherit; text-decoration: underline; cursor: pointer;">unicidade</a>
+                da paralela. Demonstramos agora uma propriedade fundamental sobre os ângulos formados
+                quando duas retas paralelas são cortadas por uma transversal.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema:</strong> Se duas retas paralelas são cortadas por uma transversal,
+                    os ângulos alternos internos são congruentes.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_paralelas_angulos_1.png" alt="Paralelas cortadas por transversal com ângulos alternos internos" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.48 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Sejam \\(m\\) e \\(s\\) retas com \\(s \\parallel m\\), cortadas pela transversal \\(t\\)
+                nos pontos \\(A \\in m\\) e \\(P \\in s\\). Sejam \\(\\alpha\\) e \\(\\beta\\) os ângulos
+                alternos internos formados em \\(A\\) e em \\(P\\), respectivamente.
+            </p>
+
+            <p>
+                Suponha, por absurdo, que \\(\\beta \\not\\equiv \\alpha\\). Então existe uma reta \\(s'\\),
+                distinta de \\(s\\), passando por \\(P\\), tal que o ângulo alterno interno \\(\\beta'\\)
+                formado por \\(s'\\) e \\(t\\) satisfaz \\(\\beta' \\equiv \\alpha\\). Pela
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>,
+                isso implica \\(s' \\parallel m\\).
+            </p>
+
+            <p>
+                Assim, por \\(P\\) passariam duas retas distintas, \\(s\\) e \\(s'\\), ambas paralelas a \\(m\\),
+                o que contradiz o
+                <a href="#" onclick="loadPage('postulado-euclides')" style="color: inherit; text-decoration: underline; cursor: pointer;">Postulado de Euclides (seção 1.8.4)</a>.
+                Portanto, \\(\\beta \\equiv \\alpha\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário 1:</strong> Se duas retas paralelas são cortadas por uma transversal,
+                    os ângulos correspondentes são congruentes.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_paralelas_angulos_2.png" alt="Ângulos correspondentes congruentes" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.49 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Pelo Teorema acima, os ângulos alternos internos em \\(A\\) e \\(P\\) são congruentes:
+                \\(\\beta \\equiv \\alpha\\). O ângulo correspondente a \\(\\alpha\\) em \\(P\\) é o oposto
+                pelo vértice de \\(\\beta\\); como ângulos opostos pelo vértice são congruentes,
+                segue que o ângulo correspondente é congruente a \\(\\alpha\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário 2:</strong> Se duas retas paralelas são cortadas por uma transversal,
+                    os ângulos colaterais internos são suplementares.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_paralelas_angulos_3.png" alt="Ângulos colaterais internos suplementares" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.50 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Pelo Teorema acima, \\(\\beta \\equiv \\alpha\\). O ângulo colateral interno a \\(\\alpha\\)
+                em \\(P\\), que chamamos \\(\\gamma\\), é suplementar de \\(\\beta\\), pois ambos formam
+                um ângulo raso sobre a reta \\(s\\). Logo \\(\\alpha + \\gamma = \\beta + \\gamma = 180°\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Condição Necessária e Suficiente:</strong>
+                    Uma condição necessária e suficiente para que duas retas distintas sejam paralelas
+                    é formarem com uma transversal ângulos alternos internos congruentes (ou,
+                    equivalentemente, ângulos correspondentes congruentes, ou ângulos colaterais
+                    internos suplementares). Em símbolos:
+                    \\[\\alpha \\equiv \\beta \\iff s \\parallel m\\]
+                </p>
+            </div>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> A implicação \\(\\alpha \\equiv \\beta \\Rightarrow s \\parallel m\\)
+                    foi demonstrada na
+                    <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>.
+                    A implicação recíproca \\(s \\parallel m \\Rightarrow \\alpha \\equiv \\beta\\)
+                    é exatamente o Teorema demonstrado nesta seção. Juntas, as duas implicações
+                    estabelecem a equivalência completa.
+                </p>
+            </div>
+
+        </div>
+        `
     },
 
     'soma-angulos-triangulo': {
         title: '1.8.6 Soma dos Ângulos do Triângulo',
         description: '',
-        videoId: '',
+        videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
         videoDate: '',
-        videoDescription: '',
+        videoDescription: 'Soma dos Ângulos do Triângulo',
         sectionTitle: '',
-        content: `<div class="math-display"><p>Em construção...</p></div>`
+        content: `
+        <div class="math-display">
+
+            <h3>1.8.6 Soma dos Ângulos do Triângulo</h3>
+
+            <p>
+                Com o resultado da
+                <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção anterior</a>
+                em mãos, demonstramos primeiro uma propriedade do ângulo externo e dela deduzimos
+                a soma dos ângulos internos.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (Ângulo Externo):</strong> Em todo triângulo, qualquer ângulo externo
+                    é igual à soma dos dois ângulos internos não adjacentes a ele.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.51. Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABC\\) um triângulo com ângulos internos \\(\\alpha\\) em \\(A\\), \\(\\beta\\) em \\(B\\)
+                e \\(\\gamma\\) em \\(C\\), e seja \\(e\\) o ângulo externo adjacente a \\(\\gamma\\).
+                Trace por \\(C\\) uma reta \\(r\\) paralela ao lado \\(AB\\).
+            </p>
+
+            <p>
+                Como \\(r \\parallel AB\\), pela
+                <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.5</a>:
+            </p>
+
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(CA\\) é transversal: o ângulo alterno interno em \\(C\\) é congruente a \\(\\alpha\\).</li>
+                <li>\\(CB\\) é transversal: o ângulo correspondente em \\(C\\) é congruente a \\(\\beta\\).</li>
+            </ul>
+
+            <p>
+                Esses dois ângulos formam juntos o ângulo externo \\(e\\). Portanto:
+                \\[e = \\alpha + \\beta\\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> Este resultado coincide com o
+                    <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 1.5)</a>,
+                    demonstrado anteriormente sem uso de paralelismo. Aqui o obtemos por um caminho diferente.
+                </p>
+            </div>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário (Soma dos Ângulos Internos):</strong> A soma dos ângulos internos
+                    de qualquer triângulo é igual a \\(180°\\).
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Sendo \\(e\\) e \\(\\gamma\\) suplementares, \\(e + \\gamma = 180°\\).
+                Pelo Teorema acima, \\(e = \\alpha + \\beta\\). Substituindo:
+                \\[\\alpha + \\beta + \\gamma = 180°\\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário 2:</strong> Um triângulo pode ter no máximo um ângulo reto e no máximo
+                    um ângulo obtuso. Em particular, em todo triângulo retângulo os dois ângulos agudos
+                    são complementares.
+                </p>
+            </div>
+
+        </div>
+        `
     },
 
     // ========== OUTROS ==========

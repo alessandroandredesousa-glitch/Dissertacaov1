@@ -924,6 +924,234 @@ drawSector({ points: [D, C, A], radius: 0.6, fill: true, fillColor: cor_rosa_cho
 
 ---
 
+### 8.23 Padrão `if/else` para Chegada sem Fantasma de Lápis
+
+Quando um elemento precisa aparecer na sua posição **final** de forma instantânea (sem a animação do lápis), use o `else` dentro de um `animation`. O que está no `else` aparece instantaneamente, sem transição progressiva — é exatamente esse comportamento que queremos ao "pousar" num destino.
+
+```javascript
+animation(p_mover, (s) => {
+    if (s < 0.99) {
+        // elemento viajando — desenhado normalmente enquanto se move
+        drawSector({ ..., rotation: s * Math.PI, translation: { ... } })
+    } else {
+        // chegou ao destino: aparece instantaneamente na posição final
+        // SEM fantasma de lápis, SEM re-animação do traço
+        drawSector({ points: [destino_P1, destino_vertex, destino_P2], radius: 0.55,
+            fill: true, fillColor: cor_dourado, opacity: 0.75 })
+    }
+})
+```
+
+**Por que funciona:** o Conexty só roda a animação do lápis uma vez por elemento, na primeira vez que ele é renderizado. Como o `else` só é alcançado quando `s >= 0.99`, o elemento "nasce" instantaneamente nesse instante, sem a sequência de traço.
+
+**Diferença com 8.16 (guard de opacidade):** 8.16 evita chamar `drawText` com `opacity: 0`. Esta técnica (8.23) é para mostrar o estado **final** de uma transformação de forma limpa, sem o lápis redesenhar do zero.
+
+**Regra prática:** use `s < 0.99` (não `s < 1`) para garantir que o `else` dispara com margem antes do param chegar exatamente a 1.
+
+---
+
+### 8.24 Transporte de Ângulo Alterno Interno (rotação π + translação)
+
+Para transportar visualmente um setor do vértice A até o vértice P, onde o ângulo de chegada é o **ângulo alterno interno** (roda exatamente 180°):
+
+```javascript
+// Configuração: A e P são os dois vértices (A em r, P em m, com transversal t = AP)
+const A = {x: -2, y: -2}
+const P = {x:  0, y:  2}
+
+// Setor original em A (ângulo α):
+// drawSector({ points: [P1_em_A, A, P2_em_A], radius: 0.55, ... })
+// onde P1_em_A é ponto na reta r e P2_em_A é ponto na direção de t acima de A
+
+animation(p_mover, (s) => {
+    if (s < 0.99) {
+        drawSector({
+            points: [P1_em_A, A, P2_em_A],   // geometria original do setor em A
+            radius: 0.55,
+            fill: true,
+            fillColor: cor_dourado,
+            opacity: 0.85,
+            rotation: s * Math.PI,            // roda 180° ao longo do percurso
+            rotationOrigin: A,                // pivô fixo em A
+            translation: {                    // translada de A para P
+                x: s * (P.x - A.x),
+                y: s * (P.y - A.y)
+            }
+        })
+    } else {
+        // β em P: aparece instantaneamente (técnica 8.23)
+        drawSector({ points: [P1_em_P, P, P2_em_P], radius: 0.55,
+            fill: true, fillColor: cor_dourado, opacity: 0.75 })
+    }
+})
+```
+
+**Por que funciona matematicamente:** os ângulos alternos internos diferem por exatamente π de rotação. A combinação `rotation: s*π` + `rotationOrigin: A` + `translation: s*(P−A)` garante:
+- Em s=0: setor em A na orientação de α ✓
+- Em s=1: setor em P na orientação de β (alterno interno de α) ✓
+- Em s intermediário: setor viaja ao longo de t, girando suavemente
+
+**Verificação no `else`:** os pontos do setor em P são a transformação geométrica exata dos pontos em A após rotação π e translação. Se o setor original em A é `[P1, A, P2]`, o setor em P é `[rot_π(P1)+AP, P, rot_π(P2)+AP]`.
+
+**Cor sugerida para o transporte:** `cor_dourado` — indica "cópia sendo transportada", distinto do `cor_amarelo_neon` usado para marcar ângulos já estabelecidos.
+
+---
+
+### 8.25 Textos Escritos durante a Narração (fora de `animation`)
+
+Para criar o efeito de "escrever enquanto narra" no vídeo, coloque `drawText` (ou qualquer `draw`) **fora de `animation()`**, logo após um `pause()`. O lápis os desenhará naturalmente quando o gravador avançar.
+
+```javascript
+animation(p_mover, (s) => {
+    // ... animação do setor chegando em P ...
+    // NÃO colocar os rótulos aqui
+})
+
+pause()  // ← gravador para aqui; você narra "o ângulo chegou em P..."
+
+// Rótulos com lápis: aparecem enquanto você narra
+drawText({ text: "$\\beta$", x: -0.75, y: 1.32, fontSize: 0.5, color: cor_dourado })
+drawText({ text: "$\\beta \\equiv \\alpha$", x: -2.11, y: 0.08, fontSize: 0.5, color: cor_verde_neon })
+
+pause()  // ← avança para a próxima fase
+```
+
+**Contraste com rótulos dentro de `animation`:** rótulos dentro do `else` de uma animation aparecem **instantaneamente** (sem lápis). Rótulos fora, após `pause()`, aparecem com a **animação completa do lápis** — ideal para o fluxo de narração.
+
+**Regra de decisão:**
+- Elemento é parte da animação (posição, opacidade dependem do param) → dentro de `animation`
+- Elemento aparece depois que a animação termina, enquanto você fala → fora, após `pause()`
+
+---
+
+### 8.26 Restrições dentro do callback de `animation()`
+
+O Conexty **não aceita declarações `function` dentro do callback** de `animation()`. Mover sempre as funções auxiliares para o escopo global (fora de qualquer `animation`/`param`). Além disso, o método `padStart` pode não ser suportado — usar concatenação manual:
+
+```javascript
+// ❌ Erro — function dentro de animation():
+animation(p, (s) => {
+    function h(n) { return n.toString(16).padStart(2, '0') }
+    // ...
+})
+
+// ✅ Correto — função no escopo global:
+function h(n) {
+    n = Math.max(0, Math.min(255, Math.round(n)))
+    const hex = n.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+}
+
+animation(p, (s) => {
+    // usa h() aqui normalmente
+})
+```
+
+---
+
+### 8.27 `Infinity` não é suportado — usar `1e9`
+
+O Conexty não reconhece a palavra-chave `Infinity` do JavaScript. Substituir por `1e9` (um bilhão) em qualquer contexto onde se precise de um valor inicial "infinitamente grande", como em algoritmos de clipping:
+
+```javascript
+// ❌ Conexty não reconhece:
+let tMin = Infinity
+
+// ✅ Correto:
+let tMin = 1e9
+```
+
+---
+
+### 8.28 Título sem numeração de seção
+
+Para evitar ter de regravar vídeos se a ordem das seções mudar, os títulos das animações **não incluem o número** da seção — apenas o nome do teorema/construção:
+
+```javascript
+// ✅ Correto — sem numeração:
+drawText({
+    text: "\\begin{center}\\textbf{Paralelas e Ângulos Alternos Internos}\\end{center}",
+    x: 0.15, y: 6.15, color: cor_titulo
+})
+
+// ❌ Evitar — número embutido:
+drawText({
+    text: "\\begin{center}\\textbf{1.8.5 Paralelas e Ângulos Alternos Internos}\\end{center}",
+    ...
+})
+```
+
+---
+
+### 8.29 Fade de elemento com `opacity: (1 - b)`
+
+Para fazer um elemento **desaparecer** conforme o param aumenta de 0 a 1, usar `(1 - b)` na opacity. O param começa em 1 (visível) e os botões levam a 0 (some):
+
+```javascript
+const p_beta = param({
+    value: 1, min: 0, max: 1, step: 0.01,
+    label: "β",
+    buttons: [{ value: 0, time: 1 }, { value: 1, time: 1 }]
+})
+
+animation(p_beta, (b) => {
+    drawSector({ ..., opacity: 0.75 * (1 - b) })
+    drawText({ ..., opacity: 1 - b })
+})
+```
+
+O `time: 1` nos botões garante fade animado (não instantâneo).
+
+---
+
+### 8.30 Rotação suave de reta por interpolação
+
+Para animar uma reta girando suavemente até uma posição alvo (ex: tornar-se paralela a outra reta), interpolar `theta` multiplicando pelo complemento do param:
+
+```javascript
+const p_inclinacao = param({ value: 0.5, min: 0, max: 1, step: 0.001, label: "Inclinação s'" })
+const p_paralela   = param({ value: 0,   min: 0, max: 1, step: 1,     label: "Sobre s" })
+
+animation(p_inclinacao, p_paralela, (s, p) => {
+    // theta_base: inclinação atual pelo slider
+    const theta_base = ANGULO_INICIAL + (s - 0.5) * AMPLITUDE
+    // theta: interpola suavemente para 0 (horizontal) conforme p → 1
+    const theta = theta_base * (1 - p)
+
+    const ep3 = saida(P.x, P.y, -Math.cos(theta), -Math.sin(theta))
+    const ep4 = saida(P.x, P.y,  Math.cos(theta),  Math.sin(theta))
+    // ... desenhar reta
+})
+```
+
+Quando `p = 1`, `theta = 0` → reta horizontal. A transição é sempre suave porque `theta` interpola continuamente.
+
+---
+
+### 8.31 `saida()` com origem variável
+
+A função `saida()` deve aceitar a **origem** como parâmetro (não hardcoded), para ser reutilizável com qualquer ponto:
+
+```javascript
+function saida(ox, oy, dx, dy) {
+    const lim = 4.4
+    let tMin = 1e9
+    if (Math.abs(dx) > 1e-9) tMin = Math.min(tMin, ((dx > 0 ? lim : -lim) - ox) / dx)
+    if (Math.abs(dy) > 1e-9) tMin = Math.min(tMin, ((dy > 0 ? lim : -lim) - oy) / dy)
+    return { x: ox + tMin * dx, y: oy + tMin * dy }
+}
+
+// Reta por A na direção (ux, uy):
+const ep1 = saida(A.x, A.y, -ux, -uy)
+const ep2 = saida(A.x, A.y,  ux,  uy)
+
+// Reta por P em outra direção:
+const ep3 = saida(P.x, P.y, -Math.cos(theta), -Math.sin(theta))
+const ep4 = saida(P.x, P.y,  Math.cos(theta),  Math.sin(theta))
+```
+
+---
+
 ## 10. ESTRUTURA PADRÃO DE UMA ANIMAÇÃO
 
 ```javascript
@@ -991,3 +1219,4 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `existencia_paralela.js` | 1.8.2 | Rotação manual Math.cos/sin (técnica 8.20), lineDash nativo em drawSegment, dois params num mesmo animation (retaM + p_concorrente), função caixa de texto com pos+escala (técnica 8.21), drawArrow cotovelo 3 pontos (técnica 8.22), triângulo de absurdo com drawPolygon opacity:0.1, ponto de interseção calculado analiticamente |
 | `ex2_semelhanca_triangulos.js` | Exercício | drawCurve pontilhada, drawArrow em L, função congruencia() |
 | `ex3_circulos_inscritos.js` | Exercício | Geometria analítica explícita, 3 níveis de círculos, animation condicional aninhada |
+| `paralelas_angulos_congruentes.js` | 1.8.5 | saida() com origem variável (8.31), fade com opacity:(1-b) (8.29), rotação suave por interpolação theta*(1-p) (8.30), título sem numeração (8.28), animation(p1, p2) com dois params independentes |
