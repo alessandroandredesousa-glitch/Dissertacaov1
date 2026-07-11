@@ -426,10 +426,10 @@ const PAGES_DATA = {
     'ponto_medio': {
         title: '1.4.1 Ponto Médio',
         description: 'Cálculo do ponto médio',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '2:30 minutos',
-        videoDate: 'Agosto 2023',
-        videoDescription: 'Perímetro do quadrado.',
+        videoId: 'Og-MoQOlV2Y',
+        videoDuration: '3:09 minutos',
+        videoDate: '10 de julho de 2026',
+        videoDescription: 'Definição do ponto médio e demonstração de sua existência.',
         content: `
         <div class="theorem">
             <h3>Definição de Ponto Médio</h3>
