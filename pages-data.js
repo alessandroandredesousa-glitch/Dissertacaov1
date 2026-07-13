@@ -612,10 +612,10 @@ const PAGES_DATA = {
    'existencia-bissetriz': {
     title: '1.4.3 Definição e Existência da Bissetriz',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Existência da Bissetriz',
+    videoId: 'LfA7spPwVis',
+    videoDuration: '2:31 minutos',
+    videoDate: '10 de julho de 2026',
+    videoDescription: 'Definição e demonstração da existência da bissetriz.',
     sectionTitle: '',
     content: `
         <div class="theorem">
