@@ -109,10 +109,10 @@ const PAGES_DATA = {
     'definicaodecongruencia': {
         title: '1.3.1 Definição de Congruência',
         description: '',
-        videoId: 'Xyblz3iS57Y',
-        videoDuration: '4:30 minutos',
-        videoDate: 'Outubro 2023',
-        videoDescription: 'Definição de Congruência',
+        videoId: 'c75NEECgB4s',
+        videoDuration: '1:17 minutos',
+        videoDate: '10 de julho de 2026',
+        videoDescription: 'Definição de congruência de triângulos.',
         sectionTitle: '',
         content: `
         <div class="theorem">
