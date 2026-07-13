@@ -543,10 +543,10 @@ const PAGES_DATA = {
     'mediana-triangulo': {
         title: '1.4.2 Mediana de um Triângulo',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
-        videoDescription: 'Mediana de um Triângulo',
+        videoId: 'uyL567-x_VI',
+        videoDuration: '0:50 minutos',
+        videoDate: '10 de julho de 2026',
+        videoDescription: 'Definição de mediana e do baricentro do triângulo.',
         sectionTitle: '',
         content: `
         <div class="theorem">
