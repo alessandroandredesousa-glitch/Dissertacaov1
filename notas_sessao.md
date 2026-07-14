@@ -1,8 +1,33 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 16/06/2026
+## Última sessão: 13/07/2026
 
 ---
+
+## Sessão 13/07/2026
+
+### Vídeos ligados às seções (pages-data.js)
+- **1.3.1 Definição de Congruência** — corrigido: estava com o `videoId` da 1.1 por engano (`Xyblz3iS57Y`). Agora `c75NEECgB4s`, duração 1:17, data 10/07/2026, descrição corrigida.
+- **1.4.1 Ponto Médio** — `Og-MoQOlV2Y`, 3:09, tirados os placeholders ("Perímetro do quadrado" / "Agosto 2023").
+- **1.4.2 Mediana de um Triângulo** — `uyL567-x_VI`, 0:50 (Short).
+- **1.4.3 Definição e Existência da Bissetriz** — `LfA7spPwVis`, 2:31.
+- Método p/ pegar título dos vídeos: endpoint oembed do YouTube (`.../oembed?url=...&format=json`) — retorna título e autor (não a duração; essa o Alessandro informa).
+
+### Animação criada
+- **`animacoes_referencia/bissetriz_triangulo.js`** (seção 1.4.4) — estilo da mediana: revelação uma a uma das 3 bissetrizes, params "Sumir A/B/C" + "Mostrar todas" (traz só a geometria, não os textos), vértices móveis, marcas de bissecção (`measureMarks: 1`), bônus do incentro ao "Mostrar todas". Título sem numeração, cor `cor_titulo` (#FF4500). Matemática validada numericamente.
+
+### Guia atualizado (guia_completo_conexty.md) — mantido LOCAL, fora do repo
+- Novas técnicas: **8.32** pé da bissetriz (Teorema da Bissetriz Interna), **8.33** incentro por ponderação baricêntrica, **8.34** bissecção visível com 2 setores + measureMarks, **8.35** opacidade separada geometria vs texto. Catálogo (seção 12) atualizado com a linha da 1.4.4.
+
+### Manutenção
+- `index.html` normalizado (CRLF→LF); nenhuma mudança de conteúdo.
+
+### Próximos vídeos pendentes (placeholder `SEU_VIDEO_ID`)
+1.4.4 Bissetriz do Triângulo · 1.5 Ângulo Externo · 1.6 LAA(o) · 1.7.1 · 1.7.2 · 1.8.1–1.8.6.
+
+---
+
+## Sessão 16/06/2026
 
 ## O que foi feito
 
