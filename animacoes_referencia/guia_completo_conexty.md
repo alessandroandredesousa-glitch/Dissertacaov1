@@ -894,6 +894,91 @@ drawArrow({
 
 ---
 
+### 8.32 Pé da Bissetriz Interna (Teorema da Bissetriz)
+
+Para encontrar o ponto `D` onde a bissetriz do ângulo em `V` encontra o lado oposto `P1P2`. Pelo **Teorema da Bissetriz Interna**, `D` divide o lado oposto na razão dos lados adjacentes: `P1D / DP2 = |VP1| / |VP2|`.
+
+```javascript
+function dist(P, Q) {
+    return Math.sqrt((P.x - Q.x) ** 2 + (P.y - Q.y) ** 2)
+}
+
+// Pé da bissetriz do ângulo em V sobre o lado oposto P1P2
+function bissetrizPe(V, P1, P2) {
+    const d1 = dist(V, P1)
+    const d2 = dist(V, P2)
+    const t = d1 / (d1 + d2)   // P1D / P1P2 = |VP1| / (|VP1| + |VP2|)
+    return { x: P1.x + t * (P2.x - P1.x), y: P1.y + t * (P2.y - P1.y) }
+}
+
+// As três bissetrizes de um triângulo ABC:
+const DA = bissetrizPe(A, B, C)  // vértice A → lado BC
+const DB = bissetrizPe(B, A, C)  // vértice B → lado AC
+const DC = bissetrizPe(C, A, B)  // vértice C → lado AB
+```
+
+**Vértices móveis:** com triângulo animado, chamar `bissetrizPe` **dentro** do `animation()` a cada frame (usando `A2/B2/C2`), pois o pé se recalcula conforme os vértices se movem. Análogo à técnica 8.10 (ponto D com AD=AC), mas a razão vem dos dois lados adjacentes ao vértice.
+
+---
+
+### 8.33 Incentro por Ponderação Baricêntrica
+
+O incentro `I` (encontro das três bissetrizes) é a média dos vértices **ponderada pelos comprimentos dos lados opostos** a cada vértice:
+
+```javascript
+const a_len = dist(B, C)  // lado oposto a A
+const b_len = dist(A, C)  // lado oposto a B
+const c_len = dist(A, B)  // lado oposto a C
+const perim = a_len + b_len + c_len
+
+const I = {
+    x: (a_len * A.x + b_len * B.x + c_len * C.x) / perim,
+    y: (a_len * A.y + b_len * B.y + c_len * C.y) / perim
+}
+```
+
+**Verificação:** `I` fica exatamente sobre cada bissetriz `V–D` (produto vetorial `(D−V) × (I−V) ≈ 0`) e é equidistante dos três lados. Recalcular dentro do `animation()` se os vértices se movem.
+
+---
+
+### 8.34 Bissecção Visível com Dois Setores + measureMarks
+
+Para mostrar que uma bissetriz `VD` divide o ângulo em `V` em duas partes iguais, desenhar **dois setores** que compartilham o vértice `V` como centro (segundo ponto), cada um com o **mesmo** `measureMarks`:
+
+```javascript
+// Bissetriz do vértice A com pé DA sobre BC:
+drawSector({ points: [B, A, DA], radius: 0.55, measureMarks: 1, color: cor_laranja, opacity: op })
+drawSector({ points: [DA, A, C], radius: 0.55, measureMarks: 1, color: cor_laranja, opacity: op })
+```
+
+- Os dois meio-ângulos (`∠BAD` e `∠DAC`) recebem o mesmo número de marcas → convenção de "ângulos congruentes".
+- Manter `measureMarks` **igual** nos dois setores do mesmo vértice (o número em si é só estética; o importante é serem iguais).
+
+---
+
+### 8.35 Opacidade Separada: Geometria (com "mostrar todas") vs Texto (só "sumir")
+
+Quando cada elemento tem um param "sumir" individual **e** existe um param global "mostrar todas", às vezes queremos que "mostrar todas" traga de volta **só a geometria**, sem os textos explicativos. Basta usar fórmulas de opacidade diferentes:
+
+```javascript
+animation(sumir_A, sumir_B, sumir_C, mostrar_todas, mover, (a, b, c, todas, t) => {
+    const op_geoA = Math.max(1 - a, todas)   // geometria: reaparece com "todas"
+    // ...
+
+    // geometria (setores, segmento, pé) usa op_geoA:
+    drawSegment({ points: [A2, DA2], color: cor_laranja, opacity: op_geoA })
+    // texto usa (1 - a): NÃO responde a "todas", só ao "sumir A":
+    drawText({ text: "...", opacity: 1 - a })
+})
+```
+
+- `Math.max(1 - sumir, todas)` → geometria volta ao clicar "Mostrar todas".
+- `1 - sumir` → texto fica de fora do "Mostrar todas" (só o botão individual o controla).
+
+**Dica de fluxo (evitar sobreposição de textos):** se os textos ficam quase no mesmo `y`, revelar um por vez (geometria + texto juntos, 1 `pause()` por elemento) e usar "sumir" antes de revelar o próximo — assim nunca há dois textos visíveis ao mesmo tempo. Para exibir todos empilhados de vez, dar `y` distintos a cada texto.
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
@@ -1211,6 +1296,7 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `ponto_medio.js` | 1.4.1 | Cores legacy, if/else em animation, 3 congruências |
 | `medianas.js` | 1.4.2 | Múltiplos params, vértices móveis senoidais, Math.max para opacity |
 | `bissetriz.js` | 1.4.3 | Encolher por centroide, interseção de segmentos, 3 params em animation, sumir_sombra |
+| `bissetriz_triangulo.js` | 1.4.4 | Pé da bissetriz via Teorema da Bissetriz Interna (8.32), incentro por ponderação baricêntrica (8.33), bissecção visível com dois setores + measureMarks (8.34), opacidade geometria vs texto separada (8.35), pontos derivados recalculados a cada frame para acompanhar vértices móveis |
 | `angulo_externo.js` | 1.5 | Estrutura limpa, setores de ângulo externo |
 | `congruencia_laa_o.js` | 1.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
 | `maior_lado_maior_angulo.js` | 1.6.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
