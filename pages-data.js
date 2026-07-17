@@ -104,7 +104,8 @@ const PAGES_DATA = {
             <p>Como \\(\\overrightarrow{OB}\\) e \\(\\overrightarrow{OD}\\) são opostas, \\(B\\widehat{O}D\\) é um ângulo raso, dividido pela semirreta \\(\\overrightarrow{OC}\\). Logo:</p>
             \\[ m(B\\widehat{O}C) + m(C\\widehat{O}D) = 180^\\circ. \\]
 
-            <p>Comparando as duas igualdades, \\(m(A\\widehat{O}B) = m(C\\widehat{O}D)\\), ou seja, \\(A\\widehat{O}B \\equiv C\\widehat{O}D\\). \\(\\blacksquare\\)</p>
+            <p>Comparando as duas igualdades, \\(m(A\\widehat{O}B) = m(C\\widehat{O}D)\\), ou seja, \\(A\\widehat{O}B \\equiv C\\widehat{O}D\\).</p>
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
         </div>
         `
     },

@@ -320,12 +320,6 @@ body {
     margin-bottom: 10px;
 }
 
-.video-container:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
 /* --- Personalização da barra de rolagem --- */
 .demo-container::-webkit-scrollbar {
     width: 8px;
