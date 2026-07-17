@@ -1161,7 +1161,7 @@ drawText({
 
 // ❌ Evitar — número embutido:
 drawText({
-    text: "\\begin{center}\\textbf{1.8.5 Paralelas e Ângulos Alternos Internos}\\end{center}",
+    text: "\\begin{center}\\textbf{2.8.5 Paralelas e Ângulos Alternos Internos}\\end{center}",
     ...
 })
 ```
@@ -1293,16 +1293,16 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 
 | Arquivo | Seção | Técnicas principais |
 |---|---|---|
-| `ponto_medio.js` | 1.4.1 | Cores legacy, if/else em animation, 3 congruências |
-| `medianas.js` | 1.4.2 | Múltiplos params, vértices móveis senoidais, Math.max para opacity |
-| `bissetriz.js` | 1.4.3 | Encolher por centroide, interseção de segmentos, 3 params em animation, sumir_sombra |
-| `bissetriz_triangulo.js` | 1.4.4 | Pé da bissetriz via Teorema da Bissetriz Interna (8.32), incentro por ponderação baricêntrica (8.33), bissecção visível com dois setores + measureMarks (8.34), opacidade geometria vs texto separada (8.35), pontos derivados recalculados a cada frame para acompanhar vértices móveis |
-| `angulo_externo.js` | 1.5 | Estrutura limpa, setores de ângulo externo |
-| `congruencia_laa_o.js` | 1.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
-| `maior_lado_maior_angulo.js` | 1.6.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
-| `desigualdade_triangular.js` | 1.6.2 | Transporte bissetor, mesmo param dois efeitos opostos, vértices animados via senoides, cópias que voam com comprimento dinâmico, animation(p1, p2), sistema com chave LaTeX |
-| `paralelas.js` | 1.8.1 | Reta móvel (coincidem→paralelas), lápis fantasma (guards if s>0.02 / s<0.98), dois params simultâneos (separar + sumir), reta como seta dupla, setores de tipo de ângulo, numeração 1–8 |
-| `existencia_paralela.js` | 1.8.2 | Rotação manual Math.cos/sin (técnica 8.20), lineDash nativo em drawSegment, dois params num mesmo animation (retaM + p_concorrente), função caixa de texto com pos+escala (técnica 8.21), drawArrow cotovelo 3 pontos (técnica 8.22), triângulo de absurdo com drawPolygon opacity:0.1, ponto de interseção calculado analiticamente |
+| `ponto_medio.js` | 2.4.1 | Cores legacy, if/else em animation, 3 congruências |
+| `medianas.js` | 2.4.2 | Múltiplos params, vértices móveis senoidais, Math.max para opacity |
+| `bissetriz.js` | 2.4.3 | Encolher por centroide, interseção de segmentos, 3 params em animation, sumir_sombra |
+| `bissetriz_triangulo.js` | 2.4.4 | Pé da bissetriz via Teorema da Bissetriz Interna (8.32), incentro por ponderação baricêntrica (8.33), bissecção visível com dois setores + measureMarks (8.34), opacidade geometria vs texto separada (8.35), pontos derivados recalculados a cada frame para acompanhar vértices móveis |
+| `angulo_externo.js` | 2.5 | Estrutura limpa, setores de ângulo externo |
+| `congruencia_laa_o.js` | 2.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
+| `maior_lado_maior_angulo.js` | 2.7.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
+| `desigualdade_triangular.js` | 2.7.2 | Transporte bissetor, mesmo param dois efeitos opostos, vértices animados via senoides, cópias que voam com comprimento dinâmico, animation(p1, p2), sistema com chave LaTeX |
+| `paralelas.js` | 2.8.1 | Reta móvel (coincidem→paralelas), lápis fantasma (guards if s>0.02 / s<0.98), dois params simultâneos (separar + sumir), reta como seta dupla, setores de tipo de ângulo, numeração 1–8 |
+| `existencia_paralela.js` | 2.8.2 | Rotação manual Math.cos/sin (técnica 8.20), lineDash nativo em drawSegment, dois params num mesmo animation (retaM + p_concorrente), função caixa de texto com pos+escala (técnica 8.21), drawArrow cotovelo 3 pontos (técnica 8.22), triângulo de absurdo com drawPolygon opacity:0.1, ponto de interseção calculado analiticamente |
 | `ex2_semelhanca_triangulos.js` | Exercício | drawCurve pontilhada, drawArrow em L, função congruencia() |
 | `ex3_circulos_inscritos.js` | Exercício | Geometria analítica explícita, 3 níveis de círculos, animation condicional aninhada |
-| `paralelas_angulos_congruentes.js` | 1.8.5 | saida() com origem variável (8.31), fade com opacity:(1-b) (8.29), rotação suave por interpolação theta*(1-p) (8.30), título sem numeração (8.28), animation(p1, p2) com dois params independentes |
+| `paralelas_angulos_congruentes.js` | 2.8.5 | saida() com origem variável (8.31), fade com opacity:(1-b) (8.29), rotação suave por interpolação theta*(1-p) (8.30), título sem numeração (8.28), animation(p1, p2) com dois params independentes |
