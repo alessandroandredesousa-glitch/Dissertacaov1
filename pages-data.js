@@ -1,9 +1,148 @@
 // DADOS DAS PÁGINAS
 const PAGES_DATA = {
 
+    // ========== Capítulo 1 — Elementos Fundamentais ==========
+    'reta-semirreta-segmento': {
+        title: '1.1 Reta, Semirreta e Segmento',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Reta, semirreta e segmento de reta.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>1.1 Reta, Semirreta e Segmento</h3>
+            <p><strong>Ponto</strong>, <strong>reta</strong> e <strong>plano</strong> são <strong>noções primitivas</strong> da Geometria: conceitos aceitos sem definição, a partir dos quais todos os demais são construídos. Representamos pontos por letras maiúsculas (\\(A\\), \\(B\\)), retas por letras minúsculas (\\(r\\), \\(s\\)) e planos por letras gregas (\\(\\alpha\\), \\(\\beta\\)).</p>
+        </div>
+
+        <div class="math-display">
+            <p>Adota-se o postulado fundamental: <strong>por dois pontos distintos passa uma, e somente uma, reta</strong>.</p>
+
+            <p>Um ponto \\(O\\) de uma reta a divide em duas <strong>semirretas</strong> de origem \\(O\\). A semirreta de origem \\(O\\) que contém o ponto \\(A\\) é indicada por \\(\\overrightarrow{OA}\\). Duas semirretas de mesma origem, contidas numa mesma reta e de sentidos contrários, são chamadas <strong>semirretas opostas</strong>.</p>
+
+            <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\).</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.1 – Reta \\(r\\), semirreta \\(\\overrightarrow{OA}\\) e segmento \\(\\overline{AB}\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.1/img_reta_semirreta_segmento.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na seção 2.4.1.</p>
+        </div>
+        `
+    },
+
+    'angulo-elementos': {
+        title: '1.2 Ângulo: Definição e Elementos',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Definição de ângulo, elementos e classificação inicial.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>1.2 Ângulo: Definição e Elementos</h3>
+            <p>Chama-se <strong>ângulo</strong> à reunião de duas semirretas de mesma origem e não contidas numa mesma reta (não colineares). Sendo \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\) essas semirretas, o ângulo é indicado por \\(A\\widehat{O}B\\) (ou apenas \\(\\widehat{O}\\), quando não há ambiguidade).</p>
+        </div>
+
+        <div class="math-display">
+            <ul>
+                <li>O ponto \\(O\\) é o <strong>vértice</strong> do ângulo.</li>
+                <li>As semirretas \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\) são os <strong>lados</strong> do ângulo.</li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.2 – Ângulo \\(A\\widehat{O}B\\), com vértice \\(O\\) e lados \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.2/img_angulo_elementos.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>A cada ângulo associa-se uma <strong>medida</strong> (ou amplitude) \\(m(A\\widehat{O}B)\\), um número real. A unidade usual é o <strong>grau</strong> (\\(^\\circ\\)): o ângulo reto mede \\(90^\\circ\\), e a medida \\(\\alpha\\) de um ângulo qualquer satisfaz \\(0^\\circ \\le \\alpha \\le 180^\\circ\\).</p>
+
+            <p>Dois casos-limite completam a definição: o <strong>ângulo nulo</strong>, cujos lados coincidem (\\(0^\\circ\\)), e o <strong>ângulo raso</strong>, cujos lados são semirretas opostas (\\(180^\\circ\\)).</p>
+
+            <h4>Ângulos consecutivos e adjacentes</h4>
+            <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns.</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos adjacentes \\(A\\widehat{O}B\\) e \\(B\\widehat{O}C\\) (lado comum \\(\\overrightarrow{OB}\\))</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.2/img_angulos_consecutivos.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver seção 2.4.3).</p>
+        </div>
+        `
+    },
+
+    'opostos-vertice': {
+        title: '1.3 Ângulos Opostos pelo Vértice',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Ângulos opostos pelo vértice e sua congruência.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>1.3 Ângulos Opostos pelo Vértice</h3>
+            <p>Dois ângulos são <strong>opostos pelo vértice</strong> (o.p.v.) quando os lados de um são as semirretas opostas aos lados do outro. Duas retas concorrentes determinam <strong>dois pares</strong> de ângulos opostos pelo vértice.</p>
+        </div>
+
+        <div class="math-display">
+            <p style="text-align: center; font-weight: bold;">Figura 1.4 – Ângulos opostos pelo vértice \\(A\\widehat{O}B\\) e \\(C\\widehat{O}D\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.3/img_opostos_vertice.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <h3>Teorema</h3>
+                <p>Se dois ângulos são opostos pelo vértice, então eles são congruentes.</p>
+            </div>
+
+            <p><strong>Demonstração.</strong> Sejam \\(A\\widehat{O}B\\) e \\(C\\widehat{O}D\\) opostos pelo vértice, com \\(\\overrightarrow{OA}\\) oposta a \\(\\overrightarrow{OC}\\) e \\(\\overrightarrow{OB}\\) oposta a \\(\\overrightarrow{OD}\\). Considere o ângulo \\(B\\widehat{O}C\\), adjacente a ambos.</p>
+
+            <p>Como \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OC}\\) são opostas, \\(A\\widehat{O}C\\) é um ângulo raso, dividido pela semirreta \\(\\overrightarrow{OB}\\). Logo:</p>
+            \\[ m(A\\widehat{O}B) + m(B\\widehat{O}C) = 180^\\circ. \\]
+
+            <p>Como \\(\\overrightarrow{OB}\\) e \\(\\overrightarrow{OD}\\) são opostas, \\(B\\widehat{O}D\\) é um ângulo raso, dividido pela semirreta \\(\\overrightarrow{OC}\\). Logo:</p>
+            \\[ m(B\\widehat{O}C) + m(C\\widehat{O}D) = 180^\\circ. \\]
+
+            <p>Comparando as duas igualdades, \\(m(A\\widehat{O}B) = m(C\\widehat{O}D)\\), ou seja, \\(A\\widehat{O}B \\equiv C\\widehat{O}D\\). \\(\\blacksquare\\)</p>
+        </div>
+        `
+    },
+
+    'complementares-suplementares': {
+        title: '1.4 Ângulos Complementares, Suplementares e Ângulo Reto',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Ângulos complementares, suplementares e ângulo reto.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>1.4 Ângulos Complementares, Suplementares e Ângulo Reto</h3>
+            <p>Conforme a sua medida, um ângulo é <strong>reto</strong> quando mede \\(90^\\circ\\), <strong>agudo</strong> quando mede menos de \\(90^\\circ\\) e <strong>obtuso</strong> quando mede mais de \\(90^\\circ\\).</p>
+        </div>
+
+        <div class="math-display">
+            <div class="theorem">
+                <p>Dois ângulos são <strong>complementares</strong> quando a soma de suas medidas é \\(90^\\circ\\); cada um é o <strong>complemento</strong> do outro.</p>
+                <p>Dois ângulos são <strong>suplementares</strong> quando a soma de suas medidas é \\(180^\\circ\\); cada um é o <strong>suplemento</strong> do outro.</p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 1.5 – Ângulos complementares (soma \\(90^\\circ\\)) e suplementares (soma \\(180^\\circ\\))</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.4/img_complementares_suplementares.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>Por exemplo, o complemento de \\(25^\\circ\\) é \\(65^\\circ\\) (pois \\(25^\\circ + 65^\\circ = 90^\\circ\\)) e o suplemento de \\(72^\\circ\\) é \\(108^\\circ\\) (pois \\(72^\\circ + 108^\\circ = 180^\\circ\\)).</p>
+
+            <p>Um caso importante ocorre quando um lado de um ângulo é prolongado além do vértice: o ângulo \\(A\\widehat{O}B\\) e o ângulo \\(B\\widehat{O}C\\) formado pela semirreta oposta são <strong>suplementares adjacentes</strong> — sua soma é o ângulo raso, \\(180^\\circ\\). Essa relação é a base da demonstração de que ângulos opostos pelo vértice são congruentes (seção 1.3) e reaparece no Teorema do Ângulo Externo (seção 2.5).</p>
+        </div>
+        `
+    },
+
     // ========== Triângulos ==========
     'definicaotriangulos': {
-        title: '1.1 Definição de Triângulos',
+        title: '2.1 Definição de Triângulos',
         description: '',
         sectionTitle: '',
         videoId: 'Xyblz3iS57Y',
@@ -12,16 +151,16 @@ const PAGES_DATA = {
         videoDescription: 'Definição de triângulos',
         content: `
            <div class="theorem">
-            <h3>1.1 Definição de Triângulo</h3>
+            <h3>2.1 Definição de Triângulo</h3>
             <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\\triangle ABC\\)) é a reunião dos segmentos \\(\\overline{AB}\\), \\(\\overline{AC}\\) e \\(\\overline{BC}\\).</p>
         </div>
 
         <div class="math-display">
-            <p style="text-align: center; font-weight: bold;">Figura 1.1 – Triângulo ABC com vértices A, B e C</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.1 – Triângulo ABC com vértices A, B e C</p>
 
             <div style="text-align: center; margin: 20px 0;">
 
-                <img src="./imagem/1.1/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
+                <img src="./imagem/2.1/img_definicaodetriangulos.png" alt="Pontos A, B e C" style="max-width: 70%;">
 
             </div>
 
@@ -33,9 +172,9 @@ const PAGES_DATA = {
 
             
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.2 – Lados do triângulo ABC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.2 – Lados do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="./imagem/1.1/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
+                <img src="./imagem/2.1/img_definicaodetriangulos_1.png" alt="Lados do triângulo" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -43,9 +182,9 @@ const PAGES_DATA = {
             <li>Os ângulos \\(B\\widehat{A}C\\) (ou \\(\\widehat{A}\\)), \\(A\\widehat{B}C\\) (ou \\(\\widehat{B}\\)) e \\(B\\widehat{C}A\\) (ou \\(\\widehat{C}\\)) são chamados de <strong>ângulos internos</strong> do \\(\\triangle ABC\\).
             Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
             <ul>
-            <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos internos e lados opostos do triângulo ABC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.3 – Ângulos internos e lados opostos do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.1/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
+                <img src="imagem/2.1/img_definicaodetriangulos_2.png" alt="Ângulos e lados opostos" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
@@ -53,7 +192,7 @@ const PAGES_DATA = {
     },
 
     'classificacaotriangulos': {
-        title: '1.2 Classificação dos Triângulos',
+        title: '2.2 Classificação dos Triângulos',
         description: '',
         videoId: '5EGzuVGgBO0',
         videoDuration: '1:13 minutos',
@@ -62,7 +201,7 @@ const PAGES_DATA = {
         sectionTitle: '',
         content: `
         <div class="theorem">
-            <h3>1.2 Classificação</h3>
+            <h3>2.2 Classificação</h3>
             <p>Os triângulos podem ser classificados de duas formas: quanto aos seus lados ou quanto aos seus ângulos internos.</p>
         </div>
 
@@ -96,9 +235,9 @@ const PAGES_DATA = {
             </ul>
 
             <h3 style="text-align: center;">Resumindo .... </h3>
-            <p style="text-align: center; font-weight: bold;">Figura 1.4 – Classificação dos triângulos quanto aos lados e ângulos internos</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.4 – Classificação dos triângulos quanto aos lados e ângulos internos</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.1/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
+                <img src="imagem/2.1/img_classsificacao_tri_3.png" alt="Classificação quanto aos lados e ângulos" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         </div>
@@ -107,7 +246,7 @@ const PAGES_DATA = {
 
 
     'definicaodecongruencia': {
-        title: '1.3.1 Definição de Congruência',
+        title: '2.3.1 Definição de Congruência',
         description: '',
         videoId: 'c75NEECgB4s',
         videoDuration: '1:17 minutos',
@@ -116,7 +255,7 @@ const PAGES_DATA = {
         sectionTitle: '',
         content: `
         <div class="theorem">
-            <h3>1.3 Definição de Congruência</h3>
+            <h3>2.3 Definição de Congruência</h3>
             <p>Dois triângulos são ditos congruentes se, e somente se, existe uma correspondência entre seus vértices, tal que:</p>
             <ul style="list-style-type: none; padding-left: 15px;">
                 <li><strong>I)</strong> Os lados correspondentes são congruentes;</li>
@@ -125,9 +264,9 @@ const PAGES_DATA = {
         </div>
 
         <div class="math-display">
-            <p style="text-align: center; font-weight: bold;">Figura 1.5 – Correspondência entre vértices de triângulos congruentes</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.5 – Correspondência entre vértices de triângulos congruentes</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.2/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
+                <img src="imagem/2.2/img_congruenciadetriangulo_1.png" alt="Triângulos Congruentes" style="max-width: 70%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -149,7 +288,7 @@ const PAGES_DATA = {
 
     // ========== CASO DE CONGRUÊNCIAS (SUBMENU DE 2º NÍVEL) ==========
     'congruenciasdetriangulos-LAL': {
-        title: '1.3.2 Congruência Lado-Ângulo-Lado (LAL)',
+        title: '2.3.2 Congruência Lado-Ângulo-Lado (LAL)',
         description: '',
         videoId: 'glSWv63mKMM',
         videoDuration: '1:04',
@@ -162,9 +301,9 @@ const PAGES_DATA = {
             <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes.</p>
         </div>
 
-        <p style="text-align: center; font-weight: bold;">Figura 1.6 – Postulado de congruência Lado-Ângulo-Lado (LAL)</p>
+        <p style="text-align: center; font-weight: bold;">Figura 2.6 – Postulado de congruência Lado-Ângulo-Lado (LAL)</p>
         <div style="text-align: center; margin: 20px 0;">
-            <img src="imagem/1.3/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
+            <img src="imagem/2.3/img_casaLAL_1.png" alt="Caso LAL" style="max-width: 70%;">
         </div>
         <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
         <div class="math-display">
@@ -183,7 +322,7 @@ const PAGES_DATA = {
     },
 
     'congruenciasdetriangulos-ALA': {
-        title: '1.3.2 Congruência Ângulo-Lado-Ângulo (ALA)',
+        title: '2.3.2 Congruência Ângulo-Lado-Ângulo (ALA)',
         description: '',
         videoId: 'NZ4-fDWQwKw',
         videoDuration: '2:56 Minutos',
@@ -198,13 +337,13 @@ const PAGES_DATA = {
 
         <div class="math-display">
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.7 – Triângulos ABC e A'B'C' com hipótese ALA</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.7 – Triângulos ABC e A'B'C' com hipótese ALA</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
+                <img src="imagem/2.3/img_casa_ALA_1.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
 
 
             </div>
@@ -223,11 +362,11 @@ const PAGES_DATA = {
                 Tracemos uma reta \\(r\\) sobre o segmento \\(\\overline{A'C'}\\) e marquemos um ponto \\(X\\) sobre 
                 \\(r\\) de tal modo que \\(\\overline{AC} = \\overline{A'X}\\).
             </p>
-            <p style="text-align: center; font-weight: bold;">Figura 1.8 – Ponto X sobre a reta A'C' com A'X = AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.8 – Ponto X sobre a reta A'C' com A'X = AC</p>
 
             <div style="text-align: center; margin: 20px 0;">
 
-                <img src="imagem/1.3/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
+                <img src="imagem/2.3/img_casa_ALA_2.png" alt="Triângulos ABC e A'B'C': Caso ALA" style="max-width: 70%;">
 
             </div>
 
@@ -238,13 +377,13 @@ const PAGES_DATA = {
                 portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.9 – Coincidência X = C' e conclusão pelo caso LAL</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.9 – Coincidência X = C' e conclusão pelo caso LAL</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_casa_ALA_3.png" alt="Demonstração: ponto X sobre A'C'" style="max-width: 70%;">
+                <img src="imagem/2.3/img_casa_ALA_3.png" alt="Demonstração: ponto X sobre A'C'" style="max-width: 70%;">
 
 
             </div>
@@ -266,7 +405,7 @@ const PAGES_DATA = {
     },
 
     'congruenciasdetriangulos-LLL': {
-        title: '1.3.3 Congruência Lado-Lado-Lado (LLL)',
+        title: '2.3.3 Congruência Lado-Lado-Lado (LLL)',
         description: '',
         videoId: 'TQV90EEjjt8',
         videoDuration: '3:20 Minutos',
@@ -288,13 +427,13 @@ const PAGES_DATA = {
                 tomando um ponto \\(X\\) tal que \\(E\\widehat{D}X \\equiv C\\widehat{A}B\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.10 – Construção do ângulo EDX ≡ CAB</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.10 – Construção do ângulo EDX ≡ CAB</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_caso_LLL_1.png" alt="Construção do ponto X" style="max-width: 70%;">
+                <img src="imagem/2.3/img_caso_LLL_1.png" alt="Construção do ponto X" style="max-width: 70%;">
 
 
             </div>
@@ -307,13 +446,13 @@ const PAGES_DATA = {
                 \\(\\overline{DH} = \\overline{AC}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.11 – Ponto H sobre a reta DX com DH = AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.11 – Ponto H sobre a reta DX com DH = AC</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_caso_LLL_2.png" alt="Ponto H sobre DX" style="max-width: 70%;">
+                <img src="imagem/2.3/img_caso_LLL_2.png" alt="Ponto H sobre DX" style="max-width: 70%;">
 
 
             </div>
@@ -338,13 +477,13 @@ const PAGES_DATA = {
                 portanto \\(D\\widehat{H}F \\equiv D\\widehat{F}H\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.12 – Triângulo DFH isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.12 – Triângulo DFH isósceles</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
+                <img src="imagem/2.3/img_caso_LLL_3.png" alt="Triângulo DFH isósceles" style="max-width: 70%;">
 
 
             </div>
@@ -357,13 +496,13 @@ const PAGES_DATA = {
                 e \\(E\\widehat{F}H \\equiv F\\widehat{H}E\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.13 – Triângulo FEH isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.13 – Triângulo FEH isósceles</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
+                <img src="imagem/2.3/img_caso_LLL_4.png" alt="Triângulo FEH isósceles" style="max-width: 70%;">
 
 
             </div>
@@ -386,13 +525,13 @@ const PAGES_DATA = {
                 D\\widehat{F}E \\equiv D\\widehat{H}E
             \\]
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.14 – Conclusão △ABC ≡ △DEF pelo caso LAL</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.14 – Conclusão △ABC ≡ △DEF pelo caso LAL</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.3/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
+                <img src="imagem/2.3/img_caso_LLL_5.png" alt="Conclusão LAL" style="max-width: 70%;">
 
 
             </div>
@@ -424,7 +563,7 @@ const PAGES_DATA = {
 
     // ========== CONSTRUÇÕES GEOMÉTRICAS (SUBMENU DE 2º NÍVEL) ==========
     'ponto_medio': {
-        title: '1.4.1 Ponto Médio',
+        title: '2.4.1 Ponto Médio',
         description: 'Cálculo do ponto médio',
         videoId: 'Og-MoQOlV2Y',
         videoDuration: '3:09 minutos',
@@ -455,13 +594,13 @@ const PAGES_DATA = {
                 \\end{array}\\right.
             \\]
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.15 – Pontos C e D em semiplanos opostos em relação a AB</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.15 – Pontos C e D em semiplanos opostos em relação a AB</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
+                <img src="imagem/2.4/img_pontomedio_1.png" alt="Pontos C e D em semiplanos opostos" style="max-width: 70%;">
 
 
             </div>
@@ -473,13 +612,13 @@ const PAGES_DATA = {
                 O segmento \\(\\overline{CD}\\) intercepta o segmento \\(\\overline{AB}\\) em um ponto \\(M\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.16 – Segmento CD interceptando AB no ponto M</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.16 – Segmento CD interceptando AB no ponto M</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                <img src="imagem/2.4/img_pontomedio_2.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
 
             </div>
@@ -492,11 +631,11 @@ const PAGES_DATA = {
                 <li>
                     \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
                 </li>
-                <p style="text-align: center; font-weight: bold;">Figura 1.17 – Congruência △CAB ≡ △ABD pelo caso LAL</p>
+                <p style="text-align: center; font-weight: bold;">Figura 2.17 – Congruência △CAB ≡ △ABD pelo caso LAL</p>
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/1.4/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/2.4/img_pontomedio_3.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -505,11 +644,11 @@ const PAGES_DATA = {
                     \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL</a>), pois \\(\\overline{AD} = \\overline{CB}\\) 
                     pela congruência anterior
                 </li>
-                <p style="text-align: center; font-weight: bold;">Figura 1.18 – Congruência △ACD ≡ △CDB pelo caso LLL</p>
+                <p style="text-align: center; font-weight: bold;">Figura 2.18 – Congruência △ACD ≡ △CDB pelo caso LLL</p>
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/1.4/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/2.4/img_pontomedio_4.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -518,11 +657,11 @@ const PAGES_DATA = {
                     \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
                     \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
                 </li>
-                <p style="text-align: center; font-weight: bold;">Figura 1.19 – Congruência △AMD ≡ △BMC pelo caso ALA</p>
+                <p style="text-align: center; font-weight: bold;">Figura 2.19 – Congruência △AMD ≡ △BMC pelo caso ALA</p>
 
                 <div style="text-align: center; margin: 20px 0;">
 
-                    <img src="imagem/1.4/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
+                    <img src="imagem/2.4/img_pontomedio_5.png" alt="Segmento CD interceptando AB no ponto M" style="max-width: 70%;">
 
                 </div>
 
@@ -541,7 +680,7 @@ const PAGES_DATA = {
     },
 
     'mediana-triangulo': {
-        title: '1.4.2 Mediana de um Triângulo',
+        title: '2.4.2 Mediana de um Triângulo',
         description: '',
         videoId: 'uyL567-x_VI',
         videoDuration: '0:50 minutos',
@@ -560,13 +699,13 @@ const PAGES_DATA = {
 
         <div class="math-display">
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.20 – Mediana relativa ao lado AB do triângulo ABC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.20 – Mediana relativa ao lado AB do triângulo ABC</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
+                <img src="imagem/2.4/img_mediana_1.png" alt="Mediana do triângulo ABC" style="max-width: 50%;">
 
 
             </div>
@@ -584,13 +723,13 @@ const PAGES_DATA = {
                 <li>Mediana relativa ao lado \\(\\overline{BC}\\): segmento \\(\\overline{AM_a}\\), onde \\(M_a\\) é o ponto médio de \\(\\overline{BC}\\).</li>
             </ul>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.21 – As três medianas do triângulo ABC concorrendo no baricentro G</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.21 – As três medianas do triângulo ABC concorrendo no baricentro G</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
+                <img src="imagem/2.4/img_mediana_2.png" alt="As três medianas do triângulo" style="max-width: 50%;">
 
 
             </div>
@@ -610,7 +749,7 @@ const PAGES_DATA = {
     },
 
    'existencia-bissetriz': {
-    title: '1.4.3 Definição e Existência da Bissetriz',
+    title: '2.4.3 Definição e Existência da Bissetriz',
     description: '',
     videoId: 'LfA7spPwVis',
     videoDuration: '2:31 minutos',
@@ -649,13 +788,13 @@ const PAGES_DATA = {
                 com \\(\\overline{OA'} > \\overline{OA}\\) e \\(\\overline{OB'} > \\overline{OB}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.22 – Ângulo aOb com pontos A, A', B, B' nas semirretas</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.22 – Ângulo aOb com pontos A, A', B, B' nas semirretas</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
+                <img src="imagem/2.4/img_bissetriz_1.png" alt="Ângulo aOb com pontos A, A', B, B'" style="max-width: 50%;">
 
 
             </div>
@@ -668,13 +807,13 @@ const PAGES_DATA = {
                 \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Consideremos a semirreta \\(\\overrightarrow{OC}\\). Temos:
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.23 – Ponto C interseção de AB' e BA'</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.23 – Ponto C interseção de AB' e BA'</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
+                <img src="imagem/2.4/img_bissetriz_2.png" alt="Ponto C interseção de AB' e BA'" style="max-width: 50%;">
 
 
             </div>
@@ -688,13 +827,13 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.24 – Congruência △OBA' ≡ △OAB' pelo caso LAL</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.24 – Congruência △OBA' ≡ △OAB' pelo caso LAL</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
+                <img src="imagem/2.4/img_bissetriz_3.png" alt="Congruência LAL" style="max-width: 50%;">
 
 
             </div>
@@ -708,13 +847,13 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.25 – Congruência △ACA' ≡ △BCB' pelo caso ALA</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.25 – Congruência △ACA' ≡ △BCB' pelo caso ALA</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
+                <img src="imagem/2.4/img_bissetriz_4.png" alt="Congruência ALA" style="max-width: 50%;">
 
 
             </div>
@@ -728,13 +867,13 @@ const PAGES_DATA = {
                 </li>
             </ul>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.26 – Congruência △OAC ≡ △OBC e bissetriz OC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.26 – Congruência △OAC ≡ △OBC e bissetriz OC</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.4/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
+                <img src="imagem/2.4/img_bissetriz_5.png" alt="Congruência LAL final" style="max-width: 50%;">
 
 
             </div>
@@ -753,7 +892,7 @@ const PAGES_DATA = {
 },
 
 'bissetriz-triangulo': {
-    title: '1.4.4 Bissetriz de um Triângulo',
+    title: '2.4.4 Bissetriz de um Triângulo',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -763,7 +902,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.4.4 Bissetriz de um Triângulo</h3>
+            <h3>2.4.4 Bissetriz de um Triângulo</h3>
 
             <div class="theorem">
                 <p>
@@ -774,9 +913,9 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.27 – Bissetriz interna \\(\\overline{AD}\\) do triângulo \\(ABC\\) relativa ao vértice \\(A\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.27 – Bissetriz interna \\(\\overline{AD}\\) do triângulo \\(ABC\\) relativa ao vértice \\(A\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.4/img_bissetriz_triangulo_1.png" alt="Bissetriz interna AD do triângulo ABC" style="max-width: 60%;">
+                <img src="imagem/2.4/img_bissetriz_triangulo_1.png" alt="Bissetriz interna AD do triângulo ABC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -788,9 +927,9 @@ const PAGES_DATA = {
                 que é equidistante dos três lados.
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.28 – As três bissetrizes internas do triângulo \\(ABC\\) concorrendo no incentro \\(I\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.28 – As três bissetrizes internas do triângulo \\(ABC\\) concorrendo no incentro \\(I\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.4/img_bissetriz_triangulo_2.png" alt="As três bissetrizes do triângulo ABC e o incentro I" style="max-width: 60%;">
+                <img src="imagem/2.4/img_bissetriz_triangulo_2.png" alt="As três bissetrizes do triângulo ABC e o incentro I" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -799,7 +938,7 @@ const PAGES_DATA = {
 },
 
 'teorema-angulo-externo': {
-    title: '1.5 Teorema do Ângulo Externo',
+    title: '2.5 Teorema do Ângulo Externo',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -809,7 +948,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.5 Teorema do Ângulo Externo</h3>
+            <h3>2.5 Teorema do Ângulo Externo</h3>
 
             <div class="theorem">
                 <p>
@@ -823,13 +962,13 @@ const PAGES_DATA = {
                 triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.29 – Triângulo ABC com ângulo externo ε</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.29 – Triângulo ABC com ângulo externo ε</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_1.png" alt="Triângulo ABC com ângulo externo ε" style="max-width: 50%;">
 
 
             </div>
@@ -844,13 +983,13 @@ const PAGES_DATA = {
                 semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.30 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.30 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_2.png" alt="Ponto M médio de AC e ponto P sobre BM" style="max-width: 50%;">
 
 
             </div>
@@ -864,13 +1003,13 @@ const PAGES_DATA = {
                 \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.31 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.31 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_3.png" alt="Congruência LAL" style="max-width: 50%;">
 
 
             </div>
@@ -885,13 +1024,13 @@ const PAGES_DATA = {
                 \\(\\overline{AM} = \\overline{MP}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.32 – Ponto M médio de BC e ponto P sobre a semirreta AM</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.32 – Ponto M médio de BC e ponto P sobre a semirreta AM</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_4.png" alt="Ponto M médio de BC e ponto P sobre AM" style="max-width: 50%;">
 
 
             </div>
@@ -909,13 +1048,13 @@ const PAGES_DATA = {
                 \\(K\\) está fora do segmento \\(\\overline{PC}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.33 – Ponto K sobre a semirreta PC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.33 – Ponto K sobre a semirreta PC</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_5.png" alt="Ponto K sobre semirreta PC" style="max-width: 50%;">
 
 
             </div>
@@ -927,13 +1066,13 @@ const PAGES_DATA = {
                 Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.34 – Ângulos opostos pelo vértice KCX e MCP</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.34 – Ângulos opostos pelo vértice KCX e MCP</p>
 
 
             <div style="text-align: center; margin: 20px 0;">
 
 
-                <img src="imagem/1.5/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
+                <img src="imagem/2.5/img_angulo_externo_6.png" alt="Ângulos opostos pelo vértice" style="max-width: 50%;">
 
 
             </div>
@@ -958,7 +1097,7 @@ const PAGES_DATA = {
 },
 
     'congruencia-LAA': {
-    title: '1.6 Congruência de Triângulos: Caso LAA(o)',
+    title: '2.6 Congruência de Triângulos: Caso LAA(o)',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -968,7 +1107,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.6 Teorema de Congruência \\(\\text{LAA}_o\\)</h3>
+            <h3>2.6 Teorema de Congruência \\(\\text{LAA}_o\\)</h3>
 
             <div class="theorem">
                 <p>
@@ -992,9 +1131,9 @@ const PAGES_DATA = {
                 e do ângulo oposto a esse lado (\\(\\widehat{C} \\equiv \\widehat{F}\\)).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.35 – Triângulos \\(ABC\\) e \\(DEF\\) com hipótese do caso \\(\\text{LAA}_o\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.35 – Triângulos \\(ABC\\) e \\(DEF\\) com hipótese do caso \\(\\text{LAA}_o\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.6/img_congruencia_LAA_1.png" alt="Triângulos ABC e DEF com as marcações da hipótese LAA(o)" style="max-width: 65%;">
+                <img src="imagem/2.6/img_congruencia_LAA_1.png" alt="Triângulos ABC e DEF com as marcações da hipótese LAA(o)" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1023,9 +1162,9 @@ const PAGES_DATA = {
                 \\(D\\widehat{P}E > \\widehat{F}\\). Contradição.
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.6/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
+                <img src="imagem/2.6/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1045,7 +1184,7 @@ const PAGES_DATA = {
 },
 
     'maior-lado-maior-angulo': {
-    title: '1.7.1 Relação entre Lados e Ângulos Opostos',
+    title: '2.7.1 Relação entre Lados e Ângulos Opostos',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -1055,7 +1194,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.7.1 Relação entre Lados e Ângulos Opostos</h3>
+            <h3>2.7.1 Relação entre Lados e Ângulos Opostos</h3>
 
             <div class="theorem">
                 <p><strong>Teorema.</strong>
@@ -1070,9 +1209,9 @@ const PAGES_DATA = {
 
             <h4>Demonstração (\\(\\Rightarrow\\)): Se \\(\\overline{AB} > \\overline{AC}\\), então \\(\\widehat{C} > \\widehat{B}\\).</h4>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.37 – Triângulo ABC com AB > AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.37 – Triângulo ABC com AB > AC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.6/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
+                <img src="imagem/2.6/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1081,9 +1220,9 @@ const PAGES_DATA = {
                 \\(\\overline{AC} = \\overline{AD}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.38 – Ponto D sobre AB com AD = AC</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.38 – Ponto D sobre AB com AD = AC</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.6/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
+                <img src="imagem/2.6/img_maior_lado_2.png" alt="Ponto D sobre AB com AD = AC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1105,9 +1244,9 @@ const PAGES_DATA = {
                 pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>:
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.39 – Triângulo BDC com ângulo externo \\(A\\widehat{D}C\\) em destaque</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.39 – Triângulo BDC com ângulo externo \\(A\\widehat{D}C\\) em destaque</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.6/img_maior_lado_3.png" alt="Triângulo BDC destacado com ângulo externo ADC" style="max-width: 60%;">
+                <img src="imagem/2.6/img_maior_lado_3.png" alt="Triângulo BDC destacado com ângulo externo ADC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1151,7 +1290,7 @@ const PAGES_DATA = {
 },
 
     'desigualdade-triangular': {
-    title: '1.7.2 A Desigualdade Triangular',
+    title: '2.7.2 A Desigualdade Triangular',
     description: '',
     videoId: 'SEU_VIDEO_ID',
     videoDuration: '',
@@ -1161,7 +1300,7 @@ const PAGES_DATA = {
     content: `
         <div class="math-display">
 
-            <h3>1.7.2 A Desigualdade Triangular</h3>
+            <h3>2.7.2 A Desigualdade Triangular</h3>
 
             <div class="theorem">
                 <p>
@@ -1177,9 +1316,9 @@ const PAGES_DATA = {
 
             <h4>Demonstração:</h4>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.39 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.39 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.7/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
+                <img src="imagem/2.7/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1189,9 +1328,9 @@ const PAGES_DATA = {
                 Os pontos ficam na ordem \\(B\\text{-}A\\text{-}D\\) sobre a reta.
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.40 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.40 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.7/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
+                <img src="imagem/2.7/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1211,9 +1350,9 @@ const PAGES_DATA = {
                 B\\widehat{C}D > A\\widehat{C}D = A\\widehat{D}C = B\\widehat{D}C
             \\]
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.41 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.41 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.7/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
+                <img src="imagem/2.7/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1247,7 +1386,7 @@ const PAGES_DATA = {
 
     // ========== PARALELISMO ==========
     'paralelas-transversal': {
-        title: '1.8.1 Retas Paralelas e Ângulos com Transversal',
+        title: '2.8.1 Retas Paralelas e Ângulos com Transversal',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1257,7 +1396,7 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.1 Retas Paralelas e Ângulos com Transversal</h3>
+            <h3>2.8.1 Retas Paralelas e Ângulos com Transversal</h3>
 
             <div class="theorem">
                 <p>
@@ -1267,9 +1406,9 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.42 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.42 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
+                <img src="imagem/2.8/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1297,9 +1436,9 @@ const PAGES_DATA = {
                 </ul>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 1.43 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.43 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
+                <img src="imagem/2.8/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -1308,7 +1447,7 @@ const PAGES_DATA = {
     },
 
     'existencia-paralela': {
-        title: '1.8.2 Existência da Paralela',
+        title: '2.8.2 Existência da Paralela',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1318,7 +1457,7 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.2 Existência da Paralela</h3>
+            <h3>2.8.2 Existência da Paralela</h3>
 
             <div class="theorem">
                 <p>
@@ -1350,9 +1489,9 @@ const PAGES_DATA = {
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_existencia_paralela_1.png" alt="Existência da paralela: construção e absurdo" style="max-width: 65%;">
+                <img src="imagem/2.8/img_existencia_paralela_1.png" alt="Existência da paralela: construção e absurdo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 Se \\(m\\) e \\(r\\) não fossem paralelas, teriam um ponto \\(B\\) em comum e
@@ -1381,7 +1520,7 @@ const PAGES_DATA = {
     },
 
     'construcao-paralela': {
-        title: '1.8.3 Construção da Paralela',
+        title: '2.8.3 Construção da Paralela',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1391,7 +1530,7 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.3 Construção da Paralela</h3>
+            <h3>2.8.3 Construção da Paralela</h3>
 
             <p>
                 A existência da paralela, demonstrada na seção anterior, foi obtida por meio de uma
@@ -1414,9 +1553,9 @@ const PAGES_DATA = {
             </ol>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_construcao_paralela_1.png" alt="Transversal t por P e A, ângulo α em A" style="max-width: 65%;">
+                <img src="imagem/2.8/img_construcao_paralela_1.png" alt="Transversal t por P e A, ângulo α em A" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.45 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.45 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
 
             <ol start="3">
                 <li>Em \\(P\\), construa um ângulo \\(\\beta \\equiv \\alpha\\) com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
@@ -1425,16 +1564,16 @@ const PAGES_DATA = {
             </ol>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_construcao_paralela_2.png" alt="Ângulo β reproduzido em P e reta m paralela a r" style="max-width: 65%;">
+                <img src="imagem/2.8/img_construcao_paralela_2.png" alt="Ângulo β reproduzido em P e reta m paralela a r" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.46 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.46 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
 
             <p><strong>Justificativa:</strong></p>
 
             <p>
                 Por construção, \\(\\alpha \\equiv \\beta\\) são ângulos alternos internos formados pela transversal
                 \\(t\\) com as retas \\(r\\) e \\(m\\). Pela demonstração da
-                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>,
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>,
                 isso implica \\(m \\parallel r\\).
             </p>
 
@@ -1453,7 +1592,7 @@ const PAGES_DATA = {
     },
 
     'postulado-euclides': {
-        title: '1.8.4 Postulado de Euclides',
+        title: '2.8.4 Postulado de Euclides',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1463,10 +1602,10 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.4 Postulado de Euclides</h3>
+            <h3>2.8.4 Postulado de Euclides</h3>
 
             <p>
-                Na <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>
+                Na <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>
                 demonstramos a <strong>existência</strong> de uma paralela a uma reta \\(r\\)
                 passando por um ponto \\(P \\notin r\\). Resta saber se essa paralela é <strong>única</strong>.
                 Essa unicidade não é demonstrável a partir dos demais postulados da geometria euclidiana;
@@ -1481,9 +1620,9 @@ const PAGES_DATA = {
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_postulado_euclides_1.png" alt="Única paralela por P a r" style="max-width: 60%;">
+                <img src="imagem/2.8/img_postulado_euclides_1.png" alt="Única paralela por P a r" style="max-width: 60%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.47 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.47 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
                 <p>
@@ -1499,7 +1638,7 @@ const PAGES_DATA = {
 
             <p>
                 Combinando o resultado de existência (
-                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>)
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>)
                 com o Postulado de Euclides, obtemos o seguinte teorema:
             </p>
 
@@ -1513,7 +1652,7 @@ const PAGES_DATA = {
             <p>
                 <strong>Demonstração:</strong>
                 A existência foi demonstrada na
-                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>.
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>.
                 A unicidade é garantida pelo Postulado de Euclides.
             </p>
 
@@ -1524,7 +1663,7 @@ const PAGES_DATA = {
     },
 
     'paralelas-angulos-congruentes': {
-        title: '1.8.5 Paralelas e Ângulos Congruentes',
+        title: '2.8.5 Paralelas e Ângulos Congruentes',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1534,7 +1673,7 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.5 Paralelas e Ângulos Congruentes</h3>
+            <h3>2.8.5 Paralelas e Ângulos Congruentes</h3>
 
             <p>
                 Nas seções anteriores estabelecemos a
@@ -1553,9 +1692,9 @@ const PAGES_DATA = {
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_paralelas_angulos_1.png" alt="Paralelas cortadas por transversal com ângulos alternos internos" style="max-width: 65%;">
+                <img src="imagem/2.8/img_paralelas_angulos_1.png" alt="Paralelas cortadas por transversal com ângulos alternos internos" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.48 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.48 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1568,14 +1707,14 @@ const PAGES_DATA = {
                 Suponha, por absurdo, que \\(\\beta \\not\\equiv \\alpha\\). Então existe uma reta \\(s'\\),
                 distinta de \\(s\\), passando por \\(P\\), tal que o ângulo alterno interno \\(\\beta'\\)
                 formado por \\(s'\\) e \\(t\\) satisfaz \\(\\beta' \\equiv \\alpha\\). Pela
-                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>,
+                <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>,
                 isso implica \\(s' \\parallel m\\).
             </p>
 
             <p>
                 Assim, por \\(P\\) passariam duas retas distintas, \\(s\\) e \\(s'\\), ambas paralelas a \\(m\\),
                 o que contradiz o
-                <a href="#" onclick="loadPage('postulado-euclides')" style="color: inherit; text-decoration: underline; cursor: pointer;">Postulado de Euclides (seção 1.8.4)</a>.
+                <a href="#" onclick="loadPage('postulado-euclides')" style="color: inherit; text-decoration: underline; cursor: pointer;">Postulado de Euclides (seção 2.8.4)</a>.
                 Portanto, \\(\\beta \\equiv \\alpha\\).
             </p>
 
@@ -1589,9 +1728,9 @@ const PAGES_DATA = {
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_paralelas_angulos_2.png" alt="Ângulos correspondentes congruentes" style="max-width: 65%;">
+                <img src="imagem/2.8/img_paralelas_angulos_2.png" alt="Ângulos correspondentes congruentes" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.49 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.49 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1611,9 +1750,9 @@ const PAGES_DATA = {
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_paralelas_angulos_3.png" alt="Ângulos colaterais internos suplementares" style="max-width: 65%;">
+                <img src="imagem/2.8/img_paralelas_angulos_3.png" alt="Ângulos colaterais internos suplementares" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.50 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.50 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1639,7 +1778,7 @@ const PAGES_DATA = {
                 <p>
                     <strong>Observação:</strong> A implicação \\(\\alpha \\equiv \\beta \\Rightarrow s \\parallel m\\)
                     foi demonstrada na
-                    <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.2</a>.
+                    <a href="#" onclick="loadPage('existencia-paralela')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.2</a>.
                     A implicação recíproca \\(s \\parallel m \\Rightarrow \\alpha \\equiv \\beta\\)
                     é exatamente o Teorema demonstrado nesta seção. Juntas, as duas implicações
                     estabelecem a equivalência completa.
@@ -1651,7 +1790,7 @@ const PAGES_DATA = {
     },
 
     'soma-angulos-triangulo': {
-        title: '1.8.6 Soma dos Ângulos do Triângulo',
+        title: '2.8.6 Soma dos Ângulos do Triângulo',
         description: '',
         videoId: 'SEU_VIDEO_ID',
         videoDuration: '',
@@ -1661,7 +1800,7 @@ const PAGES_DATA = {
         content: `
         <div class="math-display">
 
-            <h3>1.8.6 Soma dos Ângulos do Triângulo</h3>
+            <h3>2.8.6 Soma dos Ângulos do Triângulo</h3>
 
             <p>
                 Com o resultado da
@@ -1678,9 +1817,9 @@ const PAGES_DATA = {
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
+                <img src="imagem/2.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 1.51. Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.51. Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1691,7 +1830,7 @@ const PAGES_DATA = {
 
             <p>
                 Como \\(r \\parallel AB\\), pela
-                <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.8.5</a>:
+                <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.5</a>:
             </p>
 
             <ul style="margin: 8px 0 8px 24px;">
@@ -1709,7 +1848,7 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Observação:</strong> Este resultado coincide com o
-                    <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 1.5)</a>,
+                    <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 2.5)</a>,
                     demonstrado anteriormente sem uso de paralelismo. Aqui o obtemos por um caminho diferente.
                 </p>
             </div>

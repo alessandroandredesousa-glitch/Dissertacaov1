@@ -41,7 +41,11 @@ function loadPage(pageId) {
     
     if (pageData.videoId) {
         html += '<div class="video-column"><div class="video-container"><div class="video-wrapper">';
-        html += '<iframe src="https://www.youtube.com/embed/' + pageData.videoId + '?vq=hd1080&hd=1&modestbranding=1&rel=0&controls=1&fs=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        if (pageData.videoId === 'PLACEHOLDER') {
+            html += '<div class="video-placeholder"><span class="video-placeholder-icon">🎬</span><span class="video-placeholder-text">Espaço reservado para o vídeo</span><span class="video-placeholder-sub">(a ser gravado)</span></div>';
+        } else {
+            html += '<iframe src="https://www.youtube.com/embed/' + pageData.videoId + '?vq=hd1080&hd=1&modestbranding=1&rel=0&controls=1&fs=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        }
         html += '</div></div>';
         html += '<div class="video-details"><h3>Detalhes do Vídeo</h3><p><strong>Duração:</strong> ' + pageData.videoDuration + '</p><p><strong>Gravação:</strong> ' + pageData.videoDate + '</p><p><strong>Conteúdo:</strong> ' + pageData.videoDescription + '</p></div></div>';
     }
