@@ -1,4 +1,4 @@
-// ANIMAÇÃO: 1.4.1 Existência do Ponto Médio
+// ANIMAÇÃO: 2.4.1 Existência do Ponto Médio
 // Status: CONCLUÍDA — usar como referência de estilo
 //
 // Destaques desta animação:

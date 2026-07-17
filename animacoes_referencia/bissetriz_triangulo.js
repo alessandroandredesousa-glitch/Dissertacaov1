@@ -1,5 +1,5 @@
-// ANIMAÇÃO: 1.4.4 Bissetriz de um Triângulo
-// Status: baseada na animação da mediana (1.4.2) — mesmo estilo
+// ANIMAÇÃO: 2.4.4 Bissetriz de um Triângulo
+// Status: baseada na animação da mediana (2.4.2) — mesmo estilo
 
 //drawGrid({xMin: -5, xMax: 5, yMin: -5, yMax: 5});
 

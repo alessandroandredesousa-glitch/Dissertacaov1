@@ -27,7 +27,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.1/img_reta_semirreta_segmento.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
-            <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na seção 2.4.1.</p>
+            <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.1</a>.</p>
         </div>
         `
     },
@@ -67,7 +67,7 @@ const PAGES_DATA = {
             <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.2/img_angulos_consecutivos.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
-            <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver seção 2.4.3).</p>
+            <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver <a href="#" onclick="loadPage('existencia-bissetriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.3</a>).</p>
         </div>
         `
     },
@@ -135,7 +135,7 @@ const PAGES_DATA = {
 
             <p>Por exemplo, o complemento de \\(25^\\circ\\) é \\(65^\\circ\\) (pois \\(25^\\circ + 65^\\circ = 90^\\circ\\)) e o suplemento de \\(72^\\circ\\) é \\(108^\\circ\\) (pois \\(72^\\circ + 108^\\circ = 180^\\circ\\)).</p>
 
-            <p>Um caso importante ocorre quando um lado de um ângulo é prolongado além do vértice: o ângulo \\(A\\widehat{O}B\\) e o ângulo \\(B\\widehat{O}C\\) formado pela semirreta oposta são <strong>suplementares adjacentes</strong> — sua soma é o ângulo raso, \\(180^\\circ\\). Essa relação é a base da demonstração de que ângulos opostos pelo vértice são congruentes (seção 1.3) e reaparece no Teorema do Ângulo Externo (seção 2.5).</p>
+            <p>Um caso importante ocorre quando um lado de um ângulo é prolongado além do vértice: o ângulo \\(A\\widehat{O}B\\) e o ângulo \\(B\\widehat{O}C\\) formado pela semirreta oposta são <strong>suplementares adjacentes</strong> — sua soma é o ângulo raso, \\(180^\\circ\\). Essa relação é a base da demonstração de que ângulos opostos pelo vértice são congruentes (<a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.3</a>) e reaparece no <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 2.5)</a>.</p>
         </div>
         `
     },

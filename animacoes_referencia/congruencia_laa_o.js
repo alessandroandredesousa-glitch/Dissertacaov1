@@ -1,4 +1,4 @@
-// ANIMAÇÃO: 1.6 Congruência LAA_o (Lado, Ângulo e Ângulo Oposto)
+// ANIMAÇÃO: 2.6 Congruência LAA_o (Lado, Ângulo e Ângulo Oposto)
 // Status: CONCLUÍDA — usar como referência de estilo
 //
 // DESTAQUES PRINCIPAIS:

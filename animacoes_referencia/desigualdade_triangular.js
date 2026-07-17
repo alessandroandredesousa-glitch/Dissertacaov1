@@ -1,11 +1,11 @@
 // ============================================================
-// ANIMAÇÃO: 1.6.2 Desigualdade Triangular
+// ANIMAÇÃO: 2.7.2 Desigualdade Triangular
 // ============================================================
 //
 // TÉCNICAS USADAS NESTA ANIMAÇÃO:
 //
 // 1. TRANSPORTE DE SETOR COM ROTAÇÃO (método bissetor)
-//    ACD transportado de C para D — mesmo método do 1.6.1
+//    ACD transportado de C para D — mesmo método do 2.7.1
 //
 // 2. MESMO PARAM PARA DOIS EFEITOS OPOSTOS
 //    destacar_BCD: ao mesmo tempo some com triângulo verde (opacity: 1-s)

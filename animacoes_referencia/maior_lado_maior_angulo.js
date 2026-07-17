@@ -1,5 +1,5 @@
 // ============================================================
-// ANIMAÇÃO: 1.6.1 Relação entre Lados e Ângulos Opostos
+// ANIMAÇÃO: 2.7.1 Relação entre Lados e Ângulos Opostos
 // ============================================================
 //
 // TÉCNICAS USADAS NESTA ANIMAÇÃO:

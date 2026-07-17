@@ -1,4 +1,4 @@
-// ANIMAÇÃO: 1.4.3 Existência da Bissetriz de um Ângulo
+// ANIMAÇÃO: 2.4.3 Existência da Bissetriz de um Ângulo
 // Status: CONCLUÍDA — usar como referência de estilo
 //
 // DESTAQUE PRINCIPAL: encolher triângulo via interpolação por centroide

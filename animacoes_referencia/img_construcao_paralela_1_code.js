@@ -1,6 +1,6 @@
 // =====================================================
 // IMAGEM ESTÁTICA 1 — img_construcao_paralela_1.png
-// Figura 1.45: setup — r, P, A, t, α
+// Figura 2.45: setup — r, P, A, t, α
 // (passos 1 e 2 da construção)
 // =====================================================
 // drawGrid({xMin: -5, xMax: 5, yMin: -5, yMax: 5})

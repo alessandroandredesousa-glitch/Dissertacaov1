@@ -1,4 +1,4 @@
-// ANIMAÇÃO: 1.4.2 Mediana de um Triângulo
+// ANIMAÇÃO: 2.4.2 Mediana de um Triângulo
 // Status: CONCLUÍDA — usar como referência de estilo
 //
 // Destaques desta animação:

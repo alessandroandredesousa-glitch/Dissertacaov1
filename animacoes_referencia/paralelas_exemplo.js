@@ -1,5 +1,5 @@
 // ============================================================
-// EXEMPLO: Retas Paralelas e Transversal (1.8.1)
+// EXEMPLO: Retas Paralelas e Transversal (2.8.1)
 // Arquivo: paralelas_exemplo.js
 // Referência de: paralelas.js (versão final)
 //

@@ -1,6 +1,39 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 13/07/2026
+## Última sessão: 17/07/2026
+
+---
+
+## Sessão 17/07/2026
+
+### Capítulo de Fundamentos + renumeração dos capítulos
+- Criado o **Capítulo de Elementos Fundamentais** (definições-base do livro Dolce & Pompeo, cap. Ângulos/Segmento): 4 seções — Reta/Semirreta/Segmento, Ângulo (definição e elementos), Ângulos Opostos pelo Vértice (com demonstração de congruência via ângulo raso) e Complementares/Suplementares/Ângulo Reto.
+- Placeholder de vídeo: `videoId: 'PLACEHOLDER'` renderiza uma caixa "🎬 Espaço reservado para o vídeo" no lugar do iframe (novo bloco em script.js + `.video-placeholder` em style.css) — permite pré-visualizar o layout de duas colunas antes de gravar. Figuras com placeholder tracejado vermelho.
+- **Renumeração**: o capítulo de fundamentos entrou como **Capítulo 1**; o antigo Capítulo 1 (Triângulos) virou **Capítulo 2**. Atualizados no index.html e pages-data.js: menu, títulos, `<h3>`, legendas `Figura X.Y`, refs `seção X.Y` e caminhos `imagem/X.Y/`. Verificado por grep (zero "0." remanescente; contagens coerentes).
+- Guia atualizado (catálogo seção 12 + exemplo 8.28) com a nova numeração; corrigidos também números defasados (maior_lado/desigualdade agora 2.7.1/2.7.2).
+
+### ⚠ Pendente (rodar no VS Code — sandbox bloqueia mv)
+Renomear as pastas físicas de imagem. Até fazer isso, as imagens do Cap. 2 aparecem quebradas:
+```
+git mv imagem/1.8 imagem/2.8   (… 1.7→2.7 … até … 1.1→2.1)
+```
+
+### Nova estrutura de capítulos
+```
+1 Elementos Fundamentais
+  1.1 Reta, Semirreta e Segmento
+  1.2 Ângulo: Definição e Elementos
+  1.3 Ângulos Opostos pelo Vértice
+  1.4 Complementares, Suplementares e Ângulo Reto
+2 Triângulos, congruências e fundamentos
+  2.1 Definição · 2.2 Classificação
+  2.3 Congruências (2.3.1 Def, 2.3.2 LAL, 2.3.3 ALA, 2.3.4 LLL)
+  2.4 Construções (2.4.1 Ponto Médio, 2.4.2 Mediana, 2.4.3 Def/Existência Bissetriz, 2.4.4 Bissetriz do Triângulo)
+  2.5 Teorema do Ângulo Externo · 2.6 Congruência LAA(o)
+  2.7 Desigualdades (2.7.1 Lados×Ângulos, 2.7.2 Desigualdade Triangular)
+  2.8 Paralelismo (2.8.1–2.8.6)
+```
+> Obs.: os vídeos ligados na sessão de 13/07 (então 1.3.1, 1.4.1–1.4.3) agora correspondem a **2.3.1, 2.4.1, 2.4.2, 2.4.3**. As entradas de sessões anteriores abaixo usam a numeração antiga (Cap. 1 = Triângulos).
 
 ---
 

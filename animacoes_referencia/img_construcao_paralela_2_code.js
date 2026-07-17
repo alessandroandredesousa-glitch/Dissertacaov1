@@ -1,6 +1,6 @@
 // =====================================================
 // IMAGEM ESTÁTICA 2 — img_construcao_paralela_2.png
-// Figura 1.46: resultado — r, P, A, t, α, β, β≡α, m, m∥r
+// Figura 2.46: resultado — r, P, A, t, α, β, β≡α, m, m∥r
 // (construção completa, quadro final da animação)
 // =====================================================
 // drawGrid({xMin: -5, xMax: 5, yMin: -5, yMax: 5})
