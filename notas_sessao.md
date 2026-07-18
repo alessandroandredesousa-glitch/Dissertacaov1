@@ -12,11 +12,8 @@
 - **Renumeração**: o capítulo de fundamentos entrou como **Capítulo 1**; o antigo Capítulo 1 (Triângulos) virou **Capítulo 2**. Atualizados no index.html e pages-data.js: menu, títulos, `<h3>`, legendas `Figura X.Y`, refs `seção X.Y` e caminhos `imagem/X.Y/`. Verificado por grep (zero "0." remanescente; contagens coerentes).
 - Guia atualizado (catálogo seção 12 + exemplo 8.28) com a nova numeração; corrigidos também números defasados (maior_lado/desigualdade agora 2.7.1/2.7.2).
 
-### ⚠ Pendente (rodar no VS Code — sandbox bloqueia mv)
-Renomear as pastas físicas de imagem. Até fazer isso, as imagens do Cap. 2 aparecem quebradas:
-```
-git mv imagem/1.8 imagem/2.8   (… 1.7→2.7 … até … 1.1→2.1)
-```
+### Renomeação das pastas de imagem — ✓ feito
+As pastas físicas `imagem/1.x` foram renomeadas para `imagem/2.x` (via `git mv` no VS Code); a pasta de teste `_teste_mv` foi removida. As imagens do Cap. 2 voltaram a carregar.
 
 ### Nova estrutura de capítulos
 ```
@@ -32,8 +29,28 @@ git mv imagem/1.8 imagem/2.8   (… 1.7→2.7 … até … 1.1→2.1)
   2.5 Teorema do Ângulo Externo · 2.6 Congruência LAA(o)
   2.7 Desigualdades (2.7.1 Lados×Ângulos, 2.7.2 Desigualdade Triangular)
   2.8 Paralelismo (2.8.1–2.8.6)
+  2.9 Perpendicularidade (2.9.1 Retas Perpendiculares, 2.9.2 Construção, 2.9.3 Mediatriz, 2.9.4 Distância Ponto-Reta)
 ```
 > Obs.: os vídeos ligados na sessão de 13/07 (então 1.3.1, 1.4.1–1.4.3) agora correspondem a **2.3.1, 2.4.1, 2.4.2, 2.4.3**. As entradas de sessões anteriores abaixo usam a numeração antiga (Cap. 1 = Triângulos).
+
+### Revisão do Cap. 1 e ajustes de interface
+- Citações do Cap. 1 viraram **hyperlinks** (padrão `loadPage`): ponto médio → 2.4.1, bissetriz → 2.4.3, opostos pelo vértice → 1.3, Teorema do Ângulo Externo → 2.5.
+- ∎ da demonstração de "Opostos pelo Vértice" alinhado à direita (padrão `padding-left: 85%`, igual às demonstrações do Cap. 2).
+- Removida a animação de hover do vídeo (`.video-container:hover` com `translateY`) — a coluna do vídeo não "sobe" mais ao passar o mouse.
+
+### Sumário completo definitivo — `sumario_completo.md`
+- Criado o sumário fechado da dissertação: **9 capítulos**, programa completo de geometria plana + aprofundamento olímpico, com base em **FME9 (Dolce & Pompeo)** e **Geometria Plana (Rufino)**.
+- Decisões-chave: **Perpendicularidade** = 2.9 (dentro do Cap. 2); **Pontos Notáveis** virou **capítulo próprio (Cap. 7)** — antes era seção 1.10. Teoremas olímpicos (Ceva, Menelaus, Simson, reta de Euler, círculo dos nove pontos, Ptolomeu, Stewart, Apolônio, Napoleão…) distribuídos nos capítulos naturais e marcados com ⭐. Ordem por dependência pedagógica.
+- Aviso registrado no doc: quando chegar em Quadriláteros, ele agora é **Cap. 3** (o sumário antigo dizia "Cap. 2").
+
+### Seção 2.9 Perpendicularidade — construída no site
+- 4 subseções (2.9.1–2.9.4) no `pages-data.js` + submenu no `index.html`. Base: FME9 cap. VI, **redação própria**.
+- Demonstrações escritas: caracterização da mediatriz (ida por LAL, volta por LLL) e "a perpendicular é o menor caminho" (via teorema 2.7.1). Hyperlinks cruzados (ponto médio, LAL, LLL, opostos pelo vértice, maior lado/maior ângulo).
+- `videoId: 'PLACEHOLDER'`; figuras 2.52–2.56 em `imagem/2.9/` (placeholders). `node -c` OK.
+- **Convenção de originalidade reforçada**: fatos matemáticos (definições/enunciados) fiéis aos livros e citados; redação, estrutura, demonstrações escritas e conexões entre seções são próprias. As demonstrações serão creditadas a Dolce & Pompeo e Rufino.
+
+### Próximo passo
+Capítulo 3 — Quadriláteros (conforme `sumario_completo.md`).
 
 ---
 

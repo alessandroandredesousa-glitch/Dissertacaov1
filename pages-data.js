@@ -24,7 +24,7 @@ const PAGES_DATA = {
             <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.1 – Reta \\(r\\), semirreta \\(\\overrightarrow{OA}\\) e segmento \\(\\overline{AB}\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.1/img_reta_semirreta_segmento.png</div>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.1/img_reta_semirreta_segmento.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.1</a>.</p>
@@ -53,7 +53,7 @@ const PAGES_DATA = {
             </ul>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.2 – Ângulo \\(A\\widehat{O}B\\), com vértice \\(O\\) e lados \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.2/img_angulo_elementos.png</div>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.2/img_angulo_elementos.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A cada ângulo associa-se uma <strong>medida</strong> (ou amplitude) \\(m(A\\widehat{O}B)\\), um número real. A unidade usual é o <strong>grau</strong> (\\(^\\circ\\)): o ângulo reto mede \\(90^\\circ\\), e a medida \\(\\alpha\\) de um ângulo qualquer satisfaz \\(0^\\circ \\le \\alpha \\le 180^\\circ\\).</p>
@@ -64,7 +64,7 @@ const PAGES_DATA = {
             <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns.</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos adjacentes \\(A\\widehat{O}B\\) e \\(B\\widehat{O}C\\) (lado comum \\(\\overrightarrow{OB}\\))</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.2/img_angulos_consecutivos.png</div>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.2/img_angulos_consecutivos.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver <a href="#" onclick="loadPage('existencia-bissetriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.3</a>).</p>
@@ -88,7 +88,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <p style="text-align: center; font-weight: bold;">Figura 1.4 – Ângulos opostos pelo vértice \\(A\\widehat{O}B\\) e \\(C\\widehat{O}D\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.3/img_opostos_vertice.png</div>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.3/img_opostos_vertice.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -131,12 +131,12 @@ const PAGES_DATA = {
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.5 – Ângulos complementares (soma \\(90^\\circ\\)) e suplementares (soma \\(180^\\circ\\))</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir — imagem/1.4/img_complementares_suplementares.png</div>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.4/img_complementares_suplementares.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Por exemplo, o complemento de \\(25^\\circ\\) é \\(65^\\circ\\) (pois \\(25^\\circ + 65^\\circ = 90^\\circ\\)) e o suplemento de \\(72^\\circ\\) é \\(108^\\circ\\) (pois \\(72^\\circ + 108^\\circ = 180^\\circ\\)).</p>
 
-            <p>Um caso importante ocorre quando um lado de um ângulo é prolongado além do vértice: o ângulo \\(A\\widehat{O}B\\) e o ângulo \\(B\\widehat{O}C\\) formado pela semirreta oposta são <strong>suplementares adjacentes</strong> — sua soma é o ângulo raso, \\(180^\\circ\\). Essa relação é a base da demonstração de que ângulos opostos pelo vértice são congruentes (<a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.3</a>) e reaparece no <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 2.5)</a>.</p>
+            <p>Um caso importante ocorre quando um lado de um ângulo é prolongado além do vértice: o ângulo \\(A\\widehat{O}B\\) e o ângulo \\(B\\widehat{O}C\\) formado pela semirreta oposta são <strong>suplementares adjacentes</strong>, e sua soma é o ângulo raso, \\(180^\\circ\\). Essa relação é a base da demonstração de que ângulos opostos pelo vértice são congruentes (<a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 1.3</a>) e reaparece no <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo (seção 2.5)</a>.</p>
         </div>
         `
     },
@@ -1882,67 +1882,243 @@ const PAGES_DATA = {
         `
     },
 
-    // ========== OUTROS ==========
-    'angulos-triangulos': {
-        title: 'Ângulos em Triângulos',
-        description: 'Propriedades dos ângulos',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '3:45 minutos',
-        videoDate: 'Julho 2023',
-        videoDescription: 'Ângulos.',
-        content: '<div class="theorem"><h3>Soma dos Ângulos</h3><p>5\alpha + \beta + \gamma = 180°5</p></div>'
+    // ========== Capítulo 2 — 2.9 Perpendicularidade ==========
+    'retas-perpendiculares': {
+        title: '2.9.1 Retas Perpendiculares',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Retas perpendiculares: definição, existência e unicidade.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>2.9.1 Retas Perpendiculares</h3>
+            <p>Duas retas concorrentes \\(r\\) e \\(s\\) são <strong>perpendiculares</strong> quando formam ângulos retos. Indica-se \\(r \\perp s\\).</p>
+        </div>
+
+        <div class="math-display">
+            <p>Ao se cruzarem, duas retas determinam quatro ângulos. Como ângulos <a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">opostos pelo vértice</a> são congruentes e ângulos adjacentes são <a href="#" onclick="loadPage('complementares-suplementares')" style="color: inherit; text-decoration: underline; cursor: pointer;">suplementares</a>, basta que <strong>um</strong> desses quatro ângulos seja reto para que os quatro sejam retos. Por isso, uma única condição, um ângulo de \\(90^\\circ\\), já caracteriza a perpendicularidade.</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 2.52 – Retas perpendiculares \\(r \\perp s\\): os quatro ângulos são retos</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_retas_perpendiculares.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <h3>Existência e Unicidade da Perpendicular</h3>
+                <p>Por um ponto \\(P\\) do plano passa uma, e somente uma, reta perpendicular a uma reta dada \\(r\\), tanto no caso \\(P \\in r\\) quanto no caso \\(P \\notin r\\).</p>
+            </div>
+
+            <p>A <strong>existência</strong> decorre do transporte de ângulo: a partir de um ponto de \\(r\\) pode-se construir uma semirreta que forma \\(90^\\circ\\) com \\(r\\). A <strong>unicidade</strong> segue do fato de que duas perpendiculares distintas a \\(r\\) passando por \\(P\\) formariam, do mesmo lado, dois ângulos retos com um lado comum, o que obriga as semirretas a coincidir.</p>
+
+            <p>Num triângulo, o segmento perpendicular que vai de um vértice à reta suporte do lado oposto é a <strong>altura</strong> relativa a esse lado, e o ponto em que ela encontra essa reta é o <strong>pé da altura</strong>. As três alturas de um triângulo serão retomadas no estudo do ortocentro.</p>
+        </div>
+        `
     },
 
-    'cossenos': {
-        title: 'Lei dos Cossenos',
-        description: 'Generalização de Pitágoras',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '5:15 minutos',
-        videoDate: 'Junho 2023',
-        videoDescription: 'Cossenos.',
-        content: '<div class="math-display"><p>5c^2 = a^2 + b^2 - 2ab \cos(\gamma)5</p></div>'
+    'construcao-perpendicular': {
+        title: '2.9.2 Construção da Perpendicular',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Construção da perpendicular por um ponto, com régua e compasso.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>2.9.2 Construção da Perpendicular por um Ponto</h3>
+            <p>Com régua e compasso, constrói-se a perpendicular a uma reta \\(r\\) que passa por um ponto \\(P\\). Há dois casos, que se reduzem à mesma ideia.</p>
+        </div>
+
+        <div class="math-display">
+            <h4>Caso 1: \\(P\\) pertence à reta \\(r\\)</h4>
+            <p>Com centro em \\(P\\), traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\), de modo que \\(PA = PB\\). Em seguida, com centros em \\(A\\) e \\(B\\) e um mesmo raio (maior que \\(PA\\)), traçam-se dois arcos que se cruzam num ponto \\(Q\\). A reta \\(PQ\\) é perpendicular a \\(r\\).</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 2.53 – Perpendicular por um ponto \\(P \\in r\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_construcao_perpendicular_1.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <h4>Caso 2: \\(P\\) não pertence à reta \\(r\\)</h4>
+            <p>Com centro em \\(P\\) e raio suficiente, traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\). Como \\(PA = PB\\), o ponto \\(P\\) é equidistante de \\(A\\) e \\(B\\), ou seja, pertence à <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz</a> de \\(\\overline{AB}\\); construída essa mediatriz, ela passa por \\(P\\) e é perpendicular a \\(r\\).</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 2.54 – Perpendicular por um ponto \\(P \\notin r\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_construcao_perpendicular_2.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>Em ambos os casos, a construção se apoia na mediatriz de um segmento, o lugar dos pontos equidistantes de \\(A\\) e \\(B\\), estudada na seção seguinte.</p>
+        </div>
+        `
     },
 
-    // ========== GEOMETRIA ANALÍTICA ==========
-    'distancia-pontos': {
-        title: 'Distância entre Pontos',
-        description: 'Fórmula euclidiana',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '3:30 minutos',
-        videoDate: 'Maio 2023',
-        videoDescription: 'Distância.',
-        content: '<div class="math-display"><p>5d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}5</p></div>'
+    'mediatriz': {
+        title: '2.9.3 Mediatriz de um Segmento',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Mediatriz: definição e caracterização por equidistância.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>2.9.3 Mediatriz de um Segmento</h3>
+            <p>A <strong>mediatriz</strong> de um segmento \\(\\overline{AB}\\) é a reta perpendicular a \\(\\overline{AB}\\) que passa pelo seu <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">ponto médio</a> \\(M\\).</p>
+        </div>
+
+        <div class="math-display">
+            <p style="text-align: center; font-weight: bold;">Figura 2.55 – Mediatriz \\(m\\) do segmento \\(\\overline{AB}\\) e um ponto \\(P\\) equidistante</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_mediatriz.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <h3>Teorema (Caracterização da Mediatriz)</h3>
+                <p>Um ponto \\(P\\) pertence à mediatriz de \\(\\overline{AB}\\) se, e somente se, é equidistante de \\(A\\) e \\(B\\), isto é, \\(PA = PB\\).</p>
+            </div>
+
+            <p><strong>Demonstração.</strong> (\\(\\Rightarrow\\)) Seja \\(P\\) na mediatriz \\(m\\), com pé \\(M\\). Nos triângulos \\(PMA\\) e \\(PMB\\): \\(\\overline{PM}\\) é lado comum, \\(\\overline{MA} = \\overline{MB}\\) (pois \\(M\\) é ponto médio) e \\(P\\widehat{M}A = P\\widehat{M}B = 90^\\circ\\). Pelo <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>, \\(\\triangle PMA \\equiv \\triangle PMB\\); logo \\(PA = PB\\).</p>
+
+            <p>(\\(\\Leftarrow\\)) Suponha \\(PA = PB\\) e seja \\(M\\) o ponto médio de \\(\\overline{AB}\\). Nos triângulos \\(PMA\\) e \\(PMB\\): \\(PA = PB\\), \\(\\overline{MA} = \\overline{MB}\\) e \\(\\overline{PM}\\) comum. Pelo <a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL</a>, \\(\\triangle PMA \\equiv \\triangle PMB\\), donde \\(P\\widehat{M}A = P\\widehat{M}B\\). Como esses ângulos são adjacentes e suplementares, cada um mede \\(90^\\circ\\); então \\(\\overline{PM} \\perp \\overline{AB}\\), e \\(P\\) está na mediatriz.</p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <p>Assim, a mediatriz é o <strong>lugar geométrico</strong> dos pontos do plano equidistantes de \\(A\\) e \\(B\\). Essa propriedade será a chave para localizar o <strong>circuncentro</strong> de um triângulo, no capítulo de Pontos Notáveis.</p>
+        </div>
+        `
     },
 
-    'ponto-medio': {
-        title: 'Ponto Médio',
-        description: 'Cálculo do ponto médio',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '3:15 minutos',
-        videoDate: 'Abril 2023',
-        videoDescription: 'Ponto médio.',
-        content: '<div class="math-display"><p>5M = \left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)5</p></div>'
+    'distancia-ponto-reta': {
+        title: '2.9.4 Distância de Ponto a Reta',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Distância de ponto a reta e a perpendicular como menor caminho.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem">
+            <h3>2.9.4 Distância de Ponto a Reta</h3>
+            <p>A <strong>distância</strong> de um ponto \\(P\\) a uma reta \\(r\\) é o comprimento do segmento perpendicular \\(\\overline{PP'}\\), em que \\(P'\\) é a <strong>projeção ortogonal</strong> de \\(P\\) sobre \\(r\\) (o pé da perpendicular). Se \\(P \\in r\\), a distância é nula.</p>
+        </div>
+
+        <div class="math-display">
+            <p style="text-align: center; font-weight: bold;">Figura 2.56 – Distância de \\(P\\) a \\(r\\): a perpendicular \\(\\overline{PP'}\\) e um oblíquo \\(\\overline{PQ}\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_distancia_ponto_reta.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <h3>Teorema (A Perpendicular é o Menor Caminho)</h3>
+                <p>O segmento perpendicular é o menor entre \\(P\\) e os pontos de \\(r\\): para todo \\(Q \\in r\\) com \\(Q \\neq P'\\), tem-se \\(PP' < PQ\\).</p>
+            </div>
+
+            <p><strong>Demonstração.</strong> Considere o triângulo \\(PP'Q\\), retângulo em \\(P'\\). Como a soma dos ângulos internos vale \\(180^\\circ\\) e o ângulo em \\(P'\\) mede \\(90^\\circ\\), os ângulos em \\(P\\) e \\(Q\\) são agudos; logo o ângulo reto em \\(P'\\) é o maior do triângulo. Pelo teorema de que <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">ao maior ângulo opõe-se o maior lado</a>, o lado oposto ao ângulo reto, a hipotenusa \\(\\overline{PQ}\\), é o maior lado. Portanto \\(PP' < PQ\\).</p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <p>É por isso que a distância de um ponto a uma reta é sempre medida pela perpendicular: qualquer outro segmento até a reta é mais longo.</p>
+        </div>
+        `
     },
 
-    // ========== GEOMETRIA ESPACIAL ==========
-    'prismas': {
-        title: 'Prismas',
-        description: 'Volume e área',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '4:30 minutos',
-        videoDate: 'Março 2023',
-        videoDescription: 'Prismas.',
-        content: '<div class="math-display"><h3>Volume</h3><p>5V = A_b \times h5</p></div>'
+    // ========== Capítulo 3 — Quadriláteros Notáveis (em construção) ==========
+    'quad-definicoes': {
+        title: '3.1 Definições e Propriedades Gerais',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Definições e propriedades gerais dos quadriláteros.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.1 Definições e Propriedades Gerais</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
     },
 
-    'piramides': {
-        title: 'Pirâmides',
-        description: 'Volume e área',
-        videoId: 'dQw4w9WgXcQ',
-        videoDuration: '4:45 minutos',
-        videoDate: 'Fevereiro 2023',
-        videoDescription: 'Pirâmides.',
-        content: '<div class="math-display"><h3>Volume</h3><p>5V = \frac{1}{3} A_b \times h5</p></div>'
+    'base-media': {
+        title: '3.2 Base Média do Triângulo e do Trapézio',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Base média do triângulo e do trapézio.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.2 Base Média do Triângulo e do Trapézio</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'trapezios': {
+        title: '3.3 Trapézios',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Trapézios: classificação e propriedades.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.3 Trapézios</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'paralelogramos': {
+        title: '3.4 Paralelogramos',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Paralelogramos: propriedades e diagonais.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.4 Paralelogramos</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'quadrilateros-especiais': {
+        title: '3.5 Quadriláteros Especiais',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Quadriláteros especiais: retângulo, losango e quadrado.',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.5 Quadriláteros Especiais (retângulo, losango, quadrado)</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'teorema-pitot': {
+        title: '3.6 Teorema de Pitot',
+        description: '',
+        videoId: 'PLACEHOLDER',
+        videoDuration: 'a definir',
+        videoDate: 'a gravar',
+        videoDescription: 'Teorema de Pitot (quadrilátero circunscritível).',
+        sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>3.6 Teorema de Pitot (quadrilátero circunscritível)</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
     },
 
     'sobre': {

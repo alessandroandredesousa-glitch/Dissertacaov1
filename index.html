@@ -57,7 +57,7 @@
                         </li>
                         
                         <li><a href="#" onclick="loadPage('teorema-angulo-externo')">2.5 Teorema do Ângulo Externo</a></li>
-                        <li><a href="#" onclick="loadPage('congruencia-LAA')">2.6 Congruência de Triângulos — Caso \(\text{LAA}_o\)</a></li>
+                        <li><a href="#" onclick="loadPage('congruencia-LAA')">2.6 Congruência de Triângulos: Caso \(\text{LAA}_o\)</a></li>
 
                         <!-- SUBMENU DE 2º NÍVEL: Desigualdades no Triângulo -->
                         <li class="menu-item has-submenu">
@@ -80,27 +80,33 @@
                                 <li><a href="#" onclick="loadPage('soma-angulos-triangulo')">2.8.6 Soma dos Ângulos do Triângulo</a></li>
                             </ul>
                         </li>
+
+                        <!-- SUBMENU DE 2º NÍVEL: Perpendicularidade -->
+                        <li class="menu-item has-submenu">
+                            <a href="#" onclick="toggleSubmenu('perpendicularidade')">2.9 Perpendicularidade</a>
+                            <ul class="submenu submenu-level-2" id="perpendicularidade-submenu">
+                                <li><a href="#" onclick="loadPage('retas-perpendiculares')">2.9.1 Retas Perpendiculares</a></li>
+                                <li><a href="#" onclick="loadPage('construcao-perpendicular')">2.9.2 Construção da Perpendicular</a></li>
+                                <li><a href="#" onclick="loadPage('mediatriz')">2.9.3 Mediatriz de um Segmento</a></li>
+                                <li><a href="#" onclick="loadPage('distancia-ponto-reta')">2.9.4 Distância de Ponto a Reta</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
-                <!-- MENU 2: Geometria Analítica -->
+                <!-- MENU CAPÍTULO 3: Quadriláteros -->
                 <li class="menu-item has-submenu">
-                    <a href="#" onclick="toggleSubmenu('analitica')">Geometria Analítica</a>
-                    <ul class="submenu" id="analitica-submenu">
-                        <li><a href="#" onclick="loadPage('distancia-pontos')">Distância entre Pontos</a></li>
-                        <li><a href="#" onclick="loadPage('ponto-medio')">Ponto Médio</a></li>
+                    <a href="#" onclick="toggleSubmenu('quadrilateros')">3 Quadriláteros Notáveis</a>
+                    <ul class="submenu" id="quadrilateros-submenu">
+                        <li><a href="#" onclick="loadPage('quad-definicoes')">3.1 Definições e Propriedades Gerais</a></li>
+                        <li><a href="#" onclick="loadPage('base-media')">3.2 Base Média do Triângulo e do Trapézio</a></li>
+                        <li><a href="#" onclick="loadPage('trapezios')">3.3 Trapézios</a></li>
+                        <li><a href="#" onclick="loadPage('paralelogramos')">3.4 Paralelogramos</a></li>
+                        <li><a href="#" onclick="loadPage('quadrilateros-especiais')">3.5 Quadriláteros Especiais</a></li>
+                        <li><a href="#" onclick="loadPage('teorema-pitot')">3.6 Teorema de Pitot</a></li>
                     </ul>
                 </li>
-                
-                <!-- MENU 3: Geometria Espacial -->
-                <li class="menu-item has-submenu">
-                    <a href="#" onclick="toggleSubmenu('espacial')">Geometria Espacial</a>
-                    <ul class="submenu" id="espacial-submenu">
-                        <li><a href="#" onclick="loadPage('prismas')">Prismas</a></li>
-                        <li><a href="#" onclick="loadPage('piramides')">Pirâmides</a></li>
-                    </ul>
-                </li>
-                
+
                 <li class="menu-item">
                     <a href="#" onclick="loadPage('sobre')">Sobre a Dissertação</a>
                 </li>
