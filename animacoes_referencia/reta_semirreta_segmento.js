@@ -1,12 +1,10 @@
-// ANIMAÇÃO: 1.1 Reta, Semirreta e Segmento  (baseada no rascunho do Alessandro)
-// Conceito: um ponto O sobre a reta AB; as semirretas OPOSTAS OA e OB giram
-//   em torno de O via um parâmetro, mostrando que sempre têm sentidos opostos.
-// Estilo: o LÁPIS desenha todo o cenário estático (eixos, reta, segmento, O, textos),
-//   com pauses; o PARÂMETRO só anima os raios que giram.
+// ANIMAÇÃO: 1.1 Reta, Semirreta e Segmento
+// Ordem do texto: 1) RETA (postulado)  2) SEMIRRETAS opostas (O divide a reta)
+//                 3) SEGMENTO AB        (parâmetros independentes giram OA e OB)
 
 //drawGrid({ xMin: -5, xMax: 5, yMin: -5, yMax: 5 });
 
-//CORES
+// === CORES ===
 const cor_ciano = '#00FFFF'
 const cor_verde_neon = '#39FF14'
 const cor_amarelo_neon = '#FFFF00'
@@ -18,101 +16,88 @@ const cor_coral = '#FF6B6B'
 const cor_verde_menta = '#00FA9A'
 const cor_dourado = '#FFD700'
 const cor_titulo = '#FF4500'
-const cor_cinza = '#999999'
 
-// TÍTULO (o lápis escreve)
+// TÍTULO
 drawText({
     text: "\\begin{center}\\textbf{Reta, Semirreta e Segmento}\\end{center}",
-    x: 0.15, y: 7, color: cor_titulo
+    x: 0.42, y: 3.98, color: cor_titulo
 })
 
 pause()
 
-// EIXOS (o lápis desenha)
-drawArrow({ points: [{ x: -5, y: 0 }, { x: 5, y: 0 }], color: cor_cinza, size: 0.2 })
-drawText({ text: "$x$", x: 4.7, y: -0.5, fontSize: 0.5, color: cor_cinza })
-drawArrow({ points: [{ x: 0, y: -4 }, { x: 0, y: 5 }], color: cor_cinza, size: 0.2 })
-drawText({ text: "$y$", x: 0.3, y: 4.7, fontSize: 0.5, color: cor_cinza })
+// === A, B e O (O sobre AB) ===
+const A = { x: -3, y: -0.6 }
+const B = { x: 3, y: 1.8 }
+const O = { x: A.x + 0.55 * (B.x - A.x), y: A.y + 0.55 * (B.y - A.y) }
 
-pause()
+const dx = B.x - A.x, dy = B.y - A.y
+const nAB = Math.sqrt(dx * dx + dy * dy)
+const ux = dx / nAB, uy = dy / nAB
 
-// PONTOS A, B e O (O sobre o segmento AB)
-const A = { x: -2.8, y: -0.4 }
-const B = { x: 2.4, y: 1.6 }
-const O = { x: A.x + 0.6 * (B.x - A.x), y: A.y + 0.6 * (B.y - A.y) }  // O pertence a AB
+const ext = 2
+const R1 = { x: A.x - ext * ux, y: A.y - ext * uy }
+const R2 = { x: B.x + ext * ux, y: B.y + ext * uy }
 
-// direção unitária de A para B
-const dABx = B.x - A.x, dABy = B.y - A.y
-const nAB = Math.sqrt(dABx * dABx + dABy * dABy)
-const ux = dABx / nAB, uy = dABy / nAB
-
-// RETA suporte de AB (o lápis desenha) — tracejada, ultrapassa A e B com setas
-const ext = 2.5
-const retaP1 = { x: A.x - ext * ux, y: A.y - ext * uy }
-const retaP2 = { x: B.x + ext * ux, y: B.y + ext * uy }
-drawSegment({ points: [retaP1, retaP2], color: cor_roxo_neon, width: 0.04, lineDash: [0.2, 0.12] })
-drawArrow({ points: [{ x: A.x - (ext - 0.7) * ux, y: A.y - (ext - 0.7) * uy }, retaP1], color: cor_roxo_neon, size: 0.2 })
-drawArrow({ points: [{ x: B.x + (ext - 0.7) * ux, y: B.y + (ext - 0.7) * uy }, retaP2], color: cor_roxo_neon, size: 0.2 })
-drawText({ text: "reta suporte de $AB$", x: retaP1.x - 0.1, y: retaP1.y - 0.6, fontSize: 0.42, color: cor_roxo_neon })
-
-pause()
-
-// SEGMENTO AB (o lápis desenha) — verde, grosso
-drawSegment({ points: [A, B], color: cor_verde_neon, width: 0.08 })
+// === 1) DRAW RETA: dois pontos A, B determinam a reta (postulado) ===
 drawPoint({ x: A.x, y: A.y, size: 0.08 })
 drawText({ text: "$A$", x: A.x - 0.45, y: A.y - 0.15, fontSize: 0.5 })
 drawPoint({ x: B.x, y: B.y, size: 0.08 })
 drawText({ text: "$B$", x: B.x + 0.2, y: B.y + 0.1, fontSize: 0.5 })
-drawText({ text: "Segmento $\\overline{AB}$", x: B.x - 1.5, y: B.y + 0.7, fontSize: 0.45, color: cor_verde_neon })
+drawSegment({ points: [R1, R2], color: cor_roxo_neon, width: 0.04, lineDash: [0.2, 0.12] })
+drawArrow({ points: [{ x: A.x - (ext - 0.7) * ux, y: A.y - (ext - 0.7) * uy }, R1], color: cor_roxo_neon, size: 0.2 })
+drawArrow({ points: [{ x: B.x + (ext - 0.7) * ux, y: B.y + (ext - 0.7) * uy }, R2], color: cor_roxo_neon, size: 0.2 })
+drawText({ text: "reta", x: 5.06, y: 2.06, fontSize: 0.45, color: cor_roxo_neon })
 
 pause()
 
-// PONTO O sobre a reta (o lápis desenha)
+// === 2) DRAW POINT O + SEMIRRETAS: O divide a reta em duas semirretas ===
 drawPoint({ x: O.x, y: O.y, size: 0.09, color: cor_amarelo_neon })
 drawText({ text: "$O$", x: O.x + 0.15, y: O.y - 0.45, fontSize: 0.5, color: cor_amarelo_neon })
 
 pause()
 
-// NARRAÇÃO (o lápis escreve)
-drawText({
-    text: "De $O$ saem duas semirretas $\\overrightarrow{OA}$ e $\\overrightarrow{OB}$ que giram em torno de $O$.",
-    x: -4.7, y: -2.7, fontSize: 0.48
+// parâmetros INDEPENDENTES (um por raio)
+const p_OA = param({
+    value: 0, min: 0, max: 1, step: 0.001,
+    buttons: [{ value: 1, time: 2 }, { value: 0, time: 2 }],
+    label: "Girar OA em torno de O"
+})
+const p_OB = param({
+    value: 0, min: 0, max: 1, step: 0.001,
+    buttons: [{ value: 1, time: 2 }, { value: 0, time: 2 }],
+    label: "Girar OB em torno de O"
 })
 
-pause()
+const L = 4  // comprimento visual dos raios
 
-// PARÂMETRO que rotaciona OA e OB em torno de O
-const p_rot = param({
-    value: 0, min: -1, max: 1, step: 0.001,
-    buttons: [{ value: 1, time: 2.5 }, { value: -1, time: 2.5 }, { value: 0, time: 2.5 }],
-    label: "Girar OA e OB em torno de O"
-})
-
-const L = 2.5  // comprimento visual dos raios
-
-animation(p_rot, (p) => {
-    const ang = p * Math.PI            // gira até ±180°
-    const cosA = Math.cos(ang), sinA = Math.sin(ang)
-
-    // direção de OB = +u rotacionada;  OA é sempre a oposta
-    const obx = ux * cosA - uy * sinA
-    const oby = ux * sinA + uy * cosA
-    const oax = -obx, oay = -oby
-
-    const rayB = { x: O.x + L * obx, y: O.y + L * oby }
+animation(p_OA, p_OB, (a, b) => {
+    // raio OA: base -u (para A), girado por 'a'
+    const angA = a * Math.PI
+    const oax = (-ux) * Math.cos(angA) - (-uy) * Math.sin(angA)
+    const oay = (-ux) * Math.sin(angA) + (-uy) * Math.cos(angA)
     const rayA = { x: O.x + L * oax, y: O.y + L * oay }
+    drawArrow({ points: [O, rayA], color: cor_coral, size: 0.22, width: 0.08 })
+    drawText({ text: "$\\overrightarrow{OA}$", x: rayA.x - 0.6, y: rayA.y - 0.15, fontSize: 0.45, color: cor_coral })
 
+    // raio OB: base +u (para B), girado por 'b'
+    const angB = b * Math.PI
+    const obx = ux * Math.cos(angB) - uy * Math.sin(angB)
+    const oby = ux * Math.sin(angB) + uy * Math.cos(angB)
+    const rayB = { x: O.x + L * obx, y: O.y + L * oby }
     drawArrow({ points: [O, rayB], color: cor_azul_eletrico, size: 0.22 })
     drawText({ text: "$\\overrightarrow{OB}$", x: rayB.x + 0.15, y: rayB.y + 0.15, fontSize: 0.45, color: cor_azul_eletrico })
-
-    drawArrow({ points: [O, rayA], color: cor_coral, size: 0.22 })
-    drawText({ text: "$\\overrightarrow{OA}$", x: rayA.x - 0.6, y: rayA.y - 0.15, fontSize: 0.45, color: cor_coral })
 })
 
 pause()
 
-// CONCLUSÃO (o lápis escreve)
+// nota: raios na mesma reta e de sentidos opostos -> semirretas opostas
 drawText({
-    text: "$\\overrightarrow{OA}$ e $\\overrightarrow{OB}$ apontam sempre para sentidos opostos: s\\~ao \\textbf{semirretas opostas}.",
-    x: -4.7, y: -3.7, fontSize: 0.46, color: cor_verde_menta
+    text: "$\\overrightarrow{OA}$ e $\\overrightarrow{OB}$ são chamadas de semirretas Opostas.",
+    x: 0.22, y: -3, fontSize: 0.46, color: cor_roxo_neon
 })
+
+pause()
+
+// === 3) DRAW SEGMENTO: AB (por último), a parte entre A e B ===
+drawSegment({ points: [A, B], color: cor_verde_neon, width: 0.05 })
+drawText({ text: "Segmento $\\overline{AB}$", x: -0.43, y: 1.16, fontSize: 0.45, color: cor_verde_neon })

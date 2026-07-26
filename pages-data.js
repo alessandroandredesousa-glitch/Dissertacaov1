@@ -24,7 +24,7 @@ const PAGES_DATA = {
             <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.1 – Reta \\(r\\), semirreta \\(\\overrightarrow{OA}\\) e segmento \\(\\overline{AB}\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.1/img_reta_semirreta_segmento.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.1/img_reta_semirreta_segmento.png" alt="Reta r, semirretas opostas OA e OB, e segmento AB" style="max-width: 70%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.1</a>.</p>
