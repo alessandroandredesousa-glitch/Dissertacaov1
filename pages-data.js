@@ -941,10 +941,10 @@ const PAGES_DATA = {
 'teorema-angulo-externo': {
     title: '2.5 Teorema do Ângulo Externo',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Teorema do Ângulo Externo',
+    videoId: 'Ypl2sZm-8do',
+    videoDuration: '2:36 minutos',
+    videoDate: '24 de julho de 2026',
+    videoDescription: 'Teorema do ângulo externo e sua demonstração.',
     sectionTitle: '',
     content: `
         <div class="math-display">
