@@ -53,7 +53,7 @@ const PAGES_DATA = {
             </ul>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.2 – Ângulo \\(A\\widehat{O}B\\), com vértice \\(O\\) e lados \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.2/img_angulo_elementos.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulo_elementos.png" alt="Ângulo AÔB com vértice O e lados OA e OB" style="max-width: 60%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A cada ângulo associa-se uma <strong>medida</strong> (ou amplitude) \\(m(A\\widehat{O}B)\\), um número real. A unidade usual é o <strong>grau</strong> (\\(^\\circ\\)): o ângulo reto mede \\(90^\\circ\\), e a medida \\(\\alpha\\) de um ângulo qualquer satisfaz \\(0^\\circ \\le \\alpha \\le 180^\\circ\\).</p>
@@ -64,7 +64,7 @@ const PAGES_DATA = {
             <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns.</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos adjacentes \\(A\\widehat{O}B\\) e \\(B\\widehat{O}C\\) (lado comum \\(\\overrightarrow{OB}\\))</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.2/img_angulos_consecutivos.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulos_consecutivos.png" alt="Ângulos adjacentes AÔB e BÔC com lado comum OB" style="max-width: 60%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver <a href="#" onclick="loadPage('existencia-bissetriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.3</a>).</p>
