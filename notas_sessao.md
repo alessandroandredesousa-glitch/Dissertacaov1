@@ -1,6 +1,30 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 17/07/2026
+## Última sessão: 24/07/2026
+
+---
+
+## Sessão 24/07/2026
+
+### Remoção de travessões
+- Todo o conteúdo VISÍVEL do site ficou sem travessão ("—"): trocado por vírgula ou dois-pontos no Cap. 1 (seções que eu redigi), na 2.9 e no rótulo de menu 2.6. Convenção adotada: não usar travessão no conteúdo do site daqui pra frente. (Os travessões dos docs de apoio — sumário e notas — e o traço "–" das legendas de figura foram mantidos, a pedido.)
+
+### Capítulo 3 — Quadriláteros (menu + páginas "em construção")
+- Adicionado o menu **3 Quadriláteros Notáveis** com 3.1–3.6 (conforme `sumario_completo.md`). Cada seção abre uma página "🚧 Seção em construção" com `videoId: 'PLACEHOLDER'` (mostra o espaço do vídeo) — pra marcar onde paramos. Demonstrações serão feitas uma a uma.
+- **Removidos** os tópicos de teste **Geometria Analítica** e **Geometria Espacial** (menu + páginas dummy do bloco OUTROS). **Sobre a Dissertação** e **Contato** mantidos como parte do trabalho (ainda com conteúdo de exemplo, a preencher).
+
+### Animações do Capítulo 1 (Conexty)
+- **`reta_semirreta_segmento.js`** (1.1) — ponto O sobre a reta AB; dois parâmetros INDEPENDENTES giram as semirretas opostas OA e OB em torno de O; a reta (que contém os raios) é desenhada por último, definindo semirretas opostas. Segue o rascunho do Alessandro + pseudocódigo. Lápis desenha o cenário; params só animam os raios.
+- **`angulo_oposto_vertice.js`** (1.3) — CONCLUÍDA. Retas AC e DB por dois pontos (estendidas além deles), O = interseção, par congruente AÔB/CÔD em dourado com `measureMarks`, adjacente CÔB em azul, opacidade independente por ângulo (sumir/reaparecer). Nas equações, o termo comum CÔB fica azul (\textcolor) igual ao setor. Convertida do pseudocódigo manuscrito do Alessandro.
+
+### Guia atualizado (mantido LOCAL)
+- Novas técnicas: **8.36** reta por dois pontos estendida (com o cuidado do sinal do `ext`), **8.37** colorir um termo da equação igual ao setor (\textcolor casando com fillColor). Catálogo (seção 12) com as linhas de `reta_semirreta_segmento.js` (1.1) e `angulo_oposto_vertice.js` (1.3).
+
+### Fluxo de trabalho descoberto
+- Rascunhos manuscritos do Alessandro (storyboard + pseudocódigo) chegam como PDF em `pdf demonstações/`. Para lê-los: renderizar as páginas em PNG no sandbox (`pdftoppm -png -r 120 arquivo.pdf /.../outputs/nome`) e abrir os PNGs como imagem.
+
+### Próximo passo
+Seguir as animações do Cap. 1 (1.2 Ângulo, 1.4 Complementares/Suplementares) e/ou começar as demonstrações do Cap. 3.
 
 ---
 

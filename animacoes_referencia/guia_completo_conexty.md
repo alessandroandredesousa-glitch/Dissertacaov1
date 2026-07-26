@@ -979,6 +979,46 @@ animation(sumir_A, sumir_B, sumir_C, mostrar_todas, mover, (a, b, c, todas, t) =
 
 ---
 
+### 8.36 Reta por Dois Pontos (estendida além deles)
+
+Para desenhar uma **reta** (não só o segmento) que passa por dois pontos dados `P` e `Q` e ultrapassa ambos:
+
+```javascript
+const dpx = Q.x - P.x, dpy = Q.y - P.y
+const n = Math.sqrt(dpx * dpx + dpy * dpy)
+const ux = dpx / n, uy = dpy / n
+const ext = 1.0   // quanto ultrapassa cada ponto
+
+drawSegment({
+    points: [
+        { x: P.x - ext * ux, y: P.y - ext * uy },   // além de P (lado oposto a Q)
+        { x: Q.x + ext * ux, y: Q.y + ext * uy }     // além de Q
+    ],
+    color: cor_branco, width: 0.04
+})
+```
+
+**Cuidado com o sinal:** `P - ext*u` estende para FORA (além de P); `P + ext*u` iria para DENTRO (encurtando a reta antes de P). Erro comum: a reta parar antes dos pontos.
+
+---
+
+### 8.37 Colorir um Termo da Equação Igual ao Setor (\textcolor)
+
+Para amarrar visualmente um termo de uma equação ao ângulo correspondente na figura, colorir só esse termo com `\textcolor`, usando a mesma cor do `fillColor` do setor. Ex.: o termo comum `CÔB` em azul, igual ao setor azul:
+
+```javascript
+// setor CÔB desenhado em cor_azul_eletrico (#00B0FF)
+drawSector({ points: [B, O, C], radius: 0.7, fill: true, fillColor: cor_azul_eletrico, opacity: 1 - sb })
+
+// nas equações, só o termo CÔB fica azul:
+drawText({ text: "$\\textcolor{#00B0FF}{C\\hat{O}B} + B\\hat{O}A = 180^\\circ$", x: -2.49, y: -2.8, fontSize: 0.6 })
+drawText({ text: "$D\\hat{O}C + \\textcolor{#00B0FF}{C\\hat{O}B} = 180^\\circ$", x: -2.51, y: -3.78, fontSize: 0.6 })
+```
+
+Assim, ao "cancelar" o termo comum das duas equações, o olho identifica na hora qual ângulo está saindo. Combina com um parâmetro de opacidade independente por ângulo (`opacity: 1 - s`, botões `[{value:1},{value:0}]` = sumir/reaparecer) para esconder/mostrar cada setor durante a narração.
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
@@ -1298,6 +1338,8 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `bissetriz.js` | 2.4.3 | Encolher por centroide, interseção de segmentos, 3 params em animation, sumir_sombra |
 | `bissetriz_triangulo.js` | 2.4.4 | Pé da bissetriz via Teorema da Bissetriz Interna (8.32), incentro por ponderação baricêntrica (8.33), bissecção visível com dois setores + measureMarks (8.34), opacidade geometria vs texto separada (8.35), pontos derivados recalculados a cada frame para acompanhar vértices móveis |
 | `angulo_externo.js` | 2.5 | Estrutura limpa, setores de ângulo externo |
+| `reta_semirreta_segmento.js` | 1.1 | Ponto O sobre reta AB; dois params independentes giram semirretas opostas OA/OB; reta desenhada por último (define semirretas opostas) |
+| `angulo_oposto_vertice.js` | 1.3 | Reta por dois pontos estendida (8.36), interseção O (8.9), par congruente dourado com measureMarks (8.34), opacidade independente por ângulo (sumir/reaparecer), termo comum colorido igual ao setor (8.37) |
 | `congruencia_laa_o.js` | 2.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
 | `maior_lado_maior_angulo.js` | 2.7.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
 | `desigualdade_triangular.js` | 2.7.2 | Transporte bissetor, mesmo param dois efeitos opostos, vértices animados via senoides, cópias que voam com comprimento dinâmico, animation(p1, p2), sistema com chave LaTeX |
