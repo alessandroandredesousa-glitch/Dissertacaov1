@@ -895,10 +895,10 @@ const PAGES_DATA = {
 'bissetriz-triangulo': {
     title: '2.4.4 Bissetriz de um Triângulo',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
-    videoDescription: 'Bissetriz de um Triângulo',
+    videoId: 'dNrLqm0FWRQ',
+    videoDuration: '0:56 minutos',
+    videoDate: '24 de julho de 2026',
+    videoDescription: 'Bissetriz de um triângulo e o incentro.',
     sectionTitle: '',
     content: `
         <div class="math-display">
