@@ -2,12 +2,12 @@
 // Status: CONCLUÍDA — usar como referência de estilo
 //
 // Destaques:
-// - retas AC e DB desenhadas por dois pontos, estendidas ALÉM deles (A - ext*u ... C + ext*u)
-// - O = interseção das duas retas (Téc. 8.9)
-// - par congruente AÔB e CÔD em dourado com measureMarks: 1 (Téc. 8.34)
+// - retas AC e DB por dois pontos, estendidas ALÉM deles (8.36)
+// - O = interseção das duas retas (8.9)
+// - par oposto pelo vértice AÔB e CÔD em coral com measureMarks: 1 (8.34)
 // - ângulo adjacente CÔB em azul
-// - um parâmetro de opacidade INDEPENDENTE por ângulo (sumir=1 / reaparecer=0), opacity: 1 - s
-// - nas equações, o termo comum CÔB é colorido de AZUL com \textcolor, casando com o setor azul
+// - um parâmetro de opacidade INDEPENDENTE por ângulo (sumir=1 / reaparecer=0)
+// - nas equações, o termo comum CÔB é colorido igual ao setor (\textcolor, 8.37)
 
 //drawGrid({ xMin: -5, xMax: 5, yMin: -5, yMax: 5 });
 
@@ -33,7 +33,6 @@ drawText({
     x: 0.09, y: 4.08, color: cor_titulo
 })
 
-pause()
 
 // === CONST A, B, C, D  (retas AC e DB) ===
 const A = { x:  2.7, y:  2.6 }
@@ -58,7 +57,7 @@ drawPoint({ x: C.x, y: C.y, size: 0.07})
 drawText({ text: "$C$", x: C.x - 0.4, y: C.y, fontSize: 0.5 })
 drawSegment({ points: [{ x: A.x - ext * uACx, y: A.y - ext * uACy }, { x: C.x + ext * uACx, y: C.y + ext * uACy }], color: cor_branco, width: 0.04 })
 
-pause()
+
 
 // === RETA DB (além de B e D) ===
 drawPoint({ x: B.x, y: B.y , size: 0.07})
@@ -82,8 +81,9 @@ const p_COB = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 
 
 // === SETORES ===
 animation(p_AOB, p_CVD, p_COB, (sa, sc, sb) => {
-    drawSector({ points: [A, O, B], radius: 0.7, fill: true, fillColor: cor_dourado, measureMarks: 1, opacity: 1 - sa })
-    drawSector({ points: [C, O, D], radius: 0.7, fill: true, fillColor: cor_dourado, measureMarks: 1, opacity: 1 - sc })
+    drawSector({ points: [A, O, B], radius: 0.7, fill: true, fillColor: cor_coral, measureMarks: 1, opacity: 1 - sa })
+    drawSector({ points: [C, O, D], radius: 0.7, fill: true, fillColor: cor_coral, measureMarks: 1, opacity: 1 - sc })
+    pause()
     drawSector({ points: [B, O, C], radius: 0.7, fill: true, fillColor: cor_azul_eletrico, opacity: 1 - sb })
 })
 
@@ -99,5 +99,5 @@ drawText({ text: "$D\\hat{O}C + \\textcolor{#00B0FF}{C\\hat{O}B} = 180^\\circ$",
 pause()
 
 // === CONCLUSÃO ===
-drawText({ text: "$\\Rightarrow \\; B\\hat{O}A = D\\hat{O}C$", x: 2.58, y: -3.33, fontSize: 0.6, color: cor_verde_menta })
-drawText({ text: "Logo, $A\\hat{O}B \\equiv C\\hat{O}D$.", x: -0.27, y: -5.8, fontSize: 0.55, color: cor_verde_menta })
+drawText({ text: "$\\Rightarrow \\; B\\hat{O}A = D\\hat{O}C$", x: 2.58, y: -3.33, fontSize: 0.6, color: cor_coral})
+drawText({ text: "Logo, $A\\hat{O}B \\equiv C\\hat{O}D$.", x: -0.27, y: -5.8, fontSize: 0.55, color: cor_coral })

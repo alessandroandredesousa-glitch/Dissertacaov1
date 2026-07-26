@@ -1019,6 +1019,29 @@ Assim, ao "cancelar" o termo comum das duas equações, o olho identifica na hor
 
 ---
 
+### 8.38 Cor Padrão que Adapta ao Fundo (imagem branca × animação preta)
+
+As **animações** rodam em fundo **PRETO**; as **imagens estáticas** exportadas para o site saem em fundo **BRANCO**. Um elemento com cor fixa clara (ex.: `cor_branco` numa reta, ou `cor_amarelo_neon` num ponto) fica invisível no fundo branco da imagem.
+
+**Regra:** para elementos neutros (retas, pontos, rótulos, o vértice), **não passar `color`** — deixar a **cor padrão do sistema**, que se adapta ao fundo (clara no preto, escura no branco). Reservar cor fixa só para o que precisa de destaque e aparece bem nos dois fundos (ex.: setores em `cor_coral`).
+
+```javascript
+// ❌ some no fundo branco da imagem:
+drawSegment({ points: [P, Q], color: cor_branco, width: 0.04 })
+drawPoint({ x: O.x, y: O.y, color: cor_amarelo_neon })
+
+// ✅ adapta ao fundo (imagem e animação):
+drawSegment({ points: [P, Q], width: 0.04 })
+drawPoint({ x: O.x, y: O.y })
+
+// destaque com cor fixa que funciona nos dois fundos:
+drawSector({ points: [A, O, B], radius: 0.7, fill: true, fillColor: cor_coral })
+```
+
+Ao gerar a versão IMAGEM de uma animação: manter as mesmas contas/pontos, tirar cor fixa dos elementos neutros e conferir que as cores de destaque contrastam no branco.
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
@@ -1339,7 +1362,7 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `bissetriz_triangulo.js` | 2.4.4 | Pé da bissetriz via Teorema da Bissetriz Interna (8.32), incentro por ponderação baricêntrica (8.33), bissecção visível com dois setores + measureMarks (8.34), opacidade geometria vs texto separada (8.35), pontos derivados recalculados a cada frame para acompanhar vértices móveis |
 | `angulo_externo.js` | 2.5 | Estrutura limpa, setores de ângulo externo |
 | `reta_semirreta_segmento.js` | 1.1 | Ponto O sobre reta AB; dois params independentes giram semirretas opostas OA/OB; reta desenhada por último (define semirretas opostas) |
-| `angulo_oposto_vertice.js` | 1.3 | Reta por dois pontos estendida (8.36), interseção O (8.9), par congruente dourado com measureMarks (8.34), opacidade independente por ângulo (sumir/reaparecer), termo comum colorido igual ao setor (8.37) |
+| `angulo_oposto_vertice.js` | 1.3 | Reta por dois pontos estendida (8.36), interseção O (8.9), par oposto pelo vértice em coral com measureMarks (8.34), opacidade independente por ângulo (sumir/reaparecer), termo comum colorido igual ao setor (8.37); versão imagem em `img_opostos_vertice_code.js` com cor adaptável ao fundo (8.38) |
 | `congruencia_laa_o.js` | 2.6 LAA | Ponto P dinâmico em segmento, função hipotese(), flushright, ABSURDO em vermelho |
 | `maior_lado_maior_angulo.js` | 2.7.1 | Transporte bissetor, duas fases 0→2, comparação em P, bicondicional, \\pause em drawText |
 | `desigualdade_triangular.js` | 2.7.2 | Transporte bissetor, mesmo param dois efeitos opostos, vértices animados via senoides, cópias que voam com comprimento dinâmico, animation(p1, p2), sistema com chave LaTeX |

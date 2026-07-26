@@ -88,7 +88,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <p style="text-align: center; font-weight: bold;">Figura 1.4 – Ângulos opostos pelo vértice \\(A\\widehat{O}B\\) e \\(C\\widehat{O}D\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.3/img_opostos_vertice.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.3/img_opostos_vertice.png" alt="Ângulos opostos pelo vértice AÔB e CÔD" style="max-width: 60%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
