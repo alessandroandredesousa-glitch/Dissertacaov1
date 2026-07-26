@@ -75,9 +75,9 @@ const PAGES_DATA = {
     'opostos-vertice': {
         title: '1.3 Ângulos Opostos pelo Vértice',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'M4OhnL0tNXk',
+        videoDuration: '1:12 minutos',
+        videoDate: '24 de julho de 2026',
         videoDescription: 'Ângulos opostos pelo vértice e sua congruência.',
         sectionTitle: '',
         content: `
