@@ -5,9 +5,9 @@ const PAGES_DATA = {
     'reta-semirreta-segmento': {
         title: '1.1 Reta, Semirreta e Segmento',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: '9WkcbcVO9Gg',
+        videoDuration: '0:57 minutos',
+        videoDate: '26 de julho de 2026',
         videoDescription: 'Reta, semirreta e segmento de reta.',
         sectionTitle: '',
         content: `
@@ -35,9 +35,9 @@ const PAGES_DATA = {
     'angulo-elementos': {
         title: '1.2 Ângulo: Definição e Elementos',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'p_jAhinA3OU',
+        videoDuration: '1:08 minutos',
+        videoDate: '26 de julho de 2026',
         videoDescription: 'Definição de ângulo, elementos e classificação inicial.',
         sectionTitle: '',
         content: `
