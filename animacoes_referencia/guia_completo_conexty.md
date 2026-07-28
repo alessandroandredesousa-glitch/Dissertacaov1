@@ -1042,6 +1042,42 @@ Ao gerar a versão IMAGEM de uma animação: manter as mesmas contas/pontos, tir
 
 ---
 
+### 8.39 Transporte de um Ângulo (interpolação de vértice + rotação)
+
+Para animar **um ângulo "solto" sendo levado para ficar adjacente a outro** (ex.: juntar dois ângulos até formarem um raso de 180° ou um reto de 90°), usa-se um ângulo **âncora** (fixo, no destino) e um ângulo **móvel** que se transporta rigidamente até encostar nele, compartilhando um lado.
+
+O móvel é definido pelas **direções finais** dos seus dois lados (o lado que ficará comum e o outro). Um parâmetro `s ∈ [0,1]` interpola **ao mesmo tempo** a posição do vértice (translação) e um deslocamento angular `ρ` (rotação), de modo que em `s=0` ele está separado/girado e em `s=1` está no lugar exato, adjacente à âncora.
+
+```javascript
+const dr = Math.PI / 180
+const Lr = 2.6
+const Vd = { x: -1.4, y: -6 }   // vértice DESTINO (o mesmo da âncora)
+const Vi = { x: 2.7, y: -6 }    // vértice INICIAL (móvel separado)
+const R0 = -90                  // giro inicial (graus) — em s=0 fica girado R0
+// direções FINAIS dos lados do móvel (compartilhado e outro):
+const dCom = 120, dOut = 180
+
+animation(p, (s) => {
+    const V = { x: Vi.x + (Vd.x - Vi.x) * s, y: Vi.y + (Vd.y - Vi.y) * s }  // translada
+    const rho = R0 * (1 - s)                                                // desgira
+    const tCom = { x: V.x + Lr*Math.cos((dCom+rho)*dr), y: V.y + Lr*Math.sin((dCom+rho)*dr) }
+    const tOut = { x: V.x + Lr*Math.cos((dOut+rho)*dr), y: V.y + Lr*Math.sin((dOut+rho)*dr) }
+    drawSector({ points: [tOut, V, tCom], radius: 0.75, fill: true, fillColor: cor_coral, opacity: 0.75 })
+    drawArrow({ points: [V, tCom], color: cor_verde_menta, size: 0.2 })
+    drawArrow({ points: [V, tOut], color: cor_verde_menta, size: 0.2 })
+})
+```
+
+Notas:
+- A **âncora** é desenhada separada, fixa em `Vd`, com seus lados nas direções `0°` e `dCom` (ex.: setor `0°→120°`). Ao juntar, o setor móvel `dCom→dOut` completa o raso/reto.
+- Cor por papel: **âncora = dourado**, **móvel = coral** (setores); assim o leitor vê qual ângulo se moveu.
+- **Rótulos das medidas seguem a cor do setor** (dourado para o da âncora, coral para o do móvel) na animação (fundo preto). Na versão IMAGEM (fundo branco), usar cor padrão nos rótulos, pois o dourado some.
+- Para empilhar duas cenas na mesma tela sem apagar, **desenhar a segunda mais para baixo** (ex.: um par em `y≈-6` e outro em `y≈-11.5`), em vez de usar parâmetro de "apagar".
+
+Usado em `angulo_complementar_suplementar.js` (1.4): junta 120°+60°=180° (suplementares) e 60°+30°=90° (complementares).
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
