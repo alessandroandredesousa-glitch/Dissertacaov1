@@ -131,7 +131,9 @@ const PAGES_DATA = {
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.5 – Ângulos complementares (soma \\(90^\\circ\\)) e suplementares (soma \\(180^\\circ\\))</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/1.4/img_complementares_suplementares.png</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/1.4/img_complementares_suplementares.png" alt="Ângulos complementares (soma 90°) e suplementares (soma 180°)" style="max-width: 100%; height: auto;">
+            </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Por exemplo, o complemento de \\(25^\\circ\\) é \\(65^\\circ\\) (pois \\(25^\\circ + 65^\\circ = 90^\\circ\\)) e o suplemento de \\(72^\\circ\\) é \\(108^\\circ\\) (pois \\(72^\\circ + 108^\\circ = 180^\\circ\\)).</p>
