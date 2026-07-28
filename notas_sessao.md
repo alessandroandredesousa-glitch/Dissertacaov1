@@ -1,6 +1,28 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 24/07/2026
+## Última sessão: 27/07/2026
+
+---
+
+## Sessão 27/07/2026
+
+### Animação 1.2 (Ângulo — Definição e Elementos) e imagens
+- **`angulo_elementos.js`** (1.2) — versão final com 4 pauses na ordem definida pelo Alessandro: (1) ângulo + lados OA/OB, (2) rótulos Vértice/Lado, (3) medida ao vivo, (4) lado OC + BÔC (adjacentes). Corrigido o setor virando pra baixo em 180° com `thetaSec = Math.min(theta, Math.PI - 0.01)` e ponto de direção `Asec` separado.
+- Imagens geradas e colocadas: `imagem/1.2/img_angulo_elementos.png` e `imagem/1.2/img_angulos_consecutivos.png`.
+- Vídeos 1.1 e 1.2 adicionados ao site (shorts do YouTube).
+
+### Animação 1.4 (Complementares, Suplementares e Ângulo Reto) — CONCLUÍDA
+- **`angulo_complementar_suplementar.js`** — duas partes no mesmo código, do pseudocódigo manuscrito ("14 complementar e suplementar").
+  - **Parte 1** (em cima): OA gira e o ângulo é classificado reto/agudo/obtuso ao vivo (if/else), com referência de 90° tracejada de baixa opacidade e marca de ângulo reto quando ≈90°.
+  - **Parte 2** (desenhada MAIS PARA BAIXO, sem parâmetro de apagar — decisão do Alessandro): dois pares de ângulos que se JUNTAM. Ângulo âncora fixo + ângulo móvel transportado (interpolação de vértice + rotação `ρ=R0*(1-s)`) até ficar adjacente. Junta 120°+60°=180° (suplementares, y≈-6) e 60°+30°=90° (complementares, y≈-11.5).
+  - Ajustes do Alessandro: rótulo de medida na **cor do setor** (âncora dourado, móvel coral); posições afinadas por ele.
+- Imagem: `img_complementares_suplementares_code.js` → `imagem/1.4/img_complementares_suplementares.png` (Figura 1.5), já ligada na seção 1.4 (placeholder substituído). Na imagem (fundo branco) os rótulos ficam na cor padrão porque o dourado sumiria.
+
+### Guia atualizado (mantido LOCAL)
+- Nova técnica **8.39** — transporte de um ângulo por interpolação de vértice + rotação (juntar dois ângulos formando raso/reto). Catálogo (seção 12) com as linhas de `angulo_elementos.js` (1.2) e `angulo_complementar_suplementar.js` (1.4).
+
+### Próximo passo
+Seguir as animações/demonstrações restantes do Cap. 1, ou começar as demonstrações do Cap. 3 (Quadriláteros). Falta o vídeo da 1.4 (ainda `PLACEHOLDER`).
 
 ---
 
