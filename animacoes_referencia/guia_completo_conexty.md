@@ -1078,6 +1078,67 @@ Usado em `angulo_complementar_suplementar.js` (1.4): junta 120°+60°=180° (sup
 
 ---
 
+### 8.40 Fases encadeadas com parâmetro de transição (uma some, a próxima aparece)
+
+Para emendar duas fases de uma prova na MESMA tela (ex.: ângulos internos → externos), usa-se um único parâmetro de transição (ex.: `sumirInterno`) que **apaga a fase 1** e **revela a fase 2**, com o mesmo `si`:
+
+```javascript
+const sumirInterno = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 1.5 }], label: "Sumir internos" })
+
+// fase 1: multiplica a opacidade por (1 - si) -> some
+animation(juntar, sumirInterno, (t, si) => { drawSector({ ..., opacity: 0.85 * (1 - si) }) })
+
+// fase 2: multiplica por si -> aparece só depois de limpar a fase 1
+animation(juntarExt, sumirInterno, (t, si) => { drawSector({ ..., opacity: 0.8 * si }) })
+```
+
+- Um mesmo elemento pode reagir a DOIS params: `animation(paramA, paramB, (a, b) => ...)`. Ex.: interno que se move com `juntar` e some com `sumirInterno`.
+- Para um elemento sumir por qualquer um de dois motivos: `opacity: 1 - Math.max(t, si)`.
+- As `drawText` das duas fases coexistem no código; só a opacidade decide o que está na tela.
+
+### 8.41 Transporte de ângulo com rótulo de posição inicial E final independentes
+
+No transporte (8.39), o rótulo do ângulo interpola entre duas posições **totalmente custom** (uma no vértice, outra no destino), em vez de calcular pela bissetriz — dá controle fino nas duas pontas:
+
+```javascript
+const labA = { x: -2.59, y: 0.93 }, labAf = { x: 0.74, y: 0.43 }   // início / fim
+// dentro do animation(param, ...):
+drawText({ text: label, x: labIni.x + (labFim.x - labIni.x) * t, y: labIni.y + (labFim.y - labIni.y) * t, ... })
+```
+
+Padrão útil: deixar `const labX = {...}, labXf = {...}` no topo, um par por ângulo, e ajustar à mão.
+
+### 8.42 `\textcolor` só nos termos com significado (resto na cor padrão)
+
+Nas equações, colorir **apenas** os termos que remetem a algo da figura (cada ângulo na cor do seu setor), deixando operadores e números na **cor padrão do sistema** (não passar `color:` no `drawText`, só usar `\textcolor{#hex}{...}` nos termos):
+
+```javascript
+// só os ângulos coloridos; "+", "=" e "360°" ficam no padrão (adapta ao fundo)
+drawText({ text: "$\\textcolor{#FF6B6B}{\\hat{A}} + \\textcolor{#00B0FF}{\\hat{B}} + \\textcolor{#FFD700}{\\hat{C}} + \\textcolor{#00FA9A}{\\hat{D}} = 360^\\circ$", fontSize: 0.6, opacity: 1 - si })
+```
+
+- Aceita hexadecimal: `\\textcolor{#BF00FF}{...}`.
+- Para colorir uma **palavra** dentro de `$...$`, envolver com `\\text{}`: `\\textcolor{#39FF14}{\\text{internos}}`.
+
+### 8.43 Ângulo externo (prolongamento do lado) e leque de 360°
+
+Ângulo externo no vértice `V` (na travessia `prev → V → next`): é o ângulo entre o **prolongamento** do lado que chega (`prev→V`) e o lado que sai (`V→next`); mede `180° − interno`. Os quatro externos de um polígono convexo somam `360°`, e podem ser transportados (8.39) a um ponto comum fechando a volta:
+
+```javascript
+function externo(prev, V, next) {
+    const aExt = ang(prev, V), aNext = ang(V, next)     // prolongamento e lado seguinte
+    const d = norm180(aNext - aExt)
+    return d >= 0 ? { start: aExt, m: d, aExt } : { start: aNext, m: -d, aExt }
+}
+// prolongamento tracejado a partir do vértice:
+const Ext = { x: V.x + L * Math.cos(aExt * DEG), y: V.y + L * Math.sin(aExt * DEG) }
+drawSegment({ points: [V, Ext], lineDash: [0.12, 0.1] })
+```
+
+Usado em `quad_soma_angulos.js` (3.1). Bônus: a diagonal desenhada por `drawSegment` **dentro** de `animation(param, ...)` ainda ganha o traço do lápis na primeira aparição, e pode sumir depois via `opacity`.
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
@@ -1409,3 +1470,4 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `paralelas_angulos_congruentes.js` | 2.8.5 | saida() com origem variável (8.31), fade com opacity:(1-b) (8.29), rotação suave por interpolação theta*(1-p) (8.30), título sem numeração (8.28), animation(p1, p2) com dois params independentes |
 | `angulo_elementos.js` | 1.2 | Ângulo abrindo 0°→180° com medida ao vivo (r*180).toFixed(2); setor limitado a ~179.4° (thetaSec) p/ não virar em 180°; 4 pauses encadeados (ângulo → rótulos vértice/lado → medida → adjacentes OC/BÔC); param clear apaga rótulos; versão imagem em `img_angulo_elementos_code.js` e `img_angulos_consecutivos_code.js` |
 | `angulo_complementar_suplementar.js` | 1.4 | Parte 1: reto/agudo/obtuso girando OA com classificação if/else e ref. de 90° tracejada. Parte 2 (mais abaixo, sem apagar): transporte de ângulo por interpolação de vértice + rotação (8.39) juntando 120°+60°=180° (suplementares) e 60°+30°=90° (complementares); âncora dourado, móvel coral, rótulo na cor do setor; versão imagem em `img_complementares_suplementares_code.js` |
+| `quad_soma_angulos.js` | 3.1 | Soma dos ângulos do quadrilátero. Abertura (vértices/lados), diagonais com `sumirDiag` (some/volta), teorema dos internos = 360° (diagonal AC → 2 triângulos de 180°) e transporte dos 4 ângulos num leque de 360°. Transição `sumirInterno` (fases encadeadas, 8.40) para a parte dos externos (prolongamento dos lados, 8.43) que também fecham 360°. Rótulos com pos. inicial/final custom (8.41); equações com `\textcolor` só nos termos com significado (8.42) |

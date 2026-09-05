@@ -2030,16 +2030,132 @@ const PAGES_DATA = {
         videoDescription: 'Definições e propriedades gerais dos quadriláteros.',
         sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>3.1 Definições e Propriedades Gerais</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                Estudado o triângulo, o polígono de menor número de lados, passamos aos
+                <strong>quadriláteros</strong>, figuras de quatro lados. Nesta seção fixamos a
+                linguagem (vértices, lados, diagonais e ângulos) e demonstramos a propriedade
+                central da qual as demais decorrem: a soma dos ângulos internos vale \\(360°\\).
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Dados quatro pontos \\(A\\), \\(B\\), \\(C\\) e \\(D\\),
+                    três a três não colineares, o <strong>quadrilátero</strong> \\(ABCD\\) é a reunião
+                    dos segmentos \\(\\overline{AB}\\), \\(\\overline{BC}\\), \\(\\overline{CD}\\) e
+                    \\(\\overline{DA}\\), com a condição de que dois lados não consecutivos não tenham
+                    ponto em comum.
+                </p>
+            </div>
+
+            <p>Os elementos do quadrilátero \\(ABCD\\) são:</p>
+
+            <ul style="margin: 8px 0 8px 24px;">
+                <li><strong>vértices:</strong> os pontos \\(A\\), \\(B\\), \\(C\\) e \\(D\\);</li>
+                <li><strong>lados:</strong> os segmentos \\(\\overline{AB}\\), \\(\\overline{BC}\\), \\(\\overline{CD}\\) e \\(\\overline{DA}\\). Dois lados com um vértice comum são <strong>consecutivos</strong>; sem vértice comum, <strong>opostos</strong>;</li>
+                <li><strong>diagonais:</strong> os segmentos que ligam vértices não consecutivos, \\(\\overline{AC}\\) e \\(\\overline{BD}\\);</li>
+                <li><strong>ângulos internos:</strong> \\(\\widehat{A}\\), \\(\\widehat{B}\\), \\(\\widehat{C}\\) e \\(\\widehat{D}\\).</li>
+            </ul>
+
+            <p>
+                Um quadrilátero é <strong>convexo</strong> quando cada uma de suas diagonais está
+                inteiramente contida em seu interior ou, de modo equivalente, quando todos os seus
+                ângulos internos medem menos de \\(180°\\). Salvo menção em contrário, trabalharemos
+                sempre com quadriláteros convexos.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.1 – Quadrilátero convexo \\(ABCD\\), com lados, ângulos internos e as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.1/img_quadrilatero_convexo.png" alt="Quadrilátero convexo ABCD com lados, ângulos internos e as diagonais AC e BD" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Enquanto o triângulo não possui diagonais, o quadrilátero possui exatamente duas:
+                de cada vértice parte uma única diagonal, ligando-o ao vértice oposto. Esse é o caso
+                \\(n = 4\\) da fórmula geral \\(\\dfrac{n(n-3)}{2}\\) para o número de diagonais de um
+                polígono convexo de \\(n\\) lados.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (Soma dos Ângulos Internos):</strong> A soma dos ângulos internos
+                    de todo quadrilátero convexo é igual a \\(360°\\).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.2 – A diagonal \\(\\overline{AC}\\) decompõe o quadrilátero \\(ABCD\\) nos triângulos \\(ABC\\) e \\(ACD\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.1/img_diagonal_dois_triangulos.png" alt="A diagonal AC decompõe o quadrilátero ABCD nos triângulos ABC e ACD" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) um quadrilátero convexo. Tracemos a diagonal \\(\\overline{AC}\\).
+                Como o quadrilátero é convexo, essa diagonal está contida em seu interior e o separa
+                em dois triângulos: \\(ABC\\) e \\(ACD\\).
+            </p>
+
+            <p>
+                A diagonal decompõe o ângulo \\(\\widehat{A}\\) em duas partes,
+                \\(\\widehat{A}_1\\) (no triângulo \\(ABC\\)) e \\(\\widehat{A}_2\\) (no triângulo \\(ACD\\)),
+                de modo que \\(\\widehat{A}_1 + \\widehat{A}_2 = \\widehat{A}\\); do mesmo modo, decompõe
+                \\(\\widehat{C}\\) em \\(\\widehat{C}_1 + \\widehat{C}_2 = \\widehat{C}\\). Já os ângulos
+                \\(\\widehat{B}\\) e \\(\\widehat{D}\\) pertencem por inteiro a um único triângulo.
+            </p>
+
+            <p>
+                Pela
+                <a href="#" onclick="loadPage('soma-angulos-triangulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">soma dos ângulos internos de um triângulo (seção 2.8.6)</a>,
+                cada um dos dois triângulos contribui com \\(180°\\):
+                \\[ \\left(\\widehat{A}_1 + \\widehat{B} + \\widehat{C}_1\\right) + \\left(\\widehat{A}_2 + \\widehat{C}_2 + \\widehat{D}\\right) = 180° + 180° = 360°. \\]
+                Reagrupando os termos e usando \\(\\widehat{A}_1 + \\widehat{A}_2 = \\widehat{A}\\) e
+                \\(\\widehat{C}_1 + \\widehat{C}_2 = \\widehat{C}\\), obtemos
+                \\[ \\widehat{A} + \\widehat{B} + \\widehat{C} + \\widehat{D} = 360°. \\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário (Soma dos Ângulos Externos):</strong> Considerando um ângulo
+                    externo em cada vértice, a soma dos quatro ângulos externos de um quadrilátero
+                    convexo é igual a \\(360°\\).
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Em cada vértice, o ângulo interno e o ângulo externo são
+                <a href="#" onclick="loadPage('complementares-suplementares')" style="color: inherit; text-decoration: underline; cursor: pointer;">suplementares (seção 1.4)</a>,
+                somando \\(180°\\). Nos quatro vértices, internos e externos somam, ao todo,
+                \\(4 \\times 180° = 720°\\). Subtraindo a soma dos ângulos internos, que acabamos de
+                mostrar valer \\(360°\\), resta para os externos:
+                \\[ 720° - 360° = 360°. \\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Generalização:</strong> O mesmo argumento da diagonal, feito a partir de
+                    um único vértice de um polígono convexo de \\(n\\) lados, o decompõe em
+                    \\(n - 2\\) triângulos. Logo, a soma de seus ângulos internos é
+                    \\((n - 2)\\cdot 180°\\), enquanto a soma de seus ângulos externos permanece igual
+                    a \\(360°\\), qualquer que seja \\(n\\). O quadrilátero é o caso \\(n = 4\\).
+                </p>
+            </div>
+
         </div>
         `
     },
 
     'base-media': {
-        title: '3.2 Base Média do Triângulo e do Trapézio',
+        title: '3.3 Base Média do Triângulo e do Trapézio',
         description: '',
         videoId: 'PLACEHOLDER',
         videoDuration: 'a definir',
@@ -2048,7 +2164,7 @@ const PAGES_DATA = {
         sectionTitle: '',
         content: `
         <div class="theorem" style="text-align: center;">
-            <h3>3.2 Base Média do Triângulo e do Trapézio</h3>
+            <h3>3.3 Base Média do Triângulo e do Trapézio</h3>
             <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
             <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
         </div>
@@ -2056,7 +2172,7 @@ const PAGES_DATA = {
     },
 
     'trapezios': {
-        title: '3.3 Trapézios',
+        title: '3.2 Trapézios',
         description: '',
         videoId: 'PLACEHOLDER',
         videoDuration: 'a definir',
@@ -2064,10 +2180,164 @@ const PAGES_DATA = {
         videoDescription: 'Trapézios: classificação e propriedades.',
         sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
-            <h3>3.3 Trapézios</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        <div class="math-display">
+
+            <h3>3.2 Trapézios</h3>
+
+            <p>
+                Entre os quadriláteros, o <strong>trapézio</strong> é aquele caracterizado por um
+                par de lados paralelos. Vamos defini-lo, classificá-lo e demonstrar suas propriedades
+                fundamentais, com destaque para o trapézio isósceles.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Um <strong>trapézio</strong> é um quadrilátero convexo
+                    que possui um único par de lados paralelos. Os lados paralelos são as
+                    <strong>bases</strong> (uma maior e uma menor); os outros dois são os
+                    <strong>lados laterais</strong>. A distância entre as bases é a <strong>altura</strong>
+                    do trapézio.
+                </p>
+            </div>
+
+            <p>
+                Ao longo desta seção, adotamos o trapézio \\(ABCD\\) com bases \\(\\overline{AB}\\) e
+                \\(\\overline{CD}\\), sendo \\(\\overline{AB} \\parallel \\overline{CD}\\) e \\(\\overline{AB}\\)
+                a base maior; os lados laterais são \\(\\overline{AD}\\) e \\(\\overline{BC}\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.3 – Elementos do trapézio: bases \\(\\overline{AB}\\) e \\(\\overline{CD}\\), laterais \\(\\overline{AD}\\) e \\(\\overline{BC}\\), e a altura \\(h\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_elementos.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Classificação.</strong> Quanto aos lados laterais, o trapézio é:
+                </p>
+                <ul style="margin: 8px 0 8px 24px;">
+                    <li><strong>escaleno:</strong> laterais de medidas diferentes;</li>
+                    <li><strong>isósceles:</strong> laterais congruentes (\\(\\overline{AD} \\cong \\overline{BC}\\));</li>
+                    <li><strong>retângulo:</strong> uma lateral perpendicular às bases, o que lhe dá dois ângulos retos.</li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.4 – Os três tipos de trapézio: escaleno, isósceles e retângulo</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_tipos.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> Adotamos aqui a definição em que o trapézio tem
+                    <em>exatamente</em> um par de lados paralelos. Assim, o paralelogramo, que possui
+                    dois pares de lados paralelos, não é considerado um trapézio e será tratado à parte
+                    na <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.4</a>.
+                </p>
+            </div>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 1 (ângulos junto a uma lateral):</strong> Em todo trapézio,
+                    os dois ângulos adjacentes a um mesmo lado lateral são suplementares.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                O lado lateral \\(\\overline{AD}\\) é uma transversal às retas paralelas \\(\\overline{AB}\\)
+                e \\(\\overline{CD}\\). Os ângulos \\(\\widehat{A}\\) e \\(\\widehat{D}\\) são, então,
+                colaterais internos e, pela
+                <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.5</a>,
+                suplementares:
+                \\[ \\widehat{A} + \\widehat{D} = 180°. \\]
+                O mesmo argumento, aplicado à lateral \\(\\overline{BC}\\), dá \\(\\widehat{B} + \\widehat{C} = 180°\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 2 (trapézio isósceles):</strong> Em um trapézio isósceles,
+                    os ângulos adjacentes a uma mesma base são congruentes.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.5 – Transporte da lateral \\(\\overline{AD}\\): a paralela por \\(C\\) encontra \\(\\overline{AB}\\) em \\(P\\), formando o triângulo isósceles \\(BPC\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_isosceles_angulos.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) isósceles, com \\(\\overline{AD} \\cong \\overline{BC}\\). Por \\(C\\),
+                trace a paralela ao lado \\(\\overline{AD}\\), que encontra a base \\(\\overline{AB}\\)
+                em um ponto \\(P\\). Comparemos os triângulos \\(ACD\\) e \\(CAP\\):
+            </p>
+
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(\\overline{AC}\\) é lado comum;</li>
+                <li>\\(D\\widehat{C}A = P\\widehat{A}C\\) (alternos internos, pois \\(\\overline{CD} \\parallel \\overline{AP}\\), transversal \\(\\overline{AC}\\));</li>
+                <li>\\(D\\widehat{A}C = P\\widehat{C}A\\) (alternos internos, pois \\(\\overline{AD} \\parallel \\overline{PC}\\), transversal \\(\\overline{AC}\\)).</li>
+            </ul>
+
+            <p>
+                Logo, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA (seção 2.3)</a>,
+                \\(\\triangle ACD \\cong \\triangle CAP\\), e portanto \\(\\overline{CP} \\cong \\overline{AD}\\).
+                Como \\(\\overline{AD} \\cong \\overline{BC}\\), resulta \\(\\overline{CP} \\cong \\overline{BC}\\):
+                o triângulo \\(BPC\\) é isósceles, e seus ângulos da base são congruentes,
+                \\(B\\widehat{P}C = P\\widehat{B}C\\).
+            </p>
+
+            <p>
+                Ora, \\(B\\widehat{P}C = \\widehat{A}\\) (correspondentes, pois \\(\\overline{CP} \\parallel \\overline{AD}\\))
+                e \\(P\\widehat{B}C = \\widehat{B}\\). Portanto \\(\\widehat{A} = \\widehat{B}\\). Finalmente,
+                pela Propriedade 1, \\(\\widehat{A} + \\widehat{D} = \\widehat{B} + \\widehat{C} = 180°\\); com
+                \\(\\widehat{A} = \\widehat{B}\\), segue \\(\\widehat{D} = \\widehat{C}\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 3 (diagonais do trapézio isósceles):</strong> Em um trapézio
+                    isósceles, as diagonais são congruentes.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.6 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) do trapézio isósceles</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_diagonais.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Consideremos os triângulos \\(DAB\\) e \\(CBA\\), formados por cada diagonal com a base
+                maior \\(\\overline{AB}\\):
+            </p>
+
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(\\overline{AD} \\cong \\overline{BC}\\) (lados laterais, por hipótese);</li>
+                <li>\\(D\\widehat{A}B = C\\widehat{B}A\\) (ângulos da base maior, pela Propriedade 2);</li>
+                <li>\\(\\overline{AB}\\) é lado comum.</li>
+            </ul>
+
+            <p>
+                Pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL (seção 2.3)</a>,
+                \\(\\triangle DAB \\cong \\triangle CBA\\). Em particular, os lados correspondentes
+                \\(\\overline{DB}\\) e \\(\\overline{CA}\\) são congruentes, isto é, as diagonais são iguais:
+                \\[ \\overline{AC} \\cong \\overline{BD}. \\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação (recíproca):</strong> Vale também a volta: se um trapézio tem os
+                    ângulos de uma base congruentes, então ele é isósceles. Assim, ângulos da base
+                    congruentes caracterizam o trapézio isósceles, que é o único a possuir eixo de
+                    simetria (a reta perpendicular às bases pelos seus pontos médios).
+                </p>
+            </div>
+
         </div>
         `
     },

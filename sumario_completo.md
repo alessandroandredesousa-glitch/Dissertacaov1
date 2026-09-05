@@ -57,8 +57,8 @@
 *FME9 cap. VII; Rufino cap. 5.*
 
 - **3.1** Definições e Propriedades Gerais (soma dos ângulos internos = 360°)
-- **3.2** Base Média do Triângulo e do Trapézio
-- **3.3** Trapézios (classificação e propriedades)
+- **3.2** Trapézios (classificação e propriedades)
+- **3.3** Base Média do Triângulo e do Trapézio
 - **3.4** Paralelogramos (propriedades e diagonais)
 - **3.5** Quadriláteros Especiais (retângulo, losango, quadrado)
 - **3.6** ⭐ Teorema de Pitot (quadrilátero circunscritível) — *revisitado no Cap. 4*

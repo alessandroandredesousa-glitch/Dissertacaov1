@@ -1,6 +1,27 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 27/07/2026
+## Última sessão: 03/09/2026
+
+---
+
+## Sessão 03/09/2026
+
+### Capítulo 3 (Quadriláteros) — início da redação no site
+- **3.1 Definições e Propriedades Gerais** escrita e aprovada: definição/elementos, convexidade, nº de diagonais, teorema da soma dos ângulos internos = 360° (pela diagonal → 2 triângulos), corolário dos externos = 360° e generalização \((n-2)\cdot180°\). Duas figuras a inserir: `imagem/3.1/img_quadrilatero_convexo.png` e `img_diagonal_dois_triangulos.png`.
+- **Reordenação**: trocamos 3.2 e 3.3 — agora **3.2 Trapézios** (antes 3.3) e **3.3 Base Média** (antes 3.2), pois a base média do trapézio depende de já saber o que é trapézio. Ajustado em menu, títulos/h3 e sumário.
+- **3.2 Trapézios** escrita: definição, classificação (escaleno/isósceles/retângulo), P1 (ângulos junto a uma lateral suplementares), P2 (ângulos da base do isósceles por transporte da lateral → ALA), P3 (diagonais congruentes por LAL). Figuras a inserir em `imagem/3.2/`.
+- **Notação de ângulo corrigida**: o circunflexo vai só no vértice (`A\widehat{B}C`, não `\widehat{ABC}`); subscritos como `\widehat{A}_1`.
+
+### Animação da 3.1 (`quad_soma_angulos.js`) — FINALIZADA
+- Cobre boa parte da seção: abertura (vértices/lados), **diagonais** (param `sumirDiag` some/volta), teorema dos **internos = 360°** (diagonal AC, dois triângulos de 180°) com finale de **transporte dos 4 ângulos num leque de 360°**, e a **parte dos externos = 360°** (prolongamento dos lados + transporte + equação como no site).
+- 4 params na ordem: Sumir/voltar diagonais → Juntar internos → Sumir internos → Juntar externos.
+- Equações com `\textcolor` casando com a cor de cada ângulo; operadores/números na cor padrão.
+
+### Guia atualizado (LOCAL)
+- Técnicas novas **8.40** (fases encadeadas com param de transição), **8.41** (rótulo do transporte com pos. inicial/final custom), **8.42** (`\textcolor` só nos termos com significado), **8.43** (ângulo externo por prolongamento + leque de 360°). Catálogo (seção 12) com a linha de `quad_soma_angulos.js` (3.1).
+
+### Próximo passo
+Seguir o Capítulo 3: escrever a **3.3 Base Média do Triângulo e do Trapézio**. Figuras pendentes das 3.1/3.2 (Conexty).
 
 ---
 
