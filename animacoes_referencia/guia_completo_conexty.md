@@ -1139,6 +1139,80 @@ Usado em `quad_soma_angulos.js` (3.1). Bônus: a diagonal desenhada por `drawSeg
 
 ---
 
+### 8.44 Classificação por transformação (morph) com detecção de tipo ao vivo
+
+Um parâmetro **desliza um vértice** e a figura muda de tipo em tempo real; uma função classifica a configuração atual e o rótulo do tipo (com cor por tipo) acompanha:
+
+```javascript
+function topo(cx) { return { D: { x: cx - Ltop/2, y: A.y + h }, C: { x: cx + Ltop/2, y: A.y + h } } }
+function tipo(cx) {                                  // detecta pela geometria
+    const Dx = cx - Ltop/2, Cx = cx + Ltop/2
+    if (Math.abs(Dx - A.x) < 0.04 || Math.abs(Cx - B.x) < 0.04) return "retângulo"  // lado vertical
+    if (Math.abs(cx) < 0.04) return "isósceles"      // centralizado
+    return "escaleno"
+}
+const cx = param({ ..., buttons: [{value:0,time:1.5},{value:-1.5,time:2},{value:1.0,time:2},{value:0,time:2}], label: "Deslizar (muda o tipo)" })
+animation(cx, (t) => { const {D,C} = topo(t); /* desenha a figura + rótulo colorido de tipo(t) */ })
+```
+
+Marcas condicionais por tipo: mostrar ângulo reto (`drawSector` no vértice do lado vertical) só quando `tipo === "retângulo"`, ticks de congruência só quando `"isósceles"`, etc.
+
+### 8.45 Separar/comparar em CASCATA e em tamanho original (fade do original)
+
+Para comparar duas figuras congruentes sem levantar suspeita de que se mudou a escala, **não encolher** (`esc = 1`): transportar cada uma por **translação pura** para uma cascata (uma em cima, outra embaixo) e **apagar o original** para liberar espaço.
+
+```javascript
+const esc = 1
+const tgtL = { x: cen1.x, y:  1.2 }   // sobe
+const tgtR = { x: cen2.x, y: -2.7 }   // desce
+function xf(Pt, s, cen, tgt) { const px = tgt.x + esc*(Pt.x-cen.x), py = tgt.y + esc*(Pt.y-cen.y); return { x: Pt.x + s*(px-Pt.x), y: Pt.y + s*(py-Pt.y) } }
+// o original (contorno, rótulos, diagonais) some com o mesmo param 'separar':
+animation(cx, separar, (t, sep) => { drawSegment({ ..., opacity: 1 - sep }) })
+```
+
+- `esc = 1` ⇒ o transporte é translação rígida: preserva medidas (o espectador vê que nada mudou).
+- Rótulos das cópias entram só no fim do deslocamento (`opacity: p - (1 - s)`), evitando o lápis fantasma (8.x): nunca declarar texto com opacidade 0 esperando o parâmetro — desenhá-lo **depois** de um `pause()`.
+
+Usado em `trapezio.js` (3.2).
+
+---
+
+### 8.46 Retas suporte tracejadas dos colaterais internos (desenho clássico das paralelas)
+
+Para a demonstração visual de que dois ângulos consecutivos de um paralelogramo somam `180°`, reproduz-se o **desenho clássico** dos ângulos colaterais internos: prolongam-se as duas paralelas (`AB` e `DC`) e a transversal (`AD`) com **linha tracejada** (`lineDash`), deixando a figura reconhecível como "duas paralelas cortadas por uma transversal".
+
+```javascript
+// prolonga as paralelas AB e DC para trás de A e D (tracejado, mesma cor do par)
+drawSegment({ points: [A, { x: A.x - 1.8, y: A.y }], width: 0.02, lineDash: [0.14, 0.1], color: cor_coral, opacity: 0.7 * o })
+drawSegment({ points: [D, { x: D.x - 1.8, y: D.y }], width: 0.02, lineDash: [0.14, 0.1], color: cor_coral, opacity: 0.7 * o })
+// prolonga a transversal AD para os dois lados (u = D - A)
+const ux = D.x - A.x, uy = D.y - A.y
+drawSegment({ points: [{ x: A.x - 0.5*ux, y: A.y - 0.5*uy }, { x: D.x + 0.5*ux, y: D.y + 0.5*uy }], width: 0.02, lineDash: [0.14, 0.1], color: cor_azul_eletrico, opacity: 0.7 * o })
+```
+
+Combina com o **transporte de meia volta** (8.39): o ângulo `Â` desliza pela transversal até `D̂` (vetor `(D-A)*mv`), encaixando-se ao lado dele para formar visivelmente os `180°`. Arrows curvos (`drawArrow`) indicam qual ângulo é qual. Usado em `paralelogramo.js` (3.3).
+
+### 8.47 Simetria central: girar 180° em torno do ponto médio e coincidir
+
+Grande final que evidencia que o paralelogramo tem **centro de simetria** em `M` (interseção das diagonais): gira-se uma cópia da figura `180°` em torno de `M` e ela recai sobre si mesma. Rotação de um ponto `P` por ângulo `ang` em torno de `M`:
+
+```javascript
+function rot(Pt, ang) {
+    const dx = Pt.x - M.x, dy = Pt.y - M.y
+    const c = Math.cos(ang), s = Math.sin(ang)
+    return { x: M.x + dx*c - dy*s, y: M.y + dx*s + dy*c }
+}
+const girar = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 2.5 }, { value: 0, time: 2.5 }], label: "Girar 180° em torno de M" })
+animation(girar, (g) => {
+    const ang = Math.PI * g
+    drawPolygon({ points: [rot(A,ang), rot(B,ang), rot(C,ang), rot(D,ang)], fill: true, fillColor: cor_verde_neon, opacity: 0.2 })
+})
+```
+
+Com `g: 0→1` a cópia (verde translúcida) faz meia volta e cobre exatamente o paralelogramo original. Usado em `paralelogramo.js` (3.3).
+
+---
+
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
 
 **O que é declarado PRIMEIRO fica ATRÁS.**
@@ -1470,4 +1544,8 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `paralelas_angulos_congruentes.js` | 2.8.5 | saida() com origem variável (8.31), fade com opacity:(1-b) (8.29), rotação suave por interpolação theta*(1-p) (8.30), título sem numeração (8.28), animation(p1, p2) com dois params independentes |
 | `angulo_elementos.js` | 1.2 | Ângulo abrindo 0°→180° com medida ao vivo (r*180).toFixed(2); setor limitado a ~179.4° (thetaSec) p/ não virar em 180°; 4 pauses encadeados (ângulo → rótulos vértice/lado → medida → adjacentes OC/BÔC); param clear apaga rótulos; versão imagem em `img_angulo_elementos_code.js` e `img_angulos_consecutivos_code.js` |
 | `angulo_complementar_suplementar.js` | 1.4 | Parte 1: reto/agudo/obtuso girando OA com classificação if/else e ref. de 90° tracejada. Parte 2 (mais abaixo, sem apagar): transporte de ângulo por interpolação de vértice + rotação (8.39) juntando 120°+60°=180° (suplementares) e 60°+30°=90° (complementares); âncora dourado, móvel coral, rótulo na cor do setor; versão imagem em `img_complementares_suplementares_code.js` |
+| `trapezio.js` | 3.2 | Trapézio: classificação por transformação (base menor desliza; tipo detectado ao vivo — escaleno/isósceles/retângulo, 8.44) e demonstrações do isósceles: P1 ângulos junto à lateral suplementares, P2 ângulos da base por transporte da lateral (ALA → isósceles → correspondentes), P3 diagonais congruentes (LAL) com os dois triângulos em cascata, tamanho original + fade do trapézio (8.45). Params encadeados (8.40); rótulos após pause p/ evitar lápis fantasma |
+| `paralelogramo.js` | 3.3 | Propriedades do paralelogramo com limpeza entre etapas (params `Limpar P1/P2/P3`, fases encadeadas 8.40). P1: diagonal AC → triângulos congruentes (ALA), lados/ângulos opostos (measureMarks 8.34). P2: consecutivos suplementares com retas suporte tracejadas dos colaterais internos (8.46) + transporte de meia volta do Â até D̂ (8.39). P3: diagonais se cortam ao meio (pause() interno entre setores e ticks). Finale: simetria central girando 180° em torno de M (8.47). Imagens `img_paralelogramo_lados_code.js` e `img_paralelogramo_diagonais_code.js` |
+| `base_media.js`, `base_media_trapezio.js` | 3.4 | Duas animações em planos próprios (tela infinita, drawGrid novo cada). TRIÂNGULO: médios M,N → base média MN → prolonga até P (P/NP/CP ficam) → △AMN≅△CPN (LAL) → alternos internos M̂AN=P̂CN → paralelogramo MBCP → MN=BC/2. Params `limparLAL` (só sombreado+marcas) e `limparTri`. TRAPÉZIO: médios M,N → base média MN → diagonal AC + médio E → △ACD dá ME (params `limparT1`) → △ABC dá EN (`limparT2`) → M,E,N colineares → MN=(AB+CD)/2 |
+| `img_base_media_tri_1/2/3_code.js`, `img_base_media_trap_1/2_code.js` | 3.4 | Estáticos derivados das animações (Figs 3.9–3.13, fundo branco, 8.38). Tri_1: △ABC com médios M,N e base média MN. Tri_2: prolongamento até P, △AMN≅△CPN (LAL). Tri_3: paralelogramo MBCP (MB=CP, MP=BC) + alternos internos. Trap_1: diagonal AC, médio E, ME base média de △ACD. Trap_2: EN base média de △ABC completando MN |
 | `quad_soma_angulos.js` | 3.1 | Soma dos ângulos do quadrilátero. Abertura (vértices/lados), diagonais com `sumirDiag` (some/volta), teorema dos internos = 360° (diagonal AC → 2 triângulos de 180°) e transporte dos 4 ângulos num leque de 360°. Transição `sumirInterno` (fases encadeadas, 8.40) para a parte dos externos (prolongamento dos lados, 8.43) que também fecham 360°. Rótulos com pos. inicial/final custom (8.41); equações com `\textcolor` só nos termos com significado (8.42) |

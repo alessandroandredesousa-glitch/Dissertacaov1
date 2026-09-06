@@ -2155,7 +2155,7 @@ const PAGES_DATA = {
     },
 
     'base-media': {
-        title: '3.3 Base Média do Triângulo e do Trapézio',
+        title: '3.4 Base Média do Triângulo e do Trapézio',
         description: '',
         videoId: 'PLACEHOLDER',
         videoDuration: 'a definir',
@@ -2163,10 +2163,135 @@ const PAGES_DATA = {
         videoDescription: 'Base média do triângulo e do trapézio.',
         sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
-            <h3>3.3 Base Média do Triângulo e do Trapézio</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        <div class="math-display">
+
+            <h3>3.4 Base Média do Triângulo e do Trapézio</h3>
+
+            <p>
+                Chamamos de <strong>base média</strong> o segmento que une os pontos médios de dois
+                lados de uma figura. No triângulo, ela liga os pontos médios de dois lados; no
+                trapézio, os pontos médios das duas laterais. Em ambos os casos ela é paralela a
+                uma base e tem comprimento determinado por ela, como veremos.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (Base Média do Triângulo):</strong> O segmento que une os pontos
+                    médios de dois lados de um triângulo é paralelo ao terceiro lado e mede a metade dele.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABC\\) um triângulo, \\(M\\) o ponto médio de \\(\\overline{AB}\\) e \\(N\\) o ponto
+                médio de \\(\\overline{AC}\\). O segmento \\(\\overline{MN}\\) que os une é a base média
+                relativa ao lado \\(\\overline{BC}\\) (Figura 3.9).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.9 – Triângulo \\(ABC\\) com os pontos médios \\(M\\) e \\(N\\) e a base média \\(\\overline{MN}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.4/img_base_media_tri_1.png" alt="Triângulo ABC com médios M, N e base média MN" style="max-width: 55%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Prolonguemos \\(\\overline{MN}\\) até um ponto \\(P\\) tal que \\(N\\) seja o ponto médio de
+                \\(\\overline{MP}\\), isto é, \\(\\overline{MN} \\cong \\overline{NP}\\) (Figura 3.10).
+                Comparando então os triângulos \\(AMN\\) e \\(CPN\\):
+            </p>
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(\\overline{AN} \\cong \\overline{CN}\\) (\\(N\\) é ponto médio de \\(\\overline{AC}\\));</li>
+                <li>\\(A\\widehat{N}M \\cong C\\widehat{N}P\\) (opostos pelo vértice);</li>
+                <li>\\(\\overline{MN} \\cong \\overline{NP}\\) (construção).</li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.10 – Prolongamento de \\(\\overline{MN}\\) até \\(P\\): \\(\\triangle AMN \\cong \\triangle CPN\\) (caso LAL)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.4/img_base_media_tri_2.png" alt="Prolongamento até P; triângulos AMN e CPN congruentes (LAL)" style="max-width: 55%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Logo, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL (seção 2.3)</a>,
+                \\(\\triangle AMN \\cong \\triangle CPN\\). Daí \\(\\overline{CP} \\cong \\overline{AM}\\) e
+                \\(M\\widehat{A}N \\cong P\\widehat{C}N\\). Como esses dois ângulos são alternos internos em
+                relação à transversal \\(\\overline{AC}\\), segue \\(\\overline{CP} \\parallel \\overline{AB}\\).
+            </p>
+
+            <p>
+                Como \\(\\overline{AM} \\cong \\overline{MB}\\), obtemos \\(\\overline{CP} \\cong \\overline{MB}\\)
+                e \\(\\overline{CP} \\parallel \\overline{MB}\\). Assim, no quadrilátero \\(MBCP\\) os lados
+                opostos \\(\\overline{MB}\\) e \\(\\overline{CP}\\) são paralelos e congruentes (Figura 3.11); pelo
+                <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">Critério do paralelogramo (seção 3.3)</a>,
+                \\(MBCP\\) é um paralelogramo.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.11 – O quadrilátero \\(MBCP\\) é um paralelogramo, pois \\(\\overline{MB} \\parallel \\overline{CP}\\) e \\(\\overline{MB} \\cong \\overline{CP}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.4/img_base_media_tri_3.png" alt="Quadrilátero MBCP é paralelogramo: MB paralelo e congruente a CP" style="max-width: 55%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Logo, como os lados opostos de um paralelogramo são
+                paralelos e congruentes (Propriedade 1, seção 3.3), \\(\\overline{MP} \\parallel \\overline{BC}\\)
+                e \\(\\overline{MP} \\cong \\overline{BC}\\). Como \\(N\\) é o ponto médio de \\(\\overline{MP}\\),
+                o segmento \\(\\overline{MN}\\) é paralelo a \\(\\overline{BC}\\) e
+                \\[ MN = \\frac{MP}{2} = \\frac{BC}{2}. \\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (Base Média do Trapézio):</strong> Em um trapézio, o segmento que
+                    une os pontos médios das laterais é paralelo às bases e igual à sua semissoma:
+                    \\(\\displaystyle MN = \\frac{AB + CD}{2}\\).
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) um trapézio de bases \\(\\overline{AB}\\) e \\(\\overline{CD}\\)
+                (\\(\\overline{AB} \\parallel \\overline{CD}\\)), com \\(M\\) o ponto médio da lateral
+                \\(\\overline{AD}\\) e \\(N\\) o ponto médio da lateral \\(\\overline{BC}\\). Tracemos a diagonal
+                \\(\\overline{AC}\\) e seja \\(E\\) o seu ponto médio.
+            </p>
+
+            <p>
+                No triângulo \\(ACD\\), \\(M\\) e \\(E\\) são pontos médios de \\(\\overline{AD}\\) e
+                \\(\\overline{AC}\\); pela base média do triângulo (demonstrada acima),
+                \\[ \\overline{ME} \\parallel \\overline{CD} \\quad\\text{e}\\quad ME = \\frac{CD}{2}. \\]
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.12 – A diagonal \\(\\overline{AC}\\) e seu ponto médio \\(E\\); no triângulo \\(ACD\\), \\(\\overline{ME}\\) é base média</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.4/img_base_media_trap_1.png" alt="Diagonal AC e médio E; ME base média do triângulo ACD" style="max-width: 55%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                No triângulo \\(ABC\\), \\(E\\) e \\(N\\) são pontos médios de \\(\\overline{AC}\\) e
+                \\(\\overline{BC}\\); do mesmo modo,
+                \\[ \\overline{EN} \\parallel \\overline{AB} \\quad\\text{e}\\quad EN = \\frac{AB}{2}. \\]
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.13 – No triângulo \\(ABC\\), \\(\\overline{EN}\\) é base média; com \\(\\overline{ME}\\), completa-se \\(\\overline{MN}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.4/img_base_media_trap_2.png" alt="EN base média do triângulo ABC; com ME completa-se MN" style="max-width: 55%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como \\(\\overline{AB} \\parallel \\overline{CD}\\), os segmentos \\(\\overline{ME}\\) e
+                \\(\\overline{EN}\\) têm a mesma direção e partilham o ponto \\(E\\); logo \\(M\\), \\(E\\) e
+                \\(N\\) são colineares, e \\(\\overline{MN}\\) é paralelo às bases. Somando,
+                \\[ MN = ME + EN = \\frac{CD}{2} + \\frac{AB}{2} = \\frac{AB + CD}{2}. \\]
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> A base média do triângulo é o caso particular da base
+                    média do trapézio quando a base menor degenera em um ponto (\\(CD = 0\\)): a fórmula
+                    \\(\\frac{AB + CD}{2}\\) reduz-se a \\(\\frac{AB}{2}\\). Essas relações são ferramentas
+                    frequentes em problemas de olimpíada, por permitirem trocar pontos médios por
+                    paralelismos e razões conhecidas.
+                </p>
+            </div>
+
         </div>
         `
     },
@@ -2207,7 +2332,9 @@ const PAGES_DATA = {
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.3 – Elementos do trapézio: bases \\(\\overline{AB}\\) e \\(\\overline{CD}\\), laterais \\(\\overline{AD}\\) e \\(\\overline{BC}\\), e a altura \\(h\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_elementos.png</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.2/img_trapezio_elementos.png" alt="Elementos do trapézio: bases, laterais e altura" style="max-width: 55%; height: auto;">
+            </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -2222,7 +2349,9 @@ const PAGES_DATA = {
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.4 – Os três tipos de trapézio: escaleno, isósceles e retângulo</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_tipos.png</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.2/img_trapezio_tipos.png" alt="Os três tipos de trapézio: escaleno, isósceles e retângulo" style="max-width: 55%; height: auto;">
+            </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -2230,7 +2359,7 @@ const PAGES_DATA = {
                     <strong>Observação:</strong> Adotamos aqui a definição em que o trapézio tem
                     <em>exatamente</em> um par de lados paralelos. Assim, o paralelogramo, que possui
                     dois pares de lados paralelos, não é considerado um trapézio e será tratado à parte
-                    na <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.4</a>.
+                    na <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>.
                 </p>
             </div>
 
@@ -2262,7 +2391,9 @@ const PAGES_DATA = {
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.5 – Transporte da lateral \\(\\overline{AD}\\): a paralela por \\(C\\) encontra \\(\\overline{AB}\\) em \\(P\\), formando o triângulo isósceles \\(BPC\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_isosceles_angulos.png</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.2/img_trapezio_isosceles_angulos.png" alt="Transporte da lateral AD formando o triângulo isósceles BPC" style="max-width: 55%; height: auto;">
+            </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
@@ -2304,7 +2435,9 @@ const PAGES_DATA = {
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.6 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) do trapézio isósceles</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/3.2/img_trapezio_diagonais.png</div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.2/img_trapezio_diagonais.png" alt="As diagonais AC e BD do trapézio isósceles" style="max-width: 55%; height: auto;">
+            </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
@@ -2343,7 +2476,7 @@ const PAGES_DATA = {
     },
 
     'paralelogramos': {
-        title: '3.4 Paralelogramos',
+        title: '3.3 Paralelogramos',
         description: '',
         videoId: 'PLACEHOLDER',
         videoDuration: 'a definir',
@@ -2351,10 +2484,119 @@ const PAGES_DATA = {
         videoDescription: 'Paralelogramos: propriedades e diagonais.',
         sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
-            <h3>3.4 Paralelogramos</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        <div class="math-display">
+
+            <h3>3.3 Paralelogramos</h3>
+
+            <p>
+                O <strong>paralelogramo</strong> é o quadrilátero de dois pares de lados paralelos.
+                Dessa única condição decorrem várias propriedades, que reunimos aqui e usaremos
+                adiante (por exemplo, na base média, na <a href="#" onclick="loadPage('base-media')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.4</a>).
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Um <strong>paralelogramo</strong> é um quadrilátero
+                    convexo cujos lados opostos são paralelos: \\(\\overline{AB} \\parallel \\overline{CD}\\)
+                    e \\(\\overline{AD} \\parallel \\overline{BC}\\).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.7 – Paralelogramo \\(ABCD\\) e a diagonal \\(\\overline{AC}\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.3/img_paralelogramo_lados.png" alt="Paralelogramo ABCD e a diagonal AC: lados e ângulos opostos congruentes" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 1 (lados e ângulos opostos):</strong> Em um paralelogramo, os
+                    lados opostos são congruentes e os ângulos opostos são congruentes.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Tracemos a diagonal \\(\\overline{AC}\\). Como \\(\\overline{AB} \\parallel \\overline{CD}\\),
+                temos \\(B\\widehat{A}C \\cong D\\widehat{C}A\\) (alternos internos); como
+                \\(\\overline{AD} \\parallel \\overline{BC}\\), temos \\(D\\widehat{A}C \\cong B\\widehat{C}A\\).
+                Com \\(\\overline{AC}\\) comum, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA (seção 2.3)</a>,
+                \\(\\triangle ABC \\cong \\triangle CDA\\).
+            </p>
+
+            <p>
+                Daí \\(\\overline{AB} \\cong \\overline{CD}\\) e \\(\\overline{BC} \\cong \\overline{DA}\\)
+                (lados opostos), e \\(\\widehat{B} \\cong \\widehat{D}\\) (ângulos opostos). Para os outros
+                dois, \\(\\widehat{A} = B\\widehat{A}C + D\\widehat{A}C = D\\widehat{C}A + B\\widehat{C}A = \\widehat{C}\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 2 (ângulos consecutivos):</strong> Em um paralelogramo, dois
+                    ângulos consecutivos são suplementares.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                O lado \\(\\overline{AD}\\) é transversal às paralelas \\(\\overline{AB}\\) e
+                \\(\\overline{CD}\\); assim \\(\\widehat{A}\\) e \\(\\widehat{D}\\) são colaterais internos e,
+                pela <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.5</a>,
+                \\(\\widehat{A} + \\widehat{D} = 180^\\circ\\). O mesmo vale para os demais pares consecutivos.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade 3 (diagonais):</strong> As diagonais de um paralelogramo
+                    cortam-se ao meio.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.8 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se no ponto médio \\(M\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.3/img_paralelogramo_diagonais.png" alt="As diagonais AC e BD cortam-se no ponto médio M" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Sejam \\(\\overline{AC}\\) e \\(\\overline{BD}\\) as diagonais, que se encontram em \\(M\\).
+                Nos triângulos \\(ABM\\) e \\(CDM\\): \\(\\overline{AB} \\cong \\overline{CD}\\) (Propriedade 1),
+                \\(B\\widehat{A}M \\cong D\\widehat{C}M\\) e \\(A\\widehat{B}M \\cong C\\widehat{D}M\\)
+                (alternos internos, \\(\\overline{AB} \\parallel \\overline{CD}\\)). Pelo caso ALA,
+                \\(\\triangle ABM \\cong \\triangle CDM\\); logo \\(\\overline{AM} \\cong \\overline{CM}\\) e
+                \\(\\overline{BM} \\cong \\overline{DM}\\), ou seja, \\(M\\) é ponto médio de ambas.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Critério (recíproco):</strong> Se um quadrilátero tem um par de lados
+                    opostos <em>paralelos e congruentes</em>, então ele é um paralelogramo.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) com \\(\\overline{AB} \\parallel \\overline{CD}\\) e
+                \\(\\overline{AB} \\cong \\overline{CD}\\). Tracemos \\(\\overline{AC}\\). Por serem
+                \\(\\overline{AB} \\parallel \\overline{CD}\\), \\(B\\widehat{A}C \\cong D\\widehat{C}A\\)
+                (alternos internos). Com \\(\\overline{AB} \\cong \\overline{CD}\\) e \\(\\overline{AC}\\)
+                comum, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL (seção 2.3)</a>,
+                \\(\\triangle ABC \\cong \\triangle CDA\\). Então \\(B\\widehat{C}A \\cong D\\widehat{A}C\\), o
+                que dá \\(\\overline{BC} \\parallel \\overline{AD}\\). Com os dois pares de lados paralelos,
+                \\(ABCD\\) é paralelogramo.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
         </div>
         `
     },

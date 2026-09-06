@@ -57,7 +57,7 @@ const cx = param({
 const provar = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 1.5 }], label: "Ir para as demonstrações" })
 const transp = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 2 }], label: "Transportar lateral AD → CP" })
 const p3 = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 1.5 }], label: "Ir para as diagonais (P3)" })
-const separar = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 2.5 }], label: "Separar triângulos (cascata, LAL)" })
+const separar = param({ value: 0, min: 0, max: 1, step: 0.001, buttons: [{ value: 1, time: 2.5 },{value:0, time: 2.5}], label: "Separar triângulos (cascata, LAL)" })
 
 // GEOMETRIA do trapézio (segue o morph; SOME ao separar os triângulos)
 animation(cx, separar, (t, sep) => {
@@ -206,17 +206,17 @@ animation(p3, separar, (p, s) => {
 
 pause()   // <- aqui você põe os triângulos em cascata (aperta "Separar")
 
-// AGORA sim os rótulos + congruência + marcas das diagonais (o lápis escreve, sem fantasma)
+// AGORA sim os rótulos + marcas das diagonais (o lápis escreve, sem fantasma)
 animation(p3, separar, (p, s) => {
     const dL = xfL(D0, s), aL = xfL(A, s), bL = xfL(B, s)
     const cR = xfR(C0, s), bR = xfR(B, s), aR = xfR(A, s)
-    drawText({ text: "$D$", x: dL.x - 0.15, y: dL.y + 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$A$", x: aL.x - 0.35, y: aL.y - 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$B$", x: bL.x + 0.15, y: bL.y - 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$C$", x: cR.x + 0.15, y: cR.y + 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$B$", x: bR.x + 0.15, y: bR.y - 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$A$", x: aR.x - 0.35, y: aR.y - 0.3, fontSize: 0.45, opacity: p })
-    drawText({ text: "$\\cong$", x: -0.25, y: -0.35, fontSize: 1.0, color: cor_dourado, opacity: p })
+    drawText({ text: "$D$", x: dL.x - 0.15, y: dL.y + 0.1, fontSize: 0.45, opacity: p -(1-s)})
+    drawText({ text: "$A$", x: aL.x - 0.35, y: aL.y - 0.3, fontSize: 0.45, opacity: p -(1-s)})
+    drawText({ text: "$B$", x: bL.x + 0.15, y: bL.y - 0.3, fontSize: 0.45, opacity: p -(1-s)})
+    drawText({ text: "$C$", x: cR.x + 0.15, y: cR.y +0.1, fontSize: 0.45, opacity: p-(1-s) })
+    drawText({ text: "$B$", x: bR.x + 0.15, y: bR.y - 0.3, fontSize: 0.45, opacity: p-(1-s) })
+    drawText({ text: "$A$", x: aR.x - 0.35, y: aR.y - 0.3, fontSize: 0.45, opacity: p-(1-s) })
+
     drawSegmentMeasureMark({ points: [bL, dL], size: 0.25, quantity: 3, color: cor_amarelo_neon, opacity: p })  // BD
     drawSegmentMeasureMark({ points: [cR, aR], size: 0.25, quantity: 3, color: cor_amarelo_neon, opacity: p })  // CA
 })
@@ -225,5 +225,5 @@ pause()
 
 // conclusão: △DAB ≅ △CBA (LAL) => AC = BD
 animation(p3, separar, (p, s) => {
-    drawText({ text: "$\\triangle DAB \\cong \\triangle CBA$  (LAL)  $\\Rightarrow$  $AC = BD$", x: 0, y: -4.5, fontSize: 0.5, color: cor_verde_neon, opacity: p })
+    drawText({ text: "$\\Delta DAB \\cong \\Delta CBA$  (LAL)  $\\Rightarrow$  $\\bar{AC} = \\bar{BD}$", x: 0, y: -5.5, fontSize: 0.5, color: cor_verde_neon, opacity: p })
 })

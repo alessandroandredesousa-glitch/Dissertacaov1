@@ -1,6 +1,41 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 03/09/2026
+## Última sessão: 05/09/2026
+
+---
+
+## Sessão 05/09/2026
+
+### Cap. 3 — 3.3 Paralelogramos e 3.4 Base Média (escritos)
+- Reordenado o Cap. 3: **3.3 Paralelogramos** antes de **3.4 Base Média** (a prova da base média usa o Critério do paralelogramo, 3.3, + Propriedade 1). Menu, sumário e referências ajustados.
+- Animação `paralelogramo.js` (3.3) finalizada: P1 diagonal→congruência ALA + lados/ângulos opostos; P2 consecutivos suplementares com **retas suporte tracejadas dos colaterais internos** + **transporte de meia volta** do Â até D̂; P3 diagonais se cortam ao meio; finale **simetria central** (gira 180° em torno de M). Imagens 3.7/3.8 (`imagem/3.3/`) colocadas.
+- **3.4 Base Média — demonstração pausada em figuras sequenciais** (estilo Cap. 2). Texto do triângulo dividido em 3 figuras (3.9 médios+MN; 3.10 prolongamento até P + △AMN≅△CPN LAL; 3.11 paralelogramo MBCP → MP∥BC) e o trapézio em 1 figura (3.12 diagonal AC, médio E, base médias ME/EN). Placeholders no site + código Conexty gerado: `img_base_media_tri_1/2/3_code.js` e `img_base_media_trap_code.js` (fundo branco).
+
+### Guia atualizado (LOCAL)
+- Técnicas novas **8.46** (retas suporte tracejadas dos colaterais internos) e **8.47** (simetria central por rotação 180° em torno de M). Catálogo com linhas de `paralelogramo.js` (3.3) e das imagens da base média (3.4).
+
+### 3.4 finalizada
+- Animações: `base_media.js` (triângulo) e `base_media_trapezio.js` (trapézio, plano próprio na tela infinita).
+- 5 figuras estáticas em `imagem/3.4/` (Figs 3.9–3.13): tri_1 (médios+MN), tri_2 (prolongamento+LAL), tri_3 (paralelogramo MBCP + alternos internos), trap_1 (diagonal AC+E+ME de ACD), trap_2 (EN de ABC completando MN). Todas ligadas no site (max-width 55%).
+- Correções de figura: Fig 3.11 tinha AC pela metade + efeito cebola (preenchimento por cima) — resolvido desenhando AC inteiro e o fill atrás; Fig 3.13 tinha preenchimento duplo chapando os segmentos — destacado só o △ABC.
+
+### Próximo passo
+Seções 3.5 (Quadriláteros Especiais) e 3.6 (Teorema de Pitot). Vídeos do Cap. 3 ainda PLACEHOLDER (gravar).
+
+### Imagens da 3.1 (site)
+- Geradas do código do vídeo (mesmos vértices/cores) e colocadas: `imagem/3.1/img_quadrilatero_convexo.png` (Fig. 3.1) e `imagem/3.1/img_diagonal_dois_triangulos.png` (Fig. 3.2). Ligadas no site; tamanho ajustado para `max-width: 55%` (padrão adotado p/ figuras do Cap. 3).
+
+### Animação da 3.2 (`trapezio.js`) — CONCLUÍDA
+- **Classificação por transformação**: a base menor desliza (param `cx`) e o tipo muda ao vivo — escaleno/isósceles/retângulo — com rótulo colorido por tipo e marcas condicionais (ângulo reto no retângulo, laterais congruentes no isósceles).
+- **Demonstrações** (isósceles, cx=0), com params encadeados: P1 ângulos junto à lateral suplementares; P2 ângulos da base por transporte da lateral (`CP ∥ AD` → ALA → triângulo isósceles → correspondentes → Â=B̂); P3 diagonais congruentes por LAL, com os dois triângulos puxados em **cascata (um em cima, outro embaixo), em tamanho original** (não encolhe, pra não parecer que mudou medida) e o trapézio sumindo pra dar espaço.
+- Cuidado com o **lápis fantasma**: rótulos das cópias só são desenhados depois de um `pause()` (nunca com opacidade 0 esperando o parâmetro).
+- Ordem dos params = ordem de apresentação (todos declarados no topo): deslizar, provar, transportar, diagonais, separar.
+
+### Guia atualizado (LOCAL)
+- Técnicas novas **8.44** (classificação por morph com detecção de tipo ao vivo) e **8.45** (separar/comparar em cascata, tamanho original, com fade do original). Catálogo (seção 12) com a linha de `trapezio.js` (3.2).
+
+### Próximo passo
+Gerar a imagem estática da 3.2 (a partir do código do vídeo) e/ou escrever a 3.3 (Base Média do Triângulo e do Trapézio). Figuras pendentes da 3.2 (`imagem/3.2/`).
 
 ---
 
