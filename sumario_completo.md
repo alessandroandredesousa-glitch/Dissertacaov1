@@ -61,7 +61,8 @@
 - **3.3** Paralelogramos (propriedades e diagonais)
 - **3.4** Base Média do Triângulo e do Trapézio
 - **3.5** Quadriláteros Especiais (retângulo, losango, quadrado)
-- **3.6** ⭐ Teorema de Pitot (quadrilátero circunscritível) — *revisitado no Cap. 4*
+
+> **Nota:** o **Teorema de Pitot** (quadrilátero circunscritível) foi movido para o Cap. 4, pois depende do círculo e do lema dos segmentos tangentes (4.4).
 
 ---
 
@@ -72,6 +73,7 @@
 - **4.2** Determinação de uma Circunferência (por três pontos)
 - **4.3** Posições Relativas entre Reta e Circunferência; Teorema da Reta Tangente
 - **4.4** Segmentos Tangentes; Posições Relativas de Duas Circunferências
+  - 4.4.1 ⭐ Teorema de Pitot (quadrilátero circunscritível) — *movido do Cap. 3; usa o lema dos segmentos tangentes*
 - **4.5** Ângulos na Circunferência (central e inscrito); Teorema do Ângulo Inscrito
 - **4.6** Arco Capaz
 - **4.7** Quadrilátero Inscritível (ângulos opostos suplementares)

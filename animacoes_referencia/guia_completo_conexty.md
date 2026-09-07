@@ -1211,6 +1211,61 @@ animation(girar, (g) => {
 
 Com `g: 0→1` a cópia (verde translúcida) faz meia volta e cobre exatamente o paralelogramo original. Usado em `paralelogramo.js` (3.3).
 
+### 8.48 Morph de paralelogramo em retângulo / losango / quadrado (com detecção de tipo)
+
+Um paralelogramo genérico vira o quadrilátero especial variando os vetores da base por um parâmetro. A geometria é uma função do param, e o **rótulo do tipo** muda ao vivo (como 8.44). Três variações:
+
+```javascript
+// RETÂNGULO — "endireitar": some o cisalhamento do topo (s -> 0), os ângulos viram retos
+function verts(p) { const s = 1.2 * (1 - p); return { A:{x:-1.7,y:0.2}, B:{x:1.7,y:0.2}, C:{x:1.7+s,y:1.8}, D:{x:-1.7+s,y:1.8} } }
+// LOSANGO — "igualar": a meia-base encolhe até ficar = ao lado (hux: 1.7 -> 1.118)
+// QUADRADO — "formar": endireita E iguala ao mesmo tempo (hu -> (1.3,0), hv -> (0,1.3))
+const tp = p > 0.98 ? "Retângulo" : "Paralelogramo"
+drawText({ text: tp, ..., color: p > 0.98 ? cor_verde_neon : cor_coral })
+```
+
+- Os **ângulos retos surgem sozinhos**: `drawSector` marca `90°` automaticamente quando o ângulo chega a reto; basta `opacity: 0.55 * p` para ele aparecer conforme `p → 1`.
+- Rótulo do tipo escrito como palavra direta no `text` (sem `\text{}`, que dá erro fora de modo matemático).
+Usado em `retangulo.js`, `losango.js`, `quadrado.js` (3.5).
+
+### 8.49 Escala global da figura em torno de um centro (`sc()` + bloco AJUSTES)
+
+Para poder redimensionar/reposicionar tudo por consts no topo, define-se um bloco **AJUSTES** e uma função `sc()` que escala qualquer ponto em torno de um centro fixo `cRect`. A base e as cópias transportadas herdam a mesma escala:
+
+```javascript
+// === AJUSTES ===
+const escalaTri = 1.5                 // escala de TODA a figura
+const posABC = { x: 0.8, y: -3 }      // posição de cada triângulo transportado
+const cRect = { x: 0, y: 1.0 }
+function sc(P) { return { x: cRect.x + escalaTri*(P.x-cRect.x), y: cRect.y + escalaTri*(P.y-cRect.y) } }
+const A = sc({ x: -1.7, y: 0.2 }), B = sc({ x: 1.7, y: 0.2 }) // ... vértices já escalados
+```
+
+- Como `A,B,C,D` já saem escalados, a função de transporte `xf()` faz **só translação** (não reaplica a escala, senão escalaria duas vezes).
+- `sc(centro) = centro`: o ponto médio/centro fica invariante sob a escala.
+Usado em `retangulo.js`, `losango.js`, `quadrado.js` (3.5).
+
+### 8.50 Puxar triângulos p/ baixo mantendo a base + abrir os 4 triângulos (loop)
+
+Variação de 8.45: em vez de a base sumir, ela **permanece** e as cópias dos triângulos descem/abrem por translação (`xf` com esc=1). Revelar um triângulo por `pause()` e escrever os rótulos **depois** de descer (evita o lápis fantasma, 8.23). Para o quadrado, os 4 triângulos das diagonais abrem via um array + `forEach`:
+
+```javascript
+const tris = [
+  { P: A, Q: B, pos: posAMB, fill: cor_roxo_neon },  // cada triângulo = P, M, Q
+  { P: B, Q: C, pos: posBMC, fill: cor_azul_eletrico }, /* ... */
+]
+animation(separar, (s) => {
+  tris.forEach((t) => {
+    const cen = { x:(t.P.x+M.x+t.Q.x)/3, y:(t.P.y+M.y+t.Q.y)/3 }
+    const P1 = xf(t.P,s,cen,t.pos), M1 = xf(M,s,cen,t.pos), Q1 = xf(t.Q,s,cen,t.pos)
+    drawPolygon({ points:[P1,M1,Q1], fill:true, fillColor:t.fill, opacity:0.16 })
+  })
+})
+```
+
+- Triângulos e marcas no `forEach` (não precisam de ajuste fino); **rótulos escritos um a um** (o loop dificulta posicioná-los).
+Usado em `retangulo.js`, `losango.js` (2 triângulos p/ baixo) e `quadrado.js` (4 triângulos abrindo) (3.5).
+
 ---
 
 ## 9. ORDEM DE PROFUNDIDADE (Z-INDEX)
@@ -1548,4 +1603,5 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `paralelogramo.js` | 3.3 | Propriedades do paralelogramo com limpeza entre etapas (params `Limpar P1/P2/P3`, fases encadeadas 8.40). P1: diagonal AC → triângulos congruentes (ALA), lados/ângulos opostos (measureMarks 8.34). P2: consecutivos suplementares com retas suporte tracejadas dos colaterais internos (8.46) + transporte de meia volta do Â até D̂ (8.39). P3: diagonais se cortam ao meio (pause() interno entre setores e ticks). Finale: simetria central girando 180° em torno de M (8.47). Imagens `img_paralelogramo_lados_code.js` e `img_paralelogramo_diagonais_code.js` |
 | `base_media.js`, `base_media_trapezio.js` | 3.4 | Duas animações em planos próprios (tela infinita, drawGrid novo cada). TRIÂNGULO: médios M,N → base média MN → prolonga até P (P/NP/CP ficam) → △AMN≅△CPN (LAL) → alternos internos M̂AN=P̂CN → paralelogramo MBCP → MN=BC/2. Params `limparLAL` (só sombreado+marcas) e `limparTri`. TRAPÉZIO: médios M,N → base média MN → diagonal AC + médio E → △ACD dá ME (params `limparT1`) → △ABC dá EN (`limparT2`) → M,E,N colineares → MN=(AB+CD)/2 |
 | `img_base_media_tri_1/2/3_code.js`, `img_base_media_trap_1/2_code.js` | 3.4 | Estáticos derivados das animações (Figs 3.9–3.13, fundo branco, 8.38). Tri_1: △ABC com médios M,N e base média MN. Tri_2: prolongamento até P, △AMN≅△CPN (LAL). Tri_3: paralelogramo MBCP (MB=CP, MP=BC) + alternos internos. Trap_1: diagonal AC, médio E, ME base média de △ACD. Trap_2: EN base média de △ABC completando MN |
+| `retangulo.js` / `losango.js` / `quadrado.js` | 3.5 | Esqueleto comum: morph paralelogramo→especial com detecção de tipo (8.48); escala global `sc()` em torno de `cRect` + bloco AJUSTES (`escalaTri`, `posXXX`) (8.49); base fica e os triângulos descem/abrem por translação `xf()` (8.50), rótulos escritos um a um. Retângulo: diagonais congruentes (LAL, ABC/BAD p/ baixo). Losango: diagonais ⊥ e bissetrizes (LLL, ABM/CBM). Quadrado: reúne os dois (diagonais congruentes E ⊥) e abre os 4 triângulos (retângulos isósceles). Imagens `img_retangulo_diagonais/triangulos`, `img_losango_diagonais/triangulos`, `img_quadrado_diagonais` (cores da animação no fundo branco) |
 | `quad_soma_angulos.js` | 3.1 | Soma dos ângulos do quadrilátero. Abertura (vértices/lados), diagonais com `sumirDiag` (some/volta), teorema dos internos = 360° (diagonal AC → 2 triângulos de 180°) e transporte dos 4 ângulos num leque de 360°. Transição `sumirInterno` (fases encadeadas, 8.40) para a parte dos externos (prolongamento dos lados, 8.43) que também fecham 360°. Rótulos com pos. inicial/final custom (8.41); equações com `\textcolor` só nos termos com significado (8.42) |

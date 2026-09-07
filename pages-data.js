@@ -2229,7 +2229,7 @@ const PAGES_DATA = {
 
             <p>
                 Logo, como os lados opostos de um paralelogramo são
-                paralelos e congruentes (Propriedade 1, seção 3.3), \\(\\overline{MP} \\parallel \\overline{BC}\\)
+                paralelos e congruentes (Propriedade 1, <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), \\(\\overline{MP} \\parallel \\overline{BC}\\)
                 e \\(\\overline{MP} \\cong \\overline{BC}\\). Como \\(N\\) é o ponto médio de \\(\\overline{MP}\\),
                 o segmento \\(\\overline{MN}\\) é paralelo a \\(\\overline{BC}\\) e
                 \\[ MN = \\frac{MP}{2} = \\frac{BC}{2}. \\]
@@ -2610,27 +2610,159 @@ const PAGES_DATA = {
         videoDescription: 'Quadriláteros especiais: retângulo, losango e quadrado.',
         sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
-            <h3>3.5 Quadriláteros Especiais (retângulo, losango, quadrado)</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
-        </div>
-        `
-    },
+        <div class="math-display">
 
-    'teorema-pitot': {
-        title: '3.6 Teorema de Pitot',
-        description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
-        videoDescription: 'Teorema de Pitot (quadrilátero circunscritível).',
-        sectionTitle: '',
-        content: `
-        <div class="theorem" style="text-align: center;">
-            <h3>3.6 Teorema de Pitot (quadrilátero circunscritível)</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+            <h3>3.5 Quadriláteros Especiais (retângulo, losango, quadrado)</h3>
+
+            <p>
+                O retângulo, o losango e o quadrado são <strong>paralelogramos</strong> que satisfazem
+                uma condição extra. Por isso, cada um deles herda automaticamente todas as propriedades
+                demonstradas na <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>
+                (lados e ângulos opostos congruentes, ângulos consecutivos suplementares e diagonais que
+                se cortam ao meio) e ganha propriedades próprias das suas diagonais, que demonstramos a seguir.
+            </p>
+
+            <h4 style="margin-top: 28px;">Retângulo</h4>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Um <strong>retângulo</strong> é um paralelogramo que
+                    possui um ângulo reto.
+                </p>
+            </div>
+
+            <p>
+                A condição de um único ângulo reto já obriga os quatro a serem retos: se \\(\\widehat{A} = 90°\\),
+                então, como os ângulos consecutivos de um paralelogramo são suplementares
+                (Propriedade 2, <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), \\(\\widehat{B} = 180° - \\widehat{A} = 90°\\); e como os
+                ângulos opostos são congruentes (Propriedade 1), \\(\\widehat{C} = \\widehat{A} = 90°\\) e
+                \\(\\widehat{D} = \\widehat{B} = 90°\\). Logo, <strong>todo retângulo tem os quatro ângulos retos</strong>.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.14 – Retângulo \\(ABCD\\) com os quatro ângulos retos e as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_retangulo_diagonais.png" alt="Retângulo ABCD com os quatro ângulos retos e as diagonais AC e BD" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade (diagonais do retângulo):</strong> As diagonais de um retângulo
+                    são congruentes.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) um retângulo. Comparemos os triângulos \\(ABC\\) e \\(BAD\\), cada um
+                formado por uma diagonal e a base \\(\\overline{AB}\\) (Figura 3.15):
+            </p>
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(\\overline{AB}\\) é lado comum;</li>
+                <li>\\(A\\widehat{B}C = B\\widehat{A}D = 90°\\) (ângulos retos do retângulo);</li>
+                <li>\\(\\overline{BC} \\cong \\overline{AD}\\) (lados opostos do paralelogramo, <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>).</li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.15 – Os triângulos \\(ABC\\) e \\(BAD\\): lado comum \\(\\overline{AB}\\), ângulos retos em \\(A\\) e \\(B\\), e \\(\\overline{BC} \\cong \\overline{AD}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_retangulo_triangulos.png" alt="Triângulos ABC e BAD: AB comum, ângulos retos em A e B, BC congruente a AD" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Logo, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL (seção 2.3)</a>,
+                \\(\\triangle ABC \\cong \\triangle BAD\\), e portanto as diagonais correspondentes são
+                congruentes: \\(\\overline{AC} \\cong \\overline{BD}\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <h4 style="margin-top: 28px;">Losango</h4>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Um <strong>losango</strong> é um paralelogramo que possui
+                    dois lados consecutivos congruentes.
+                </p>
+            </div>
+
+            <p>
+                Novamente a condição se propaga: se \\(\\overline{AB} \\cong \\overline{BC}\\), como os
+                lados opostos do paralelogramo são congruentes (<a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), temos
+                \\(\\overline{CD} \\cong \\overline{AB}\\) e \\(\\overline{AD} \\cong \\overline{BC}\\), de modo que
+                <strong>todos os quatro lados são congruentes</strong>.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.16 – Losango \\(ABCD\\) com os quatro lados congruentes; as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se em \\(M\\), perpendicularmente</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_losango_diagonais.png" alt="Losango ABCD com quatro lados congruentes; diagonais perpendiculares em M" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade (diagonais do losango):</strong> As diagonais de um losango são
+                    perpendiculares entre si e bissetam os ângulos internos do losango.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) um losango e \\(M\\) o ponto de encontro das diagonais. Pelas propriedades
+                do paralelogramo (<a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), \\(M\\) é o ponto médio de ambas; em particular
+                \\(\\overline{AM} \\cong \\overline{CM}\\). Comparemos os triângulos \\(ABM\\) e \\(CBM\\)
+                (Figura 3.17):
+            </p>
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(\\overline{AB} \\cong \\overline{CB}\\) (lados do losango);</li>
+                <li>\\(\\overline{BM}\\) é lado comum;</li>
+                <li>\\(\\overline{AM} \\cong \\overline{CM}\\) (\\(M\\) é ponto médio de \\(\\overline{AC}\\)).</li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.17 – Os triângulos \\(ABM\\) e \\(CBM\\): \\(\\overline{AB} \\cong \\overline{CB}\\), \\(\\overline{BM}\\) comum e \\(\\overline{AM} \\cong \\overline{CM}\\); daí \\(A\\widehat{M}B = C\\widehat{M}B = 90°\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_losango_triangulos.png" alt="Triângulos ABM e CBM congruentes (LLL); ângulo reto em M" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Logo, pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL (seção 2.3)</a>,
+                \\(\\triangle ABM \\cong \\triangle CBM\\). Daí \\(A\\widehat{M}B = C\\widehat{M}B\\); mas esses
+                dois ângulos são adjacentes suplementares (formam o ângulo raso \\(A\\widehat{M}C\\)), então
+                cada um vale \\(90°\\): as diagonais são <strong>perpendiculares</strong>. Além disso,
+                \\(A\\widehat{B}M = C\\widehat{B}M\\), isto é, a diagonal \\(\\overline{BD}\\)
+                <strong>bissecta</strong> o ângulo \\(\\widehat{B}\\). O mesmo argumento, aplicado aos demais
+                vértices, mostra que cada diagonal bissecta os dois ângulos que atravessa.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <h4 style="margin-top: 28px;">Quadrado</h4>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição:</strong> Um <strong>quadrado</strong> é um paralelogramo que é, ao
+                    mesmo tempo, retângulo e losango; ou seja, tem os quatro ângulos retos e os quatro
+                    lados congruentes.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.18 – Quadrado \\(ABCD\\): diagonais congruentes e perpendiculares, ângulos de \\(45°\\) e os quatro triângulos retângulos isósceles</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_quadrado_diagonais.png" alt="Quadrado ABCD: diagonais congruentes e perpendiculares, ângulos de 45 graus, quatro triângulos" style="max-width: 38%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como o quadrado é retângulo <em>e</em> losango, ele reúne as propriedades das diagonais
+                de ambos: <strong>as diagonais de um quadrado são congruentes</strong> (por ser retângulo)
+                <strong>e perpendiculares</strong>, além de <strong>bissetarem os ângulos internos</strong>
+                (por ser losango). Cada diagonal divide os ângulos retos dos vértices em dois ângulos de
+                \\(45°\\), e as duas diagonais, cortando-se ao meio, determinam quatro triângulos
+                retângulos isósceles congruentes.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação (hierarquia):</strong> Todo quadrado é retângulo e é losango; todo
+                    retângulo e todo losango são paralelogramos; e todo paralelogramo é um quadrilátero.
+                    O quadrado é, portanto, o caso mais particular, ocupando a interseção entre os
+                    retângulos e os losangos.
+                </p>
+            </div>
+
         </div>
         `
     },

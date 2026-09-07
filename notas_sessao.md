@@ -1,6 +1,34 @@
 # Notas de Sessão — Geometria Demonstrada
 
-## Última sessão: 05/09/2026
+## Última sessão: 06/09/2026
+
+---
+
+## Sessão 06/09/2026
+
+### 3.5 Quadriláteros Especiais — texto + animações PRONTOS
+- **Texto no site** (pages-data.js, quadrilateros-especiais): retângulo, losango, quadrado como paralelogramos especiais, com demonstrações pausadas e figuras de construção intercaladas (Figs 3.14–3.18). Sem travessões; citações à seção 3.3 com hiperlink.
+- **Animações (3 arquivos, esqueleto comum)** em animacoes_referencia/:
+  - `retangulo.js` — morph paralelogramo→retângulo (endireitar) + demonstração diagonais congruentes (LAL), triângulos ABC/BAD puxados p/ baixo.
+  - `losango.js` — morph→losango (igualar lados) + diagonais ⊥ e bissetrizes (LLL), triângulos ABM/CBM.
+  - `quadrado.js` — morph→quadrado + diagonais congruentes E ⊥; abre os 4 triângulos (retângulos isósceles congruentes).
+  - Padrão: bloco AJUSTES no topo (escalaTri escala TODA a figura em torno de cRect; posXXX posiciona cada triângulo); função sc() escala base; xf() translada cópias; rótulos escritos um a um (não em loop).
+
+### 3.5 — IMAGENS ESTÁTICAS PRONTAS (07/09)
+As 5 figuras (3.14–3.18) geradas das animações (cores originais: diagonais amarelo/ciano, retos verde, marcas dourado/coral/verde_menta) e ligadas no site em `imagem/3.5/`. Seção 3.5 COMPLETA (texto + animações + imagens).
+
+### Guia atualizado (07/09)
+Técnicas novas **8.48** (morph paralelogramo→retângulo/losango/quadrado com detecção de tipo), **8.49** (escala global sc() em torno de cRect + bloco AJUSTES), **8.50** (base fica + puxar/abrir triângulos por translação, rótulos um a um). Linha de catálogo de retangulo/losango/quadrado.js (3.5). Tamanho das figuras no site: 3.5 em 45% (quadrado em 38%).
+
+### Pitot adiado p/ Cap. 4 (decisão 07/09)
+O Teorema de Pitot depende do círculo + lema dos segmentos tangentes (4.4), então foi MOVIDO do Cap. 3 para o Cap. 4 (sumário: 4.4.1). Removido do menu e o stub saiu de pages-data. **Cap. 3 ENCERRADO na 3.5.**
+
+### PRÓXIMO PASSO
+Cap. 3 concluído (3.1–3.5). Próximo: iniciar Cap. 4 (Circunferência e Círculo) — 4.1 Definições Iniciais. Vídeos do Cap. 3 ainda PLACEHOLDER (gravar). Pitot entra em 4.4.1.
+
+---
+
+## Sessão 05/09/2026
 
 ---
 
