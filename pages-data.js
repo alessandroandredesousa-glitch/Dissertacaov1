@@ -279,8 +279,8 @@ const PAGES_DATA = {
                 \\[
                 \\triangle ABC \\equiv \\triangle A'B'C' \\implies 
                 \\begin{cases} 
-                \\overline{AB} = \\overline{A'B'} & \\quad e \\quad & \\widehat{A} = \\widehat{A'} \\\\
-                \\overline{AC} = \\overline{A'C'} & \\quad e \\quad &\\widehat{B} = \\widehat{B'} \\\\
+                \\overline{AB} = \\overline{A'B'} & \\quad e \\quad & \\widehat{A} = \\widehat{A'} \\
+                \\overline{AC} = \\overline{A'C'} & \\quad e \\quad &\\widehat{B} = \\widehat{B'} \\
                 \\overline{BC} = \\overline{B'C'} & \\quad e \\quad & \\widehat{C} = \\widehat{C'} 
                 \\end{cases}
                 \\]
@@ -314,8 +314,8 @@ const PAGES_DATA = {
             \\[
                 \\Delta ABC \\equiv \\Delta A'B'C' \\implies
                 \\left\\{\\begin{array}{ll}
-                    \\textcolor{#f67821}{\\overline{AB} = \\overline{A'B'}} & \\textcolor{#f67821}{e} \\quad \\textcolor{#f67821}{\\widehat{C} = \\widehat{C'}} \\\\
-                    \\textcolor{#008000}{\\overline{AC} = \\overline{A'C'}} & \\textcolor{#008000}{e} \\quad \\textcolor{#008000}{\\widehat{B} = \\widehat{B'}} \\\\
+                    \\textcolor{#f67821}{\\overline{AB} = \\overline{A'B'}} & \\textcolor{#f67821}{e} \\quad \\textcolor{#f67821}{\\widehat{C} = \\widehat{C'}} \\
+                    \\textcolor{#008000}{\\overline{AC} = \\overline{A'C'}} & \\textcolor{#008000}{e} \\quad \\textcolor{#008000}{\\widehat{B} = \\widehat{B'}} \\
                     \\overline{BC} = \\overline{B'C'} & e \\quad \\widehat{A} = \\widehat{A'}
                 \\end{array}\\right.
             \\]
@@ -397,8 +397,8 @@ const PAGES_DATA = {
             <p>Temos:</p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    \\overline{AC} = \\overline{A'C'} \\\\
-                    \\widehat{A} \\equiv \\widehat{A'} \\\\
+                    \\overline{AC} = \\overline{A'C'} \\
+                    \\widehat{A} \\equiv \\widehat{A'} \\
                     \\overline{AB} = \\overline{A'B'}
                 \\end{array}\\right.
                 \\Rightarrow \\triangle ABC \\equiv \\triangle A'B'C' \\quad \\text{(pelo caso LAL)}
@@ -466,8 +466,8 @@ const PAGES_DATA = {
             <p>Note que:</p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    E\\widehat{D}H \\equiv C\\widehat{A}B \\\\
-                    \\overline{DH} = \\overline{AC} \\\\
+                    E\\widehat{D}H \\equiv C\\widehat{A}B \\
+                    \\overline{DH} = \\overline{AC} \\
                     \\overline{DE} = \\overline{AB}
                 \\end{array}\\right.
                 \\quad \\quad \\Rightarrow \\quad \\quad \\triangle DHE \\equiv \\triangle ABC \\quad \\text{(Caso LAL)}
@@ -516,7 +516,7 @@ const PAGES_DATA = {
             <p>Portanto:</p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    D\\widehat{F}E = D\\widehat{F}H + H\\widehat{F}E \\\\
+                    D\\widehat{F}E = D\\widehat{F}H + H\\widehat{F}E \\
                     D\\widehat{H}E = D\\widehat{H}F + E\\widehat{H}F
                 \\end{array}\\right.
             \\]
@@ -545,8 +545,8 @@ const PAGES_DATA = {
             <p>Temos:</p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    \\overline{DF} = \\overline{DH} \\\\
-                    D\\widehat{H}E \\equiv D\\widehat{F}E \\\\
+                    \\overline{DF} = \\overline{DH} \\
+                    D\\widehat{H}E \\equiv D\\widehat{F}E \\
                     \\overline{HE} = \\overline{FE}
                 \\end{array}\\right.
                 \\quad \\quad \\Rightarrow \\quad \\quad \\triangle DHE \\equiv \\triangle DEF \\quad \\text{(LAL)}
@@ -592,7 +592,7 @@ const PAGES_DATA = {
             </p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    C\\widehat{A}B \\equiv A\\widehat{B}D \\\\
+                    C\\widehat{A}B \\equiv A\\widehat{B}D \\
                     \\overline{AC} = \\overline{BD}
                 \\end{array}\\right.
             \\]
@@ -783,7 +783,7 @@ const PAGES_DATA = {
             </p>
             \\[
                 \\left\\{\\begin{array}{l}
-                    \\overline{OA} = \\overline{OB} \\\\
+                    \\overline{OA} = \\overline{OB} \\
                     \\overline{OB'} \\equiv \\overline{OB'}
                 \\end{array}\\right.
             \\]
@@ -1118,8 +1118,8 @@ const PAGES_DATA = {
                 </p>
                 \\[
                     \\left\\{\\begin{array}{l}
-                        \\overline{AB} = \\overline{DE} \\\\
-                        \\widehat{B} \\equiv \\widehat{E} \\\\
+                        \\overline{AB} = \\overline{DE} \\
+                        \\widehat{B} \\equiv \\widehat{E} \\
                         \\widehat{C} \\equiv \\widehat{F}
                     \\end{array}\\right.
                 \\]
@@ -2763,6 +2763,194 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+        </div>
+        `
+    },
+
+    // ========== Capítulo 4 — Circunferência e Círculo (em construção) ==========
+    'circ-definicoes': {
+        title: '4.1 Definições Iniciais',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Circunferência, círculo, corda, arco, raio, diâmetro.', sectionTitle: '',
+        content: `
+        <div class="math-display">
+
+            <h3>4.1 Definições Iniciais</h3>
+
+            <p>
+                Iniciamos o estudo da circunferência, a curva que reúne todos os pontos que estão a
+                uma mesma distância de um ponto fixo. A partir dela definimos os elementos que
+                usaremos ao longo do capítulo: raio, corda, diâmetro e arco.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (circunferência):</strong> Dados um ponto \\(O\\) e um número real
+                    \\(r > 0\\), a <strong>circunferência</strong> de centro \\(O\\) e raio \\(r\\) é o
+                    conjunto de todos os pontos \\(P\\) do plano cuja distância a \\(O\\) é igual a \\(r\\):
+                    \\[ OP = r. \\]
+                    Cada segmento \\(\\overline{OP}\\) com \\(P\\) na circunferência chama-se <strong>raio</strong>
+                    (e o próprio número \\(r\\) é a medida do raio).
+                </p>
+            </div>
+
+            <p>
+                Um ponto \\(P\\) do plano fica em uma de três posições em relação à circunferência:
+                é <strong>interior</strong> se \\(OP < r\\), está <strong>sobre</strong> a circunferência
+                se \\(OP = r\\), e é <strong>exterior</strong> se \\(OP > r\\).
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (círculo):</strong> O <strong>círculo</strong> (ou disco) de centro
+                    \\(O\\) e raio \\(r\\) é a reunião da circunferência com a sua região interior, isto é,
+                    o conjunto dos pontos \\(P\\) com \\(OP \\le r\\). A circunferência é apenas a
+                    <em>borda</em>; o círculo é a <em>região</em> por ela delimitada.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.1 – Circunferência de centro \\(O\\) e raio \\(r\\), com pontos interior, sobre e exterior</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.1/img_circunferencia_elementos.png" alt="Circunferência de centro O e raio r; pontos interior, sobre e exterior" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (corda e diâmetro):</strong> Uma <strong>corda</strong> é um segmento
+                    cujos dois extremos pertencem à circunferência. Uma corda que <strong>passa pelo
+                    centro</strong> chama-se <strong>diâmetro</strong>. Todo diâmetro mede \\(2r\\), pois é
+                    formado por dois raios opostos.
+                </p>
+            </div>
+
+            <p>
+                Duas circunferências são <strong>congruentes</strong> quando têm o mesmo raio, e
+                <strong>concêntricas</strong> quando têm o mesmo centro (e raios diferentes).
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Propriedade:</strong> O diâmetro é a <strong>maior</strong> das cordas de uma
+                    circunferência.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(\\overline{AB}\\) uma corda qualquer que não passa pelo centro. Então \\(A\\),
+                \\(B\\) e \\(O\\) formam um triângulo, e pela
+                <a href="#" onclick="loadPage('desigualdade-triangular')" style="color: inherit; text-decoration: underline; cursor: pointer;">desigualdade triangular (seção 2.7)</a>,
+                \\[ AB < AO + OB = r + r = 2r. \\]
+                Se, por outro lado, \\(\\overline{AB}\\) passa pelo centro, então \\(A\\), \\(O\\) e \\(B\\)
+                são colineares e \\(AB = AO + OB = 2r\\). Logo, toda corda mede no máximo \\(2r\\), e esse
+                máximo é atingido exatamente pelos diâmetros.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (arco):</strong> Dois pontos \\(A\\) e \\(B\\) de uma circunferência
+                    a dividem em duas partes, chamadas <strong>arcos</strong> de extremos \\(A\\) e \\(B\\).
+                    Quando \\(\\overline{AB}\\) é um diâmetro, os dois arcos são iguais e cada um é uma
+                    <strong>semicircunferência</strong>.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.2 – Corda \\(\\overline{AB}\\), diâmetro \\(\\overline{CD}\\) e um arco de extremos \\(A\\) e \\(B\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.1/img_corda_diametro_arco.png" alt="Corda AB, diâmetro CD e o arco de extremos A e B" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+        </div>
+        `
+    },
+
+    'determinacao-circunferencia': {
+        title: '4.2 Determinação de uma Circunferência',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Determinação de uma circunferência por três pontos.', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.2 Determinação de uma Circunferência (por três pontos)</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'reta-circunferencia': {
+        title: '4.3 Reta e Circunferência; Reta Tangente',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Posições relativas entre reta e circunferência; Teorema da Reta Tangente.', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.3 Posições Relativas entre Reta e Circunferência; Teorema da Reta Tangente</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'segmentos-tangentes': {
+        title: '4.4 Segmentos Tangentes',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Segmentos tangentes; posições relativas de duas circunferências.', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.4 Segmentos Tangentes; Posições Relativas de Duas Circunferências</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'teorema-pitot': {
+        title: '4.4.1 Teorema de Pitot',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Teorema de Pitot (quadrilátero circunscritível).', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.4.1 Teorema de Pitot (quadrilátero circunscritível)</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Usa o lema dos segmentos tangentes (4.4). Conteúdo a ser desenvolvido.</p>
+        </div>
+        `
+    },
+
+    'angulos-circunferencia': {
+        title: '4.5 Ângulos na Circunferência',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Ângulo central e inscrito; Teorema do Ângulo Inscrito.', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.5 Ângulos na Circunferência (central e inscrito); Teorema do Ângulo Inscrito</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'arco-capaz': {
+        title: '4.6 Arco Capaz',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Arco capaz.', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.6 Arco Capaz</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+        </div>
+        `
+    },
+
+    'quadrilatero-inscritivel': {
+        title: '4.7 Quadrilátero Inscritível',
+        description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
+        videoDescription: 'Quadrilátero inscritível (ângulos opostos suplementares).', sectionTitle: '',
+        content: `
+        <div class="theorem" style="text-align: center;">
+            <h3>4.7 Quadrilátero Inscritível (ângulos opostos suplementares)</h3>
+            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
+            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
         </div>
         `
     },

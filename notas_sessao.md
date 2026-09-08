@@ -23,8 +23,16 @@ Técnicas novas **8.48** (morph paralelogramo→retângulo/losango/quadrado com 
 ### Pitot adiado p/ Cap. 4 (decisão 07/09)
 O Teorema de Pitot depende do círculo + lema dos segmentos tangentes (4.4), então foi MOVIDO do Cap. 3 para o Cap. 4 (sumário: 4.4.1). Removido do menu e o stub saiu de pages-data. **Cap. 3 ENCERRADO na 3.5.**
 
+### Cap. 4 iniciado (08/09)
+- Menu do Cap. 4 criado (4.1–4.7 + 4.4.1 Pitot aninhado sob 4.4; Potência de Ponto movida p/ 5.6). Stubs "em construção" no pages-data.
+- **4.1 Definições Iniciais**: TEXTO escrito (circunferência, raio, círculo, corda, diâmetro, arco; propriedade "diâmetro é a maior corda" via desigualdade triangular). Convenção adotada: overline só p/ segmento/relações; medidas sem barra.
+- **4.1 ANIMAÇÃO** (`circunferencia_definicoes.js`) finalizada: `drawCircle`, raio girando, Q interior/sobre/exterior, corda→diâmetro, maior corda (triângulo COD), arco com `drawArc` EM RADIANOS. Guia: técnica 8.51 (drawArc em radianos) + catálogo.
+
+### 4.1 COMPLETA (08/09)
+Texto + animação + 2 estáticas (Figs 4.1 e 4.2) em `imagem/4.1/` (max-width 45%), ligadas no site.
+
 ### PRÓXIMO PASSO
-Cap. 3 concluído (3.1–3.5). Próximo: iniciar Cap. 4 (Circunferência e Círculo) — 4.1 Definições Iniciais. Vídeos do Cap. 3 ainda PLACEHOLDER (gravar). Pitot entra em 4.4.1.
+4.2 Determinação de uma Circunferência (por três pontos). Vídeos ainda PLACEHOLDER.
 
 ---
 

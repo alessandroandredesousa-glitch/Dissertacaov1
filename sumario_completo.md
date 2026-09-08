@@ -77,7 +77,8 @@
 - **4.5** Ângulos na Circunferência (central e inscrito); Teorema do Ângulo Inscrito
 - **4.6** Arco Capaz
 - **4.7** Quadrilátero Inscritível (ângulos opostos suplementares)
-- **4.8** ⭐ Potência de Ponto (e eixo radical)
+
+> **Nota:** a **Potência de Ponto** foi movida para o Cap. 5, pois sua demonstração usa semelhança de triângulos (AA), introduzida em 5.3.
 
 ---
 
@@ -89,6 +90,7 @@
 - **5.3** Semelhança de Triângulos (casos AA, LAL, LLL)
 - **5.4** Semelhança de Polígonos
 - **5.5** Razão de Semelhança e Razão de Áreas
+- **5.6** ⭐ Potência de Ponto (e eixo radical) — *movida do Cap. 4; usa semelhança (AA), 5.3*
 
 ---
 
