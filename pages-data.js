@@ -2869,10 +2869,80 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Determinação de uma circunferência por três pontos.', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.2 Determinação de uma Circunferência (por três pontos)</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                Quantos pontos são necessários para fixar uma circunferência? Por <strong>um</strong> ponto
+                passam infinitas. Por <strong>dois</strong> pontos \\(A\\) e \\(B\\) também passam infinitas:
+                o centro precisa estar à mesma distância de \\(A\\) e de \\(B\\), ou seja, sobre a
+                <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz (seção 2.9)</a>
+                de \\(\\overline{AB}\\), com um centro para cada ponto dessa reta.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.3 – Por dois pontos \\(A\\) e \\(B\\) passam infinitas circunferências; os centros ficam na mediatriz de \\(\\overline{AB}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.2/img_dois_pontos_infinitas.png" alt="Dois pontos A e B: infinitas circunferências com centros na mediatriz de AB" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Com <strong>três</strong> pontos a situação muda: se eles não estiverem alinhados, existe
+                exatamente uma circunferência que passa pelos três.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema:</strong> Por três pontos <strong>não colineares</strong> passa uma, e
+                    uma só, circunferência.
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Sejam \\(A\\), \\(B\\) e \\(C\\) três pontos não colineares. Um ponto \\(O\\) é centro de uma
+                circunferência que passa pelos três exatamente quando \\(OA = OB = OC\\). Analisemos essa
+                condição por partes:
+            </p>
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(OA = OB\\) significa que \\(O\\) está na mediatriz de \\(\\overline{AB}\\);</li>
+                <li>\\(OB = OC\\) significa que \\(O\\) está na mediatriz de \\(\\overline{BC}\\).</li>
+            </ul>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.4 – Construímos as mediatrizes de \\(\\overline{AB}\\) e de \\(\\overline{BC}\\) no triângulo \\(ABC\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.2/img_mediatrizes_construcao.png" alt="Triângulo ABC com as mediatrizes de AB e de BC" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Como \\(A\\), \\(B\\) e \\(C\\) não são colineares, \\(\\overline{AB}\\) e \\(\\overline{BC}\\)
+                têm direções diferentes; logo suas mediatrizes não são paralelas e se cruzam em um
+                <strong>único</strong> ponto \\(O\\). Esse \\(O\\) satisfaz \\(OA = OB\\) e \\(OB = OC\\),
+                portanto \\(OA = OB = OC\\): tomando \\(r = OA\\), a circunferência de centro \\(O\\) e raio
+                \\(r\\) passa por \\(A\\), \\(B\\) e \\(C\\), o que prova a <strong>existência</strong>.
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.5 – As mediatrizes concorrem em \\(O\\); a circunferência de centro \\(O\\) e raio \\(r = OA\\) passa por \\(A\\), \\(B\\) e \\(C\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.2/img_circuncentro_circunscrita.png" alt="Mediatrizes concorrem em O; circunferência circunscrita a ABC com OA=OB=OC" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Para a <strong>unicidade</strong>, qualquer centro de uma circunferência pelos três pontos
+                teria de estar, ao mesmo tempo, nas mediatrizes de \\(\\overline{AB}\\) e de \\(\\overline{BC}\\);
+                mas essas retas se cruzam em um só ponto. Logo o centro é obrigatoriamente \\(O\\), e a
+                circunferência é única.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> Se \\(A\\), \\(B\\) e \\(C\\) forem colineares, as mediatrizes
+                    de \\(\\overline{AB}\\) e \\(\\overline{BC}\\) ficam paralelas e não se encontram: não há
+                    circunferência passando pelos três. Quando não são colineares, o ponto \\(O\\) obtido é o
+                    <strong>circuncentro</strong> do triângulo \\(ABC\\), e a circunferência é a sua
+                    circunferência <strong>circunscrita</strong>.
+                </p>
+            </div>
+
         </div>
         `
     },

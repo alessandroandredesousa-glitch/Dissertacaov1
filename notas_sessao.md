@@ -31,8 +31,15 @@ O Teorema de Pitot depende do círculo + lema dos segmentos tangentes (4.4), ent
 ### 4.1 COMPLETA (08/09)
 Texto + animação + 2 estáticas (Figs 4.1 e 4.2) em `imagem/4.1/` (max-width 45%), ligadas no site.
 
+### 4.2 texto + animação (08/09)
+- TEXTO: determinação por 3 pontos, com figuras de construção no meio da demonstração (Figs 4.3 dois pontos, 4.4 mediatrizes, 4.5 O+circunscrita). Observação (colineares → paralelas → sem circunferência) explicada.
+- ANIMAÇÃO `determinacao_circunferencia.js`: deslizar centro (infinitas por 2 pontos) → C → mediatrizes → O → circunscrita; 2º diagrama abaixo com param `alinhar` que degenera a circunferência ao alinhar C. Guia: 8.52 (drawText maxWidth/lineHeight) + catálogo.
+
+### 4.2 COMPLETA (08/09)
+Texto + animação + 3 estáticas (Figs 4.3, 4.4, 4.5) em `imagem/4.2/` (45%), ligadas no site.
+
 ### PRÓXIMO PASSO
-4.2 Determinação de uma Circunferência (por três pontos). Vídeos ainda PLACEHOLDER.
+4.3 Reta e Circunferência; Teorema da Reta Tangente. Vídeos ainda PLACEHOLDER.
 
 ---
 
