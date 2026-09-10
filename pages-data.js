@@ -2952,10 +2952,85 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Posições relativas entre reta e circunferência; Teorema da Reta Tangente.', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.3 Posições Relativas entre Reta e Circunferência; Teorema da Reta Tangente</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                Dada uma circunferência de centro \\(O\\) e raio \\(r\\) e uma reta \\(s\\), o número de pontos
+                que elas têm em comum depende de uma única grandeza: a distância \\(d\\) do centro \\(O\\) à
+                reta \\(s\\). Essa distância é medida pelo segmento perpendicular de \\(O\\) a \\(s\\), que é o
+                <a href="#" onclick="loadPage('distancia-ponto-reta')" style="color: inherit; text-decoration: underline; cursor: pointer;">menor caminho de um ponto a uma reta (seção 2.9)</a>.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Posições relativas:</strong> Comparando \\(d\\) com \\(r\\):
+                </p>
+                <ul style="margin: 8px 0 8px 24px;">
+                    <li>se \\(d > r\\), a reta é <strong>exterior</strong> (nenhum ponto em comum);</li>
+                    <li>se \\(d = r\\), a reta é <strong>tangente</strong> (exatamente um ponto em comum);</li>
+                    <li>se \\(d < r\\), a reta é <strong>secante</strong> (dois pontos em comum).</li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.6 – As três posições de uma reta em relação à circunferência, conforme \\(d\\) e \\(r\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.3/img_posicoes_reta_circ.png" alt="Três posições de uma reta: exterior (d>r), tangente (d=r) e secante (d<r)" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                O caso \\(d = r\\) é o mais importante: a reta toca a circunferência em um único ponto \\(T\\),
+                chamado <strong>ponto de tangência</strong>. Esse ponto tem uma propriedade marcante,
+                que caracteriza as tangentes.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (da reta tangente):</strong> Uma reta \\(t\\) é tangente a uma
+                    circunferência no ponto \\(T\\) se, e somente se, \\(t\\) é <strong>perpendicular</strong>
+                    ao raio \\(\\overline{OT}\\) nesse ponto.
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.7 – A tangente \\(t\\) em \\(T\\) é perpendicular ao raio \\(\\overline{OT}\\); qualquer outro ponto \\(X\\) de \\(t\\) satisfaz \\(OX > r\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.3/img_tangente_perpendicular.png" alt="Tangente t perpendicular ao raio OT em T; ponto X com OX maior que r" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Lembremos que a distância de \\(O\\) à reta é atingida pelo pé da perpendicular baixada de
+                \\(O\\), e que esse é o ponto da reta mais próximo de \\(O\\) (seção 2.9).
+            </p>
+
+            <p>
+                <strong>(Se é tangente, então é perpendicular ao raio.)</strong>
+                Suponha \\(t\\) tangente em \\(T\\). Como só há um ponto em comum, a distância de \\(O\\) a
+                \\(t\\) vale exatamente \\(r\\); logo o pé da perpendicular baixada de \\(O\\) sobre \\(t\\)
+                está a distância \\(r\\) de \\(O\\), ou seja, é um ponto da circunferência sobre \\(t\\). Mas o
+                único ponto de \\(t\\) na circunferência é \\(T\\); portanto o pé da perpendicular é o próprio
+                \\(T\\), e \\(\\overline{OT} \\perp t\\).
+            </p>
+
+            <p>
+                <strong>(Se é perpendicular ao raio, então é tangente.)</strong>
+                Reciprocamente, suponha que \\(t\\) passe por \\(T\\) (com \\(OT = r\\)) e seja perpendicular a
+                \\(\\overline{OT}\\). Para qualquer outro ponto \\(X\\) de \\(t\\), o segmento \\(\\overline{OT}\\)
+                é a perpendicular e \\(\\overline{OX}\\) é uma oblíqua; como a perpendicular é o menor caminho,
+                \\[ OX > OT = r. \\]
+                Assim, todo ponto de \\(t\\) diferente de \\(T\\) é exterior à circunferência, de modo que \\(t\\)
+                a encontra somente em \\(T\\): a reta é tangente.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Consequência:</strong> Por um ponto \\(T\\) de uma circunferência passa uma
+                    <strong>única</strong> tangente, a saber, a perpendicular ao raio \\(\\overline{OT}\\) em
+                    \\(T\\).
+                </p>
+            </div>
+
         </div>
         `
     },

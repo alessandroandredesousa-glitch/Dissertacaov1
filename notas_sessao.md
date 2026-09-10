@@ -38,8 +38,13 @@ Texto + animação + 2 estáticas (Figs 4.1 e 4.2) em `imagem/4.1/` (max-width 4
 ### 4.2 COMPLETA (08/09)
 Texto + animação + 3 estáticas (Figs 4.3, 4.4, 4.5) em `imagem/4.2/` (45%), ligadas no site.
 
+### 4.3 texto + animação (10/09)
+- TEXTO no site: posições relativas (d vs r) + Teorema da Reta Tangente (t⊥OT no ponto de contato), demonstração nos 2 sentidos usando "perpendicular = menor caminho" (2.9). Figs 4.6 (posições) e 4.7 (tangente ⊥ raio). 1 figura basta (prova numa só configuração).
+- ANIMAÇÃO `reta_circunferencia.js`: aproximar a reta (exterior/tangente/secante ao vivo, rótulo d esmaece), OT⊥t, mover X com parada em T (X esmaece → sobra T). Catálogo atualizado.
+- OBS: shell (node) ficou fora hoje por falha de montagem; validação do pages-data foi estrutural (edição via file tools OK). Reconferir com node quando voltar.
+
 ### PRÓXIMO PASSO
-4.3 Reta e Circunferência; Teorema da Reta Tangente. Vídeos ainda PLACEHOLDER.
+Gerar as 2 estáticas da 4.3 (Figs 4.6 posições, 4.7 tangente⊥raio). Depois 4.4 Segmentos Tangentes (+ 4.4.1 Pitot). Vídeos ainda PLACEHOLDER.
 
 ---
 
