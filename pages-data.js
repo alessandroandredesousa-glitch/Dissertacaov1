@@ -21,7 +21,7 @@ const PAGES_DATA = {
 
             <p>Um ponto \\(O\\) de uma reta a divide em duas <strong>semirretas</strong> de origem \\(O\\). A semirreta de origem \\(O\\) que contém o ponto \\(A\\) é indicada por \\(\\overrightarrow{OA}\\). Duas semirretas de mesma origem, contidas numa mesma reta e de sentidos contrários, são chamadas <strong>semirretas opostas</strong>.</p>
 
-            <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\).</p>
+            <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\) (Figura 1.1).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.1 – Reta \\(r\\), semirreta \\(\\overrightarrow{OA}\\) e segmento \\(\\overline{AB}\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.1/img_reta_semirreta_segmento.png" alt="Reta r, semirretas opostas OA e OB, e segmento AB" style="max-width: 70%;"></div>
@@ -43,7 +43,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>1.2 Ângulo: Definição e Elementos</h3>
-            <p>Chama-se <strong>ângulo</strong> à reunião de duas semirretas de mesma origem e não contidas numa mesma reta (não colineares). Sendo \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\) essas semirretas, o ângulo é indicado por \\(A\\widehat{O}B\\) (ou apenas \\(\\widehat{O}\\), quando não há ambiguidade).</p>
+            <p>Chama-se <strong>ângulo</strong> à reunião de duas semirretas de mesma origem e não contidas numa mesma reta (não colineares). Sendo \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\) essas semirretas, o ângulo é indicado por \\(A\\widehat{O}B\\) (ou apenas \\(\\widehat{O}\\), quando não há ambiguidade). Seus elementos aparecem na Figura 1.2.</p>
         </div>
 
         <div class="math-display">
@@ -61,7 +61,7 @@ const PAGES_DATA = {
             <p>Dois casos-limite completam a definição: o <strong>ângulo nulo</strong>, cujos lados coincidem (\\(0^\\circ\\)), e o <strong>ângulo raso</strong>, cujos lados são semirretas opostas (\\(180^\\circ\\)).</p>
 
             <h4>Ângulos consecutivos e adjacentes</h4>
-            <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns.</p>
+            <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns (Figura 1.3).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos adjacentes \\(A\\widehat{O}B\\) e \\(B\\widehat{O}C\\) (lado comum \\(\\overrightarrow{OB}\\))</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulos_consecutivos.png" alt="Ângulos adjacentes AÔB e BÔC com lado comum OB" style="max-width: 60%;"></div>
@@ -83,7 +83,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>1.3 Ângulos Opostos pelo Vértice</h3>
-            <p>Dois ângulos são <strong>opostos pelo vértice</strong> (o.p.v.) quando os lados de um são as semirretas opostas aos lados do outro. Duas retas concorrentes determinam <strong>dois pares</strong> de ângulos opostos pelo vértice.</p>
+            <p>Dois ângulos são <strong>opostos pelo vértice</strong> (o.p.v.) quando os lados de um são as semirretas opostas aos lados do outro. Duas retas concorrentes determinam <strong>dois pares</strong> de ângulos opostos pelo vértice (Figura 1.4).</p>
         </div>
 
         <div class="math-display">
@@ -127,7 +127,7 @@ const PAGES_DATA = {
         <div class="math-display">
             <div class="theorem">
                 <p>Dois ângulos são <strong>complementares</strong> quando a soma de suas medidas é \\(90^\\circ\\); cada um é o <strong>complemento</strong> do outro.</p>
-                <p>Dois ângulos são <strong>suplementares</strong> quando a soma de suas medidas é \\(180^\\circ\\); cada um é o <strong>suplemento</strong> do outro.</p>
+                <p>Dois ângulos são <strong>suplementares</strong> quando a soma de suas medidas é \\(180^\\circ\\); cada um é o <strong>suplemento</strong> do outro (Figura 1.5).</p>
             </div>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.5 – Ângulos complementares (soma \\(90^\\circ\\)) e suplementares (soma \\(180^\\circ\\))</p>
@@ -155,7 +155,7 @@ const PAGES_DATA = {
         content: `
            <div class="theorem">
             <h3>2.1 Definição de Triângulo</h3>
-            <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\\triangle ABC\\)) é a reunião dos segmentos \\(\\overline{AB}\\), \\(\\overline{AC}\\) e \\(\\overline{BC}\\).</p>
+            <p>Dados três pontos \\(A\\), \\(B\\) e \\(C\\) não colineares, dizemos que o triângulo \\(ABC\\) (denotado por \\(\\triangle ABC\\)) é a reunião dos segmentos \\(\\overline{AB}\\), \\(\\overline{AC}\\) e \\(\\overline{BC}\\) (Figura 2.1).</p>
         </div>
 
         <div class="math-display">
@@ -170,7 +170,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
             <ul>
                 <li>Os pontos \\(A\\), \\(B\\) e \\(C\\) são chamados de <strong>vértices</strong>.
-                <li>Os segmentos \\(\\overline{AB}\\) (de medida \\(c\\)), \\(\\overline{AC}\\) (de medida \\(b\\)) e \\(\\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\\triangle ABC\\).
+                <li>Os segmentos \\(\\overline{AB}\\) (de medida \\(c\\)), \\(\\overline{AC}\\) (de medida \\(b\\)) e \\(\\overline{BC}\\) (de medida \\(a\\)) são chamados de <strong>lados</strong> do \\(\\triangle ABC\\) (Figura 2.2).
             </ul>
 
             
@@ -183,7 +183,7 @@ const PAGES_DATA = {
 
             <ul>
             <li>Os ângulos \\(B\\widehat{A}C\\) (ou \\(\\widehat{A}\\)), \\(A\\widehat{B}C\\) (ou \\(\\widehat{B}\\)) e \\(B\\widehat{C}A\\) (ou \\(\\widehat{C}\\)) são chamados de <strong>ângulos internos</strong> do \\(\\triangle ABC\\).
-            Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente.
+            Estes ângulos são opostos aos lados \\(a\\), \\(b\\) e \\(c\\), respectivamente (Figura 2.3).
             <ul>
             <p style="text-align: center; font-weight: bold;">Figura 2.3 – Ângulos internos e lados opostos do triângulo ABC</p>
             <div style="text-align: center; margin: 20px 0;">
@@ -205,7 +205,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>2.2 Classificação</h3>
-            <p>Os triângulos podem ser classificados de duas formas: quanto aos seus lados ou quanto aos seus ângulos internos.</p>
+            <p>Os triângulos podem ser classificados de duas formas: quanto aos seus lados ou quanto aos seus ângulos internos (Figura 2.4).</p>
         </div>
 
         <div class="math-display">
@@ -259,7 +259,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>2.3 Definição de Congruência</h3>
-            <p>Dois triângulos são ditos congruentes se, e somente se, existe uma correspondência entre seus vértices, tal que:</p>
+            <p>Dois triângulos são ditos congruentes se, e somente se, existe uma correspondência entre seus vértices (Figura 2.5), tal que:</p>
             <ul style="list-style-type: none; padding-left: 15px;">
                 <li><strong>I)</strong> Os lados correspondentes são congruentes;</li>
                 <li><strong>II)</strong> Os ângulos correspondentes são congruentes.</li>
@@ -301,7 +301,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>Postulado de Congruência Lado-Ângulo-Lado (LAL)</h3>
-            <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes.</p>
+            <p>Se dois triângulos possuem dois lados congruentes e o ângulo formado por esses lados também é congruente, então os triângulos são congruentes (Figura 2.6).</p>
         </div>
 
         <p style="text-align: center; font-weight: bold;">Figura 2.6 – Postulado de congruência Lado-Ângulo-Lado (LAL)</p>
@@ -335,7 +335,7 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>Teorema de Congruência Ângulo-Lado-Ângulo (ALA)</h3>
-            <p>Se dois triângulos possuem dois ângulos congruentes e o lado compreendido entre esses ângulos também é congruente, então os triângulos são congruentes.</p>
+            <p>Se dois triângulos possuem dois ângulos congruentes e o lado compreendido entre esses ângulos também é congruente, então os triângulos são congruentes (Figura 2.7).</p>
         </div>
 
         <div class="math-display">
@@ -363,7 +363,7 @@ const PAGES_DATA = {
             <h4>Demonstração:</h4>
             <p>
                 Tracemos uma reta \\(r\\) sobre o segmento \\(\\overline{A'C'}\\) e marquemos um ponto \\(X\\) sobre 
-                \\(r\\) de tal modo que \\(\\overline{AC} = \\overline{A'X}\\).
+                \\(r\\) de tal modo que \\(\\overline{AC} = \\overline{A'X}\\) (Figura 2.8).
             </p>
             <p style="text-align: center; font-weight: bold;">Figura 2.8 – Ponto X sobre a reta A'C' com A'X = AC</p>
 
@@ -377,7 +377,7 @@ const PAGES_DATA = {
             <p>
                 Com isso, \\(\\triangle ABC \\equiv \\triangle A'B'X\\) pelo <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>. Como, por hipótese, 
                 o ângulo \\(\\widehat{B} \\equiv \\widehat{B'}\\), logo o ponto \\(X = C'\\), 
-                portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\).
+                portanto \\(\\Rightarrow \\overline{AC} = \\overline{A'C'}\\) (Figura 2.9).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.9 – Coincidência X = C' e conclusão pelo caso LAL</p>
@@ -427,7 +427,7 @@ const PAGES_DATA = {
 
             <p>
                 Vamos construir o ângulo \\(C\\widehat{A}B\\) no semiplano oposto ao ponto \\(F\\),
-                tomando um ponto \\(X\\) tal que \\(E\\widehat{D}X \\equiv C\\widehat{A}B\\).
+                tomando um ponto \\(X\\) tal que \\(E\\widehat{D}X \\equiv C\\widehat{A}B\\) (Figura 2.10).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.10 – Construção do ângulo EDX ≡ CAB</p>
@@ -445,7 +445,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Tomamos um ponto \\(H\\) sobre a reta \\(\\overleftrightarrow{DX}\\), tal que
+                Tomamos um ponto \\(H\\) sobre a reta \\(\\overleftrightarrow{DX}\\) (Figura 2.11), tal que
                 \\(\\overline{DH} = \\overline{AC}\\).
             </p>
 
@@ -475,7 +475,7 @@ const PAGES_DATA = {
             <p>onde \\(\\overline{DH} = \\overline{AC}\\) por construção e \\(\\overline{DE} = \\overline{AB}\\) pela hipótese.</p>
 
             <p>
-                Traçando \\(FH\\), obtemos o \\(\\triangle DFH\\) que é isósceles, pois
+                Traçando \\(FH\\), obtemos o \\(\\triangle DFH\\) que é isósceles (Figura 2.12), pois
                 \\(\\overline{DH} = \\overline{AC}\\) e \\(\\overline{DF} = \\overline{AC}\\),
                 portanto \\(D\\widehat{H}F \\equiv D\\widehat{F}H\\).
             </p>
@@ -496,7 +496,7 @@ const PAGES_DATA = {
 
             <p>
                 Com o mesmo raciocínio, podemos concluir que o \\(\\triangle FEH\\) é isósceles
-                e \\(E\\widehat{F}H \\equiv F\\widehat{H}E\\).
+                e \\(E\\widehat{F}H \\equiv F\\widehat{H}E\\) (Figura 2.13).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.13 – Triângulo FEH isósceles</p>
@@ -527,6 +527,8 @@ const PAGES_DATA = {
             \\[
                 D\\widehat{F}E \\equiv D\\widehat{H}E
             \\]
+
+            <p>Assim \\(\\triangle ABC \\equiv \\triangle DEF\\) pelo caso LAL (Figura 2.14).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.14 – Conclusão △ABC ≡ △DEF pelo caso LAL</p>
 
@@ -588,7 +590,7 @@ const PAGES_DATA = {
 
             <p>
                 Dado um segmento \\(\\overline{AB}\\), constrói-se pontos \\(C\\) e \\(D\\) em semiplanos 
-                opostos em relação ao segmento \\(\\overline{AB}\\), de modo que:
+                opostos em relação ao segmento \\(\\overline{AB}\\) (Figura 2.15), de modo que:
             </p>
             \\[
                 \\left\\{\\begin{array}{l}
@@ -612,7 +614,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                O segmento \\(\\overline{CD}\\) intercepta o segmento \\(\\overline{AB}\\) em um ponto \\(M\\).
+                O segmento \\(\\overline{CD}\\) intercepta o segmento \\(\\overline{AB}\\) em um ponto \\(M\\) (Figura 2.16).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.16 – Segmento CD interceptando AB no ponto M</p>
@@ -632,7 +634,7 @@ const PAGES_DATA = {
             <h4>Note que:</h4>
             <ul>
                 <li>
-                    \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
+                    \\(\\triangle CAB \\equiv \\triangle ABD\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>) (Figura 2.17)
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 2.17 – Congruência △CAB ≡ △ABD pelo caso LAL</p>
 
@@ -645,7 +647,7 @@ const PAGES_DATA = {
                 <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
                     \\(\\triangle ACD \\equiv \\triangle CDB\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL</a>), pois \\(\\overline{AD} = \\overline{CB}\\) 
-                    pela congruência anterior
+                    pela congruência anterior (Figura 2.18)
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 2.18 – Congruência △ACD ≡ △CDB pelo caso LLL</p>
 
@@ -658,7 +660,7 @@ const PAGES_DATA = {
                 <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
                 <li>
                     \\(\\triangle AMD \\equiv \\triangle BMC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>: \\(B\\widehat{A}D \\equiv A\\widehat{B}C\\), 
-                    \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\))
+                    \\(\\overline{AD} = \\overline{BC}\\), \\(A\\widehat{D}C \\equiv D\\widehat{C}B\\)) (Figura 2.19)
                 </li>
                 <p style="text-align: center; font-weight: bold;">Figura 2.19 – Congruência △AMD ≡ △BMC pelo caso ALA</p>
 
@@ -695,8 +697,8 @@ const PAGES_DATA = {
             <h3>Definição de Mediana</h3>
             <p>
                 Dado um triângulo \\(\\triangle ABC\\), a <strong>mediana</strong> relativa ao lado 
-                \\(\\overline{AB}\\) é o segmento que une o vértice \\(C\\) ao ponto médio \\(M\\) 
-                do lado \\(\\overline{AB}\\).
+                \\(\\overline{AB}\\) é o segmento que une o vértice \\(C\\) ao ponto médio \\(M\\)
+                do lado \\(\\overline{AB}\\) (Figura 2.20).
             </p>
         </div>
 
@@ -717,7 +719,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Todo triângulo possui três medianas, cada uma relativa a um de seus lados:
+                Todo triângulo possui três medianas, cada uma relativa a um de seus lados (Figura 2.21):
             </p>
 
             <ul>
@@ -788,7 +790,7 @@ const PAGES_DATA = {
                 \\end{array}\\right.
             \\]
             <p>
-                com \\(\\overline{OA'} > \\overline{OA}\\) e \\(\\overline{OB'} > \\overline{OB}\\).
+                com \\(\\overline{OA'} > \\overline{OA}\\) e \\(\\overline{OB'} > \\overline{OB}\\) (Figura 2.22).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.22 – Ângulo aOb com pontos A, A', B, B' nas semirretas</p>
@@ -807,7 +809,7 @@ const PAGES_DATA = {
 
             <p>
                 Façamos \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Seja \\(C\\) o ponto de interseção de 
-                \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Consideremos a semirreta \\(\\overrightarrow{OC}\\). Temos:
+                \\(\\overline{AB'}\\) e \\(\\overline{BA'}\\). Consideremos a semirreta \\(\\overrightarrow{OC}\\) (Figura 2.23). Temos:
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.23 – Ponto C interseção de AB' e BA'</p>
@@ -826,7 +828,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle OBA' \\equiv \\triangle OAB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
+                    O triângulo \\(\\triangle OBA' \\equiv \\triangle OAB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>) (Figura 2.24)
                 </li>
             </ul>
 
@@ -846,7 +848,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle ACA' \\equiv \\triangle BCB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>)
+                    O triângulo \\(\\triangle ACA' \\equiv \\triangle BCB'\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-ALA')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso ALA</a>) (Figura 2.25)
                 </li>
             </ul>
 
@@ -866,7 +868,7 @@ const PAGES_DATA = {
 
             <ul>
                 <li>
-                    O triângulo \\(\\triangle OAC \\equiv \\triangle OBC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>)
+                    O triângulo \\(\\triangle OAC \\equiv \\triangle OBC\\) &nbsp; (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>) (Figura 2.26)
                 </li>
             </ul>
 
@@ -912,7 +914,7 @@ const PAGES_DATA = {
                     Dado um triângulo \\(\\triangle ABC\\), a <strong>bissetriz interna</strong> relativa
                     ao vértice \\(A\\) é o segmento que parte de \\(A\\), bissecta o ângulo interno
                     \\(\\widehat{A}\\) e tem sua outra extremidade no ponto \\(D\\) de interseção com o
-                    lado oposto \\(\\overline{BC}\\).
+                    lado oposto \\(\\overline{BC}\\) (Figura 2.27).
                 </p>
             </div>
 
@@ -927,7 +929,7 @@ const PAGES_DATA = {
                 uma relativa a cada vértice. Um resultado notável, que será explorado futuramente,
                 é que essas três bissetrizes são <strong>concorrentes</strong>: elas se encontram
                 em um único ponto \\(I\\), chamado <strong>incentro</strong> do triângulo,
-                que é equidistante dos três lados.
+                que é equidistante dos três lados (Figura 2.28).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.28 – As três bissetrizes internas do triângulo \\(ABC\\) concorrendo no incentro \\(I\\)</p>
@@ -962,7 +964,7 @@ const PAGES_DATA = {
             <p>
                 Dado um \\(\\triangle ABC\\) e sendo \\(\\overrightarrow{CX}\\) a semirreta oposta à semirreta 
                 \\(\\overrightarrow{CB}\\), o ângulo \\(\\varepsilon = A\\widehat{C}X\\) é o ângulo externo do 
-                triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\).
+                triângulo \\(ABC\\), adjacente a \\(\\widehat{C}\\) e não adjacente a \\(\\widehat{A}\\) e \\(\\widehat{B}\\) (Figura 2.29).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.29 – Triângulo ABC com ângulo externo ε</p>
@@ -983,7 +985,7 @@ const PAGES_DATA = {
 
             <p>
                 Seja \\(M\\) o ponto médio de \\(\\overline{AC}\\), e tomemos um ponto \\(P\\) sobre a 
-                semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\).
+                semirreta \\(\\overrightarrow{BM}\\) de modo que \\(\\overline{BM} = \\overline{MP}\\) (Figura 2.30).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.30 – Ponto M médio de AC e ponto P sobre a semirreta BM</p>
@@ -1003,7 +1005,7 @@ const PAGES_DATA = {
             <p>
                 Note que \\(\\triangle BMA \\equiv \\triangle CMP\\) (<a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LAL</a>), então 
                 \\(B\\widehat{A}C \\equiv M\\widehat{C}P\\). Como \\(M\\widehat{C}P\\) é interno a 
-                \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\).
+                \\(\\varepsilon\\), logo \\(\\varepsilon > M\\widehat{C}P \\Rightarrow \\varepsilon > B\\widehat{A}C\\) (Figura 2.31).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.31 – Congruência △BMA ≡ △CMP pelo caso LAL</p>
@@ -1023,7 +1025,7 @@ const PAGES_DATA = {
 
             <p>
                 De maneira análoga, seja \\(M\\) o ponto médio do segmento \\(\\overline{BC}\\) e \\(P\\) 
-                um ponto pertencente à semirreta \\(\\overrightarrow{AM}\\), tal que 
+                um ponto pertencente à semirreta \\(\\overrightarrow{AM}\\) (Figura 2.32), tal que
                 \\(\\overline{AM} = \\overline{MP}\\).
             </p>
 
@@ -1048,7 +1050,7 @@ const PAGES_DATA = {
 
             <p>
                 Tomemos um ponto \\(K\\) pertencente à semirreta \\(\\overrightarrow{PC}\\), tal que 
-                \\(K\\) está fora do segmento \\(\\overline{PC}\\).
+                \\(K\\) está fora do segmento \\(\\overline{PC}\\) (Figura 2.33).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.33 – Ponto K sobre a semirreta PC</p>
@@ -1066,7 +1068,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice).
+                Perceba que \\(K\\widehat{C}X \\equiv M\\widehat{C}P\\) (opostos pelo vértice) (Figura 2.34).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.34 – Ângulos opostos pelo vértice KCX e MCP</p>
@@ -1131,7 +1133,7 @@ const PAGES_DATA = {
             <p>
                 A hipótese estabelece a igualdade de um lado (\\(\\overline{AB} = \\overline{DE}\\)),
                 do ângulo adjacente a esse lado em cada triângulo (\\(\\widehat{B} \\equiv \\widehat{E}\\))
-                e do ângulo oposto a esse lado (\\(\\widehat{C} \\equiv \\widehat{F}\\)).
+                e do ângulo oposto a esse lado (\\(\\widehat{C} \\equiv \\widehat{F}\\)) (Figura 2.35).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.35 – Triângulos \\(ABC\\) e \\(DEF\\) com hipótese do caso \\(\\text{LAA}_o\\)</p>
@@ -1162,7 +1164,7 @@ const PAGES_DATA = {
                 e portanto \\(D\\widehat{P}E \\equiv \\widehat{C} \\equiv \\widehat{F}\\).
                 Mas \\(D\\widehat{P}E\\) é ângulo externo de \\(\\triangle DPF\\), logo pelo
                 <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>,
-                \\(D\\widehat{P}E > \\widehat{F}\\). Contradição.
+                \\(D\\widehat{P}E > \\widehat{F}\\). Contradição (Figura 2.36).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
@@ -1212,6 +1214,8 @@ const PAGES_DATA = {
 
             <h4>Demonstração (\\(\\Rightarrow\\)): Se \\(\\overline{AB} > \\overline{AC}\\), então \\(\\widehat{C} > \\widehat{B}\\).</h4>
 
+            <p>Partimos de um triângulo \\(ABC\\) com \\(\\overline{AB} > \\overline{AC}\\) (Figura 2.37).</p>
+
             <p style="text-align: center; font-weight: bold;">Figura 2.37 – Triângulo ABC com AB > AC</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.6/img_maior_lado_1.png" alt="Triângulo ABC com AB maior que AC" style="max-width: 60%;">
@@ -1220,7 +1224,7 @@ const PAGES_DATA = {
 
             <p>
                 Seja \\(D\\) um ponto sobre \\(\\overline{AB}\\) de tal modo que
-                \\(\\overline{AC} = \\overline{AD}\\).
+                \\(\\overline{AC} = \\overline{AD}\\) (Figura 2.38).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 2.38 – Ponto D sobre AB com AD = AC</p>
@@ -1243,7 +1247,7 @@ const PAGES_DATA = {
             \\]
 
             <p>
-                Mas \\(A\\widehat{D}C\\) é ângulo externo ao triângulo \\(\\triangle BDC\\), portanto,
+                Mas \\(A\\widehat{D}C\\) é ângulo externo ao triângulo \\(\\triangle BDC\\) (Figura 2.39), portanto,
                 pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema do Ângulo Externo</a>:
             </p>
 
@@ -1319,7 +1323,9 @@ const PAGES_DATA = {
 
             <h4>Demonstração:</h4>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.39 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
+            <p>Partimos do triângulo \\(ABC\\) de lados \\(a\\), \\(b\\) e \\(c\\) (Figura 2.40).</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 2.40 – Triângulo \\(ABC\\) com lados \\(a\\), \\(b\\) e \\(c\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.7/img_desigualdade_triangular_1.png" alt="Triângulo ABC com lados a, b e c" style="max-width: 60%;">
             </div>
@@ -1328,10 +1334,10 @@ const PAGES_DATA = {
             <p>
                 Seja \\(D\\) um ponto na extensão de \\(\\overrightarrow{BA}\\) além de \\(A\\),
                 de tal modo que \\(\\overline{AD} = \\overline{AC}\\).
-                Os pontos ficam na ordem \\(B\\text{-}A\\text{-}D\\) sobre a reta.
+                Os pontos ficam na ordem \\(B\\text{-}A\\text{-}D\\) sobre a reta (Figura 2.41).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.40 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.41 – Ponto \\(D\\) na extensão de \\(\\overrightarrow{BA}\\) com \\(\\overline{AD} = \\overline{AC}\\) e \\(\\triangle ACD\\) isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.7/img_desigualdade_triangular_2.png" alt="Ponto D na extensão de BA com AD = AC, triângulo ACD isósceles" style="max-width: 60%;">
             </div>
@@ -1347,13 +1353,13 @@ const PAGES_DATA = {
 
             <p>
                 Como \\(A\\) é interno ao segmento \\(\\overline{BD}\\), o ângulo \\(B\\widehat{C}D\\) contém
-                \\(A\\widehat{C}D\\) como parte, portanto:
+                \\(A\\widehat{C}D\\) como parte (Figura 2.42), portanto:
             </p>
             \\[
                 B\\widehat{C}D > A\\widehat{C}D = A\\widehat{D}C = B\\widehat{D}C
             \\]
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.41 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.42 – No triângulo \\(BCD\\), \\(B\\widehat{C}D > B\\widehat{D}C\\), logo \\(\\overline{BD} > \\overline{BC}\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.7/img_desigualdade_triangular_3.png" alt="Triângulo BCD com ângulo BCD maior que BDC" style="max-width: 60%;">
             </div>
@@ -1405,11 +1411,11 @@ const PAGES_DATA = {
                 <p>
                     Duas retas coplanares \\(a\\) e \\(b\\) são ditas <strong>paralelas</strong>
                     (notação: \\(a \\parallel b\\)) se não possuem nenhum ponto em comum.
-                    Caso contrário, são chamadas <strong>concorrentes</strong>.
+                    Caso contrário, são chamadas <strong>concorrentes</strong> (Figura 2.43).
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.42 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.43 – Retas paralelas \\(a\\) e \\(b\\) e retas concorrentes</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_1.png" alt="Retas paralelas e retas concorrentes" style="max-width: 65%;">
             </div>
@@ -1418,7 +1424,7 @@ const PAGES_DATA = {
             <p>
                 Quando uma reta \\(t\\) corta duas retas \\(a\\) e \\(b\\) em pontos distintos,
                 dizemos que \\(t\\) é uma <strong>transversal</strong> de \\(a\\) e \\(b\\).
-                São formados 8 ângulos, que recebem nomes conforme sua posição:
+                São formados 8 ângulos, que recebem nomes conforme sua posição (Figura 2.44):
             </p>
 
             <div class="theorem">
@@ -1439,7 +1445,7 @@ const PAGES_DATA = {
                 </ul>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.43 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.44 – Os 8 ângulos formados pela transversal \\(t\\) com as retas \\(a\\) e \\(b\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_2.png" alt="Os 8 ângulos formados pela transversal" style="max-width: 65%;">
             </div>
@@ -1488,13 +1494,13 @@ const PAGES_DATA = {
                 Construímos, com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
                 um ângulo \\(\\beta\\) congruente a \\(\\alpha\\),
                 com \\(\\beta\\) e \\(\\alpha\\) em lados opostos de \\(t\\), formando ângulos alternos internos.
-                Seja \\(m\\) a reta que contém esse ângulo.
+                Seja \\(m\\) a reta que contém esse ângulo (Figura 2.45).
             </p>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_existencia_paralela_1.png" alt="Existência da paralela: construção e absurdo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.44 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.45 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 Se \\(m\\) e \\(r\\) não fossem paralelas, teriam um ponto \\(B\\) em comum e
@@ -1552,24 +1558,24 @@ const PAGES_DATA = {
 
             <ol>
                 <li>Escolha um ponto qualquer \\(A \\in r\\) e trace a transversal \\(t = \\overleftrightarrow{PA}\\) (a reta que passa por \\(P\\) e \\(A\\)).</li>
-                <li>Seja \\(\\alpha\\) o ângulo formado por \\(t\\) e \\(r\\) no vértice \\(A\\), do lado interior entre as retas.</li>
+                <li>Seja \\(\\alpha\\) o ângulo formado por \\(t\\) e \\(r\\) no vértice \\(A\\), do lado interior entre as retas (Figura 2.46).</li>
             </ol>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_construcao_paralela_1.png" alt="Transversal t por P e A, ângulo α em A" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.45 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.46 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
 
             <ol start="3">
                 <li>Em \\(P\\), construa um ângulo \\(\\beta \\equiv \\alpha\\) com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
                     de modo que \\(\\beta\\) e \\(\\alpha\\) fiquem em lados <strong>opostos</strong> de \\(t\\), formando ângulos alternos internos.</li>
-                <li>Seja \\(m\\) a reta determinada pelo outro lado do ângulo \\(\\beta\\) em \\(P\\).</li>
+                <li>Seja \\(m\\) a reta determinada pelo outro lado do ângulo \\(\\beta\\) em \\(P\\) (Figura 2.47).</li>
             </ol>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_construcao_paralela_2.png" alt="Ângulo β reproduzido em P e reta m paralela a r" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.46 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.47 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
 
             <p><strong>Justificativa:</strong></p>
 
@@ -1618,14 +1624,14 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Postulado de Euclides:</strong> Por um ponto \\(P\\) fora de uma reta \\(r\\),
-                    passa <em>uma única</em> reta paralela a \\(r\\).
+                    passa <em>uma única</em> reta paralela a \\(r\\) (Figura 2.48).
                 </p>
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_postulado_euclides_1.png" alt="Única paralela por P a r" style="max-width: 60%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.47 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.48 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
                 <p>
@@ -1690,14 +1696,14 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Teorema:</strong> Se duas retas paralelas são cortadas por uma transversal,
-                    os ângulos alternos internos são congruentes.
+                    os ângulos alternos internos são congruentes (Figura 2.49).
                 </p>
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_1.png" alt="Paralelas cortadas por transversal com ângulos alternos internos" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.48 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.49 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1726,14 +1732,14 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Corolário 1:</strong> Se duas retas paralelas são cortadas por uma transversal,
-                    os ângulos correspondentes são congruentes.
+                    os ângulos correspondentes são congruentes (Figura 2.50).
                 </p>
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_2.png" alt="Ângulos correspondentes congruentes" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.49 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.50 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1748,14 +1754,14 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Corolário 2:</strong> Se duas retas paralelas são cortadas por uma transversal,
-                    os ângulos colaterais internos são suplementares.
+                    os ângulos colaterais internos são suplementares (Figura 2.51).
                 </p>
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_3.png" alt="Ângulos colaterais internos suplementares" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.50 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.51 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1815,14 +1821,14 @@ const PAGES_DATA = {
             <div class="theorem">
                 <p>
                     <strong>Teorema (Ângulo Externo):</strong> Em todo triângulo, qualquer ângulo externo
-                    é igual à soma dos dois ângulos internos não adjacentes a ele.
+                    é igual à soma dos dois ângulos internos não adjacentes a ele (Figura 2.52).
                 </p>
             </div>
 
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.51. Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.52 – Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1900,10 +1906,10 @@ const PAGES_DATA = {
         </div>
 
         <div class="math-display">
-            <p>Ao se cruzarem, duas retas determinam quatro ângulos. Como ângulos <a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">opostos pelo vértice</a> são congruentes e ângulos adjacentes são <a href="#" onclick="loadPage('complementares-suplementares')" style="color: inherit; text-decoration: underline; cursor: pointer;">suplementares</a>, basta que <strong>um</strong> desses quatro ângulos seja reto para que os quatro sejam retos. Por isso, uma única condição, um ângulo de \\(90^\\circ\\), já caracteriza a perpendicularidade.</p>
+            <p>Ao se cruzarem, duas retas determinam quatro ângulos. Como ângulos <a href="#" onclick="loadPage('opostos-vertice')" style="color: inherit; text-decoration: underline; cursor: pointer;">opostos pelo vértice</a> são congruentes e ângulos adjacentes são <a href="#" onclick="loadPage('complementares-suplementares')" style="color: inherit; text-decoration: underline; cursor: pointer;">suplementares</a>, basta que <strong>um</strong> desses quatro ângulos seja reto para que os quatro sejam retos. Por isso, uma única condição, um ângulo de \\(90^\\circ\\), já caracteriza a perpendicularidade (Figura 2.53).</p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.52 – Retas perpendiculares \\(r \\perp s\\): os quatro ângulos são retos</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_retas_perpendiculares.png</div>
+            <p style="text-align: center; font-weight: bold;">Figura 2.53 – Retas perpendiculares \\(r \\perp s\\): os quatro ângulos são retos</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/2.9/img_retas_perpendiculares.png" alt="Retas perpendiculares r e s: os quatro ângulos são retos (90°)" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -1934,20 +1940,33 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <h4>Caso 1: \\(P\\) pertence à reta \\(r\\)</h4>
-            <p>Com centro em \\(P\\), traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\), de modo que \\(PA = PB\\). Em seguida, com centros em \\(A\\) e \\(B\\) e um mesmo raio (maior que \\(PA\\)), traçam-se dois arcos que se cruzam num ponto \\(Q\\). A reta \\(PQ\\) é perpendicular a \\(r\\).</p>
+            <p>Com centro em \\(P\\), traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\), de modo que \\(PA = PB\\). Em seguida, com centros em \\(A\\) e \\(B\\) e um mesmo raio (maior que \\(PA\\)), traçam-se dois arcos que se cruzam num ponto \\(Q\\). A reta \\(PQ\\) é perpendicular a \\(r\\) (Figura 2.54).</p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.53 – Perpendicular por um ponto \\(P \\in r\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_construcao_perpendicular_1.png</div>
+            <p style="text-align: center; font-weight: bold;">Figura 2.54 – Perpendicular por um ponto \\(P \\in r\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/2.9/img_construcao_perpendicular_1.png" alt="Construção da perpendicular por um ponto P sobre r: arcos em A e B determinam Q, e PQ é perpendicular a r" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <h4>Caso 2: \\(P\\) não pertence à reta \\(r\\)</h4>
-            <p>Com centro em \\(P\\) e raio suficiente, traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\). Como \\(PA = PB\\), o ponto \\(P\\) é equidistante de \\(A\\) e \\(B\\), ou seja, pertence à <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz</a> de \\(\\overline{AB}\\); construída essa mediatriz, ela passa por \\(P\\) e é perpendicular a \\(r\\).</p>
+            <p>Com centro em \\(P\\) e raio suficiente, traça-se um arco que corta \\(r\\) em dois pontos \\(A\\) e \\(B\\). Como \\(PA = PB\\), o ponto \\(P\\) é equidistante de \\(A\\) e \\(B\\), ou seja, pertence à <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz</a> de \\(\\overline{AB}\\); construída essa mediatriz, ela passa por \\(P\\) e é perpendicular a \\(r\\) (Figura 2.55).</p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.54 – Perpendicular por um ponto \\(P \\notin r\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_construcao_perpendicular_2.png</div>
+            <p style="text-align: center; font-weight: bold;">Figura 2.55 – Perpendicular por um ponto \\(P \\notin r\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/2.9/img_construcao_perpendicular_2.png" alt="Construção da perpendicular por um ponto P fora de r: a mediatriz de AB passa por P e é perpendicular a r" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>Em ambos os casos, a construção se apoia na mediatriz de um segmento, o lugar dos pontos equidistantes de \\(A\\) e \\(B\\), estudada na seção seguinte.</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Observação:</strong> O compasso, ao girar com abertura fixa, descreve a curva
+                    que no <a href="#" onclick="loadPage('circ-definicoes')" style="color: inherit; text-decoration: underline; cursor: pointer;">Capítulo 4</a>
+                    chamaremos de <strong>circunferência</strong> (o conjunto dos pontos a uma mesma distância
+                    de um centro). Aqui, porém, ele é usado apenas como <strong>instrumento de construção</strong>:
+                    nenhuma propriedade da circunferência é empregada. Tudo o que a construção exige é a
+                    <strong>equidistância</strong> garantida pela abertura fixa (os pontos marcados ficam todos
+                    à mesma distância do centro do arco), noção que já dispomos. Por isso, embora a curva só
+                    seja formalizada adiante, a construção é legítima neste ponto.
+                </p>
+            </div>
         </div>
         `
     },
@@ -1963,12 +1982,12 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>2.9.3 Mediatriz de um Segmento</h3>
-            <p>A <strong>mediatriz</strong> de um segmento \\(\\overline{AB}\\) é a reta perpendicular a \\(\\overline{AB}\\) que passa pelo seu <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">ponto médio</a> \\(M\\).</p>
+            <p>A <strong>mediatriz</strong> de um segmento \\(\\overline{AB}\\) é a reta perpendicular a \\(\\overline{AB}\\) que passa pelo seu <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">ponto médio</a> \\(M\\) (Figura 2.56).</p>
         </div>
 
         <div class="math-display">
-            <p style="text-align: center; font-weight: bold;">Figura 2.55 – Mediatriz \\(m\\) do segmento \\(\\overline{AB}\\) e um ponto \\(P\\) equidistante</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_mediatriz.png</div>
+            <p style="text-align: center; font-weight: bold;">Figura 2.56 – Mediatriz \\(m\\) do segmento \\(\\overline{AB}\\) e um ponto \\(P\\) equidistante</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/2.9/img_mediatriz.png" alt="Mediatriz m do segmento AB (perpendicular pelo ponto médio M) e um ponto P equidistante: PA = PB" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -1998,11 +2017,11 @@ const PAGES_DATA = {
         content: `
         <div class="theorem">
             <h3>2.9.4 Distância de Ponto a Reta</h3>
-            <p>A <strong>distância</strong> de um ponto \\(P\\) a uma reta \\(r\\) é o comprimento do segmento perpendicular \\(\\overline{PP'}\\), em que \\(P'\\) é a <strong>projeção ortogonal</strong> de \\(P\\) sobre \\(r\\) (o pé da perpendicular). Se \\(P \\in r\\), a distância é nula.</p>
+            <p>A <strong>distância</strong> de um ponto \\(P\\) a uma reta \\(r\\) é o comprimento do segmento perpendicular \\(\\overline{PP'}\\), em que \\(P'\\) é a <strong>projeção ortogonal</strong> de \\(P\\) sobre \\(r\\) (o pé da perpendicular). Se \\(P \\in r\\), a distância é nula (Figura 2.57).</p>
         </div>
 
         <div class="math-display">
-            <p style="text-align: center; font-weight: bold;">Figura 2.56 – Distância de \\(P\\) a \\(r\\): a perpendicular \\(\\overline{PP'}\\) e um oblíquo \\(\\overline{PQ}\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.57 – Distância de \\(P\\) a \\(r\\): a perpendicular \\(\\overline{PP'}\\) e um oblíquo \\(\\overline{PQ}\\)</p>
             <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_distancia_ponto_reta.png</div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -2064,7 +2083,7 @@ const PAGES_DATA = {
                 Um quadrilátero é <strong>convexo</strong> quando cada uma de suas diagonais está
                 inteiramente contida em seu interior ou, de modo equivalente, quando todos os seus
                 ângulos internos medem menos de \\(180°\\). Salvo menção em contrário, trabalharemos
-                sempre com quadriláteros convexos.
+                sempre com quadriláteros convexos (Figura 3.1).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.1 – Quadrilátero convexo \\(ABCD\\), com lados, ângulos internos e as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\)</p>
@@ -2087,18 +2106,18 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) um quadrilátero convexo. Tracemos a diagonal \\(\\overline{AC}\\).
+                Como o quadrilátero é convexo, essa diagonal está contida em seu interior e o separa
+                em dois triângulos: \\(ABC\\) e \\(ACD\\) (Figura 3.2).
+            </p>
+
             <p style="text-align: center; font-weight: bold;">Figura 3.2 – A diagonal \\(\\overline{AC}\\) decompõe o quadrilátero \\(ABCD\\) nos triângulos \\(ABC\\) e \\(ACD\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/3.1/img_diagonal_dois_triangulos.png" alt="A diagonal AC decompõe o quadrilátero ABCD nos triângulos ABC e ACD" style="max-width: 55%; height: auto;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
-            <p>
-                <strong>Demonstração:</strong>
-                Seja \\(ABCD\\) um quadrilátero convexo. Tracemos a diagonal \\(\\overline{AC}\\).
-                Como o quadrilátero é convexo, essa diagonal está contida em seu interior e o separa
-                em dois triângulos: \\(ABC\\) e \\(ACD\\).
-            </p>
 
             <p>
                 A diagonal decompõe o ângulo \\(\\widehat{A}\\) em duas partes,
@@ -2255,7 +2274,7 @@ const PAGES_DATA = {
 
             <p>
                 No triângulo \\(ACD\\), \\(M\\) e \\(E\\) são pontos médios de \\(\\overline{AD}\\) e
-                \\(\\overline{AC}\\); pela base média do triângulo (demonstrada acima),
+                \\(\\overline{AC}\\) (Figura 3.12); pela base média do triângulo (demonstrada acima),
                 \\[ \\overline{ME} \\parallel \\overline{CD} \\quad\\text{e}\\quad ME = \\frac{CD}{2}. \\]
             </p>
 
@@ -2265,7 +2284,7 @@ const PAGES_DATA = {
 
             <p>
                 No triângulo \\(ABC\\), \\(E\\) e \\(N\\) são pontos médios de \\(\\overline{AC}\\) e
-                \\(\\overline{BC}\\); do mesmo modo,
+                \\(\\overline{BC}\\) (Figura 3.13); do mesmo modo,
                 \\[ \\overline{EN} \\parallel \\overline{AB} \\quad\\text{e}\\quad EN = \\frac{AB}{2}. \\]
             </p>
 
@@ -2328,7 +2347,7 @@ const PAGES_DATA = {
             <p>
                 Ao longo desta seção, adotamos o trapézio \\(ABCD\\) com bases \\(\\overline{AB}\\) e
                 \\(\\overline{CD}\\), sendo \\(\\overline{AB} \\parallel \\overline{CD}\\) e \\(\\overline{AB}\\)
-                a base maior; os lados laterais são \\(\\overline{AD}\\) e \\(\\overline{BC}\\).
+                a base maior; os lados laterais são \\(\\overline{AD}\\) e \\(\\overline{BC}\\) (Figura 3.3).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.3 – Elementos do trapézio: bases \\(\\overline{AB}\\) e \\(\\overline{CD}\\), laterais \\(\\overline{AD}\\) e \\(\\overline{BC}\\), e a altura \\(h\\)</p>
@@ -2339,7 +2358,8 @@ const PAGES_DATA = {
 
             <div class="theorem">
                 <p>
-                    <strong>Classificação.</strong> Quanto aos lados laterais, o trapézio é:
+                    <strong>Classificação.</strong> Quanto aos lados laterais, o trapézio é
+                    (Figura 3.4):
                 </p>
                 <ul style="margin: 8px 0 8px 24px;">
                     <li><strong>escaleno:</strong> laterais de medidas diferentes;</li>
@@ -2390,18 +2410,19 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p>
+                <strong>Demonstração:</strong>
+                Seja \\(ABCD\\) isósceles, com \\(\\overline{AD} \\cong \\overline{BC}\\). Por \\(C\\),
+                trace a paralela ao lado \\(\\overline{AD}\\), que encontra a base \\(\\overline{AB}\\)
+                em um ponto \\(P\\), formando o triângulo isósceles \\(BPC\\) (Figura 3.5).
+                Comparemos os triângulos \\(ACD\\) e \\(CAP\\):
+            </p>
+
             <p style="text-align: center; font-weight: bold;">Figura 3.5 – Transporte da lateral \\(\\overline{AD}\\): a paralela por \\(C\\) encontra \\(\\overline{AB}\\) em \\(P\\), formando o triângulo isósceles \\(BPC\\)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/3.2/img_trapezio_isosceles_angulos.png" alt="Transporte da lateral AD formando o triângulo isósceles BPC" style="max-width: 55%; height: auto;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
-            <p>
-                <strong>Demonstração:</strong>
-                Seja \\(ABCD\\) isósceles, com \\(\\overline{AD} \\cong \\overline{BC}\\). Por \\(C\\),
-                trace a paralela ao lado \\(\\overline{AD}\\), que encontra a base \\(\\overline{AB}\\)
-                em um ponto \\(P\\). Comparemos os triângulos \\(ACD\\) e \\(CAP\\):
-            </p>
 
             <ul style="margin: 8px 0 8px 24px;">
                 <li>\\(\\overline{AC}\\) é lado comum;</li>
@@ -2434,17 +2455,17 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p>
+                <strong>Demonstração:</strong>
+                Consideremos os triângulos \\(DAB\\) e \\(CBA\\), formados por cada diagonal com a base
+                maior \\(\\overline{AB}\\) (Figura 3.6):
+            </p>
+
             <p style="text-align: center; font-weight: bold;">Figura 3.6 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) do trapézio isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/3.2/img_trapezio_diagonais.png" alt="As diagonais AC e BD do trapézio isósceles" style="max-width: 55%; height: auto;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
-            <p>
-                <strong>Demonstração:</strong>
-                Consideremos os triângulos \\(DAB\\) e \\(CBA\\), formados por cada diagonal com a base
-                maior \\(\\overline{AB}\\):
-            </p>
 
             <ul style="margin: 8px 0 8px 24px;">
                 <li>\\(\\overline{AD} \\cong \\overline{BC}\\) (lados laterais, por hipótese);</li>
@@ -2502,12 +2523,6 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.7 – Paralelogramo \\(ABCD\\) e a diagonal \\(\\overline{AC}\\)</p>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/3.3/img_paralelogramo_lados.png" alt="Paralelogramo ABCD e a diagonal AC: lados e ângulos opostos congruentes" style="max-width: 55%; height: auto;">
-            </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
             <div class="theorem">
                 <p>
                     <strong>Propriedade 1 (lados e ângulos opostos):</strong> Em um paralelogramo, os
@@ -2515,9 +2530,15 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 3.7 – Paralelogramo \\(ABCD\\) e a diagonal \\(\\overline{AC}\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.3/img_paralelogramo_lados.png" alt="Paralelogramo ABCD e a diagonal AC: lados e ângulos opostos congruentes" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
             <p>
                 <strong>Demonstração:</strong>
-                Tracemos a diagonal \\(\\overline{AC}\\). Como \\(\\overline{AB} \\parallel \\overline{CD}\\),
+                Tracemos a diagonal \\(\\overline{AC}\\) (Figura 3.7). Como \\(\\overline{AB} \\parallel \\overline{CD}\\),
                 temos \\(B\\widehat{A}C \\cong D\\widehat{C}A\\) (alternos internos); como
                 \\(\\overline{AD} \\parallel \\overline{BC}\\), temos \\(D\\widehat{A}C \\cong B\\widehat{C}A\\).
                 Com \\(\\overline{AC}\\) comum, pelo
@@ -2557,21 +2578,22 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.8 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se no ponto médio \\(M\\)</p>
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/3.3/img_paralelogramo_diagonais.png" alt="As diagonais AC e BD cortam-se no ponto médio M" style="max-width: 55%; height: auto;">
-            </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
             <p>
                 <strong>Demonstração:</strong>
-                Sejam \\(\\overline{AC}\\) e \\(\\overline{BD}\\) as diagonais, que se encontram em \\(M\\).
+                Sejam \\(\\overline{AC}\\) e \\(\\overline{BD}\\) as diagonais, que se encontram em \\(M\\)
+                (Figura 3.8).
                 Nos triângulos \\(ABM\\) e \\(CDM\\): \\(\\overline{AB} \\cong \\overline{CD}\\) (Propriedade 1),
                 \\(B\\widehat{A}M \\cong D\\widehat{C}M\\) e \\(A\\widehat{B}M \\cong C\\widehat{D}M\\)
                 (alternos internos, \\(\\overline{AB} \\parallel \\overline{CD}\\)). Pelo caso ALA,
                 \\(\\triangle ABM \\cong \\triangle CDM\\); logo \\(\\overline{AM} \\cong \\overline{CM}\\) e
                 \\(\\overline{BM} \\cong \\overline{DM}\\), ou seja, \\(M\\) é ponto médio de ambas.
             </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.8 – As diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se no ponto médio \\(M\\)</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="imagem/3.3/img_paralelogramo_diagonais.png" alt="As diagonais AC e BD cortam-se no ponto médio M" style="max-width: 55%; height: auto;">
+            </div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
 
@@ -2636,7 +2658,8 @@ const PAGES_DATA = {
                 então, como os ângulos consecutivos de um paralelogramo são suplementares
                 (Propriedade 2, <a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), \\(\\widehat{B} = 180° - \\widehat{A} = 90°\\); e como os
                 ângulos opostos são congruentes (Propriedade 1), \\(\\widehat{C} = \\widehat{A} = 90°\\) e
-                \\(\\widehat{D} = \\widehat{B} = 90°\\). Logo, <strong>todo retângulo tem os quatro ângulos retos</strong>.
+                \\(\\widehat{D} = \\widehat{B} = 90°\\). Logo, <strong>todo retângulo tem os quatro ângulos retos</strong>
+                (Figura 3.14).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.14 – Retângulo \\(ABCD\\) com os quatro ângulos retos e as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\)</p>
@@ -2687,7 +2710,7 @@ const PAGES_DATA = {
                 Novamente a condição se propaga: se \\(\\overline{AB} \\cong \\overline{BC}\\), como os
                 lados opostos do paralelogramo são congruentes (<a href="#" onclick="loadPage('paralelogramos')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.3</a>), temos
                 \\(\\overline{CD} \\cong \\overline{AB}\\) e \\(\\overline{AD} \\cong \\overline{BC}\\), de modo que
-                <strong>todos os quatro lados são congruentes</strong>.
+                <strong>todos os quatro lados são congruentes</strong> (Figura 3.16).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 3.16 – Losango \\(ABCD\\) com os quatro lados congruentes; as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se em \\(M\\), perpendicularmente</p>
@@ -2741,18 +2764,18 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.18 – Quadrado \\(ABCD\\): diagonais congruentes e perpendiculares, ângulos de \\(45°\\) e os quatro triângulos retângulos isósceles</p>
-            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_quadrado_diagonais.png" alt="Quadrado ABCD: diagonais congruentes e perpendiculares, ângulos de 45 graus, quatro triângulos" style="max-width: 38%; height: auto;"></div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
-
             <p>
                 Como o quadrado é retângulo <em>e</em> losango, ele reúne as propriedades das diagonais
                 de ambos: <strong>as diagonais de um quadrado são congruentes</strong> (por ser retângulo)
                 <strong>e perpendiculares</strong>, além de <strong>bissetarem os ângulos internos</strong>
                 (por ser losango). Cada diagonal divide os ângulos retos dos vértices em dois ângulos de
                 \\(45°\\), e as duas diagonais, cortando-se ao meio, determinam quatro triângulos
-                retângulos isósceles congruentes.
+                retângulos isósceles congruentes (Figura 3.18).
             </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 3.18 – Quadrado \\(ABCD\\): diagonais congruentes e perpendiculares, ângulos de \\(45°\\) e os quatro triângulos retângulos isósceles</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_quadrado_diagonais.png" alt="Quadrado ABCD: diagonais congruentes e perpendiculares, ângulos de 45 graus, quatro triângulos" style="max-width: 38%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
                 <p>
@@ -2797,7 +2820,7 @@ const PAGES_DATA = {
             <p>
                 Um ponto \\(P\\) do plano fica em uma de três posições em relação à circunferência:
                 é <strong>interior</strong> se \\(OP < r\\), está <strong>sobre</strong> a circunferência
-                se \\(OP = r\\), e é <strong>exterior</strong> se \\(OP > r\\).
+                se \\(OP = r\\), e é <strong>exterior</strong> se \\(OP > r\\) (Figura 4.1).
             </p>
 
             <div class="theorem">
@@ -2852,7 +2875,7 @@ const PAGES_DATA = {
                     <strong>Definição (arco):</strong> Dois pontos \\(A\\) e \\(B\\) de uma circunferência
                     a dividem em duas partes, chamadas <strong>arcos</strong> de extremos \\(A\\) e \\(B\\).
                     Quando \\(\\overline{AB}\\) é um diâmetro, os dois arcos são iguais e cada um é uma
-                    <strong>semicircunferência</strong>.
+                    <strong>semicircunferência</strong> (Figura 4.2).
                 </p>
             </div>
 
@@ -2878,7 +2901,7 @@ const PAGES_DATA = {
                 passam infinitas. Por <strong>dois</strong> pontos \\(A\\) e \\(B\\) também passam infinitas:
                 o centro precisa estar à mesma distância de \\(A\\) e de \\(B\\), ou seja, sobre a
                 <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz (seção 2.9)</a>
-                de \\(\\overline{AB}\\), com um centro para cada ponto dessa reta.
+                de \\(\\overline{AB}\\), com um centro para cada ponto dessa reta (Figura 4.3).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 4.3 – Por dois pontos \\(A\\) e \\(B\\) passam infinitas circunferências; os centros ficam na mediatriz de \\(\\overline{AB}\\)</p>
@@ -2901,7 +2924,7 @@ const PAGES_DATA = {
                 <strong>Demonstração:</strong>
                 Sejam \\(A\\), \\(B\\) e \\(C\\) três pontos não colineares. Um ponto \\(O\\) é centro de uma
                 circunferência que passa pelos três exatamente quando \\(OA = OB = OC\\). Analisemos essa
-                condição por partes:
+                condição por partes (Figura 4.4):
             </p>
             <ul style="margin: 8px 0 8px 24px;">
                 <li>\\(OA = OB\\) significa que \\(O\\) está na mediatriz de \\(\\overline{AB}\\);</li>
@@ -2917,7 +2940,8 @@ const PAGES_DATA = {
                 têm direções diferentes; logo suas mediatrizes não são paralelas e se cruzam em um
                 <strong>único</strong> ponto \\(O\\). Esse \\(O\\) satisfaz \\(OA = OB\\) e \\(OB = OC\\),
                 portanto \\(OA = OB = OC\\): tomando \\(r = OA\\), a circunferência de centro \\(O\\) e raio
-                \\(r\\) passa por \\(A\\), \\(B\\) e \\(C\\), o que prova a <strong>existência</strong>.
+                \\(r\\) passa por \\(A\\), \\(B\\) e \\(C\\), o que prova a <strong>existência</strong>
+                (Figura 4.5).
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 4.5 – As mediatrizes concorrem em \\(O\\); a circunferência de centro \\(O\\) e raio \\(r = OA\\) passa por \\(A\\), \\(B\\) e \\(C\\)</p>
@@ -2965,7 +2989,7 @@ const PAGES_DATA = {
 
             <div class="theorem">
                 <p>
-                    <strong>Posições relativas:</strong> Comparando \\(d\\) com \\(r\\):
+                    <strong>Posições relativas:</strong> Comparando \\(d\\) com \\(r\\) (Figura 4.6):
                 </p>
                 <ul style="margin: 8px 0 8px 24px;">
                     <li>se \\(d > r\\), a reta é <strong>exterior</strong> (nenhum ponto em comum);</li>
@@ -2988,7 +3012,7 @@ const PAGES_DATA = {
                 <p>
                     <strong>Teorema (da reta tangente):</strong> Uma reta \\(t\\) é tangente a uma
                     circunferência no ponto \\(T\\) se, e somente se, \\(t\\) é <strong>perpendicular</strong>
-                    ao raio \\(\\overline{OT}\\) nesse ponto.
+                    ao raio \\(\\overline{OT}\\) nesse ponto (Figura 4.7).
                 </p>
             </div>
 
@@ -3040,10 +3064,93 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Segmentos tangentes; posições relativas de duas circunferências.', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.4 Segmentos Tangentes; Posições Relativas de Duas Circunferências</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                De um ponto \\(P\\) exterior a uma circunferência de centro \\(O\\) podemos traçar
+                <strong>duas</strong> tangentes, que a tocam em dois pontos \\(A\\) e \\(B\\). Os segmentos
+                \\(\\overline{PA}\\) e \\(\\overline{PB}\\) são os <strong>segmentos tangentes</strong> de \\(P\\)
+                (Figura 4.8). Eles têm uma propriedade simples e muito útil.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (segmentos tangentes):</strong> De um ponto exterior \\(P\\), os dois
+                    segmentos tangentes são congruentes, \\(\\overline{PA} \\cong \\overline{PB}\\). Além disso,
+                    a reta \\(\\overline{OP}\\) bissecta tanto o ângulo \\(A\\widehat{P}B\\) quanto o ângulo
+                    \\(A\\widehat{O}B\\).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.8 – Os segmentos tangentes \\(\\overline{PA}\\) e \\(\\overline{PB}\\); os raios \\(\\overline{OA}\\) e \\(\\overline{OB}\\) são perpendiculares às tangentes</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4/img_segmentos_tangentes.png" alt="Segmentos tangentes PA e PB de um ponto exterior P; raios OA e OB perpendiculares às tangentes" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Como \\(A\\) e \\(B\\) estão na circunferência, \\(OA = OB = r\\); logo o triângulo \\(OAB\\) é
+                isósceles e seus ângulos da base são congruentes,
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">\\(O\\widehat{A}B = O\\widehat{B}A\\) (triângulo isósceles, seção 2.3)</a>.
+            </p>
+
+            <p>
+                Pelo <a href="#" onclick="loadPage('reta-circunferencia')" style="color: inherit; text-decoration: underline; cursor: pointer;">teorema da reta tangente (seção 4.3)</a>,
+                cada tangente é perpendicular ao raio no ponto de contato: \\(O\\widehat{A}P = O\\widehat{B}P = 90°\\).
+                Traçando a corda \\(\\overline{AB}\\) (Figura 4.9), como ela fica entre \\(\\overline{AO}\\) e
+                \\(\\overline{AP}\\),
+                \\[ P\\widehat{A}B = 90° - O\\widehat{A}B = 90° - O\\widehat{B}A = P\\widehat{B}A. \\]
+                O triângulo \\(PAB\\) tem, então, dois ângulos da base iguais; é isósceles, e daí
+                \\(\\overline{PA} \\cong \\overline{PB}\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.9 – Traçando a corda \\(\\overline{AB}\\): os triângulos \\(OAB\\) e \\(PAB\\) são isósceles (ângulos da base iguais), de onde \\(PA = PB\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4/img_isosceles_pab.png" alt="Corda AB; triângulos OAB e PAB isósceles, de onde PA = PB; reta OP como eixo de simetria" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Por fim, nos triângulos \\(OAP\\) e \\(OBP\\) temos \\(OA = OB\\), \\(PA = PB\\) e \\(\\overline{OP}\\)
+                comum; pelo
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LLL')" style="color: inherit; text-decoration: underline; cursor: pointer;">caso LLL (seção 2.3)</a>,
+                \\(\\triangle OAP \\cong \\triangle OBP\\). Logo \\(A\\widehat{P}O = B\\widehat{P}O\\) e
+                \\(A\\widehat{O}P = B\\widehat{O}P\\): a reta \\(\\overline{OP}\\) bissecta os ângulos
+                \\(A\\widehat{P}B\\) e \\(A\\widehat{O}B\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <h4 style="margin-top: 28px;">Posições relativas de duas circunferências</h4>
+
+            <p>
+                Para duas circunferências de centros \\(O_1\\), \\(O_2\\) e raios \\(R\\) e \\(r\\), a posição
+                relativa é determinada pela distância \\(d = O_1O_2\\) entre os centros, comparada com a soma
+                \\(R + r\\) e com a diferença \\(|R - r|\\) dos raios (Figura 4.10).
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Classificação:</strong>
+                </p>
+                <ul style="margin: 8px 0 8px 24px;">
+                    <li>\\(d > R + r\\): <strong>exteriores</strong> (nenhum ponto em comum, uma fora da outra);</li>
+                    <li>\\(d = R + r\\): <strong>tangentes exteriormente</strong> (um ponto em comum);</li>
+                    <li>\\(|R - r| < d < R + r\\): <strong>secantes</strong> (dois pontos em comum);</li>
+                    <li>\\(d = |R - r|\\) (com \\(d \\neq 0\\)): <strong>tangentes interiormente</strong> (um ponto em comum);</li>
+                    <li>\\(d < |R - r|\\): <strong>internas</strong> (nenhum ponto em comum, uma dentro da outra); se \\(d = 0\\), são <strong>concêntricas</strong>.</li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.10 – As posições relativas de duas circunferências, conforme \\(d\\) em relação a \\(R + r\\) e \\(|R - r|\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4/img_posicoes_duas_circ.png" alt="Painel com as posições relativas de duas circunferências: exteriores, tangentes exteriormente, secantes, tangentes interiormente, internas e concêntricas" style="max-width: 60%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Nos dois casos de tangência (exterior e interior), o ponto de contato está sobre a reta que
+                une os centros \\(O_1\\) e \\(O_2\\): as duas circunferências têm, nesse ponto, a mesma reta
+                tangente.
+            </p>
+
         </div>
         `
     },

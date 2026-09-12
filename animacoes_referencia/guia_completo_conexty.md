@@ -301,7 +301,7 @@ const vermlehobordo = '#970000'
 % Matemática inline
 $\overline{AB}$    % segmento
 $\hat{C}$          % ângulo (usar \hat, NÃO \widehat)
-$\triangle ABC$    % triângulo
+$\Delta ABC$       % triângulo (usar \Delta, NÃO \triangle)
 $\Rightarrow$      % seta ida (=>)
 $\Leftrightarrow$  % bicondicional (<=>)
 $\equiv$           % congruência
@@ -319,6 +319,7 @@ $\overrightarrow{AB}$  % semirreta
 
 ### Comandos que NÃO funcionam no Conexty
 - `\widehat{}` — usar `\hat{}` no lugar
+- `\triangle` — usar `\Delta` no lugar (o site MathJax aceita `\triangle`; o Conexty NÃO)
 - `\align`, `align:"center"` no drawText — usar `\begin{center}`
 - `\Leftarrow` — usar texto "Recíproca:" ou símbolo Unicode `←`
 - Símbolos Unicode em geral: testar caso a caso (às vezes funcionam)
@@ -1589,6 +1590,7 @@ drawText({ text: "\\begin{center}Conclusão \\\\ ...", x: ..., y: ... })
 | `size` no drawText | Usar `fontSize` |
 | `align: "center"` no drawText | Usar `\\begin{center}` no texto |
 | `\\widehat{}` no Conexty | Usar `\\hat{}` |
+| `\\triangle` no Conexty | Usar `\\Delta` (site MathJax aceita `\\triangle`) |
 | `─` nos comentários | Usar `-` ou `=` (Unicode não digitável) |
 | `\\Leftarrow` não renderiza | Usar texto "Recíproca:" ou `←` Unicode |
 | Dois setores desenhados no mesmo lugar | Usar `if(ld > 0)` no param secundário |
