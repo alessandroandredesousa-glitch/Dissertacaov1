@@ -2022,7 +2022,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <p style="text-align: center; font-weight: bold;">Figura 2.57 – Distância de \\(P\\) a \\(r\\): a perpendicular \\(\\overline{PP'}\\) e um oblíquo \\(\\overline{PQ}\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/2.9/img_distancia_ponto_reta.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/2.9/img_distancia_ponto_reta.png" alt="Distância de P a r: a perpendicular PP' e um oblíquo PQ, com PP' < PQ" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -3160,10 +3160,108 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Teorema de Pitot (quadrilátero circunscritível).', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.4.1 Teorema de Pitot (quadrilátero circunscritível)</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Usa o lema dos segmentos tangentes (4.4). Conteúdo a ser desenvolvido.</p>
+
+            <p>
+                Um quadrilátero convexo é <strong>circunscritível</strong> (ou <strong>tangencial</strong>)
+                quando existe uma circunferência tangente aos seus quatro lados, chamada
+                <strong>circunferência inscrita</strong>. Nesse caso, cada lado toca a circunferência em
+                um único ponto e, de cada vértice, partem dois segmentos tangentes a ela. O teorema a
+                seguir, devido a Henri Pitot, relaciona os lados de um quadrilátero desse tipo.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (Pitot):</strong> Um quadrilátero convexo \\(ABCD\\) é
+                    <strong>circunscritível</strong> (admite circunferência inscrita) se, e somente se, as
+                    somas dos seus lados opostos são iguais:
+                    \\[ AB + CD = BC + DA. \\]
+                </p>
+            </div>
+
+            <p><strong>Demonstração.</strong></p>
+
+            <p>
+                <strong>(\\(\\Rightarrow\\)) Ida.</strong> Suponha que \\(ABCD\\) admita uma circunferência
+                inscrita, tangente aos lados \\(\\overline{AB}\\), \\(\\overline{BC}\\), \\(\\overline{CD}\\)
+                e \\(\\overline{DA}\\) nos pontos \\(P\\), \\(Q\\), \\(R\\) e \\(S\\), respectivamente
+                (Figura 4.11). De cada vértice, os dois segmentos tangentes à circunferência são congruentes,
+                pelo <a href="#" onclick="loadPage('segmentos-tangentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">teorema dos segmentos tangentes (seção 4.4)</a>.
+                Chamemos essas medidas de \\(a\\), \\(b\\), \\(c\\) e \\(d\\):
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.11 – Quadrilátero \\(ABCD\\) circunscrito a uma circunferência; de cada vértice os dois segmentos tangentes são iguais (\\(a\\), \\(b\\), \\(c\\), \\(d\\))</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot.png" alt="Quadrilátero ABCD circunscrito a uma circunferência; segmentos tangentes iguais a, b, c, d de cada vértice" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <ul style="margin: 8px 0 8px 24px;">
+                <li>\\(AP = AS = a\\) (tangentes desde \\(A\\));</li>
+                <li>\\(BP = BQ = b\\) (tangentes desde \\(B\\));</li>
+                <li>\\(CQ = CR = c\\) (tangentes desde \\(C\\));</li>
+                <li>\\(DR = DS = d\\) (tangentes desde \\(D\\)).</li>
+            </ul>
+
+            <p>
+                Cada lado é a soma de dois desses segmentos:
+                \\[ AB = AP + PB = a + b, \\qquad BC = BQ + QC = b + c, \\]
+                \\[ CD = CR + RD = c + d, \\qquad DA = DS + SA = d + a. \\]
+                Somando os lados opostos,
+                \\[ AB + CD = (a + b) + (c + d) = a + b + c + d = (b + c) + (d + a) = BC + DA. \\]
+            </p>
+
+            <p>
+                <strong>(\\(\\Leftarrow\\)) Volta.</strong> Suponha agora que \\(AB + CD = BC + DA\\). As
+                bissetrizes internas dos ângulos \\(\\widehat{A}\\) e \\(\\widehat{B}\\) encontram-se num ponto
+                \\(I\\); por estar em cada bissetriz, \\(I\\) é equidistante das retas \\(\\overline{AB}\\) e
+                \\(\\overline{AD}\\) e das retas \\(\\overline{AB}\\) e \\(\\overline{BC}\\). Logo \\(I\\) fica
+                à mesma distância dos três lados \\(\\overline{AB}\\), \\(\\overline{BC}\\) e \\(\\overline{AD}\\),
+                e a circunferência \\(\\omega\\) de centro \\(I\\) e esse raio é tangente a esses três lados
+                (Figura 4.12). Resta mostrar que \\(\\omega\\) também tangencia \\(\\overline{CD}\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.12 – O centro \\(I\\), no encontro das bissetrizes de \\(\\widehat{A}\\) e \\(\\widehat{B}\\); a circunferência \\(\\omega\\) é tangente a \\(\\overline{AB}\\), \\(\\overline{BC}\\) e \\(\\overline{AD}\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot_reciproca.png" alt="Centro I no encontro das bissetrizes de A e B; circunferência ω tangente a AB, BC e AD" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Suponha, por absurdo, que \\(\\overline{CD}\\) não seja tangente a \\(\\omega\\). Por \\(C\\),
+                trace a outra reta tangente a \\(\\omega\\) (além da que contém \\(\\overline{CB}\\)); ela
+                encontra a reta \\(AD\\) num ponto \\(D' \\neq D\\), e o quadrilátero \\(ABCD'\\) fica
+                circunscrito a \\(\\omega\\) (Figura 4.13). Aplicando a ida a esse quadrilátero,
+                \\[ AB + CD' = BC + AD'. \\]
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.13 – A outra tangente por \\(C\\) encontra a reta \\(AD\\) em \\(D'\\), entre \\(A\\) e \\(D\\), formando o triângulo \\(CDD'\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot_absurdo.png" alt="Suposição do absurdo: a outra tangente por C encontra AD em D' entre A e D, formando o triângulo CDD'" style="max-width: 45%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                Subtraindo essa igualdade da hipótese \\(AB + CD = BC + AD\\), os termos \\(AB\\) e
+                \\(BC\\) se cancelam e resta
+                \\[ CD - CD' = AD - AD'. \\]
+                Suponha, sem perda de generalidade, que \\(D'\\) esteja entre \\(A\\) e \\(D\\) (o caso
+                contrário é análogo). Então \\(AD - AD' = D'D\\), com \\(D'D > 0\\), e a igualdade acima fica
+                \\[ CD = CD' + D'D. \\]
+                Mas \\(C\\) não pertence à reta \\(AD\\), de modo que \\(C\\), \\(D'\\) e \\(D\\) são vértices
+                de um triângulo; pela
+                <a href="#" onclick="loadPage('desigualdade-triangular')" style="color: inherit; text-decoration: underline; cursor: pointer;">desigualdade triangular (seção 2.7)</a>,
+                \\(CD < CD' + D'D\\). Isso contradiz \\(CD = CD' + D'D\\). Logo \\(D' = D\\), isto é,
+                \\(\\overline{CD}\\) é tangente a \\(\\omega\\), e \\(ABCD\\) é circunscritível.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Consequência:</strong> Todo losango (e, em particular, todo quadrado) é
+                    circunscritível, pois seus quatro lados são congruentes e, então,
+                    \\(AB + CD = BC + DA\\) trivialmente. Já um retângulo não quadrado não é circunscritível,
+                    pois \\(AB + CD = 2\\,AB\\) e \\(BC + DA = 2\\,BC\\) só coincidem quando \\(AB = BC\\).
+                </p>
+            </div>
+
         </div>
         `
     },
