@@ -3271,10 +3271,125 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Ângulo central e inscrito; Teorema do Ângulo Inscrito.', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.5 Ângulos na Circunferência (central e inscrito); Teorema do Ângulo Inscrito</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                Conforme a posição do vértice, dois ângulos aparecem naturalmente numa circunferência:
+                o <strong>ângulo central</strong>, com vértice no centro, e o <strong>ângulo inscrito</strong>,
+                com vértice sobre a circunferência. A relação entre eles é o resultado central desta seção.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (ângulo central):</strong> Um <strong>ângulo central</strong> é aquele
+                    cujo vértice é o centro \\(O\\); seus lados são dois raios, \\(\\overline{OA}\\) e
+                    \\(\\overline{OB}\\). Ele subtende o <strong>arco</strong> \\(AB\\) compreendido entre os
+                    lados. A <strong>medida do arco</strong> \\(AB\\) é definida como a medida do ângulo
+                    central correspondente (Figura 4.14).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.14 – Ângulo central \\(A\\widehat{O}B\\) e o arco \\(AB\\) que ele subtende</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_angulo_central.png" alt="Ângulo central AÔB e o arco AB que ele subtende" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (ângulo inscrito):</strong> Um <strong>ângulo inscrito</strong> é aquele
+                    cujo vértice \\(V\\) está <strong>sobre</strong> a circunferência e cujos lados são duas
+                    cordas, \\(\\overline{VA}\\) e \\(\\overline{VB}\\). Dizemos que ele subtende o arco
+                    \\(AB\\) que <em>não</em> contém \\(V\\) (Figura 4.15).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.15 – Ângulo inscrito \\(A\\widehat{V}B\\), com vértice \\(V\\) sobre a circunferência</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_angulo_inscrito.png" alt="Ângulo inscrito AV̂B, com vértice V sobre a circunferência, subtendendo o arco AB" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema (do Ângulo Inscrito):</strong> Todo ângulo inscrito é a <strong>metade</strong>
+                    do ângulo central que subtende o mesmo arco:
+                    \\[ A\\widehat{V}B = \\tfrac{1}{2}\\, A\\widehat{O}B. \\]
+                </p>
+            </div>
+
+            <p>
+                <strong>Demonstração:</strong>
+                A prova distingue três casos, conforme a posição do centro \\(O\\) em relação ao ângulo
+                \\(A\\widehat{V}B\\). Em todos, escrevemos \\(\\alpha = A\\widehat{V}B\\).
+            </p>
+
+            <p>
+                <strong>Caso 1 (um lado passa pelo centro).</strong> Suponha que o lado \\(\\overline{VB}\\)
+                contenha \\(O\\); então \\(\\overline{VB}\\) é um diâmetro e \\(V\\), \\(O\\), \\(B\\) são
+                colineares (Figura 4.16). No triângulo \\(OVA\\), \\(OV = OA = r\\); logo ele é
+                <a href="#" onclick="loadPage('congruenciasdetriangulos-LAL')" style="color: inherit; text-decoration: underline; cursor: pointer;">isósceles (seção 2.3)</a>
+                e os ângulos da base são iguais: \\(O\\widehat{V}A = O\\widehat{A}V = \\alpha\\). O ângulo
+                central \\(A\\widehat{O}B\\) é <strong>externo</strong> ao triângulo \\(OVA\\) no vértice \\(O\\);
+                pelo <a href="#" onclick="loadPage('teorema-angulo-externo')" style="color: inherit; text-decoration: underline; cursor: pointer;">teorema do ângulo externo (seção 2.5)</a>,
+                ele é igual à soma dos dois internos não adjacentes:
+                \\[ A\\widehat{O}B = O\\widehat{V}A + O\\widehat{A}V = 2\\alpha, \\]
+                donde \\(A\\widehat{V}B = \\tfrac{1}{2} A\\widehat{O}B\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.16 – Caso em que um lado do ângulo inscrito passa pelo centro: \\(\\triangle OVA\\) é isósceles e \\(A\\widehat{O}B = 2\\alpha\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso1.png" alt="Caso 1: um lado do ângulo inscrito passa pelo centro; triângulo OVA isósceles e AÔB = 2α" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Caso 2 (o centro é interior ao ângulo).</strong> Trace o diâmetro \\(\\overline{VC}\\)
+                (a semirreta de \\(V\\) passando por \\(O\\)). Ele decompõe o ângulo em
+                \\(A\\widehat{V}C + C\\widehat{V}B\\), e cada parcela recai no Caso 1 (Figura 4.17):
+                \\[ A\\widehat{V}C = \\tfrac{1}{2} A\\widehat{O}C, \\qquad C\\widehat{V}B = \\tfrac{1}{2} C\\widehat{O}B. \\]
+                Somando,
+                \\[ A\\widehat{V}B = \\tfrac{1}{2}\\left(A\\widehat{O}C + C\\widehat{O}B\\right) = \\tfrac{1}{2} A\\widehat{O}B. \\]
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.17 – Centro interior ao ângulo: o diâmetro \\(\\overline{VC}\\) reduz o problema a duas aplicações do Caso 1</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso2.png" alt="Caso 2: centro interior; o diâmetro VC divide o ângulo em duas parcelas do Caso 1" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Caso 3 (o centro é exterior ao ângulo).</strong> Traçando novamente o diâmetro
+                \\(\\overline{VC}\\), o ângulo aparece agora como <strong>diferença</strong> (Figura 4.18):
+                \\[ A\\widehat{V}B = C\\widehat{V}B - C\\widehat{V}A = \\tfrac{1}{2} C\\widehat{O}B - \\tfrac{1}{2} C\\widehat{O}A = \\tfrac{1}{2} A\\widehat{O}B. \\]
+                Em todos os casos, \\(A\\widehat{V}B = \\tfrac{1}{2} A\\widehat{O}B\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.18 – Centro exterior ao ângulo: o ângulo inscrito aparece como diferença de dois ângulos do Caso 1</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso3.png" alt="Caso 3: centro exterior; o ângulo inscrito aparece como diferença de dois ângulos do Caso 1" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário 1 (ângulos que subtendem o mesmo arco):</strong> Dois ângulos inscritos
+                    que subtendem o mesmo arco são congruentes, pois cada um vale a metade do mesmo ângulo
+                    central (Figura 4.19).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.19 – Ângulos inscritos \\(A\\widehat{V}B\\) e \\(A\\widehat{W}B\\) que subtendem o mesmo arco \\(AB\\): são congruentes</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_mesmo_arco.png" alt="Ângulos inscritos AV̂B e AŴB que subtendem o mesmo arco AB: são congruentes" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Corolário 2 (ângulo em semicircunferência, Teorema de Tales):</strong> Todo ângulo
+                    inscrito que subtende um diâmetro é reto. De fato, se \\(\\overline{AB}\\) é um diâmetro, o
+                    ângulo central \\(A\\widehat{O}B\\) é raso (\\(180°\\)); logo, para qualquer \\(V\\) na
+                    circunferência, \\(A\\widehat{V}B = \\tfrac{1}{2}\\cdot 180° = 90°\\) (Figura 4.20).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.20 – Ângulo inscrito num semicírculo: \\(\\overline{AB}\\) diâmetro \\(\\Rightarrow A\\widehat{V}B = 90°\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_angulo_semicirculo.png" alt="Ângulo inscrito num semicírculo: AB diâmetro implica AV̂B = 90°" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
         </div>
         `
     },
