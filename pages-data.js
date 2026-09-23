@@ -1167,7 +1167,7 @@ const PAGES_DATA = {
                 \\(D\\widehat{P}E > \\widehat{F}\\). Contradição (Figura 2.36).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): ponto \\(P\\) interno a \\(\\overline{EF}\\) e contradição pelo Teorema do Ângulo Externo</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.36 – Caso \\(\\overline{EF} > \\overline{BC}\\): o ponto \\(P\\) interno leva a contradição (ângulo externo)</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.6/img_congruencia_LAA_2.png" alt="Ponto P interno a EF e contradição pelo ângulo externo" style="max-width: 65%;">
             </div>
@@ -2418,7 +2418,7 @@ const PAGES_DATA = {
                 Comparemos os triângulos \\(ACD\\) e \\(CAP\\):
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.5 – Transporte da lateral \\(\\overline{AD}\\): a paralela por \\(C\\) encontra \\(\\overline{AB}\\) em \\(P\\), formando o triângulo isósceles \\(BPC\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 3.5 – A paralela a \\(\\overline{AD}\\) por \\(C\\) encontra \\(\\overline{AB}\\) em \\(P\\); \\(\\triangle BPC\\) isósceles</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/3.2/img_trapezio_isosceles_angulos.png" alt="Transporte da lateral AD formando o triângulo isósceles BPC" style="max-width: 55%; height: auto;">
             </div>
@@ -2713,7 +2713,7 @@ const PAGES_DATA = {
                 <strong>todos os quatro lados são congruentes</strong> (Figura 3.16).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.16 – Losango \\(ABCD\\) com os quatro lados congruentes; as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se em \\(M\\), perpendicularmente</p>
+            <p style="text-align: center; font-weight: bold;">Figura 3.16 – Losango \\(ABCD\\): as diagonais \\(\\overline{AC}\\) e \\(\\overline{BD}\\) cortam-se em \\(M\\), perpendicularmente</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_losango_diagonais.png" alt="Losango ABCD com quatro lados congruentes; diagonais perpendiculares em M" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -2737,7 +2737,7 @@ const PAGES_DATA = {
                 <li>\\(\\overline{AM} \\cong \\overline{CM}\\) (\\(M\\) é ponto médio de \\(\\overline{AC}\\)).</li>
             </ul>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.17 – Os triângulos \\(ABM\\) e \\(CBM\\): \\(\\overline{AB} \\cong \\overline{CB}\\), \\(\\overline{BM}\\) comum e \\(\\overline{AM} \\cong \\overline{CM}\\); daí \\(A\\widehat{M}B = C\\widehat{M}B = 90°\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 3.17 – Triângulos \\(ABM\\) e \\(CBM\\) congruentes (LLL); daí \\(A\\widehat{M}B = C\\widehat{M}B = 90°\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_losango_triangulos.png" alt="Triângulos ABM e CBM congruentes (LLL); ângulo reto em M" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -2773,7 +2773,7 @@ const PAGES_DATA = {
                 retângulos isósceles congruentes (Figura 3.18).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 3.18 – Quadrado \\(ABCD\\): diagonais congruentes e perpendiculares, ângulos de \\(45°\\) e os quatro triângulos retângulos isósceles</p>
+            <p style="text-align: center; font-weight: bold;">Figura 3.18 – Quadrado \\(ABCD\\): diagonais congruentes e perpendiculares, ângulos de \\(45°\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/3.5/img_quadrado_diagonais.png" alt="Quadrado ABCD: diagonais congruentes e perpendiculares, ângulos de 45 graus, quatro triângulos" style="max-width: 38%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3105,7 +3105,7 @@ const PAGES_DATA = {
                 \\(\\overline{PA} \\cong \\overline{PB}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.9 – Traçando a corda \\(\\overline{AB}\\): os triângulos \\(OAB\\) e \\(PAB\\) são isósceles (ângulos da base iguais), de onde \\(PA = PB\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.9 – Corda \\(\\overline{AB}\\): triângulos \\(OAB\\) e \\(PAB\\) isósceles, de onde \\(PA = PB\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4/img_isosceles_pab.png" alt="Corda AB; triângulos OAB e PAB isósceles, de onde PA = PB; reta OP como eixo de simetria" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3192,7 +3192,7 @@ const PAGES_DATA = {
                 Chamemos essas medidas de \\(a\\), \\(b\\), \\(c\\) e \\(d\\):
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.11 – Quadrilátero \\(ABCD\\) circunscrito a uma circunferência; de cada vértice os dois segmentos tangentes são iguais (\\(a\\), \\(b\\), \\(c\\), \\(d\\))</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.11 – Quadrilátero \\(ABCD\\) circunscrito, com os segmentos tangentes \\(a\\), \\(b\\), \\(c\\), \\(d\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot.png" alt="Quadrilátero ABCD circunscrito a uma circunferência; segmentos tangentes iguais a, b, c, d de cada vértice" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3221,7 +3221,7 @@ const PAGES_DATA = {
                 (Figura 4.12). Resta mostrar que \\(\\omega\\) também tangencia \\(\\overline{CD}\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.12 – O centro \\(I\\), no encontro das bissetrizes de \\(\\widehat{A}\\) e \\(\\widehat{B}\\); a circunferência \\(\\omega\\) é tangente a \\(\\overline{AB}\\), \\(\\overline{BC}\\) e \\(\\overline{AD}\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.12 – Centro \\(I\\) (bissetrizes de \\(\\widehat{A}\\) e \\(\\widehat{B}\\)) e \\(\\omega\\) tangente a \\(\\overline{AB}\\), \\(\\overline{BC}\\), \\(\\overline{AD}\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot_reciproca.png" alt="Centro I no encontro das bissetrizes de A e B; circunferência ω tangente a AB, BC e AD" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3233,7 +3233,7 @@ const PAGES_DATA = {
                 \\[ AB + CD' = BC + AD'. \\]
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.13 – A outra tangente por \\(C\\) encontra a reta \\(AD\\) em \\(D'\\), entre \\(A\\) e \\(D\\), formando o triângulo \\(CDD'\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.13 – A tangente por \\(C\\) encontra \\(AD\\) em \\(D'\\), formando o triângulo \\(CDD'\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.4.1/img_pitot_absurdo.png" alt="Suposição do absurdo: a outra tangente por C encontra AD em D' entre A e D, formando o triângulo CDD'" style="max-width: 45%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3335,7 +3335,7 @@ const PAGES_DATA = {
                 donde \\(A\\widehat{V}B = \\tfrac{1}{2} A\\widehat{O}B\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.16 – Caso em que um lado do ângulo inscrito passa pelo centro: \\(\\triangle OVA\\) é isósceles e \\(A\\widehat{O}B = 2\\alpha\\)</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.16 – Caso 1: um lado passa pelo centro; \\(\\triangle OVA\\) isósceles e \\(A\\widehat{O}B = 2\\alpha\\)</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso1.png" alt="Caso 1: um lado do ângulo inscrito passa pelo centro; triângulo OVA isósceles e AÔB = 2α" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3348,7 +3348,7 @@ const PAGES_DATA = {
                 \\[ A\\widehat{V}B = \\tfrac{1}{2}\\left(A\\widehat{O}C + C\\widehat{O}B\\right) = \\tfrac{1}{2} A\\widehat{O}B. \\]
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.17 – Centro interior ao ângulo: o diâmetro \\(\\overline{VC}\\) reduz o problema a duas aplicações do Caso 1</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.17 – Caso 2: o diâmetro \\(\\overline{VC}\\) divide em duas parcelas do Caso 1</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso2.png" alt="Caso 2: centro interior; o diâmetro VC divide o ângulo em duas parcelas do Caso 1" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3359,7 +3359,7 @@ const PAGES_DATA = {
                 Em todos os casos, \\(A\\widehat{V}B = \\tfrac{1}{2} A\\widehat{O}B\\).
             </p>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.18 – Centro exterior ao ângulo: o ângulo inscrito aparece como diferença de dois ângulos do Caso 1</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.18 – Caso 3: o ângulo inscrito como diferença de dois ângulos do Caso 1</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_caso3.png" alt="Caso 3: centro exterior; o ângulo inscrito aparece como diferença de dois ângulos do Caso 1" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3373,7 +3373,7 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 4.19 – Ângulos inscritos \\(A\\widehat{V}B\\) e \\(A\\widehat{W}B\\) que subtendem o mesmo arco \\(AB\\): são congruentes</p>
+            <p style="text-align: center; font-weight: bold;">Figura 4.19 – Ângulos inscritos sobre o mesmo arco \\(AB\\) são congruentes</p>
             <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.5/img_inscrito_mesmo_arco.png" alt="Ângulos inscritos AV̂B e AŴB que subtendem o mesmo arco AB: são congruentes" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -3399,10 +3399,105 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Arco capaz.', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.6 Arco Capaz</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                O teorema do ângulo inscrito tem uma leitura em forma de <strong>lugar geométrico</strong>:
+                fixados um segmento e um ângulo, quais são os pontos que "enxergam" o segmento sob aquele
+                ângulo? A resposta é um arco de circunferência, o <strong>arco capaz</strong>.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Definição (arco capaz):</strong> Dados um segmento \\(\\overline{AB}\\) e um ângulo
+                    \\(\\alpha\\) (com \\(0° < \\alpha < 180°\\)), o <strong>arco capaz</strong> de
+                    \\(\\overline{AB}\\) segundo \\(\\alpha\\) é o lugar geométrico dos pontos \\(P\\), de um
+                    mesmo lado da reta \\(AB\\), tais que \\(A\\widehat{P}B = \\alpha\\).
+                </p>
+            </div>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema:</strong> Esse lugar geométrico é um <strong>arco de circunferência</strong>
+                    de extremos \\(A\\) e \\(B\\). Cada lado da reta \\(AB\\) determina um arco capaz, e os dois
+                    são simétricos em relação a \\(AB\\).
+                </p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.21 – Arco capaz: todo ponto do arco vê \\(\\overline{AB}\\) sob o mesmo ângulo \\(\\alpha\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.6/img_arco_capaz.png" alt="Arco capaz de AB segundo α: os pontos P e Q do arco veem AB sob o mesmo ângulo α" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>Demonstração:</strong>
+                Fixado um dos lados da reta \\(AB\\), tome na
+                <a href="#" onclick="loadPage('mediatriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">mediatriz (seção 2.9)</a>
+                de \\(\\overline{AB}\\) o ponto \\(O\\) com \\(A\\widehat{O}B = 2\\alpha\\), e considere a
+                circunferência de centro \\(O\\) e raio \\(OA\\) (que passa também por \\(B\\), pois \\(OA = OB\\)).
+                Seja \\(\\Gamma\\) o arco dessa circunferência situado no lado escolhido. Vamos mostrar que
+                \\(\\Gamma\\) é exatamente o conjunto dos pontos \\(P\\), desse lado, com \\(A\\widehat{P}B = \\alpha\\).
+            </p>
+
+            <p>
+                De um lado, todo \\(P \\in \\Gamma\\) enxerga \\(\\overline{AB}\\) sob \\(\\alpha\\): o ângulo
+                \\(A\\widehat{P}B\\) é inscrito e subtende a corda \\(\\overline{AB}\\), logo, pelo
+                <a href="#" onclick="loadPage('angulos-circunferencia')" style="color: inherit; text-decoration: underline; cursor: pointer;">teorema do ângulo inscrito (seção 4.5)</a>,
+                \\(A\\widehat{P}B = \\tfrac{1}{2}\\,A\\widehat{O}B = \\alpha\\).
+            </p>
+
+            <p>
+                De outro, se \\(P\\) é um ponto do lado escolhido com \\(A\\widehat{P}B = \\alpha\\), a
+                circunferência circunscrita ao triângulo \\(APB\\) tem, sobre \\(\\overline{AB}\\), ângulo central
+                \\(2\\,A\\widehat{P}B = 2\\alpha\\). Como o centro está na mediatriz de \\(\\overline{AB}\\) e a
+                condição \\(A\\widehat{O}B = 2\\alpha\\) fixa a sua posição e o raio, essa circunferência é a mesma
+                de \\(\\Gamma\\); portanto \\(P\\) pertence a \\(\\Gamma\\). Concluímos que o lugar geométrico
+                procurado é o arco \\(\\Gamma\\).
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Construção (régua e compasso):</strong> Para traçar o arco capaz de
+                    \\(\\overline{AB}\\) segundo \\(\\alpha\\):
+                </p>
+                <ul style="margin: 8px 0 8px 24px;">
+                    <li>trace o segmento \\(\\overline{AB}\\) e sua mediatriz \\(m\\), que corta \\(\\overline{AB}\\) no ponto médio \\(M\\);</li>
+                    <li>por \\(A\\), trace a semirreta que forma ângulo \\(90° - \\alpha\\) com \\(\\overline{AB}\\); ela encontra \\(m\\) no <strong>centro</strong> \\(O\\);</li>
+                    <li>o arco de centro \\(O\\) e raio \\(OA\\), do lado escolhido, é o arco capaz.</li>
+                </ul>
+            </div>
+
+            <p>
+                A justificativa da construção está no ângulo central: como \\(OA = OB\\), o triângulo \\(AOB\\)
+                é isósceles e \\(OM\\) é a sua altura, de modo que \\(A\\widehat{O}M = A\\widehat{O}B/2\\). No
+                triângulo retângulo \\(AMO\\) (reto em \\(M\\)), o ângulo \\(O\\widehat{A}M = 90° - \\alpha\\)
+                que impomos garante \\(A\\widehat{O}M = \\alpha\\), isto é, \\(A\\widehat{O}B = 2\\alpha\\), como
+                exige o teorema (Figura 4.22).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.22 – Construção do arco capaz: centro \\(O\\) na mediatriz de \\(\\overline{AB}\\) e semirreta a \\(90° - \\alpha\\) em \\(A\\)</p>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.6/img_arco_capaz_construcao.png" alt="Construção do arco capaz: centro O no encontro da mediatriz de AB com a semirreta que forma 90°−α em A" style="max-width: 35%; height: auto;"></div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Caso particular (\\(\\alpha = 90°\\)):</strong> Quando \\(\\alpha = 90°\\), temos
+                    \\(A\\widehat{O}B = 180°\\) e o centro \\(O\\) coincide com o ponto médio \\(M\\); o arco capaz
+                    é a semicircunferência de diâmetro \\(\\overline{AB}\\). Recupera-se assim o
+                    <a href="#" onclick="loadPage('angulos-circunferencia')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema de Tales (seção 4.5)</a>:
+                    de qualquer ponto dessa semicircunferência, \\(\\overline{AB}\\) é visto sob \\(90°\\).
+                </p>
+            </div>
+
+            <p>
+                O arco capaz resolve o problema de <strong>enxergar um segmento sob um ângulo fixo</strong>, que
+                aparece em várias construções e em aplicações como a escolha da posição de melhor "abertura" de
+                visada para um segmento (por exemplo, o ângulo sob o qual se vê a trave num chute a gol).
+            </p>
+
         </div>
         `
     },
@@ -3412,10 +3507,84 @@ const PAGES_DATA = {
         description: '', videoId: 'PLACEHOLDER', videoDuration: 'a definir', videoDate: 'a gravar',
         videoDescription: 'Quadrilátero inscritível (ângulos opostos suplementares).', sectionTitle: '',
         content: `
-        <div class="theorem" style="text-align: center;">
+        <div class="math-display">
+
             <h3>4.7 Quadrilátero Inscritível (ângulos opostos suplementares)</h3>
-            <p style="font-size: 1.3rem; margin: 30px 0;">🚧 Seção em construção</p>
-            <p>Conteúdo e demonstrações a serem desenvolvidos.</p>
+
+            <p>
+                Um quadrilátero convexo é <strong>inscritível</strong> (ou <strong>cíclico</strong>) quando
+                existe uma circunferência que passa pelos seus quatro vértices, chamada
+                <strong>circunferência circunscrita</strong>. Ao contrário do triângulo, que é sempre
+                inscritível, um quadrilátero só admite tal circunferência sob uma condição, que o teorema a
+                seguir identifica.
+            </p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Teorema:</strong> Um quadrilátero convexo \\(ABCD\\) é <strong>inscritível</strong>
+                    se, e somente se, seus ângulos opostos são <strong>suplementares</strong>:
+                    \\[ \\widehat{A} + \\widehat{C} = 180° \\qquad\\text{e}\\qquad \\widehat{B} + \\widehat{D} = 180°. \\]
+                    (Uma das igualdades implica a outra, pois a soma dos quatro ângulos de um quadrilátero
+                    convexo é \\(360°\\), conforme a
+                    <a href="#" onclick="loadPage('quad-definicoes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 3.1</a>.)
+                </p>
+            </div>
+
+            <p><strong>Demonstração.</strong></p>
+
+            <p>
+                <strong>(\\(\\Rightarrow\\)) Ida.</strong> Suponha \\(ABCD\\) inscrito numa circunferência de
+                centro \\(O\\) (Figura 4.23). O ângulo \\(\\widehat{A}\\) é inscrito e subtende o arco \\(BCD\\)
+                (de \\(B\\) a \\(D\\) passando por \\(C\\)); o ângulo \\(\\widehat{C}\\) é inscrito e subtende o
+                arco \\(BAD\\) (de \\(B\\) a \\(D\\) passando por \\(A\\)). Pelo
+                <a href="#" onclick="loadPage('angulos-circunferencia')" style="color: inherit; text-decoration: underline; cursor: pointer;">teorema do ângulo inscrito (seção 4.5)</a>,
+                cada um é a metade do arco correspondente. Como os dois arcos, juntos, formam a circunferência
+                inteira (\\(360°\\)),
+                \\[ \\widehat{A} + \\widehat{C} = \\tfrac{1}{2}\\,(\\text{arco } BCD) + \\tfrac{1}{2}\\,(\\text{arco } BAD) = \\tfrac{1}{2}\\cdot 360° = 180°. \\]
+                Do mesmo modo, \\(\\widehat{B} + \\widehat{D} = 180°\\).
+            </p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.23 – Quadrilátero inscrito: \\(\\widehat{A}\\) e \\(\\widehat{C}\\) subtendem arcos que completam a circunferência, logo \\(\\widehat{A} + \\widehat{C} = 180°\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/4.7/img_quad_inscritivel.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <p>
+                <strong>(\\(\\Leftarrow\\)) Volta.</strong> Suponha agora \\(\\widehat{A} + \\widehat{C} = 180°\\)
+                (logo também \\(\\widehat{B} + \\widehat{D} = 180°\\)). Seja \\(\\Gamma\\) a circunferência que
+                passa por \\(A\\), \\(B\\) e \\(C\\), que existe e é única pela
+                <a href="#" onclick="loadPage('determinacao-circunferencia')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 4.2</a>.
+                Basta mostrar que \\(D\\) também está em \\(\\Gamma\\) (Figura 4.24).
+            </p>
+
+            <p>
+                Considere a diagonal \\(\\overline{AC}\\). Pela ida, todo ponto \\(X\\) de \\(\\Gamma\\) situado
+                do lado oposto a \\(B\\) forma um quadrilátero inscrito \\(ABXC\\) e, portanto, vê
+                \\(\\overline{AC}\\) sob o ângulo \\(A\\widehat{X}C = 180° - \\widehat{B}\\). Ou seja, esse
+                arco de \\(\\Gamma\\) é exatamente o
+                <a href="#" onclick="loadPage('arco-capaz')" style="color: inherit; text-decoration: underline; cursor: pointer;">arco capaz (seção 4.6)</a>
+                de \\(\\overline{AC}\\) segundo \\(180° - \\widehat{B}\\), daquele lado. Mas \\(D\\) está do lado
+                oposto a \\(B\\) e, por hipótese, \\(A\\widehat{D}C = \\widehat{D} = 180° - \\widehat{B}\\); logo
+                \\(D\\) pertence a esse arco capaz, que é parte de \\(\\Gamma\\). Portanto \\(D \\in \\Gamma\\), e
+                \\(ABCD\\) é inscritível.
+            </p>
+
+            <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
+
+            <p style="text-align: center; font-weight: bold;">Figura 4.24 – Volta: a circunferência \\(\\Gamma\\) por \\(A\\), \\(B\\), \\(C\\); como \\(\\widehat{D} = 180° - \\widehat{B}\\), o vértice \\(D\\) cai no arco capaz de \\(\\overline{AC}\\), sobre \\(\\Gamma\\)</p>
+            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/4.7/img_quad_inscritivel_reciproca.png</div>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
+
+            <div class="theorem">
+                <p>
+                    <strong>Consequências:</strong> Todo <strong>retângulo</strong> (e, em particular, todo
+                    <strong>quadrado</strong>) é inscritível, pois seus ângulos opostos são retos e somam
+                    \\(90° + 90° = 180°\\). Também todo <strong>trapézio isósceles</strong> é inscritível, pois
+                    seus ângulos opostos são suplementares. Já um <strong>losango</strong> não quadrado não é
+                    inscritível, pois seus ângulos opostos são iguais, e não suplementares (a menos que sejam
+                    retos, caso do quadrado).
+                </p>
+            </div>
+
         </div>
         `
     },
