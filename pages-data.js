@@ -3545,7 +3545,7 @@ const PAGES_DATA = {
             </p>
 
             <p style="text-align: center; font-weight: bold;">Figura 4.23 – Quadrilátero inscrito: \\(\\widehat{A}\\) e \\(\\widehat{C}\\) subtendem arcos que completam a circunferência, logo \\(\\widehat{A} + \\widehat{C} = 180°\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/4.7/img_quad_inscritivel.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.7/img_quad_inscritivel.png" alt="Quadrilátero inscrito: Â e Ĉ subtendem arcos que completam a circunferência" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
@@ -3571,7 +3571,7 @@ const PAGES_DATA = {
             <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 4.24 – Volta: a circunferência \\(\\Gamma\\) por \\(A\\), \\(B\\), \\(C\\); como \\(\\widehat{D} = 180° - \\widehat{B}\\), o vértice \\(D\\) cai no arco capaz de \\(\\overline{AC}\\), sobre \\(\\Gamma\\)</p>
-            <div style="text-align: center; margin: 20px 0; padding: 40px 20px; border: 2px dashed #c0392b; color: #c0392b; font-weight: bold;">⚠ Figura a inserir: imagem/4.7/img_quad_inscritivel_reciproca.png</div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/4.7/img_quad_inscritivel_reciproca.png" alt="Volta: Γ por A, B, C; D cai no arco capaz de AC, sobre Γ" style="max-width: 35%; height: auto;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
