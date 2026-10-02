@@ -24,7 +24,7 @@ const PAGES_DATA = {
             <p>Dados dois pontos distintos \\(A\\) e \\(B\\), o <strong>segmento de reta</strong> \\(\\overline{AB}\\) é a reunião de \\(A\\), \\(B\\) e de todos os pontos entre eles; \\(A\\) e \\(B\\) são suas <strong>extremidades</strong>. O comprimento (medida) de \\(\\overline{AB}\\) é indicado por \\(AB\\) (Figura 1.1).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.1 – Reta \\(r\\), semirreta \\(\\overrightarrow{OA}\\) e segmento \\(\\overline{AB}\\)</p>
-            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.1/img_reta_semirreta_segmento.png" alt="Reta r, semirretas opostas OA e OB, e segmento AB" style="max-width: 70%;"></div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.1/img_reta_semirreta_segmento.png" alt="Reta r, semirretas opostas OA e OB, e segmento AB" style="max-width: 55%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>O ponto \\(M\\) que divide \\(\\overline{AB}\\) em dois segmentos congruentes (\\(\\overline{AM} = \\overline{MB}\\)) é o seu <strong>ponto médio</strong>, estudado em detalhe na <a href="#" onclick="loadPage('ponto_medio')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.1</a>.</p>
@@ -53,7 +53,7 @@ const PAGES_DATA = {
             </ul>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.2 – Ângulo \\(A\\widehat{O}B\\), com vértice \\(O\\) e lados \\(\\overrightarrow{OA}\\) e \\(\\overrightarrow{OB}\\)</p>
-            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulo_elementos.png" alt="Ângulo AÔB com vértice O e lados OA e OB" style="max-width: 60%;"></div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulo_elementos.png" alt="Ângulo AÔB com vértice O e lados OA e OB" style="max-width: 45%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A cada ângulo associa-se uma <strong>medida</strong> (ou amplitude) \\(m(A\\widehat{O}B)\\), um número real. A unidade usual é o <strong>grau</strong> (\\(^\\circ\\)): o ângulo reto mede \\(90^\\circ\\), e a medida \\(\\alpha\\) de um ângulo qualquer satisfaz \\(0^\\circ \\le \\alpha \\le 180^\\circ\\).</p>
@@ -64,7 +64,7 @@ const PAGES_DATA = {
             <p>Dois ângulos são <strong>consecutivos</strong> quando um lado de um coincide com um lado do outro (têm um lado comum). Dois ângulos consecutivos são <strong>adjacentes</strong> quando, além disso, não têm pontos internos comuns (Figura 1.3).</p>
 
             <p style="text-align: center; font-weight: bold;">Figura 1.3 – Ângulos adjacentes \\(A\\widehat{O}B\\) e \\(B\\widehat{O}C\\) (lado comum \\(\\overrightarrow{OB}\\))</p>
-            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulos_consecutivos.png" alt="Ângulos adjacentes AÔB e BÔC com lado comum OB" style="max-width: 60%;"></div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.2/img_angulos_consecutivos.png" alt="Ângulos adjacentes AÔB e BÔC com lado comum OB" style="max-width: 45%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>A semirreta interna que divide um ângulo em dois ângulos congruentes é a sua <strong>bissetriz</strong> (ver <a href="#" onclick="loadPage('existencia-bissetriz')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.4.3</a>).</p>
@@ -88,7 +88,7 @@ const PAGES_DATA = {
 
         <div class="math-display">
             <p style="text-align: center; font-weight: bold;">Figura 1.4 – Ângulos opostos pelo vértice \\(A\\widehat{O}B\\) e \\(C\\widehat{O}D\\)</p>
-            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.3/img_opostos_vertice.png" alt="Ângulos opostos pelo vértice AÔB e CÔD" style="max-width: 60%;"></div>
+            <div style="text-align: center; margin: 20px 0;"><img src="imagem/1.3/img_opostos_vertice.png" alt="Ângulos opostos pelo vértice AÔB e CÔD" style="max-width: 45%;"></div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
@@ -132,7 +132,7 @@ const PAGES_DATA = {
 
             <p style="text-align: center; font-weight: bold;">Figura 1.5 – Ângulos complementares (soma \\(90^\\circ\\)) e suplementares (soma \\(180^\\circ\\))</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/1.4/img_complementares_suplementares.png" alt="Ângulos complementares (soma 90°) e suplementares (soma 180°)" style="max-width: 100%; height: auto;">
+                <img src="imagem/1.4/img_complementares_suplementares.png" alt="Ângulos complementares (soma 90°) e suplementares (soma 180°)" style="max-width: 40%; height: auto;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
@@ -743,7 +743,7 @@ const PAGES_DATA = {
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
-                Um resultado notável, que será explorado futuramente, é que as três medianas são
+                Um resultado notável é que as três medianas são
                 <strong>concorrentes</strong>: elas se encontram em um único ponto \\(G\\),
                 chamado <strong>baricentro</strong> (ou centróide) do triângulo, que divide
                 cada mediana na razão \\(2:1\\) a partir do vértice.
@@ -926,7 +926,7 @@ const PAGES_DATA = {
 
             <p>
                 Como um triângulo possui três vértices, ele possui três bissetrizes internas,
-                uma relativa a cada vértice. Um resultado notável, que será explorado futuramente,
+                uma relativa a cada vértice. Um resultado notável
                 é que essas três bissetrizes são <strong>concorrentes</strong>: elas se encontram
                 em um único ponto \\(I\\), chamado <strong>incentro</strong> do triângulo,
                 que é equidistante dos três lados (Figura 2.28).
