@@ -113,9 +113,9 @@ const PAGES_DATA = {
     'complementares-suplementares': {
         title: '1.4 Ângulos Complementares, Suplementares e Ângulo Reto',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'J8WddGHIaUk',
+        videoDuration: '0:43 minutos',
+        videoDate: '2 de outubro de 2026',
         videoDescription: 'Ângulos complementares, suplementares e ângulo reto.',
         sectionTitle: '',
         content: `
