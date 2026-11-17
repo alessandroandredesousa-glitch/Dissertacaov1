@@ -1104,9 +1104,9 @@ const PAGES_DATA = {
     'congruencia-LAA': {
     title: '2.6 Congruência de Triângulos: Caso LAA(o)',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
+    videoId: '-aez9KyFObM',
+    videoDuration: '1:29 minutos',
+    videoDate: '2 de outubro de 2026',
     videoDescription: 'Caso de Congruência LAA(o)',
     sectionTitle: '',
     content: `
