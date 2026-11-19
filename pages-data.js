@@ -1191,9 +1191,9 @@ const PAGES_DATA = {
     'maior-lado-maior-angulo': {
     title: '2.7.1 Relação entre Lados e Ângulos Opostos',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
+    videoId: '4hrbDv56Nys',
+    videoDuration: '2:21 minutos',
+    videoDate: '18 de novembro de 2026',
     videoDescription: 'Relação entre Lados e Ângulos Opostos em um Triângulo',
     sectionTitle: '',
     content: `
@@ -1299,9 +1299,9 @@ const PAGES_DATA = {
     'desigualdade-triangular': {
     title: '2.7.2 A Desigualdade Triangular',
     description: '',
-    videoId: 'SEU_VIDEO_ID',
-    videoDuration: '',
-    videoDate: '',
+    videoId: 'SDiKaQuFZ_M',
+    videoDuration: '2:03 minutos',
+    videoDate: '18 de novembro de 2026',
     videoDescription: 'A Desigualdade Triangular',
     sectionTitle: '',
     content: `
@@ -1367,7 +1367,7 @@ const PAGES_DATA = {
 
             <p>
                 Assim, no triângulo \\(\\triangle BCD\\), temos \\(B\\widehat{C}D > B\\widehat{D}C\\).
-                Pelo <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema 1.7.1</a>, o maior ângulo se opõe ao maior lado:
+                Pelo <a href="#" onclick="loadPage('maior-lado-maior-angulo')" style="color: inherit; text-decoration: underline; cursor: pointer;">Teorema 2.7.1</a>, o maior ângulo se opõe ao maior lado:
             </p>
             \\[
                 \\overline{BD} > \\overline{BC}
