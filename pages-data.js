@@ -1531,9 +1531,9 @@ const PAGES_DATA = {
     'construcao-paralela': {
         title: '2.8.3 Construção da Paralela',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: 'NGpcD5Yyn0g',
+        videoDuration: '0:54 minutos',
+        videoDate: '20 de novembro de 2026',
         videoDescription: 'Construção da Paralela',
         sectionTitle: '',
         content: `
