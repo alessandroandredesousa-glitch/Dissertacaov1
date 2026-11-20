@@ -1397,9 +1397,9 @@ const PAGES_DATA = {
     'paralelas-transversal': {
         title: '2.8.1 Retas Paralelas e Ângulos com Transversal',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: 'gk9bqpQJQq4',
+        videoDuration: '2:02 minutos',
+        videoDate: '20 de novembro de 2026',
         videoDescription: 'Retas Paralelas e Ângulos com Transversal',
         sectionTitle: '',
         content: `
@@ -1458,9 +1458,9 @@ const PAGES_DATA = {
     'existencia-paralela': {
         title: '2.8.2 Existência da Paralela',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: 'L3DfF-S2qrc',
+        videoDuration: '1:45 minutos',
+        videoDate: '20 de novembro de 2026',
         videoDescription: 'Existência da Paralela',
         sectionTitle: '',
         content: `
