@@ -1497,10 +1497,11 @@ const PAGES_DATA = {
                 Seja \\(m\\) a reta que contém esse ângulo (Figura 2.45).
             </p>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.45 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_existencia_paralela_1.png" alt="Existência da paralela: construção e absurdo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.45 – Construção de \\(m\\) por \\(P\\) com ângulos alternos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 Se \\(m\\) e \\(r\\) não fossem paralelas, teriam um ponto \\(B\\) em comum e
@@ -1561,10 +1562,11 @@ const PAGES_DATA = {
                 <li>Seja \\(\\alpha\\) o ângulo formado por \\(t\\) e \\(r\\) no vértice \\(A\\), do lado interior entre as retas (Figura 2.46).</li>
             </ol>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.46 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_construcao_paralela_1.png" alt="Transversal t por P e A, ângulo α em A" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.46 – Transversal \\(t\\) traçada por \\(P\\) e \\(A \\in r\\), com ângulo \\(\\alpha\\) identificado em \\(A\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <ol start="3">
                 <li>Em \\(P\\), construa um ângulo \\(\\beta \\equiv \\alpha\\) com vértice em \\(P\\) e um lado sobre \\(\\overrightarrow{PA}\\),
@@ -1572,10 +1574,11 @@ const PAGES_DATA = {
                 <li>Seja \\(m\\) a reta determinada pelo outro lado do ângulo \\(\\beta\\) em \\(P\\) (Figura 2.47).</li>
             </ol>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.47 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_construcao_paralela_2.png" alt="Ângulo β reproduzido em P e reta m paralela a r" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.47 – Ângulo \\(\\beta \\equiv \\alpha\\) reproduzido em \\(P\\), determinando a reta \\(m \\parallel r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p><strong>Justificativa:</strong></p>
 
@@ -1628,10 +1631,11 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.48 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_postulado_euclides_1.png" alt="Única paralela por P a r" style="max-width: 60%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.48 – Por \\(P\\), existe uma única reta \\(m\\) paralela a \\(r\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <div class="theorem">
                 <p>
@@ -1700,10 +1704,11 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.49 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_1.png" alt="Paralelas cortadas por transversal com ângulos alternos internos" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.49 – Retas \\(s \\parallel m\\) cortadas pela transversal \\(t\\): ângulos alternos internos \\(\\alpha \\equiv \\beta\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1736,10 +1741,11 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.50 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_2.png" alt="Ângulos correspondentes congruentes" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.50 – Ângulos correspondentes \\(\\alpha \\equiv \\alpha'\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1758,10 +1764,11 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.51 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_paralelas_angulos_3.png" alt="Ângulos colaterais internos suplementares" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.51 – Ângulos colaterais internos \\(\\alpha\\) e \\(\\gamma\\) formados por \\(s \\parallel m\\) e a transversal \\(t\\): \\(\\alpha + \\gamma = 180°\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
@@ -1825,10 +1832,11 @@ const PAGES_DATA = {
                 </p>
             </div>
 
+            <p style="text-align: center; font-weight: bold;">Figura 2.52 – Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\).</p>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="imagem/2.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
             </div>
-            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Figura 2.52 – Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\). Fonte: Autoria própria (2026).</p>
+            <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
