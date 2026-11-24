@@ -1606,9 +1606,9 @@ const PAGES_DATA = {
     'postulado-euclides': {
         title: '2.8.4 Postulado de Euclides',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: 'pE0dwKC9UnU',
+        videoDuration: '0:24 minutos',
+        videoDate: '24 de novembro de 2026',
         videoDescription: 'Postulado de Euclides',
         sectionTitle: '',
         content: `
