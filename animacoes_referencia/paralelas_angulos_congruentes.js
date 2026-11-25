@@ -138,3 +138,83 @@ drawText({
     text: "Portanto, $\\alpha \\equiv \\beta$",
     x: 0.08, y: -9.74, color: cor_dourado
 })
+
+pause()
+
+// =========================================================
+//  COROLÁRIOS — acrescentados abaixo da Parte 1 (sem sobrepor)
+//  desenhaConfig(yc): monta m, s, transversal t, A e P na
+//  altura yc e devolve A, P e a direção (ux,uy) da transversal.
+// =========================================================
+function desenhaConfig(yc) {
+    // reta m (azul)
+    drawArrow({ points: [{x:-3.5,y:-1+yc},{x:-4.5,y:-1+yc}], color: cor_azul_eletrico, size: 0.2 })
+    drawSegment({ points: [{x:-4,y:-1+yc},{x:4,y:-1+yc}], color: cor_azul_eletrico, width: 0.06 })
+    drawArrow({ points: [{x:3.5,y:-1+yc},{x:4.5,y:-1+yc}], color: cor_azul_eletrico, size: 0.2 })
+    drawText({ text: "$m$", x:-4.3, y:-0.6+yc, fontSize:0.55, color: cor_azul_eletrico })
+
+    // reta s (rosa)
+    drawArrow({ points: [{x:-3.5,y:2+yc},{x:-4.5,y:2+yc}], color: cor_rosa_choque, size: 0.2 })
+    drawSegment({ points: [{x:-4,y:2+yc},{x:4,y:2+yc}], color: cor_rosa_choque, width: 0.06 })
+    drawArrow({ points: [{x:3.5,y:2+yc},{x:4.5,y:2+yc}], color: cor_rosa_choque, size: 0.2 })
+    drawText({ text: "$s$", x:4.3, y:1.38+yc, fontSize:0.55, color: cor_rosa_choque })
+
+    // transversal t por A(-1,-1) e P(1,2) — pontas fixas (não usa saida)
+    const A = {x:-1, y:-1+yc}, P = {x:1, y:2+yc}
+    const ux = 2/Math.sqrt(13), uy = 3/Math.sqrt(13)   // direção A→P
+    const topo = {x: 2.6,  y: 4.4+yc}
+    const base = {x:-3.27, y:-4.4+yc}
+    drawArrow({ points: [{x:base.x+0.8*ux, y:base.y+0.8*uy}, base], size: 0.2 })
+    drawSegment({ points: [base, topo], width: 0.05 })
+    drawArrow({ points: [{x:topo.x-0.8*ux, y:topo.y-0.8*uy}, topo], size: 0.2 })
+    drawText({ text: "$t$", x: topo.x+0.2, y: topo.y+0.1, fontSize: 0.55 })
+
+    // pontos A e P
+    drawPoint({ x:A.x, y:A.y, size:0.07 })
+    drawText({ text: "$A$", x:A.x+0.2, y:A.y-0.52, fontSize:0.52 })
+    drawPoint({ x:P.x, y:P.y, size:0.07 })
+    drawText({ text: "$P$", x:P.x+0.2, y:P.y-0.62, fontSize:0.52 })
+
+    return { A, P, ux, uy }
+}
+
+// ===================== COROLÁRIO 1: correspondentes (α ≡ α') =====================
+const yc1 = -18
+drawText({ text: "\\begin{center}\\textbf{Corolário 1: Ângulos Correspondentes}\\end{center}",
+    x: 0.15, y: 6.15+yc1, color: cor_titulo })
+
+const c1 = desenhaConfig(yc1)
+pause()
+
+// α em A (superior direito)
+drawSector({ points: [{x:c1.A.x+1, y:c1.A.y}, c1.A, c1.P], radius:0.5, fill:true, fillColor:cor_dourado, opacity:0.75 })
+drawText({ text:"$\\alpha$", x:-0.27, y:-0.68+yc1, fontSize:0.5, color:cor_dourado })
+pause()
+
+// α' em P (correspondente — mesma posição, superior direito)
+drawSector({ points: [{x:c1.P.x+1, y:c1.P.y}, c1.P, {x:c1.P.x+c1.ux, y:c1.P.y+c1.uy}], radius:0.5, fill:true, fillColor:cor_dourado, opacity:0.75 })
+drawText({ text:"$\\alpha'$", x:1.5, y:2.55+yc1, fontSize:0.5, color:cor_dourado })
+pause()
+
+drawText({ text:"$\\alpha \\equiv \\alpha'$", x:2.2, y:0.4+yc1, fontSize:0.6, color:cor_verde_neon })
+pause()
+
+// ===================== COROLÁRIO 2: colaterais internos (α + γ = 180°) =====================
+const yc2 = -36
+drawText({ text: "\\begin{center}\\textbf{Corolário 2: Colaterais Internos}\\end{center}",
+    x: 0.15, y: 6.15+yc2, color: cor_titulo })
+
+const c2 = desenhaConfig(yc2)
+pause()
+
+// α em A (superior direito)
+drawSector({ points: [{x:c2.A.x+1, y:c2.A.y}, c2.A, c2.P], radius:0.5, fill:true, fillColor:cor_dourado, opacity:0.75 })
+drawText({ text:"$\\alpha$", x:-0.27, y:-0.68+yc2, fontSize:0.5, color:cor_dourado })
+pause()
+
+// γ em P (colateral interno — inferior direito, do mesmo lado de α)
+drawSector({ points: [{x:c2.P.x+1, y:c2.P.y}, c2.P, c2.A], radius:0.5, fill:true, fillColor:cor_ciano, opacity:0.75 })
+drawText({ text:"$\\gamma$", x:1.55, y:1.5+yc2, fontSize:0.5, color:cor_ciano })
+pause()
+
+drawText({ text:"$\\alpha + \\gamma = 180^\\circ$", x:2.0, y:0.4+yc2, fontSize:0.6, color:cor_verde_neon })
