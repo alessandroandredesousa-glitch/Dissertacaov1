@@ -1832,32 +1832,32 @@ const PAGES_DATA = {
                 </p>
             </div>
 
-            <p style="text-align: center; font-weight: bold;">Figura 2.52 – Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(C\\) e reta \\(r \\parallel AB\\) traçada por \\(C\\).</p>
+            <p style="text-align: center; font-weight: bold;">Figura 2.52 – Triângulo \\(ABC\\) com ângulo externo \\(e\\) em \\(B\\) e reta \\(r \\parallel CA\\) traçada por \\(B\\).</p>
             <div style="text-align: center; margin: 20px 0;">
-                <img src="imagem/2.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a AB por C mostrando o ângulo externo" style="max-width: 65%;">
+                <img src="imagem/2.8/img_soma_angulos_1.png" alt="Triângulo ABC com reta paralela a CA por B mostrando o ângulo externo" style="max-width: 65%;">
             </div>
             <p style="text-align: center; font-weight: bold; margin-bottom: 20px;">Fonte: Autoria própria (2026).</p>
 
             <p>
                 <strong>Demonstração:</strong>
                 Seja \\(ABC\\) um triângulo com ângulos internos \\(\\alpha\\) em \\(A\\), \\(\\beta\\) em \\(B\\)
-                e \\(\\gamma\\) em \\(C\\), e seja \\(e\\) o ângulo externo adjacente a \\(\\gamma\\).
-                Trace por \\(C\\) uma reta \\(r\\) paralela ao lado \\(AB\\).
+                e \\(\\gamma\\) em \\(C\\), e seja \\(e\\) o ângulo externo em \\(B\\), adjacente a \\(\\beta\\) (prolongando \\(AB\\) além de \\(B\\)).
+                Trace por \\(B\\) uma reta \\(r\\) paralela ao lado \\(CA\\).
             </p>
 
             <p>
-                Como \\(r \\parallel AB\\), pela
+                Como \\(r \\parallel CA\\), pela
                 <a href="#" onclick="loadPage('paralelas-angulos-congruentes')" style="color: inherit; text-decoration: underline; cursor: pointer;">seção 2.8.5</a>:
             </p>
 
             <ul style="margin: 8px 0 8px 24px;">
-                <li>\\(CA\\) é transversal: o ângulo alterno interno em \\(C\\) é congruente a \\(\\alpha\\).</li>
-                <li>\\(CB\\) é transversal: o ângulo correspondente em \\(C\\) é congruente a \\(\\beta\\).</li>
+                <li>\\(AB\\) prolongada é transversal: o ângulo correspondente em \\(B\\) é congruente a \\(\\alpha\\).</li>
+                <li>\\(CB\\) é transversal: o ângulo alterno interno em \\(B\\) é congruente a \\(\\gamma\\).</li>
             </ul>
 
             <p>
                 Esses dois ângulos formam juntos o ângulo externo \\(e\\). Portanto:
-                \\[e = \\alpha + \\beta\\]
+                \\[e = \\alpha + \\gamma\\]
             </p>
 
             <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
@@ -1879,8 +1879,8 @@ const PAGES_DATA = {
 
             <p>
                 <strong>Demonstração:</strong>
-                Sendo \\(e\\) e \\(\\gamma\\) suplementares, \\(e + \\gamma = 180°\\).
-                Pelo Teorema acima, \\(e = \\alpha + \\beta\\). Substituindo:
+                Sendo \\(e\\) e \\(\\beta\\) suplementares, \\(e + \\beta = 180°\\).
+                Pelo Teorema acima, \\(e = \\alpha + \\gamma\\). Substituindo:
                 \\[\\alpha + \\beta + \\gamma = 180°\\]
             </p>
 
