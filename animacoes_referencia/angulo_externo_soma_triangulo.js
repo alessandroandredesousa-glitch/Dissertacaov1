@@ -14,13 +14,13 @@ const cor_titulo        = '#FF4500'
 const cor_cinza         = '#999999'
 const cor_branco        = '#FFFFFF'
 
-// título intocado
+// título
 drawText({
     text: "\\begin{center}\\textbf{Ângulo Externo e Soma dos Ângulos do Triângulo}\\end{center}",
     x: 0.15, y: 7.15, color: cor_titulo
 })
 
-const s = 0.9  // fator de escala global (exceto título)
+const s = 0.9  // fator de escala global
 
 const A = {x: -5*s, y:  0   }
 const B = {x:  3*s, y:  0   }
@@ -122,7 +122,7 @@ animation(p_rotacao, p_paralela, p_alfa, p_gama, (rot, r, a, g) => {
         })
         drawText({
             text: '$\\alpha$',
-            x: Ar.x+alphaOff.x+(Br.x-Ar.x)*a,
+            x: Ar.x+alphaOff.x+(Br.x-Ar.x)*a+0.1,
             y: Ar.y+alphaOff.y+(Br.y-Ar.y)*a,
             fontSize: 0.5*s, color: cor_azul_eletrico
         })
@@ -146,7 +146,7 @@ animation(p_rotacao, p_paralela, p_alfa, p_gama, (rot, r, a, g) => {
         const dy = gammaOff.y
         const labelX = Cr.x + dx*Math.cos(thetaG) - dy*Math.sin(thetaG) + (Br.x-Cr.x)*g
         const labelY = Cr.y + dx*Math.sin(thetaG) + dy*Math.cos(thetaG) + (Br.y-Cr.y)*g
-        drawText({ text: '$\\gamma$', x: labelX, y: labelY, fontSize: 0.5*s, color: cor_coral })
+        drawText({ text: '$\\gamma$', x: labelX, y: labelY-0.2, fontSize: 0.5*s, color: cor_coral })
     }
 
     // Reta dourada: paralela a CA, começa em Cr e vai até Br
@@ -190,9 +190,38 @@ animation(p_rotacao, p_paralela, p_alfa, p_gama, (rot, r, a, g) => {
 
     drawText({
         text: '$e = \\alpha + \\gamma$',
-        x: -0.5*s, y: -3.5*s,
+        x: 2.77, y: -3.1,
         fontSize: 0.55*s, color: cor_verde_neon,
         opacity: g
     })
 
+})
+
+pause()
+
+drawSector({
+    points:[C, B, A], radius: 0.7, fill: true, fillColor: cor_dourado
+})
+
+drawText({
+    text: "$\\beta$",
+    x: 1.77,
+    y: 0.3,
+    fontSize: 0.5,
+    color: cor_dourado
+})
+
+pause()
+
+drawText({
+    text: "$\\beta + \\textcolor{#39FF14}{e} = 180$º (suplementares)",
+    x: 0.26,
+    y: -5.16
+})
+pause()
+
+drawText({
+    text: "$\\beta + \\textcolor{#39FF14}{ \\gamma + \\alpha} = 180$º",
+    x: -0.01,
+    y: -6.28
 })

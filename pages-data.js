@@ -1808,9 +1808,9 @@ const PAGES_DATA = {
     'soma-angulos-triangulo': {
         title: '2.8.6 Soma dos Ângulos do Triângulo',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: 'xCKqQcVvzCs',
+        videoDuration: '1:42 minutos',
+        videoDate: '25 de novembro de 2026',
         videoDescription: 'Soma dos Ângulos do Triângulo',
         sectionTitle: '',
         content: `
