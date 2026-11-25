@@ -1678,9 +1678,9 @@ const PAGES_DATA = {
     'paralelas-angulos-congruentes': {
         title: '2.8.5 Paralelas e Ângulos Congruentes',
         description: '',
-        videoId: 'SEU_VIDEO_ID',
-        videoDuration: '',
-        videoDate: '',
+        videoId: '55b-XNk17oA',
+        videoDuration: '2:07 minutos',
+        videoDate: '24 de novembro de 2026',
         videoDescription: 'Paralelas e Ângulos Congruentes',
         sectionTitle: '',
         content: `
