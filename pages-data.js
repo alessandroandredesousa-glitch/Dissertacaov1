@@ -1902,9 +1902,9 @@ const PAGES_DATA = {
     'retas-perpendiculares': {
         title: '2.9.1 Retas Perpendiculares',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'LCoSOe-LbUw',
+        videoDuration: '1:08 minutos',
+        videoDate: '25 de novembro de 2026',
         videoDescription: 'Retas perpendiculares: definição, existência e unicidade.',
         sectionTitle: '',
         content: `
