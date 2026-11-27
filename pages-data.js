@@ -1935,9 +1935,9 @@ const PAGES_DATA = {
     'construcao-perpendicular': {
         title: '2.9.2 Construção da Perpendicular',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'Rw7R2ZnlItw',
+        videoDuration: '1:34 minutos',
+        videoDate: '26 de novembro de 2026',
         videoDescription: 'Construção da perpendicular por um ponto, com régua e compasso.',
         sectionTitle: '',
         content: `
