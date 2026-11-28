@@ -1982,9 +1982,9 @@ const PAGES_DATA = {
     'mediatriz': {
         title: '2.9.3 Mediatriz de um Segmento',
         description: '',
-        videoId: 'PLACEHOLDER',
-        videoDuration: 'a definir',
-        videoDate: 'a gravar',
+        videoId: 'Hxibt0HfvbM',
+        videoDuration: '2:28 minutos',
+        videoDate: '27 de novembro de 2026',
         videoDescription: 'Mediatriz: definição e caracterização por equidistância.',
         sectionTitle: '',
         content: `
@@ -2009,7 +2009,7 @@ const PAGES_DATA = {
 
             <p style="text-align: left; margin-top: 10px; padding-left: 85%;">\\(\\blacksquare\\)</p>
 
-            <p>Assim, a mediatriz é o <strong>lugar geométrico</strong> dos pontos do plano equidistantes de \\(A\\) e \\(B\\). Essa propriedade será a chave para localizar o <strong>circuncentro</strong> de um triângulo, no capítulo de Pontos Notáveis.</p>
+            <p>Assim, a mediatriz é o <strong>lugar geométrico</strong> dos pontos do plano equidistantes de \\(A\\) e \\(B\\).</p>
         </div>
         `
     },
